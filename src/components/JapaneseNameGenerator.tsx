@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import { chatClient } from '@/lib/chat-client'
+import { useTranslations } from 'next-intl'
+import { chatClient } from '../lib/chat-client'
 import { 
   basicQuestions, 
   presetAdvancedQuestions,
@@ -9,8 +10,48 @@ import {
   getAIAdvancedQuestionPrompt,
   getFollowUpPrompt, 
   getFinalNamingPrompt 
-} from '@/lib/naming-questions'
-import { ConversationState, QuestionAnswer, NamingResult, AdvancedQuestion, FollowUpQuestion } from '@/types/naming'
+} from '../lib/naming-questions'
+import { ConversationState, QuestionAnswer, NamingResult, AdvancedQuestion, FollowUpQuestion } from '../types/naming'
+
+// 从markdown格式的响应中解析JSON
+const parseJsonFromResponse = (response: string): unknown => {
+  try {
+    // 尝试直接解析
+    return JSON.parse(response)
+  } catch {
+    // 如果直接解析失败，尝试从markdown中提取JSON
+    const jsonMatch = response.match(/```(?:json)?\s*([\s\S]*?)\s*```/)
+    if (jsonMatch) {
+      try {
+        return JSON.parse(jsonMatch[1])
+      } catch (innerError) {
+        throw new Error(`Failed to parse JSON from markdown: ${innerError}`)
+      }
+    }
+    
+    // 如果没有markdown标记，尝试查找JSON对象
+    const jsonObjectMatch = response.match(/\{[\s\S]*\}/)
+    if (jsonObjectMatch) {
+      try {
+        return JSON.parse(jsonObjectMatch[0])
+      } catch (innerError) {
+        throw new Error(`Failed to parse JSON object: ${innerError}`)
+      }
+    }
+    
+    // 如果没有找到JSON对象，尝试查找JSON数组
+    const jsonArrayMatch = response.match(/\[[\s\S]*\]/)
+    if (jsonArrayMatch) {
+      try {
+        return JSON.parse(jsonArrayMatch[0])
+      } catch (innerError) {
+        throw new Error(`Failed to parse JSON array: ${innerError}`)
+      }
+    }
+    
+    throw new Error(`No valid JSON found in response: ${response}`)
+  }
+}
 
 const initialState: ConversationState = {
   currentPhase: 'basic',
@@ -24,6 +65,9 @@ const initialState: ConversationState = {
 }
 
 export default function JapaneseNameGenerator() {
+  // 国际化翻译
+  const t = useTranslations()
+  
   const [state, setState] = useState<ConversationState>(initialState)
   const [currentInput, setCurrentInput] = useState('')
   const [namingResult, setNamingResult] = useState<NamingResult | null>(null)
@@ -45,7 +89,7 @@ export default function JapaneseNameGenerator() {
         const response = await chatClient.sendMessage(prompt, 'preset-options')
         
         try {
-          const options = JSON.parse(response)
+          const options = parseJsonFromResponse(response) as string[]
           questionsWithOptions.push({
             ...question,
             options: Array.isArray(options) ? options : []
@@ -155,7 +199,7 @@ export default function JapaneseNameGenerator() {
       const prompt = getFollowUpPrompt(parentAnswer.question, parentAnswer.answer, 1, allAnswers)
       const response = await chatClient.sendMessage(prompt, 'follow-up')
       
-      const followUpData = JSON.parse(response)
+      const followUpData = parseJsonFromResponse(response) as { question: string; options: string[] }
       const followUpQuestion: FollowUpQuestion = {
         id: `followup-${Date.now()}-1`,
         question: followUpData.question,
@@ -195,8 +239,8 @@ export default function JapaneseNameGenerator() {
 
     addAnswer(questionAnswer)
 
-    if (state.currentFollowUpLevel < 3 && !skipped) {
-      // 继续下一级追问
+    if (!skipped) {
+      // 继续下一级追问（不设上限）
       await generateNextFollowUp(questionAnswer)
     } else {
       // 追问完成，进入下一个进阶问题
@@ -220,7 +264,7 @@ export default function JapaneseNameGenerator() {
       const prompt = getFollowUpPrompt(originalQuestion, originalAnswer, state.currentFollowUpLevel + 1, allAnswers)
       const response = await chatClient.sendMessage(prompt, 'follow-up')
       
-      const followUpData = JSON.parse(response)
+      const followUpData = parseJsonFromResponse(response) as { question: string; options: string[] }
       const followUpQuestion: FollowUpQuestion = {
         id: `followup-${Date.now()}-${state.currentFollowUpLevel + 1}`,
         question: followUpData.question,
@@ -289,7 +333,7 @@ export default function JapaneseNameGenerator() {
       const prompt = getAIAdvancedQuestionPrompt(allAnswers, aiQuestionIndex)
       const response = await chatClient.sendMessage(prompt, 'ai-advanced')
       
-      const questionData = JSON.parse(response)
+      const questionData = parseJsonFromResponse(response) as { question: string; options: string[] }
       const aiQuestion: AdvancedQuestion = {
         id: `ai-${Date.now()}`,
         question: questionData.question,
@@ -335,18 +379,13 @@ export default function JapaneseNameGenerator() {
       })
 
       // 解析JSON响应
-      const jsonMatch = response.match(/```json\n([\s\S]*?)\n```/)
-      if (jsonMatch) {
-        const result: NamingResult = JSON.parse(jsonMatch[1])
-        setNamingResult(result)
-        setState(prev => ({
-          ...prev,
-          currentPhase: 'complete',
-          isLoading: false
-        }))
-      } else {
-        throw new Error('Invalid response format')
-      }
+      const result = parseJsonFromResponse(response) as NamingResult
+      setNamingResult(result)
+      setState(prev => ({
+        ...prev,
+        currentPhase: 'complete',
+        isLoading: false
+      }))
     } catch (error) {
       setState(prev => ({
         ...prev,
@@ -355,6 +394,21 @@ export default function JapaneseNameGenerator() {
         currentPhase: 'complete'
       }))
     }
+  }
+
+  // 跳过深度追问，换一个话题
+  const handleSkipToNextTopic = async () => {
+    setState(prev => ({
+      ...prev,
+      currentFollowUpLevel: 0,
+      currentFollowUpParent: undefined
+    }))
+    await proceedToNextAdvancedQuestion()
+  }
+
+  // 直接跳过所有问题，生成结果
+  const handleSkipToResult = async () => {
+    await generateFinalNames()
   }
 
   // 重新开始
@@ -371,14 +425,32 @@ export default function JapaneseNameGenerator() {
     if (state.currentPhase === 'basic') {
       const currentQuestion = basicQuestions[state.currentQuestionIndex]
       
+      // 如果当前基本问题不存在，显示错误信息
+      if (!currentQuestion) {
+        return (
+          <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 flex items-center justify-center">
+            <div className="text-center">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4">{t('errors.questionLoadError')}</h2>
+              <p className="text-gray-600 mb-4">{t('errors.questionLoadDescription')}</p>
+              <button
+                onClick={handleRestart}
+                className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              >
+                {t('common.restart')}
+              </button>
+            </div>
+          </div>
+        )
+      }
+      
       return (
         <div className="space-y-6">
           <div className="text-center">
             <div className="text-sm text-gray-500 mb-2">
-              基本信息 {state.currentQuestionIndex + 1} / {basicQuestions.length}
+              {t('questions.basic')} {state.currentQuestionIndex + 1} / {basicQuestions.length}
             </div>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              {currentQuestion.question}
+              {t(`basicQuestions.${currentQuestion.id}`)}
             </h2>
           </div>
 
@@ -390,7 +462,7 @@ export default function JapaneseNameGenerator() {
                   onClick={() => handleBasicAnswer(option)}
                   className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
                 >
-                  {option}
+                  {currentQuestion.id === 'gender' ? t(`basicQuestions.genderOptions.${option}`) : option}
                 </button>
               ))}
             </div>
@@ -400,7 +472,7 @@ export default function JapaneseNameGenerator() {
                 type="text"
                 value={currentInput}
                 onChange={(e) => setCurrentInput(e.target.value)}
-                placeholder={currentQuestion.placeholder || '请输入你的回答...'}
+                placeholder={currentQuestion.id === 'name' ? t('basicQuestions.namePlaceholder') : ''}
                 className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 onKeyPress={(e) => e.key === 'Enter' && handleBasicAnswer(currentInput)}
               />
@@ -410,7 +482,7 @@ export default function JapaneseNameGenerator() {
                 disabled={currentQuestion.required && !currentInput.trim()}
                 className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                下一步
+                {t('common.next')}
               </button>
             </div>
           )}
@@ -425,19 +497,31 @@ export default function JapaneseNameGenerator() {
         ? state.currentAdvancedQuestionIndex + 1
         : state.advancedQuestions.filter(q => q.type === 'ai-generated').length
 
+      // 如果当前问题不存在，显示加载状态
+      if (!currentQuestion) {
+        return (
+          <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 flex items-center justify-center">
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-16 w-16 border-4 border-red-300 border-t-red-600 mx-auto mb-4"></div>
+              <p className="text-gray-600">{t('errors.preparingQuestions')}</p>
+            </div>
+          </div>
+        )
+      }
+
       return (
         <div className="space-y-6">
           <div className="text-center">
             <div className="text-sm text-blue-600 mb-2">
-              {isPreset ? `预设进阶问题 ${questionNumber}/3` : `AI 个性化问题 ${questionNumber}/3`}
+              {isPreset ? `${t('questions.preset')} ${questionNumber}/2` : `${t('questions.aiGenerated')} ${questionNumber}/3`}
             </div>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-              {currentQuestion.question}
+              {isPreset ? t(`presetQuestions.${currentQuestion.id}`) : currentQuestion.question}
             </h2>
           </div>
 
           <div className="space-y-3">
-            {currentQuestion.options.map((option, index) => (
+            {currentQuestion.options?.map((option, index) => (
               <button
                 key={index}
                 onClick={() => handleAdvancedAnswer(option)}
@@ -451,7 +535,6 @@ export default function JapaneseNameGenerator() {
               <textarea
                 value={currentInput}
                 onChange={(e) => setCurrentInput(e.target.value)}
-                placeholder="或者输入自定义答案..."
                 rows={2}
                 className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               />
@@ -460,7 +543,7 @@ export default function JapaneseNameGenerator() {
                 disabled={!currentInput.trim()}
                 className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 disabled:opacity-50"
               >
-                提交
+                {t('common.submit')}
               </button>
             </div>
             
@@ -468,7 +551,7 @@ export default function JapaneseNameGenerator() {
               onClick={() => handleAdvancedAnswer('', true)}
               className="w-full py-2 text-gray-500 hover:text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50"
             >
-              跳过这个问题
+              {t('buttons.skipQuestion')}
             </button>
           </div>
         </div>
@@ -478,11 +561,23 @@ export default function JapaneseNameGenerator() {
     if (state.currentPhase === 'follow-up') {
       const currentFollowUp = state.followUpQuestions[state.followUpQuestions.length - 1]
       
+      // 如果当前追问不存在，显示加载状态
+      if (!currentFollowUp) {
+        return (
+          <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 flex items-center justify-center">
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-16 w-16 border-4 border-red-300 border-t-red-600 mx-auto mb-4"></div>
+              <p className="text-gray-600">{t('errors.preparingQuestions')}</p>
+            </div>
+          </div>
+        )
+      }
+      
       return (
         <div className="space-y-6">
           <div className="text-center">
             <div className="text-sm text-purple-600 mb-2">
-              深度追问 {state.currentFollowUpLevel}/3
+              {t('questions.followUp', { level: state.currentFollowUpLevel })}
             </div>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               {currentFollowUp.question}
@@ -490,7 +585,7 @@ export default function JapaneseNameGenerator() {
           </div>
 
           <div className="space-y-3">
-            {currentFollowUp.options.map((option, index) => (
+            {currentFollowUp.options?.map((option, index) => (
               <button
                 key={index}
                 onClick={() => handleFollowUpAnswer(option)}
@@ -504,7 +599,6 @@ export default function JapaneseNameGenerator() {
               <textarea
                 value={currentInput}
                 onChange={(e) => setCurrentInput(e.target.value)}
-                placeholder="或者输入自定义答案..."
                 rows={2}
                 className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
               />
@@ -513,16 +607,25 @@ export default function JapaneseNameGenerator() {
                 disabled={!currentInput.trim()}
                 className="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:opacity-50"
               >
-                提交
+                {t('common.submit')}
               </button>
             </div>
             
-            <button
-              onClick={() => handleFollowUpAnswer('', true)}
-              className="w-full py-2 text-gray-500 hover:text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50"
-            >
-              跳过这个追问
-            </button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4">
+              <button
+                onClick={handleSkipToNextTopic}
+                className="py-2 text-blue-600 hover:text-blue-800 border border-blue-300 rounded-lg hover:bg-blue-50 transition-colors"
+              >
+                {t('buttons.nextTopic')}
+              </button>
+              
+              <button
+                onClick={handleSkipToResult}
+                className="py-2 text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors"
+              >
+                {t('buttons.generateResult')}
+              </button>
+            </div>
           </div>
         </div>
       )
@@ -534,12 +637,12 @@ export default function JapaneseNameGenerator() {
   // 渲染加载状态
   if (state.isLoading) {
     const loadingTexts = {
-      'basic': '正在初始化问题...',
-      'advanced-preset': '正在生成进阶问题选项...',
-      'advanced-ai': 'AI 正在为您定制个性化问题...',
-      'follow-up': 'AI 正在思考深度追问...',
-      'generating': '正在生成您的专属日本名字...',
-      'complete': '处理完成'
+      'basic': t('loadingMessages.basic'),
+      'advanced-preset': t('loadingMessages.advancedPreset'),
+      'advanced-ai': t('loadingMessages.advancedAi'),
+      'follow-up': t('loadingMessages.followUp'),
+      'generating': t('loadingMessages.generating'),
+      'complete': t('loadingMessages.complete')
     }
 
     return (
@@ -559,8 +662,8 @@ export default function JapaneseNameGenerator() {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <div className="text-center mb-8">
-              <h1 className="text-3xl font-bold text-gray-800 mb-2">🌸 您的专属日本名字 🌸</h1>
-              <p className="text-gray-600">基于深度问答精心为您定制的10个名字</p>
+              <h1 className="text-3xl font-bold text-gray-800 mb-2">{t('result.title')}</h1>
+              <p className="text-gray-600">{t('result.subtitle')}</p>
             </div>
 
             {namingResult && (
@@ -577,23 +680,23 @@ export default function JapaneseNameGenerator() {
                       
                       <div className="grid md:grid-cols-2 gap-4 text-sm">
                         <div>
-                          <h4 className="font-semibold text-gray-700 mb-1">姓氏来源</h4>
+                          <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.surnameOrigin')}</h4>
                           <p className="text-gray-600">{name.surnameOrigin}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-gray-700 mb-1">名字寓意</h4>
+                          <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.meaning')}</h4>
                           <p className="text-gray-600">{name.meaning}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-gray-700 mb-1">适合理由</h4>
+                          <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.reason')}</h4>
                           <p className="text-gray-600">{name.reason}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-gray-700 mb-1">性格契合</h4>
+                          <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.personalityMatch')}</h4>
                           <p className="text-gray-600">{name.personalityMatch}</p>
                         </div>
                         <div className="md:col-span-2">
-                          <h4 className="font-semibold text-gray-700 mb-1">文化背景</h4>
+                          <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.culturalBackground')}</h4>
                           <p className="text-gray-600">{name.culturalBackground}</p>
                         </div>
                       </div>
@@ -603,18 +706,18 @@ export default function JapaneseNameGenerator() {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 rounded-xl p-6">
-                    <h3 className="text-xl font-semibold text-blue-800 mb-3">取名思路</h3>
+                    <h3 className="text-xl font-semibold text-blue-800 mb-3">{t('result.sections.namingThoughts')}</h3>
                     <p className="text-blue-700">{namingResult.explanation}</p>
                   </div>
                   
                   <div className="bg-green-50 rounded-xl p-6">
-                    <h3 className="text-xl font-semibold text-green-800 mb-3">性格分析</h3>
+                    <h3 className="text-xl font-semibold text-green-800 mb-3">{t('result.sections.personalityAnalysis')}</h3>
                     <p className="text-green-700">{namingResult.personalityAnalysis}</p>
                   </div>
                 </div>
 
                 <div className="bg-purple-50 rounded-xl p-6">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-3">文化解读</h3>
+                  <h3 className="text-xl font-semibold text-purple-800 mb-3">{t('result.sections.culturalContext')}</h3>
                   <p className="text-purple-700">{namingResult.culturalContext}</p>
                 </div>
               </div>
@@ -622,7 +725,7 @@ export default function JapaneseNameGenerator() {
 
             {state.error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-                <p className="text-red-700">生成过程中出现错误：{state.error}</p>
+                <p className="text-red-700">{t('errors.generationError', { error: state.error })}</p>
               </div>
             )}
 
@@ -631,7 +734,7 @@ export default function JapaneseNameGenerator() {
                 onClick={handleRestart}
                 className="px-8 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
               >
-                重新开始取名
+                {t('buttons.restartNaming')}
               </button>
             </div>
           </div>
@@ -646,13 +749,13 @@ export default function JapaneseNameGenerator() {
       <div className="max-w-2xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">🌸 AI 日本取名生成器 🌸</h1>
-            <p className="text-gray-600">通过深度智能问答，为您生成最适合的日本名字</p>
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">{t('header.title')}</h1>
+            <p className="text-gray-600">{t('header.subtitle')}</p>
           </div>
 
           {state.error && (
             <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-              <p className="text-red-700">错误：{state.error}</p>
+              <p className="text-red-700">{t('errors.generationError', { error: state.error })}</p>
             </div>
           )}
 
@@ -661,10 +764,10 @@ export default function JapaneseNameGenerator() {
           {/* 进度指示器 */}
           <div className="mt-8 text-center">
             <div className="text-sm text-gray-500">
-              {state.currentPhase === 'basic' && `基本信息阶段 (${state.currentQuestionIndex + 1}/${basicQuestions.length})`}
-              {state.currentPhase === 'advanced-preset' && `预设进阶问题阶段 (${state.currentAdvancedQuestionIndex + 1}/3)`}
-              {state.currentPhase === 'advanced-ai' && 'AI 个性化问题阶段'}
-              {state.currentPhase === 'follow-up' && `深度追问阶段 (${state.currentFollowUpLevel}/3)`}
+              {state.currentPhase === 'basic' && `${t('questions.basic')} (${state.currentQuestionIndex + 1}/${basicQuestions.length})`}
+              {state.currentPhase === 'advanced-preset' && `${t('questions.preset')} (${state.currentAdvancedQuestionIndex + 1}/2)`}
+              {state.currentPhase === 'advanced-ai' && t('questions.aiGenerated')}
+              {state.currentPhase === 'follow-up' && t('questions.followUp', { level: state.currentFollowUpLevel })}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
-import JapaneseNameGenerator from '@/components/JapaneseNameGenerator'
+import { redirect } from 'next/navigation'
+import { defaultLocale } from '../i18n'
 
-export default function Home() {
-  return <JapaneseNameGenerator />
+export default function RootPage() {
+  redirect(`/${defaultLocale}`)
 }

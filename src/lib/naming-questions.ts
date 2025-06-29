@@ -6,37 +6,31 @@ import { BasicQuestion, AdvancedQuestion } from '@/types/naming'
 export const basicQuestions: BasicQuestion[] = [
   {
     id: 'gender',
-    question: '你的性别是？',
+    question: 'What is your gender?', // 将使用国际化翻译
     type: 'select',
-    options: ['男性', '女性', '其他', '不愿透露'],
+    options: ['male', 'female', 'other', 'preferNotToSay'], // 使用键名，将通过国际化翻译
     required: true
   },
   {
     id: 'name',
-    question: '你的名字叫什么？',
+    question: 'What is your name?', // 将使用国际化翻译
     type: 'text',
-    placeholder: '请输入你的姓名',
+    placeholder: 'Please enter your name', // 将使用国际化翻译
     required: true
   }
 ]
 
-// 3个预设的进阶问题
+// 预设的进阶问题（保留基础必要问题）
 export const presetAdvancedQuestions: AdvancedQuestion[] = [
   {
-    id: 'historical_preference',
-    question: '你最欣赏哪种历史人物的品质？',
+    id: 'historicalPreference',
+    question: 'What kind of historical figure qualities do you admire most?', // 将使用国际化翻译
     options: [],
     type: 'preset'
   },
   {
-    id: 'cultural_aesthetic',
-    question: '你更喜欢哪种日本文化美学？',
-    options: [],
-    type: 'preset'
-  },
-  {
-    id: 'personality_aspiration',
-    question: '你希望自己的名字体现什么样的性格特质？',
+    id: 'animeCharacter',
+    question: 'What type of anime character do you like most?', // 将使用国际化翻译
     options: [],
     type: 'preset'
   }
@@ -56,25 +50,14 @@ export const getPresetQuestionOptionsPrompt = (questionId: string, question: str
 
 请以JSON数组格式返回：["选项1", "选项2", "选项3", "选项4", "选项5", "选项6"]
 `,
-    cultural_aesthetic: `
-请为问题"${question}"生成6个选择选项，每个选项应该代表不同的日本文化美学风格。
+    anime_character: `
+请为问题"${question}"生成6个选择选项，每个选项应该代表不同的动漫角色类型。
 
 要求：
-1. 涵盖传统与现代的日本美学（如侘寂、雅致、禅意、武士道等）
+1. 涵盖不同类型的动漫角色特质（如热血少年、智慧型、治愈系、冷静型等）
 2. 每个选项简洁明了（8-15字）
-3. 体现不同的审美倾向
-4. 有助于了解用户的文化偏好
-
-请以JSON数组格式返回：["选项1", "选项2", "选项3", "选项4", "选项5", "选项6"]
-`,
-    personality_aspiration: `
-请为问题"${question}"生成6个选择选项，每个选项应该代表不同的性格特质期望。
-
-要求：
-1. 涵盖不同的正面性格特质（如坚韧、温和、睿智、活力等）
-2. 每个选项简洁明了（8-15字）
-3. 具有普遍的正面价值
-4. 适合在日本名字中体现
+3. 体现不同的性格倾向和魅力
+4. 有助于了解用户的喜好
 
 请以JSON数组格式返回：["选项1", "选项2", "选项3", "选项4", "选项5", "选项6"]
 `
@@ -94,18 +77,24 @@ export const getAIAdvancedQuestionPrompt = (
   const answersContext = answers.map(a => `问题：${a.question}\n回答：${a.answer}`).join('\n\n')
   
   return `
-作为专业的日本文化专家和取名顾问，基于用户已有的回答：
+作为专业的日本取名顾问，基于用户已有的回答：
 
 ${answersContext}
 
-请生成第${questionIndex + 1}个深度个性化问题，用于更好地了解用户的特质以便起日本名字。
+请自由发挥，生成第${questionIndex + 1}个有创意的个性化问题，用于更深入地了解用户的内在特质。
+
+请自由选择任何你认为有助于了解用户个性的角度，可以是：
+- 生活态度、价值观念
+- 兴趣爱好、审美偏好  
+- 人生经历、情感体验
+- 性格特质、行为习惯
+- 或任何其他你觉得重要的维度
 
 要求：
-1. 问题应该与日本文化、历史、美学或价值观相关
-2. 能够深入了解用户的性格、偏好或人生态度
-3. 问题简洁明了（不超过30字）
-4. 避免与已有问题重复
-5. 提供6个选择选项，每个选项8-15字
+1. 问题简洁明了（不超过30字）
+2. 避免与已有问题重复
+3. 提供6个选择选项，每个选项8-15字
+4. 发挥创意，从独特角度了解用户
 
 请以JSON格式返回：
 {
@@ -122,16 +111,20 @@ export const getFollowUpPrompt = (
   followUpLevel: number,
   allAnswers: Array<{ question: string; answer: string }>
 ): string => {
-  const levels = [
-    '请基于用户的回答，提出一个更深入的相关问题，探索他们的深层想法和价值观。',
-    '请继续深入，问一个能揭示用户内在理念或人生哲学的问题。',
-    '请提出最后一个深度问题，探索用户的核心品格或精神追求，这将是取名的重要参考。'
-  ]
+  // 自由发挥的追问引导
+  const levelPrompt = `请自由发挥，基于用户的回答提出一个有深度的追问（第${followUpLevel}轮）。
+  
+可以从以下角度或任何你认为有价值的角度切入：
+- 深入探索用户的内心想法
+- 了解背后的原因和动机  
+- 探索相关的经历和感受
+- 挖掘更深层的价值观念
+- 从不同角度理解用户特质`
 
   const answersContext = allAnswers.map(a => `${a.question}: ${a.answer}`).join('\n')
 
   return `
-作为日本文化专家和取名顾问，用户刚才的回答是：
+作为日本取名顾问，用户刚才的回答是：
 
 问题：${originalQuestion}
 回答：${answer}
@@ -139,13 +132,14 @@ export const getFollowUpPrompt = (
 用户的其他回答：
 ${answersContext}
 
-${levels[followUpLevel - 1]}
+${levelPrompt}
 
 要求：
 1. 问题简洁明了（不超过30字）
-2. 与前面的回答有逻辑关联
+2. 与前面的回答有逻辑关联（但可以创新角度）
 3. 提供5个选择选项，体现不同的观点或倾向
 4. 选项简洁（6-12字）
+5. 发挥创意，不必拘泥于传统框架
 
 请以JSON格式返回：
 {

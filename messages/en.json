@@ -1,0 +1,75 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "next": "Next",
+    "skip": "Skip",
+    "restart": "Restart",
+    "switchToEnglish": "Switch to English",
+    "switchToChinese": "切换到中文"
+  },
+  "header": {
+    "title": "🌸 Japanese Name Generator 🌸",
+    "subtitle": "AI-powered personalized Japanese name creation based on deep Q&A"
+  },
+  "questions": {
+    "basic": "Basic Information",
+    "advanced": "Advanced Questions",
+    "followUp": "Deep Follow-up Round {level}",
+    "aiGenerated": "AI Personalized Questions",
+    "preset": "Preset Advanced Questions"
+  },
+  "buttons": {
+    "continueFollowUp": "Continue Follow-up",
+    "skipQuestion": "Skip This Question",
+    "nextTopic": "Next Topic",
+    "generateResult": "Generate Results Now",
+    "restartNaming": "Restart Naming"
+  },
+  "basicQuestions": {
+    "gender": "What is your gender?",
+    "name": "What is your name?",
+    "genderOptions": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "preferNotToSay": "Prefer not to say"
+    },
+    "namePlaceholder": "Please enter your name"
+  },
+  "presetQuestions": {
+    "historicalPreference": "What kind of historical figure qualities do you admire most?",
+    "animeCharacter": "What type of anime character do you like most?"
+  },
+  "loadingMessages": {
+    "basic": "Initializing questions...",
+    "advancedPreset": "Generating advanced question options...",
+    "advancedAi": "AI is creating personalized questions for you...",
+    "followUp": "AI is thinking of deep follow-up questions...",
+    "generating": "Generating your exclusive Japanese names...",
+    "complete": "Processing complete"
+  },
+  "result": {
+    "title": "🌸 Your Exclusive Japanese Names 🌸",
+    "subtitle": "10 carefully crafted names based on deep Q&A sessions",
+    "nameFields": {
+      "surnameOrigin": "Surname Origin",
+      "meaning": "Name Meaning",
+      "reason": "Why It Suits You",
+      "personalityMatch": "Personality Match",
+      "culturalBackground": "Cultural Background"
+    },
+    "sections": {
+      "namingThoughts": "Naming Philosophy",
+      "personalityAnalysis": "Personality Analysis",
+      "culturalContext": "Cultural Context"
+    }
+  },
+  "errors": {
+    "questionLoadError": "Question Loading Error",
+    "questionLoadDescription": "Unable to load current question, please restart",
+    "generationError": "Error occurred during generation: {error}",
+    "noValidJson": "Invalid AI response format",
+    "preparingQuestions": "Preparing questions..."
+  }
+} 

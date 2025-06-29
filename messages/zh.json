@@ -1,0 +1,75 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "submit": "提交",
+    "next": "下一步",
+    "skip": "跳过",
+    "restart": "重新开始",
+    "switchToEnglish": "Switch to English",
+    "switchToChinese": "切换到中文"
+  },
+  "header": {
+    "title": "🌸 日本名字生成器 🌸",
+    "subtitle": "基于AI深度问答为您定制专属日本名字"
+  },
+  "questions": {
+    "basic": "基本信息",
+    "advanced": "进阶问题",
+    "followUp": "深度追问第 {level} 轮",
+    "aiGenerated": "AI 个性化问题",
+    "preset": "预设进阶问题"
+  },
+  "buttons": {
+    "continueFollowUp": "继续追问",
+    "skipQuestion": "跳过这个问题",
+    "nextTopic": "换一个话题",
+    "generateResult": "直接生成结果",
+    "restartNaming": "重新开始取名"
+  },
+  "basicQuestions": {
+    "gender": "你的性别是？",
+    "name": "你的名字叫什么？",
+    "genderOptions": {
+      "male": "男性",
+      "female": "女性",
+      "other": "其他",
+      "preferNotToSay": "不愿透露"
+    },
+    "namePlaceholder": "请输入你的姓名"
+  },
+  "presetQuestions": {
+    "historicalPreference": "你最欣赏哪种历史人物的品质？",
+    "animeCharacter": "你最喜欢的动漫角色类型是？"
+  },
+  "loadingMessages": {
+    "basic": "正在初始化问题...",
+    "advancedPreset": "正在生成进阶问题选项...",
+    "advancedAi": "AI 正在为您定制个性化问题...",
+    "followUp": "AI 正在思考深度追问...",
+    "generating": "正在生成您的专属日本名字...",
+    "complete": "处理完成"
+  },
+  "result": {
+    "title": "🌸 您的专属日本名字 🌸",
+    "subtitle": "基于深度问答精心为您定制的10个名字",
+    "nameFields": {
+      "surnameOrigin": "姓氏来源",
+      "meaning": "名字寓意",
+      "reason": "适合理由",
+      "personalityMatch": "性格契合",
+      "culturalBackground": "文化背景"
+    },
+    "sections": {
+      "namingThoughts": "取名思路",
+      "personalityAnalysis": "性格分析",
+      "culturalContext": "文化解读"
+    }
+  },
+  "errors": {
+    "questionLoadError": "问题加载错误",
+    "questionLoadDescription": "无法加载当前问题，请重新开始",
+    "generationError": "生成过程中出现错误：{error}",
+    "noValidJson": "AI响应格式错误",
+    "preparingQuestions": "正在准备问题..."
+  }
+} 

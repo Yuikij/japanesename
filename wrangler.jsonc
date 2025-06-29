@@ -37,7 +37,9 @@
 	 */
 	"vars": { 
 		"hello": "Hello from Cloudflare Workers! 🚀",
-		"NODE_ENV": "production"
+		"NODE_ENV": "production",
+		"HTTP_PROXY":"http://127.0.0.1:7890",
+		"HTTPS_PROXY":"http://127.0.0.1:7890"
 	}
 	/**
 	 * Note: Use secrets to store sensitive data.

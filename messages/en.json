@@ -38,6 +38,9 @@
     },
     "namePlaceholder": "Please enter your name"
   },
+  "advancedQuestions": {
+    "customAnswerPlaceholder": "Or share your other thoughts..."
+  },
   "presetQuestions": {
     "historicalPreference": "What kind of historical figure qualities do you admire most?",
     "animeCharacter": "What type of anime character do you like most?"

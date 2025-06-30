@@ -536,6 +536,7 @@ export default function JapaneseNameGenerator() {
               <textarea
                 value={currentInput}
                 onChange={(e) => setCurrentInput(e.target.value)}
+                placeholder={t('advancedQuestions.customAnswerPlaceholder')}
                 rows={2}
                 className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               />
@@ -600,6 +601,7 @@ export default function JapaneseNameGenerator() {
               <textarea
                 value={currentInput}
                 onChange={(e) => setCurrentInput(e.target.value)}
+                placeholder={t('advancedQuestions.customAnswerPlaceholder')}
                 rows={2}
                 className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
               />

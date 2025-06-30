@@ -292,10 +292,11 @@ export default function JapaneseNameGenerator() {
 
   // 进入下一个进阶问题
   const proceedToNextAdvancedQuestion = async () => {
-    const totalPresetQuestions = state.advancedQuestions.length
-    const totalAIQuestions = state.advancedQuestions.filter(q => q.type === 'ai-generated').length
+    const presetQuestionsInState = state.advancedQuestions.filter(q => q.type === 'preset');
+    const totalPresetQuestions = presetQuestionsInState.length;
+    const totalAIQuestions = state.advancedQuestions.filter(q => q.type === 'ai-generated').length;
 
-    if (state.currentPhase === 'advanced-preset' && state.currentAdvancedQuestionIndex < totalPresetQuestions - 1) {
+    if ((state.currentPhase === 'advanced-preset' || state.currentPhase === 'follow-up') && state.currentAdvancedQuestionIndex < totalPresetQuestions - 1) {
       // 还有预设进阶问题
       setState(prev => ({
         ...prev,
@@ -303,16 +304,16 @@ export default function JapaneseNameGenerator() {
         currentAdvancedQuestionIndex: prev.currentAdvancedQuestionIndex + 1,
         currentFollowUpLevel: 0,
         currentFollowUpParent: undefined
-      }))
-    } else if (state.currentPhase === 'advanced-preset') {
-      // 预设问题完成，开始AI生成的进阶问题
-      await generateAIAdvancedQuestion()
-    } else if (totalAIQuestions < 3) {
-      // 继续生成AI进阶问题
-      await generateAIAdvancedQuestion()
+      }));
+    } else if (state.currentPhase === 'advanced-preset' || state.currentPhase === 'follow-up') {
+      // 预设问题完成，或从追问跳过，开始AI生成的进阶问题
+      await generateAIAdvancedQuestion();
+    } else if (state.currentPhase === 'advanced-ai' && totalAIQuestions < 3) {
+      // 如果当前在AI提问阶段，继续生成下一个AI问题
+      await generateAIAdvancedQuestion();
     } else {
       // 所有问题完成，生成名字
-      await generateFinalNames()
+      await generateFinalNames();
     }
   }
 

@@ -30,7 +30,7 @@ export const presetAdvancedQuestions: AdvancedQuestion[] = [
   },
   {
     id: 'animeCharacter',
-    question: 'What type of anime character do you like most?', // 将使用国际化翻译
+    question: 'What is your favorite anime character?', // 将使用国际化翻译
     options: [],
     type: 'preset'
   }

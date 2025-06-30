@@ -139,8 +139,11 @@ export class JapaneseNameChatClient {
   /**
    * 开始一个新的日本取名对话
    */
-  async startNameGenerationConversation(conversationId: string = 'naming'): Promise<string> {
-    const systemPrompt = `你是一个专业的日本文化专家和取名顾问。你精通日本历史、文化、语言，特别擅长根据个人特质和喜好为人起日本名字。
+  async startNameGenerationConversation(
+    conversationId: string = 'naming',
+    systemPrompt?: string
+  ): Promise<string> {
+    const defaultSystemPrompt = `你是一个专业的日本文化专家和取名顾问。你精通日本历史、文化、语言，特别擅长根据个人特质和喜好为人起日本名字。
 
 你的专业知识包括：
 - 日本姓氏的历史来源和文化含义
@@ -153,7 +156,7 @@ export class JapaneseNameChatClient {
 
 请先向我介绍一下日本取名的基本文化背景，然后开始第一个问题。`
 
-    return await this.sendMessage(systemPrompt, conversationId, {
+    return await this.sendMessage(systemPrompt || defaultSystemPrompt, conversationId, {
       temperature: 0.7,
       maxOutputTokens: 1500
     })
@@ -177,9 +180,10 @@ export class JapaneseNameChatClient {
    */
   async generateFinalNames(
     conversationId: string = 'naming',
-    nameCount: number = 5
+    nameCount: number = 5,
+    finalPrompt?: string
   ): Promise<string> {
-    const finalPrompt = `基于我们之前的对话，请为我生成 ${nameCount} 个日本名字选项。
+    const defaultFinalPrompt = `基于我们之前的对话，请为我生成 ${nameCount} 个日本名字选项。
 
 对于每个名字，请提供：
 1. 完整的日本名字（姓氏 + 名字）
@@ -203,7 +207,11 @@ export class JapaneseNameChatClient {
 
 请确保名字既有深厚的文化底蕴，又符合我的个性特点。`
 
-    return await this.sendMessage(finalPrompt, conversationId, {
+    const promptToUse = finalPrompt 
+      ? finalPrompt.replace('{nameCount}', nameCount.toString())
+      : defaultFinalPrompt
+
+    return await this.sendMessage(promptToUse, conversationId, {
       temperature: 0.9,
       maxOutputTokens: 2500
     })

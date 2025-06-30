@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { chatClient } from '../../lib/chat-client'
+import { chatClient } from '../../../lib/chat-client'
 
 export default function TestChatPage() {
   const [messages, setMessages] = useState<Array<{role: string, content: string}>>([])

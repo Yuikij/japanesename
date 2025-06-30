@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useMessages } from 'next-intl'
 import { chatClient } from '../lib/chat-client'
 import { 
   basicQuestions, 
@@ -67,6 +67,7 @@ const initialState: ConversationState = {
 export default function JapaneseNameGenerator() {
   // 国际化翻译
   const t = useTranslations()
+  const messages = useMessages()
   
   const [state, setState] = useState<ConversationState>(initialState)
   const [currentInput, setCurrentInput] = useState('')
@@ -85,7 +86,7 @@ export default function JapaneseNameGenerator() {
       const questionsWithOptions: AdvancedQuestion[] = []
       
       for (const question of presetAdvancedQuestions) {
-        const prompt = getPresetQuestionOptionsPrompt(question.id, question.question)
+        const prompt = getPresetQuestionOptionsPrompt(question.id, question.question, messages)
         const response = await chatClient.sendMessage(prompt, 'preset-options')
         
         try {
@@ -196,7 +197,7 @@ export default function JapaneseNameGenerator() {
         answer: a.answer
       }))
 
-      const prompt = getFollowUpPrompt(parentAnswer.question, parentAnswer.answer, 1, allAnswers)
+      const prompt = getFollowUpPrompt(parentAnswer.question, parentAnswer.answer, 1, allAnswers, messages)
       const response = await chatClient.sendMessage(prompt, 'follow-up')
       
       const followUpData = parseJsonFromResponse(response) as { question: string; options: string[] }
@@ -261,7 +262,7 @@ export default function JapaneseNameGenerator() {
       const originalQuestion = state.answers.find(a => a.questionId === state.currentFollowUpParent)?.question || ''
       const originalAnswer = state.answers.find(a => a.questionId === state.currentFollowUpParent)?.answer || ''
 
-      const prompt = getFollowUpPrompt(originalQuestion, originalAnswer, state.currentFollowUpLevel + 1, allAnswers)
+      const prompt = getFollowUpPrompt(originalQuestion, originalAnswer, state.currentFollowUpLevel + 1, allAnswers, messages)
       const response = await chatClient.sendMessage(prompt, 'follow-up')
       
       const followUpData = parseJsonFromResponse(response) as { question: string; options: string[] }
@@ -330,7 +331,7 @@ export default function JapaneseNameGenerator() {
       }))
 
       const aiQuestionIndex = state.advancedQuestions.filter(q => q.type === 'ai-generated').length
-      const prompt = getAIAdvancedQuestionPrompt(allAnswers, aiQuestionIndex)
+      const prompt = getAIAdvancedQuestionPrompt(allAnswers, aiQuestionIndex, messages)
       const response = await chatClient.sendMessage(prompt, 'ai-advanced')
       
       const questionData = parseJsonFromResponse(response) as { question: string; options: string[] }
@@ -372,7 +373,7 @@ export default function JapaneseNameGenerator() {
         answer: a.answer
       }))
 
-      const prompt = getFinalNamingPrompt(allAnswers)
+      const prompt = getFinalNamingPrompt(allAnswers, messages)
       const response = await chatClient.sendMessage(prompt, 'naming-final', {
         temperature: 0.9,
         maxOutputTokens: 4000

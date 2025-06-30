@@ -69,10 +69,12 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+        <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50">
           <div className="absolute top-4 right-4 z-10">
             <LanguageSwitcher />
           </div>
           {children}
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -544,7 +544,7 @@ export default function JapaneseNameGenerator() {
                 disabled={!currentInput.trim()}
                 className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 disabled:opacity-50"
               >
-                {t('common.submit')}
+                {t('common.confirm')}
               </button>
             </div>
             
@@ -608,7 +608,7 @@ export default function JapaneseNameGenerator() {
                 disabled={!currentInput.trim()}
                 className="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:opacity-50"
               >
-                {t('common.submit')}
+                {t('common.confirm')}
               </button>
             </div>
             

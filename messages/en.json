@@ -2,6 +2,7 @@
   "common": {
     "loading": "Loading...",
     "submit": "Submit",
+    "confirm": "Confirm",
     "next": "Next",
     "skip": "Skip",
     "restart": "Restart",

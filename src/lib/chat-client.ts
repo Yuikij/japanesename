@@ -95,7 +95,7 @@ export class JapaneseNameChatClient {
       const requestBody: ChatRequest = {
         contents: history,
         generationConfig: {
-          maxOutputTokens: 6000,
+          maxOutputTokens: 16000,
           temperature: 0.8,
           topP: 0.9,
           topK: 40,
@@ -166,7 +166,7 @@ export class JapaneseNameChatClient {
 
     return await this.sendMessage(systemPrompt || defaultSystemPrompt, conversationId, {
       temperature: 0.7,
-      maxOutputTokens: 6500
+      maxOutputTokens: 16500
     })
   }
 
@@ -179,7 +179,7 @@ export class JapaneseNameChatClient {
   ): Promise<string> {
     return await this.sendMessage(answer, conversationId, {
       temperature: 0.8,
-      maxOutputTokens: 6500
+      maxOutputTokens: 16500
     })
   }
 
@@ -221,7 +221,7 @@ export class JapaneseNameChatClient {
 
     return await this.sendMessage(promptToUse, conversationId, {
       temperature: 0.9,
-      maxOutputTokens: 6500
+      maxOutputTokens: 16500
     })
   }
 
@@ -288,12 +288,26 @@ export class JapaneseNameChatClient {
     name: string,
     meaning: string,
     culturalBackground: string,
-    personalityMatch: string
-  ): Promise<{ image: string; prompt: string }> {
+    personalityMatch: string,
+    locale?: string
+  ): Promise<{ image: string; prompt: string; explanation: string }> {
     try {
       const familyCrestApiUrl = typeof window !== 'undefined' 
         ? `${window.location.origin}/api/family-crest`
         : '/api/family-crest'
+
+      // 如果没有提供locale，尝试从当前URL或浏览器设置中获取
+      let currentLocale = locale
+      if (!currentLocale && typeof window !== 'undefined') {
+        // 从当前URL路径中提取语言设置
+        const pathMatch = window.location.pathname.match(/^\/(zh|en)/)
+        if (pathMatch) {
+          currentLocale = pathMatch[1]
+        } else {
+          // 从浏览器语言设置中获取
+          currentLocale = navigator.language.startsWith('zh') ? 'zh' : 'en'
+        }
+      }
 
       const response = await fetch(familyCrestApiUrl, {
         method: 'POST',
@@ -304,7 +318,8 @@ export class JapaneseNameChatClient {
           name,
           meaning,
           culturalBackground,
-          personalityMatch
+          personalityMatch,
+          locale: currentLocale || 'zh' // 默认为中文
         })
       })
 
@@ -313,7 +328,12 @@ export class JapaneseNameChatClient {
         throw new Error(errorData.error?.message || `HTTP ${response.status}`)
       }
 
-      const data = await response.json() as { success: boolean; image: string; prompt: string }
+      const data = await response.json() as { 
+        success: boolean; 
+        image: string; 
+        prompt: string; 
+        explanation: string 
+      }
       
       if (!data.success || !data.image) {
         throw new Error('Failed to generate family crest')
@@ -321,7 +341,8 @@ export class JapaneseNameChatClient {
 
       return {
         image: data.image,
-        prompt: data.prompt
+        prompt: data.prompt,
+        explanation: data.explanation,
       }
 
     } catch (error) {
@@ -338,5 +359,10 @@ export const chatClient = new JapaneseNameChatClient()
 export const startNaming = () => chatClient.startNameGenerationConversation()
 export const continueChat = (answer: string) => chatClient.continueNameConversation(answer)
 export const generateNames = (count: number = 5) => chatClient.generateFinalNames('naming', count)
-export const generateFamilyCrest = (name: string, meaning: string, culturalBackground: string, personalityMatch: string) => 
-  chatClient.generateFamilyCrest(name, meaning, culturalBackground, personalityMatch) 
+export const generateFamilyCrest = (
+  name: string, 
+  meaning: string, 
+  culturalBackground: string, 
+  personalityMatch: string,
+  locale?: string
+) => chatClient.generateFamilyCrest(name, meaning, culturalBackground, personalityMatch, locale) 

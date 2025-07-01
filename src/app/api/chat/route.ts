@@ -237,7 +237,7 @@ export async function POST(request: NextRequest) {
 
     // 获取 API 端点
     const apiEndpoint = process.env.API_ENDPOINT || 
-                       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent'
+                       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent'
 
     // 解析请求体
     const requestBody: ChatRequestBody = await request.json()
@@ -256,7 +256,7 @@ export async function POST(request: NextRequest) {
     const geminiRequestBody = {
       contents: requestBody.contents,
       generationConfig: {
-        maxOutputTokens: requestBody.generationConfig?.maxOutputTokens || 6000,
+        maxOutputTokens: requestBody.generationConfig?.maxOutputTokens || 16000,
         temperature: requestBody.generationConfig?.temperature || 0.8,
         topP: requestBody.generationConfig?.topP || 0.9,
         topK: requestBody.generationConfig?.topK || 40,

@@ -5,6 +5,7 @@ interface FamilyCrestRequest {
   meaning: string
   culturalBackground: string
   personalityMatch: string
+  locale?: string // 添加可选的语言参数
 }
 
 interface ErrorResponse {
@@ -127,6 +128,71 @@ function createErrorResponse(message: string, status: number = 400, request?: Ne
   )
 }
 
+// 获取用户语言偏好
+function getUserLocale(request: NextRequest): string {
+  // 首先检查URL参数
+  const url = new URL(request.url)
+  const localeParam = url.searchParams.get('locale')
+  if (localeParam && ['zh', 'en'].includes(localeParam)) {
+    return localeParam
+  }
+
+  // 检查Accept-Language头
+  const acceptLanguage = request.headers.get('Accept-Language')
+  if (acceptLanguage) {
+    if (acceptLanguage.includes('zh')) return 'zh'
+    if (acceptLanguage.includes('en')) return 'en'
+  }
+
+  // 默认返回中文
+  return 'zh'
+}
+
+// 获取本地化的家纹设计提示词
+function getLocalizedPrompt(
+  name: string,
+  meaning: string,
+  culturalBackground: string,
+  personalityMatch: string,
+  locale: string
+): string {
+  if (locale === 'en') {
+    return `As a professional Japanese family crest (Kamon) designer, please design a traditional Japanese family crest based on the following information for the name "${name}":
+
+Name Information:
+- Name: ${name}
+- Meaning: ${meaning}
+- Cultural Background: ${culturalBackground}
+- Personality Match: ${personalityMatch}
+
+Design Requirements:
+1. **Style**: Traditional Japanese family crest, circular badge, black and white, simple lines.
+2. **Core**: Incorporate symbolic elements that reflect the name's meaning, cultural background, and personality.
+3. **Composition**: The design should be harmonious and balanced, embodying Japanese aesthetics.
+4. **Image**: Generate a high-resolution image with white background and black crest.
+5. **Design Description**: Provide a concise 50-100 word explanation in English, explaining the design concept, symbolic meaning, and connection to the name.
+
+Please provide both the generated image and design description text in your response.`
+  } else {
+    return `作为一位专业的日本家纹设计师，请基于以下信息为名字"${name}"设计一个传统的日本家纹（家紋/Kamon）：
+
+名字信息：
+- 名字：${name}
+- 含义：${meaning}
+- 文化背景：${culturalBackground}
+- 性格匹配：${personalityMatch}
+
+设计要求:
+1. **风格**: 传统的日本家纹，圆形徽章，黑白分明，线条简洁。
+2. **核心**: 融入反映名字含义、文化背景和性格的象征性元素。
+3. **构图**: 设计应和谐平衡，体现日本美学。
+4. **图像**: 生成一张高分辨率的图像，白色背景，家纹为黑色。
+5. **设计说明**: 提供一段50-100字的简洁中文说明，解释家纹的设计理念、象征意义以及与名字的关联。
+
+请在响应中同时提供生成的图像和设计说明文本。`
+  }
+}
+
 export async function OPTIONS(request: NextRequest) {
   const corsHeaders = getCorsHeaders(request)
   
@@ -146,7 +212,7 @@ export async function POST(request: NextRequest) {
 
     // 解析请求体
     const body: FamilyCrestRequest = await request.json()
-    const { name, meaning, culturalBackground, personalityMatch } = body
+    const { name, meaning, culturalBackground, personalityMatch, locale } = body
 
     if (!name) {
       return createErrorResponse('Name is required', 400, request)
@@ -160,20 +226,17 @@ export async function POST(request: NextRequest) {
       return createErrorResponse('AI service not configured', 500, request)
     }
 
-    // 构造家纹设计提示词
-    const designPrompt = `作为一位专业的日本家纹设计师，请基于以下信息为名字"${name}"设计一个传统的日本家纹（家紋/Kamon）：
+    // 获取用户语言偏好
+    const userLocale = locale || getUserLocale(request)
 
-名字信息：
-- 名字：${name}
-- 含义：${meaning}
-- 文化背景：${culturalBackground}
-- 性格匹配：${personalityMatch}
-
-设计要求:
-1.  **风格**: 传统的日本家纹，圆形徽章，黑白分明，线条简洁。
-2.  **核心**: 融入反映名字含义、文化背景和性格的象征性元素。
-3.  **构图**: 设计应和谐平衡，体现日本美学。
-4.  **图像**: 生成一张高分辨率的图像，白色背景，家纹为黑色。`
+    // 构造本地化的家纹设计提示词
+    const designPrompt = getLocalizedPrompt(
+      name,
+      meaning,
+      culturalBackground,
+      personalityMatch,
+      userLocale
+    )
 
     // 调用 Gemini API
     const geminiResponse = await fetch(
@@ -222,6 +285,7 @@ export async function POST(request: NextRequest) {
 
     let finalSvg = ''
     let dataUrl = ''
+    let explanation = ''
 
     if (imagePart && imagePart.inlineData) {
       dataUrl = `data:${imagePart.inlineData.mimeType};base64,${imagePart.inlineData.data}`
@@ -249,6 +313,10 @@ export async function POST(request: NextRequest) {
       const svgBase64 = Buffer.from(finalSvg).toString('base64')
       dataUrl = `data:image/svg+xml;base64,${svgBase64}`
     }
+    
+    if (textPart && textPart.text) {
+      explanation = textPart.text
+    }
 
     // 返回成功响应
     const corsHeaders = getCorsHeaders(request)
@@ -257,8 +325,10 @@ export async function POST(request: NextRequest) {
         success: true,
         image: dataUrl,
         prompt: designPrompt,
+        explanation: explanation,
         svg: finalSvg, // May be empty if an image was generated
-        text: textPart?.text || '' // Include any text response
+        text: textPart?.text || '', // Include any text response
+        locale: userLocale // 返回使用的语言
       },
       {
         status: 200,

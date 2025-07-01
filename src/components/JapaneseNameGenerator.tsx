@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
-import { useTranslations, useMessages } from 'next-intl'
+import { useTranslations, useMessages, useLocale } from 'next-intl'
 import { chatClient, generateFamilyCrest } from '../lib/chat-client'
 import { 
   basicQuestions, 
@@ -68,6 +68,7 @@ export default function JapaneseNameGenerator() {
   // 国际化翻译
   const t = useTranslations()
   const messages = useMessages()
+  const locale = useLocale()
   
   const [state, setState] = useState<ConversationState>(initialState)
   const [basicInput, setBasicInput] = useState('')
@@ -450,6 +451,7 @@ export default function JapaneseNameGenerator() {
         familyCrest: {
           image: '',
           prompt: '',
+          explanation: '',
           generating: true
         }
       }
@@ -464,7 +466,8 @@ export default function JapaneseNameGenerator() {
         name.fullName,
         name.meaning,
         name.culturalBackground,
-        name.personalityMatch
+        name.personalityMatch,
+        locale
       )
 
       // 更新结果
@@ -476,6 +479,7 @@ export default function JapaneseNameGenerator() {
           familyCrest: {
             image: result.image,
             prompt: result.prompt,
+            explanation: result.explanation,
             generating: false
           }
         }
@@ -496,6 +500,7 @@ export default function JapaneseNameGenerator() {
           familyCrest: {
             image: '',
             prompt: '',
+            explanation: '',
             generating: false,
             error: error instanceof Error ? error.message : t('result.familyCrest.error')
           }
@@ -553,6 +558,22 @@ export default function JapaneseNameGenerator() {
                   {currentQuestion.id === 'gender' ? t(`basicQuestions.genderOptions.${option}`) : option}
                 </button>
               ))}
+              
+              {/* 换一个话题按钮 */}
+              <button
+                onClick={handleSkipToNextTopic}
+                className="w-full p-4 text-center bg-blue-50 border border-blue-300 rounded-lg hover:border-blue-400 hover:bg-blue-100 transition-colors min-h-[60px] flex items-center justify-center text-blue-600 hover:text-blue-800"
+              >
+                {t('buttons.nextTopic')}
+              </button>
+              
+              {/* 直接生成结果按钮 */}
+              <button
+                onClick={handleSkipToResult}
+                className="w-full p-4 text-center text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors min-h-[60px] flex items-center justify-center"
+              >
+                {t('buttons.generateResult')}
+              </button>
             </div>
           ) : (
             <div className="space-y-4">
@@ -572,6 +593,22 @@ export default function JapaneseNameGenerator() {
               >
                 {t('common.next')}
               </button>
+              
+              {/* 换一个话题按钮 */}
+              <button
+                onClick={handleSkipToNextTopic}
+                className="w-full p-4 text-center bg-blue-50 border border-blue-300 rounded-lg hover:border-blue-400 hover:bg-blue-100 transition-colors min-h-[60px] flex items-center justify-center text-blue-600 hover:text-blue-800"
+              >
+                {t('buttons.nextTopic')}
+              </button>
+              
+              {/* 直接生成结果按钮 */}
+              <button
+                onClick={handleSkipToResult}
+                className="w-full p-4 text-center text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors min-h-[60px] flex items-center justify-center"
+              >
+                {t('buttons.generateResult')}
+              </button>
             </div>
           )}
         </div>
@@ -581,9 +618,17 @@ export default function JapaneseNameGenerator() {
     if (state.currentPhase === 'advanced-preset' || state.currentPhase === 'advanced-ai') {
       const currentQuestion = state.advancedQuestions[state.currentAdvancedQuestionIndex]
       const isPreset = state.currentPhase === 'advanced-preset'
-      const questionNumber = isPreset 
-        ? state.currentAdvancedQuestionIndex + 1
-        : state.advancedQuestions.filter(q => q.type === 'ai-generated').length
+      
+      // 计算问题编号
+      let questionNumber: number
+      if (isPreset) {
+        // 预设问题：基于当前索引
+        questionNumber = state.currentAdvancedQuestionIndex + 1
+      } else {
+        // AI问题：基于已回答的AI问题数量 + 1（当前问题）
+        const answeredAIQuestions = state.answers.filter(a => a.type === 'advanced-ai').length
+        questionNumber = answeredAIQuestions + 1
+      }
 
       // 如果当前问题不存在，显示加载状态
       if (!currentQuestion) {
@@ -644,14 +689,7 @@ export default function JapaneseNameGenerator() {
               </button>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4">
-              <button
-                onClick={() => handleAdvancedAnswer('', true)}
-                className="w-full p-4 text-center text-gray-500 hover:text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors min-h-[60px] flex items-center justify-center"
-              >
-                {t('buttons.skipQuestion')}
-              </button>
-              
+            <div className="pt-4">
               <button
                 onClick={handleSkipToResult}
                 className="w-full p-4 text-center text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors min-h-[60px] flex items-center justify-center"
@@ -843,7 +881,9 @@ export default function JapaneseNameGenerator() {
                                 />
                               </div>
                               <div className="flex-1">
-                                <p className="text-sm text-gray-600 mb-2">{t('result.familyCrest.description')}</p>
+                                <p className="text-sm text-gray-600 mb-2">
+                                  {name.familyCrest.explanation || t('result.familyCrest.description')}
+                                </p>
                                 <button
                                   onClick={() => handleGenerateFamilyCrest(index)}
                                   className="px-3 py-1 bg-gray-500 text-white text-xs rounded hover:bg-gray-600 transition-colors"

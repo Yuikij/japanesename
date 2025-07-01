@@ -63,6 +63,7 @@ export interface GeneratedName {
 export interface FamilyCrest {
   image: string // base64 encoded image
   prompt: string
+  explanation: string
   generating?: boolean
   error?: string
 }

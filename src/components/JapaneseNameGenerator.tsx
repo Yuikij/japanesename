@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react'
 import { useTranslations, useMessages } from 'next-intl'
-import { chatClient } from '../lib/chat-client'
+import { chatClient, generateFamilyCrest } from '../lib/chat-client'
 import { 
   basicQuestions, 
   presetAdvancedQuestions,
@@ -11,7 +11,7 @@ import {
   getFollowUpPrompt, 
   getFinalNamingPrompt 
 } from '../lib/naming-questions'
-import { ConversationState, QuestionAnswer, NamingResult, AdvancedQuestion, FollowUpQuestion } from '../types/naming'
+import { ConversationState, QuestionAnswer, NamingResult, AdvancedQuestion, FollowUpQuestion, GeneratedName } from '../types/naming'
 
 // 从markdown格式的响应中解析JSON
 const parseJsonFromResponse = (response: string): unknown => {
@@ -70,8 +70,18 @@ export default function JapaneseNameGenerator() {
   const messages = useMessages()
   
   const [state, setState] = useState<ConversationState>(initialState)
-  const [currentInput, setCurrentInput] = useState('')
+  const [basicInput, setBasicInput] = useState('')
+  const [advancedInput, setAdvancedInput] = useState('')
+  const [followUpInput, setFollowUpInput] = useState('')
   const [namingResult, setNamingResult] = useState<NamingResult | null>(null)
+
+  // 设置系统提示词
+  useEffect(() => {
+    const systemPrompt = t('aiPrompts.systemPrompt')
+    if (systemPrompt) {
+      chatClient.setSystemPrompt(systemPrompt)
+    }
+  }, [t])
 
   // 初始化时生成预设进阶问题的选项
   useEffect(() => {
@@ -86,8 +96,10 @@ export default function JapaneseNameGenerator() {
       const questionsWithOptions: AdvancedQuestion[] = []
       
       for (const question of presetAdvancedQuestions) {
-        const prompt = getPresetQuestionOptionsPrompt(question.id, question.question, messages)
-        const response = await chatClient.sendMessage(prompt, 'preset-options')
+        const userPrompt = getPresetQuestionOptionsPrompt(question.id, question.question, messages)
+        const systemPrompt = t('aiPrompts.systemPrompt')
+        const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
+        const response = await chatClient.sendMessage(fullPrompt, 'preset-options')
         
         try {
           const options = parseJsonFromResponse(response) as string[]
@@ -147,7 +159,7 @@ export default function JapaneseNameGenerator() {
         ...prev,
         currentQuestionIndex: prev.currentQuestionIndex + 1
       }))
-      setCurrentInput('')
+      setBasicInput('')
     } else {
       // 基本问题完成，开始预设进阶问题
       setState(prev => ({
@@ -171,6 +183,7 @@ export default function JapaneseNameGenerator() {
     }
 
     addAnswer(questionAnswer)
+    setAdvancedInput('') // 清空进阶问题输入
 
     if (!skipped) {
       // 开始对这个问题进行追问
@@ -197,10 +210,12 @@ export default function JapaneseNameGenerator() {
         answer: a.answer
       }))
 
-      const prompt = getFollowUpPrompt(parentAnswer.question, parentAnswer.answer, 1, allAnswers, messages)
-      const response = await chatClient.sendMessage(prompt, 'follow-up')
-      
-      const followUpData = parseJsonFromResponse(response) as { question: string; options: string[] }
+      const systemPrompt = t('aiPrompts.systemPrompt')
+      const userPrompt = getFollowUpPrompt(parentAnswer.question, parentAnswer.answer, 1, allAnswers, messages)
+      const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
+
+      const response = await chatClient.sendMessage(fullPrompt, 'follow-up')
+      const followUpData = parseJsonFromResponse(response) as FollowUpQuestion
       const followUpQuestion: FollowUpQuestion = {
         id: `followup-${Date.now()}-1`,
         question: followUpData.question,
@@ -239,9 +254,10 @@ export default function JapaneseNameGenerator() {
     }
 
     addAnswer(questionAnswer)
+    setFollowUpInput('') // 清空追问输入
 
-    if (!skipped) {
-      // 继续下一级追问（不设上限）
+    if (!skipped && state.currentFollowUpLevel < 3) {
+      // 继续下一级追问（最多3个）
       await generateNextFollowUp(questionAnswer)
     } else {
       // 追问完成，进入下一个进阶问题
@@ -262,10 +278,12 @@ export default function JapaneseNameGenerator() {
       const originalQuestion = state.answers.find(a => a.questionId === state.currentFollowUpParent)?.question || ''
       const originalAnswer = state.answers.find(a => a.questionId === state.currentFollowUpParent)?.answer || ''
 
-      const prompt = getFollowUpPrompt(originalQuestion, originalAnswer, state.currentFollowUpLevel + 1, allAnswers, messages)
-      const response = await chatClient.sendMessage(prompt, 'follow-up')
-      
-      const followUpData = parseJsonFromResponse(response) as { question: string; options: string[] }
+      const systemPrompt = t('aiPrompts.systemPrompt')
+      const userPrompt = getFollowUpPrompt(originalQuestion, originalAnswer, state.currentFollowUpLevel + 1, allAnswers, messages)
+      const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
+
+      const response = await chatClient.sendMessage(fullPrompt, 'follow-up')
+      const followUpData = parseJsonFromResponse(response) as FollowUpQuestion
       const followUpQuestion: FollowUpQuestion = {
         id: `followup-${Date.now()}-${state.currentFollowUpLevel + 1}`,
         question: followUpData.question,
@@ -308,8 +326,8 @@ export default function JapaneseNameGenerator() {
     } else if (state.currentPhase === 'advanced-preset' || state.currentPhase === 'follow-up') {
       // 预设问题完成，或从追问跳过，开始AI生成的进阶问题
       await generateAIAdvancedQuestion();
-    } else if (state.currentPhase === 'advanced-ai' && totalAIQuestions < 3) {
-      // 如果当前在AI提问阶段，继续生成下一个AI问题
+    } else if (state.currentPhase === 'advanced-ai' && totalAIQuestions < 5) {
+      // 如果当前在AI提问阶段，继续生成下一个AI问题（最多5个）
       await generateAIAdvancedQuestion();
     } else {
       // 所有问题完成，生成名字
@@ -331,21 +349,16 @@ export default function JapaneseNameGenerator() {
         answer: a.answer
       }))
 
-      const aiQuestionIndex = state.advancedQuestions.filter(q => q.type === 'ai-generated').length
-      const prompt = getAIAdvancedQuestionPrompt(allAnswers, aiQuestionIndex, messages)
-      const response = await chatClient.sendMessage(prompt, 'ai-advanced')
-      
-      const questionData = parseJsonFromResponse(response) as { question: string; options: string[] }
-      const aiQuestion: AdvancedQuestion = {
-        id: `ai-${Date.now()}`,
-        question: questionData.question,
-        options: questionData.options,
-        type: 'ai-generated'
-      }
+      const systemPrompt = t('aiPrompts.systemPrompt')
+      const userPrompt = getAIAdvancedQuestionPrompt(allAnswers, state.currentAdvancedQuestionIndex + 1, messages)
+      const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
+
+      const response = await chatClient.sendMessage(fullPrompt, 'advanced-ai')
+      const newQuestion = parseJsonFromResponse(response) as AdvancedQuestion
 
       setState(prev => ({
         ...prev,
-        advancedQuestions: [...prev.advancedQuestions, aiQuestion],
+        advancedQuestions: [...prev.advancedQuestions, newQuestion],
         currentAdvancedQuestionIndex: prev.advancedQuestions.length,
         currentFollowUpLevel: 0,
         isLoading: false
@@ -374,15 +387,13 @@ export default function JapaneseNameGenerator() {
         answer: a.answer
       }))
 
-      const prompt = getFinalNamingPrompt(allAnswers, messages)
-      const response = await chatClient.sendMessage(prompt, 'naming-final', {
-        temperature: 0.9,
-        maxOutputTokens: 4000
-      })
+      const systemPrompt = t('aiPrompts.systemPrompt')
+      const userPrompt = getFinalNamingPrompt(allAnswers, messages)
+      const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
 
-      // 解析JSON响应
-      const result = parseJsonFromResponse(response) as NamingResult
-      setNamingResult(result)
+      const response = await chatClient.sendMessage(fullPrompt, 'final-naming')
+      const resultData = parseJsonFromResponse(response) as NamingResult
+      setNamingResult(resultData)
       setState(prev => ({
         ...prev,
         currentPhase: 'complete',
@@ -416,10 +427,85 @@ export default function JapaneseNameGenerator() {
   // 重新开始
   const handleRestart = () => {
     setState(initialState)
-    setCurrentInput('')
+    setBasicInput('')
+    setAdvancedInput('')
+    setFollowUpInput('')
     setNamingResult(null)
     chatClient.clearAllConversations()
     generatePresetAdvancedQuestions()
+  }
+
+  // 处理家纹生成
+  const handleGenerateFamilyCrest = async (nameIndex: number) => {
+    if (!namingResult) return
+
+    const name = namingResult.names[nameIndex]
+    
+    // 设置生成状态
+    setNamingResult(prev => {
+      if (!prev) return prev
+      const updatedNames = [...prev.names]
+      updatedNames[nameIndex] = {
+        ...name,
+        familyCrest: {
+          image: '',
+          prompt: '',
+          generating: true
+        }
+      }
+      return {
+        ...prev,
+        names: updatedNames
+      }
+    })
+
+    try {
+      const result = await generateFamilyCrest(
+        name.fullName,
+        name.meaning,
+        name.culturalBackground,
+        name.personalityMatch
+      )
+
+      // 更新结果
+      setNamingResult(prev => {
+        if (!prev) return prev
+        const updatedNames = [...prev.names]
+        updatedNames[nameIndex] = {
+          ...name,
+          familyCrest: {
+            image: result.image,
+            prompt: result.prompt,
+            generating: false
+          }
+        }
+        return {
+          ...prev,
+          names: updatedNames
+        }
+      })
+    } catch (error) {
+      console.error('Failed to generate family crest:', error)
+      
+      // 设置错误状态
+      setNamingResult(prev => {
+        if (!prev) return prev
+        const updatedNames = [...prev.names]
+        updatedNames[nameIndex] = {
+          ...name,
+          familyCrest: {
+            image: '',
+            prompt: '',
+            generating: false,
+            error: error instanceof Error ? error.message : t('result.familyCrest.error')
+          }
+        }
+        return {
+          ...prev,
+          names: updatedNames
+        }
+      })
+    }
   }
 
   // 渲染当前问题
@@ -462,7 +548,7 @@ export default function JapaneseNameGenerator() {
                 <button
                   key={index}
                   onClick={() => handleBasicAnswer(option)}
-                  className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                  className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors min-h-[60px] flex items-center"
                 >
                   {currentQuestion.id === 'gender' ? t(`basicQuestions.genderOptions.${option}`) : option}
                 </button>
@@ -472,16 +558,16 @@ export default function JapaneseNameGenerator() {
             <div className="space-y-4">
               <input
                 type="text"
-                value={currentInput}
-                onChange={(e) => setCurrentInput(e.target.value)}
+                value={basicInput}
+                onChange={(e) => setBasicInput(e.target.value)}
                 placeholder={currentQuestion.id === 'name' ? t('basicQuestions.namePlaceholder') : ''}
                 className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                onKeyPress={(e) => e.key === 'Enter' && handleBasicAnswer(currentInput)}
+                onKeyPress={(e) => e.key === 'Enter' && handleBasicAnswer(basicInput)}
               />
               
               <button
-                onClick={() => handleBasicAnswer(currentInput)}
-                disabled={currentQuestion.required && !currentInput.trim()}
+                onClick={() => handleBasicAnswer(basicInput)}
+                disabled={currentQuestion.required && !basicInput.trim()}
                 className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {t('common.next')}
@@ -515,7 +601,7 @@ export default function JapaneseNameGenerator() {
         <div className="space-y-6">
           <div className="text-center">
             <div className="text-sm text-blue-600 mb-2">
-              {isPreset ? `${t('questions.preset')} ${questionNumber}/2` : `${t('questions.aiGenerated')} ${questionNumber}/3`}
+              {isPreset ? `${t('questions.preset')} ${questionNumber}/2` : `${t('questions.aiGenerated')} ${questionNumber}/5`}
             </div>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               {isPreset ? t(`presetQuestions.${currentQuestion.id}`) : currentQuestion.question}
@@ -527,35 +613,52 @@ export default function JapaneseNameGenerator() {
               <button
                 key={index}
                 onClick={() => handleAdvancedAnswer(option)}
-                className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors min-h-[60px] flex items-center"
               >
                 {option}
               </button>
             ))}
             
+            {/* 换一个话题按钮 */}
+            <button
+              onClick={handleSkipToNextTopic}
+              className="w-full p-4 text-center bg-blue-50 border border-blue-300 rounded-lg hover:border-blue-400 hover:bg-blue-100 transition-colors min-h-[60px] flex items-center justify-center text-blue-600 hover:text-blue-800"
+            >
+              {t('buttons.nextTopic')}
+            </button>
+            
             <div className="flex gap-3 pt-4">
               <textarea
-                value={currentInput}
-                onChange={(e) => setCurrentInput(e.target.value)}
+                value={advancedInput}
+                onChange={(e) => setAdvancedInput(e.target.value)}
                 placeholder={t('advancedQuestions.customAnswerPlaceholder')}
                 rows={2}
                 className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               />
               <button
-                onClick={() => handleAdvancedAnswer(currentInput)}
-                disabled={!currentInput.trim()}
+                onClick={() => handleAdvancedAnswer(advancedInput)}
+                disabled={!advancedInput.trim()}
                 className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 disabled:opacity-50"
               >
                 {t('common.confirm')}
               </button>
             </div>
             
-            <button
-              onClick={() => handleAdvancedAnswer('', true)}
-              className="w-full py-2 text-gray-500 hover:text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50"
-            >
-              {t('buttons.skipQuestion')}
-            </button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4">
+              <button
+                onClick={() => handleAdvancedAnswer('', true)}
+                className="w-full p-4 text-center text-gray-500 hover:text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors min-h-[60px] flex items-center justify-center"
+              >
+                {t('buttons.skipQuestion')}
+              </button>
+              
+              <button
+                onClick={handleSkipToResult}
+                className="w-full p-4 text-center text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors min-h-[60px] flex items-center justify-center"
+              >
+                {t('buttons.generateResult')}
+              </button>
+            </div>
           </div>
         </div>
       )
@@ -592,40 +695,41 @@ export default function JapaneseNameGenerator() {
               <button
                 key={index}
                 onClick={() => handleFollowUpAnswer(option)}
-                className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 transition-colors"
+                className="w-full p-4 text-left bg-white border border-gray-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 transition-colors min-h-[60px] flex items-center"
               >
                 {option}
               </button>
             ))}
             
+            {/* 换一个话题按钮 */}
+            <button
+              onClick={handleSkipToNextTopic}
+              className="w-full p-4 text-center bg-blue-50 border border-blue-300 rounded-lg hover:border-blue-400 hover:bg-blue-100 transition-colors min-h-[60px] flex items-center justify-center text-blue-600 hover:text-blue-800"
+            >
+              {t('buttons.nextTopic')}
+            </button>
+            
             <div className="flex gap-3 pt-4">
               <textarea
-                value={currentInput}
-                onChange={(e) => setCurrentInput(e.target.value)}
+                value={followUpInput}
+                onChange={(e) => setFollowUpInput(e.target.value)}
                 placeholder={t('advancedQuestions.customAnswerPlaceholder')}
                 rows={2}
                 className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
               />
               <button
-                onClick={() => handleFollowUpAnswer(currentInput)}
-                disabled={!currentInput.trim()}
+                onClick={() => handleFollowUpAnswer(followUpInput)}
+                disabled={!followUpInput.trim()}
                 className="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:opacity-50"
               >
                 {t('common.confirm')}
               </button>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-4">
-              <button
-                onClick={handleSkipToNextTopic}
-                className="py-2 text-blue-600 hover:text-blue-800 border border-blue-300 rounded-lg hover:bg-blue-50 transition-colors"
-              >
-                {t('buttons.nextTopic')}
-              </button>
-              
+            <div className="pt-4">
               <button
                 onClick={handleSkipToResult}
-                className="py-2 text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors"
+                className="w-full py-3 text-green-600 hover:text-green-800 border border-green-300 rounded-lg hover:bg-green-50 transition-colors"
               >
                 {t('buttons.generateResult')}
               </button>
@@ -682,7 +786,7 @@ export default function JapaneseNameGenerator() {
                         <span className="text-lg text-gray-500">{name.reading}</span>
                       </div>
                       
-                      <div className="grid md:grid-cols-2 gap-4 text-sm">
+                      <div className="grid md:grid-cols-2 gap-4 text-sm mb-4">
                         <div>
                           <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.surnameOrigin')}</h4>
                           <p className="text-gray-600">{name.surnameOrigin}</p>
@@ -703,6 +807,65 @@ export default function JapaneseNameGenerator() {
                           <h4 className="font-semibold text-gray-700 mb-1">{t('result.nameFields.culturalBackground')}</h4>
                           <p className="text-gray-600">{name.culturalBackground}</p>
                         </div>
+                      </div>
+
+                      {/* 家纹部分 */}
+                      <div className="border-t border-gray-200 pt-4">
+                        <div className="flex items-center justify-between mb-3">
+                          <h4 className="font-semibold text-gray-700">{t('result.familyCrest.title')}</h4>
+                          {!name.familyCrest?.image && !name.familyCrest?.generating && (
+                            <button
+                              onClick={() => handleGenerateFamilyCrest(index)}
+                              className="px-4 py-2 bg-amber-500 text-white text-sm rounded-lg hover:bg-amber-600 transition-colors"
+                            >
+                              {t('result.familyCrest.generateButton')}
+                            </button>
+                          )}
+                        </div>
+                        
+                        {name.familyCrest?.generating && (
+                          <div className="flex items-center justify-center py-8 bg-amber-50 rounded-lg border border-amber-200">
+                            <div className="text-center">
+                              <div className="animate-spin rounded-full h-8 w-8 border-2 border-amber-300 border-t-amber-600 mx-auto mb-2"></div>
+                              <p className="text-amber-700 text-sm">{t('result.familyCrest.generating')}</p>
+                            </div>
+                          </div>
+                        )}
+                        
+                        {name.familyCrest?.image && (
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <div className="flex flex-col md:flex-row gap-4">
+                              <div className="flex-shrink-0">
+                                <img
+                                  src={name.familyCrest.image}
+                                  alt={`${name.fullName} family crest`}
+                                  className="w-32 h-32 object-contain bg-gray-50 rounded-lg border"
+                                />
+                              </div>
+                              <div className="flex-1">
+                                <p className="text-sm text-gray-600 mb-2">{t('result.familyCrest.description')}</p>
+                                <button
+                                  onClick={() => handleGenerateFamilyCrest(index)}
+                                  className="px-3 py-1 bg-gray-500 text-white text-xs rounded hover:bg-gray-600 transition-colors"
+                                >
+                                  {t('result.familyCrest.regenerate')}
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        
+                        {name.familyCrest?.error && (
+                          <div className="bg-red-50 border border-red-200 rounded-lg p-3">
+                            <p className="text-red-700 text-sm">{name.familyCrest.error}</p>
+                            <button
+                              onClick={() => handleGenerateFamilyCrest(index)}
+                              className="mt-2 px-3 py-1 bg-red-500 text-white text-xs rounded hover:bg-red-600 transition-colors"
+                            >
+                              {t('result.familyCrest.retry')}
+                            </button>
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}

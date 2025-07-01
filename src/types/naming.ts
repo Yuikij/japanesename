@@ -57,6 +57,14 @@ export interface GeneratedName {
   reason: string
   culturalBackground: string
   personalityMatch: string
+  familyCrest?: FamilyCrest
+}
+
+export interface FamilyCrest {
+  image: string // base64 encoded image
+  prompt: string
+  generating?: boolean
+  error?: string
 }
 
 export interface NamingResult {

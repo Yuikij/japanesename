@@ -2,12 +2,57 @@
   "common": {
     "loading": "Loading...",
     "submit": "Submit",
-    "confirm": "Confirm",
+    "confirm": "Other Answer",
     "next": "Next",
     "skip": "Skip",
     "restart": "Restart",
     "switchToEnglish": "Switch to English",
     "switchToChinese": "切换到中文"
+  },
+  "home": {
+    "title": "Japanese Name Generator",
+    "subtitle": "AI-Powered Personalized Japanese Name Creation Service",
+    "description": "Through deep Q&A to understand your personality traits, using advanced AI technology combined with Japanese cultural traditions to carefully create your exclusive Japanese name.",
+    "features": {
+      "title": "Service Features",
+      "aiPowered": {
+        "title": "AI Smart Analysis",
+        "description": "Using advanced artificial intelligence technology to deeply analyze your personality traits and cultural preferences"
+      },
+      "cultural": {
+        "title": "Rich Cultural Heritage",
+        "description": "Based on Japanese historical and cultural traditions, each name contains rich cultural connotations"
+      },
+      "personalized": {
+        "title": "Highly Personalized",
+        "description": "Through multiple rounds of deep Q&A to ensure the name perfectly matches your unique personality"
+      },
+      "professional": {
+        "title": "Professional Naming Consultant",
+        "description": "Combining the professional knowledge of Japanese naming experts to provide authoritative naming advice"
+      }
+    },
+    "process": {
+      "title": "Naming Process",
+      "step1": {
+        "title": "Basic Information Collection",
+        "description": "Understanding your basic information and initial preferences"
+      },
+      "step2": {
+        "title": "Deep Personality Analysis",
+        "description": "Understanding your personality traits through intelligent Q&A"
+      },
+      "step3": {
+        "title": "AI Name Generation",
+        "description": "Based on analysis results, AI generates multiple selected names for you"
+      },
+      "step4": {
+        "title": "Cultural Interpretation",
+        "description": "Detailed explanation of the cultural background and meaning of each name"
+      }
+    },
+    "startButton": "Start Naming",
+    "getStarted": "Start your exclusive Japanese name customization journey now"
   },
   "header": {
     "title": "🌸 Japanese Name Generator 🌸",
@@ -67,6 +112,15 @@
       "namingThoughts": "Naming Philosophy",
       "personalityAnalysis": "Personality Analysis",
       "culturalContext": "Cultural Context"
+    },
+    "familyCrest": {
+      "generateButton": "Generate Family Crest",
+      "generating": "Generating family crest...",
+      "title": "Family Crest",
+      "description": "Generated based on the name's cultural meaning and characteristics",
+      "error": "Failed to generate family crest",
+      "regenerate": "Regenerate",
+      "retry": "Retry"
     }
   },
   "errors": {

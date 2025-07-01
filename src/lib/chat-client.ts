@@ -1,6 +1,8 @@
 // 日本取名 AI 聊天客户端
 // 用于前端与 LLM API 交互的工具类
 
+import { ConversationState, QuestionAnswer } from '../types/naming';
+
 export interface ChatMessage {
   role: 'user' | 'model'
   parts: Array<{
@@ -50,9 +52,15 @@ export interface GenerationConfig {
   topK?: number
 }
 
+export interface ChatRequest {
+  contents: ChatMessage[]
+  generationConfig: GenerationConfig
+}
+
 export class JapaneseNameChatClient {
   private apiUrl: string
   private conversations: Map<string, ChatMessage[]>
+  private systemPrompt: string = ''
 
   constructor() {
     // 自动检测API端点
@@ -84,10 +92,10 @@ export class JapaneseNameChatClient {
       history.push(userMessage)
 
       // 构建请求
-      const requestBody = {
+      const requestBody: ChatRequest = {
         contents: history,
         generationConfig: {
-          maxOutputTokens: 2000,
+          maxOutputTokens: 6000,
           temperature: 0.8,
           topP: 0.9,
           topK: 40,
@@ -158,7 +166,7 @@ export class JapaneseNameChatClient {
 
     return await this.sendMessage(systemPrompt || defaultSystemPrompt, conversationId, {
       temperature: 0.7,
-      maxOutputTokens: 1500
+      maxOutputTokens: 6500
     })
   }
 
@@ -171,7 +179,7 @@ export class JapaneseNameChatClient {
   ): Promise<string> {
     return await this.sendMessage(answer, conversationId, {
       temperature: 0.8,
-      maxOutputTokens: 1500
+      maxOutputTokens: 6500
     })
   }
 
@@ -213,7 +221,7 @@ export class JapaneseNameChatClient {
 
     return await this.sendMessage(promptToUse, conversationId, {
       temperature: 0.9,
-      maxOutputTokens: 2500
+      maxOutputTokens: 6500
     })
   }
 
@@ -268,6 +276,59 @@ export class JapaneseNameChatClient {
       return `${index + 1}. ${role}:\n${content}\n`
     }).join('\n---\n\n')
   }
+
+  setSystemPrompt(prompt: string) {
+    this.systemPrompt = prompt
+  }
+
+  /**
+   * 生成家纹
+   */
+  async generateFamilyCrest(
+    name: string,
+    meaning: string,
+    culturalBackground: string,
+    personalityMatch: string
+  ): Promise<{ image: string; prompt: string }> {
+    try {
+      const familyCrestApiUrl = typeof window !== 'undefined' 
+        ? `${window.location.origin}/api/family-crest`
+        : '/api/family-crest'
+
+      const response = await fetch(familyCrestApiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          meaning,
+          culturalBackground,
+          personalityMatch
+        })
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json() as ChatError
+        throw new Error(errorData.error?.message || `HTTP ${response.status}`)
+      }
+
+      const data = await response.json() as { success: boolean; image: string; prompt: string }
+      
+      if (!data.success || !data.image) {
+        throw new Error('Failed to generate family crest')
+      }
+
+      return {
+        image: data.image,
+        prompt: data.prompt
+      }
+
+    } catch (error) {
+      console.error('Family Crest Generation Error:', error)
+      throw error
+    }
+  }
 }
 
 // 创建全局单例实例
@@ -276,4 +337,6 @@ export const chatClient = new JapaneseNameChatClient()
 // 便捷函数
 export const startNaming = () => chatClient.startNameGenerationConversation()
 export const continueChat = (answer: string) => chatClient.continueNameConversation(answer)
-export const generateNames = (count: number = 5) => chatClient.generateFinalNames('naming', count) 
+export const generateNames = (count: number = 5) => chatClient.generateFinalNames('naming', count)
+export const generateFamilyCrest = (name: string, meaning: string, culturalBackground: string, personalityMatch: string) => 
+  chatClient.generateFamilyCrest(name, meaning, culturalBackground, personalityMatch) 

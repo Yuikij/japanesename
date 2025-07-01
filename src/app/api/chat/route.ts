@@ -256,7 +256,7 @@ export async function POST(request: NextRequest) {
     const geminiRequestBody = {
       contents: requestBody.contents,
       generationConfig: {
-        maxOutputTokens: requestBody.generationConfig?.maxOutputTokens || 2000,
+        maxOutputTokens: requestBody.generationConfig?.maxOutputTokens || 6000,
         temperature: requestBody.generationConfig?.temperature || 0.8,
         topP: requestBody.generationConfig?.topP || 0.9,
         topK: requestBody.generationConfig?.topK || 40,

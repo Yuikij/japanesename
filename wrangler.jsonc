@@ -36,10 +36,7 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
 	"vars": { 
-		"hello": "Hello from Cloudflare Workers! 🚀",
-		"NODE_ENV": "production",
-		"HTTP_PROXY":"http://127.0.0.1:7890",
-		"HTTPS_PROXY":"http://127.0.0.1:7890"
+		"ALLOWED_ORIGINS": "http://japanesenamegenerator.casa,http://japanese-name-generator.yuisama.top",
 	}
 	/**
 	 * Note: Use secrets to store sensitive data.

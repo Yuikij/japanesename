@@ -6,16 +6,16 @@ import { BasicQuestion, AdvancedQuestion } from '@/types/naming'
 export const basicQuestions: BasicQuestion[] = [
   {
     id: 'gender',
-    question: 'What is your gender?', // 将使用国际化翻译
+    question: 'basicQuestions.gender', // 使用国际化键值
     type: 'select',
     options: ['male', 'female', 'other', 'preferNotToSay'], // 使用键名，将通过国际化翻译
     required: true
   },
   {
     id: 'name',
-    question: 'What is your name?', // 将使用国际化翻译
+    question: 'basicQuestions.name', // 使用国际化键值
     type: 'text',
-    placeholder: 'Please enter your name', // 将使用国际化翻译
+    placeholder: 'basicQuestions.namePlaceholder', // 使用国际化键值
     required: true
   }
 ]
@@ -24,13 +24,13 @@ export const basicQuestions: BasicQuestion[] = [
 export const presetAdvancedQuestions: AdvancedQuestion[] = [
   {
     id: 'historicalPreference',
-    question: 'What kind of historical figure qualities do you admire most?', // 将使用国际化翻译
+    question: 'presetQuestions.historicalPreference', // 使用国际化键值
     options: [],
     type: 'preset'
   },
   {
     id: 'animeCharacter',
-    question: 'What is your favorite anime character?', // 将使用国际化翻译
+    question: 'presetQuestions.animeCharacter', // 使用国际化键值
     options: [],
     type: 'preset'
   }

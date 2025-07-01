@@ -97,7 +97,8 @@ export default function JapaneseNameGenerator() {
       const questionsWithOptions: AdvancedQuestion[] = []
       
       for (const question of presetAdvancedQuestions) {
-        const userPrompt = getPresetQuestionOptionsPrompt(question.id, question.question, messages)
+        const translatedQuestion = t(`presetQuestions.${question.id}`)
+        const userPrompt = getPresetQuestionOptionsPrompt(question.id, translatedQuestion, messages)
         const systemPrompt = t('aiPrompts.systemPrompt')
         const fullPrompt = `${systemPrompt}\n\n${userPrompt}`
         const response = await chatClient.sendMessage(fullPrompt, 'preset-options')
@@ -147,7 +148,7 @@ export default function JapaneseNameGenerator() {
 
     const questionAnswer: QuestionAnswer = {
       questionId: currentQuestion.id,
-      question: currentQuestion.question,
+      question: t(`basicQuestions.${currentQuestion.id}`),
       answer: answer.trim(),
       type: 'basic'
     }
@@ -177,7 +178,7 @@ export default function JapaneseNameGenerator() {
     
     const questionAnswer: QuestionAnswer = {
       questionId: currentQuestion.id,
-      question: currentQuestion.question,
+      question: state.currentPhase === 'advanced-preset' ? t(`presetQuestions.${currentQuestion.id}`) : currentQuestion.question,
       answer: skipped ? '跳过' : answer,
       type: state.currentPhase === 'advanced-preset' ? 'advanced-preset' : 'advanced-ai',
       skipped

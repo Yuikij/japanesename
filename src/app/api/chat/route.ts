@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getRandomGeminiApiKey } from '@/lib/gemini'
+import { getGeminiApiKey } from '../../../lib/gemini-api-key'
 
 // 日本取名 AI 聊天 API
 // 基于 Cloudflare Workers + OpenNext 部署
@@ -221,18 +221,17 @@ export async function POST(request: NextRequest) {
     }
 
     // 获取客户端 IP 进行频率限制
-    const clientIP =
-      request.headers.get('CF-Connecting-IP') ||
-      request.headers.get('X-Forwarded-For') ||
-      request.headers.get('X-Real-IP') ||
-      'unknown'
-
+    const clientIP = request.headers.get('CF-Connecting-IP') || 
+                    request.headers.get('X-Forwarded-For') || 
+                    request.headers.get('X-Real-IP') || 
+                    'unknown'
+    
     if (!checkRateLimit(clientIP)) {
       return createErrorResponse('Rate limit exceeded', 429)
     }
 
     // 从环境变量获取 API Key
-    const apiKey = getRandomGeminiApiKey()
+    const apiKey = getGeminiApiKey()
     if (!apiKey) {
       return createErrorResponse('LLM API key not configured', 500)
     }

@@ -16,6 +16,7 @@ export async function generateMetadata({
   
   if (locale === 'zh') {
     return {
+      metadataBase: new URL('https://japanesename.vercel.app'),
       title: 'AI日本名字生成器 | 个性化文化取名服务',
       description: '使用AI技术深度分析个性特质，结合日本文化传统，为您精心定制专属日本名字。基于个性问答的智能日本取名服务，获得真正适合您的日本名字。',
       keywords: ['日本名字生成器', 'AI取名', '日本文化', '个性化命名', '日本取名服务', '文化名字', '动漫名字', '传统日本名字'],
@@ -65,6 +66,7 @@ export async function generateMetadata({
   
   // Default English metadata
   return {
+    metadataBase: new URL('https://japanesename.vercel.app'),
     title: 'AI-Powered Japanese Name Generator | Personalized Cultural Names',
     description: 'Create your perfect Japanese name with our AI-powered generator. Deep personality analysis, cultural authenticity, and personalized naming based on Japanese traditions. Get your unique Japanese name today.',
     keywords: ['Japanese name generator', 'AI naming', 'Japanese culture', 'personalized names', 'Japanese naming service', 'cultural names', 'anime names', 'traditional Japanese names'],

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getRandomGeminiApiKey } from '@/lib/gemini'
 
 interface FamilyCrestRequest {
   name: string
@@ -219,7 +220,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 检查是否配置了 Gemini API
-    const geminiApiKey = process.env.GEMINI_API_KEY
+    const geminiApiKey = getRandomGeminiApiKey()
 
     if (!geminiApiKey) {
       console.error('Gemini API key not configured')

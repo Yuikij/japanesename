@@ -52,7 +52,12 @@
       }
     },
     "startButton": "Start Naming",
-    "getStarted": "Start your exclusive Japanese name customization journey now"
+    "getStarted": "Start your exclusive Japanese name customization journey now",
+    "familyCrest": {
+      "title": "Generate Your Family Crest",
+      "description": "Based on the cultural meaning and characteristics of your Japanese name, AI will generate a unique family crest (Kamon) for you, making your new identity even more special.",
+      "button": "Explore Family Crests"
+    }
   },
   "header": {
     "title": "🌸 Japanese Name Generator 🌸",

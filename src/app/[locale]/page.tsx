@@ -12,7 +12,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="text-center py-20 px-4">
       <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 flex items-center justify-center gap-x-2 md:gap-x-4 flex-wrap">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 flex items-center justify-center gap-x-2 md:gap-x-4">
             <span>🌸</span>
             <span className="text-center">{t('home.title')}</span>
             <span>🌸</span>
@@ -189,6 +189,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Family Crest Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+            {t('home.familyCrest.title')}
+          </h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+            {t('home.familyCrest.description')}
+          </p>
+          <Link
+            href="./generate"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-indigo-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+          >
+            {t('home.familyCrest.button')}
+          </Link>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-pink-50 to-red-50">
         <div className="max-w-4xl mx-auto text-center">
@@ -203,7 +221,7 @@ export default function HomePage() {
             {t('home.startButton')}
             <ArrowRight className="w-7 h-7" />
           </Link>
-      </div>
+        </div>
       </section>
     </div>
   )

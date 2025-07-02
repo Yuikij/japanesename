@@ -819,9 +819,9 @@ export default function JapaneseNameGenerator() {
                   {namingResult.names.map((name, index) => (
                     <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
                       <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-2xl font-bold text-red-600">
+                        <h2 className="text-2xl font-bold text-red-600">
                           {index + 1}. {name.fullName}
-                        </h3>
+                        </h2>
                         <span className="text-lg text-gray-500">{name.reading}</span>
                       </div>
                       
@@ -914,18 +914,18 @@ export default function JapaneseNameGenerator() {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 rounded-xl p-6">
-                    <h3 className="text-xl font-semibold text-blue-800 mb-3">{t('result.sections.namingThoughts')}</h3>
+                    <h2 className="text-xl font-semibold text-blue-800 mb-3">{t('result.sections.namingThoughts')}</h2>
                     <p className="text-blue-700">{namingResult.explanation}</p>
                   </div>
                   
                   <div className="bg-green-50 rounded-xl p-6">
-                    <h3 className="text-xl font-semibold text-green-800 mb-3">{t('result.sections.personalityAnalysis')}</h3>
+                    <h2 className="text-xl font-semibold text-green-800 mb-3">{t('result.sections.personalityAnalysis')}</h2>
                     <p className="text-green-700">{namingResult.personalityAnalysis}</p>
                   </div>
                 </div>
 
                 <div className="bg-purple-50 rounded-xl p-6">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-3">{t('result.sections.culturalContext')}</h3>
+                  <h2 className="text-xl font-semibold text-purple-800 mb-3">{t('result.sections.culturalContext')}</h2>
                   <p className="text-purple-700">{namingResult.culturalContext}</p>
                 </div>
               </div>

@@ -162,7 +162,7 @@ export class JapaneseNameChatClient {
 
 现在，我想请你帮我起一个日本名字。你会通过一系列问题了解我的情况，然后提供几个精心挑选的名字选项，每个都要详细解释其文化含义和适合的理由。
 
-请先向我介绍一下日本取名的基本文化背景，然后开始第一个问题。`
+`
 
     return await this.sendMessage(systemPrompt || defaultSystemPrompt, conversationId, {
       temperature: 0.7,

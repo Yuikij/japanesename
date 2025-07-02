@@ -5,6 +5,8 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing';
 import LanguageSwitcher from '../../components/LanguageSwitcher'
+import GoogleAnalytics from '../../components/GoogleAnalytics'
+
 export const metadata: Metadata = {
   title: 'Japanese Name Generator',
   description: 'AI-powered personalized Japanese name creation',
@@ -67,6 +69,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
         <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50">

@@ -1,0 +1,177 @@
+{
+  "gender": {
+    "description": "该名字常见的性别倾向",
+    "type": "enum",
+    "values": [
+      "male",
+      "female",
+      "unisex"
+    ],
+    "examples": {
+      "male": "太郎/Tarō",
+      "female": "花子/Hanako",
+      "unisex": "光/Hikaru"
+    }
+  },
+  "name_part": {
+    "description": "姓 or 名",
+    "type": "enum",
+    "values": [
+      "family_name",
+      "given_name"
+    ],
+    "examples": {
+      "family_name": "田中/Tanaka",
+      "given_name": "蓮/Ren"
+    }
+  },
+  "era": {
+    "description": "名字常见年代",
+    "type": "enum",
+    "values": [
+      "ancient",
+      "traditional",
+      "modern",
+      "2000s",
+      "trending"
+    ],
+    "examples": {
+      "ancient": "信長/Nobunaga",
+      "modern": "蓮/Ren",
+      "2000s": "大翔/Hiroto"
+    }
+  },
+  "vibe": {
+    "description": "名字给人的气质/氛围感",
+    "type": "multi_enum",
+    "values": [
+      "cute",
+      "cool",
+      "elegant",
+      "strong",
+      "mysterious",
+      "dark",
+      "gentle",
+      "noble",
+      "playful",
+      "fierce",
+      "serene",
+      "warm",
+      "edgy"
+    ],
+    "examples": {
+      "cute": "さくら/Sakura",
+      "dark": "闇/Yami",
+      "strong": "剛/Tsuyoshi"
+    }
+  },
+  "use_case": {
+    "description": "名字适合的使用场景",
+    "type": "multi_enum",
+    "values": [
+      "anime",
+      "samurai",
+      "warrior",
+      "pet",
+      "game_character",
+      "real_person",
+      "baby",
+      "fantasy",
+      "historical",
+      "vtuber"
+    ],
+    "examples": {
+      "anime": "鬼丸/Onimaru",
+      "pet": "モチ/Mochi",
+      "samurai": "武蔵/Musashi"
+    }
+  },
+  "element": {
+    "description": "名字关联的自然元素/象征",
+    "type": "multi_enum",
+    "values": [
+      "fire",
+      "water",
+      "ice",
+      "light",
+      "dark",
+      "wind",
+      "earth",
+      "moon",
+      "sun",
+      "flower",
+      "mountain",
+      "sky",
+      "star",
+      "death",
+      "blood",
+      "thunder"
+    ],
+    "examples": {
+      "fire": "炎/Honō",
+      "light": "光/Hikaru",
+      "death": "死神/Shinigami"
+    }
+  },
+  "popularity": {
+    "description": "名字在日本的流行程度",
+    "type": "enum",
+    "values": [
+      "very_common",
+      "common",
+      "uncommon",
+      "rare",
+      "unique"
+    ],
+    "examples": {
+      "very_common": "佐藤/Satō",
+      "rare": "毒島/Busujima"
+    }
+  },
+  "syllable_count": {
+    "description": "音节数（罗马字）",
+    "type": "int_range",
+    "values": [
+      1,
+      6
+    ],
+    "note": "1-2 视为 short, 3 为 medium, 4+ 为 long"
+  },
+  "kanji_meaning_tags": {
+    "description": "汉字含义标签（LLM打标时提取）",
+    "type": "multi_string",
+    "examples": [
+      "beauty",
+      "truth",
+      "dragon",
+      "village",
+      "field",
+      "river",
+      "wisdom",
+      "love",
+      "iron",
+      "gold",
+      "mountain",
+      "cherry_blossom"
+    ]
+  },
+  "script": {
+    "description": "名字的文字系统",
+    "type": "multi_enum",
+    "values": [
+      "kanji",
+      "hiragana",
+      "katakana",
+      "romaji"
+    ]
+  },
+  "origin_region": {
+    "description": "是否日裔/日系美国人等混合文化名",
+    "type": "enum",
+    "values": [
+      "japan_native",
+      "japanese_american",
+      "international"
+    ]
+  }
+}

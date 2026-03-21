@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "japanesename-data-service",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "japanesename-data",
+      // 创建 D1 后将 database_id 填入此处: wrangler d1 create japanesename-data
+      "database_id": "a0ffc580-c7ff-419b-b165-5369e6618082"
+    }
+  ],
+  "vars": {
+    "API_SECRET": "kuboshiori"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "japanesename-data-service",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute japanesename-data --local --file=src/db/schema.sql",
+    "db:init:remote": "wrangler d1 execute japanesename-data --remote --file=src/db/schema.sql",
+    "db:seed:local": "wrangler d1 execute japanesename-data --local --file=src/db/seed-tags.sql",
+    "db:seed:remote": "wrangler d1 execute japanesename-data --remote --file=src/db/seed-tags.sql",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250317.0",
+    "typescript": "^5.8.0",
+    "wrangler": "^4.21.0"
+  }
+}

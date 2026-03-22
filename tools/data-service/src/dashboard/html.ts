@@ -377,10 +377,11 @@ async function loadNames(){
     const r=await api('/api/names?'+q);
     document.getElementById('page-count').textContent='共 '+r.total+' 条';
     if(!r.data||!r.data.length){w.innerHTML='<div class="empty-state"><p>未找到名字</p></div>';namesPg(0);return}
-    let h='<table class="data-table"><thead><tr><th>汉字 / 读音</th><th>罗马音</th><th>性别</th><th>类型</th><th>气质</th><th>状态</th></tr></thead><tbody>';
+    let h='<table class="data-table"><thead><tr><th>汉字 / 读音</th><th>罗马音</th><th>性别</th><th>类型</th><th>推定人数</th><th>气质</th><th>状态</th></tr></thead><tbody>';
     r.data.forEach(n=>{
       const v=typeof n.vibe==='string'?JSON.parse(n.vibe):n.vibe;
-      h+='<tr onclick="nameDetail(\\''+n.id+'\\')"><td><span class="kanji-lg">'+e(n.kanji)+'</span><span class="reading-sm">'+e(n.reading)+'</span></td><td>'+e(n.romaji)+'</td><td>'+stBadge(n.gender)+'</td><td><span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span></td><td>'+tgs(v)+'</td><td>'+stBadge(n.status)+'</td></tr>';
+      const pop=n.estimated_population?Number(n.estimated_population).toLocaleString():'';
+      h+='<tr onclick="nameDetail(\\''+n.id+'\\')"><td><span class="kanji-lg">'+e(n.kanji)+'</span><span class="reading-sm">'+e(n.reading)+'</span></td><td>'+e(n.romaji)+'</td><td>'+stBadge(n.gender)+'</td><td><span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span></td><td style="font-size:.78rem;color:var(--text-muted)">'+pop+'</td><td>'+tgs(v)+'</td><td>'+stBadge(n.status)+'</td></tr>';
     });
     h+='</tbody></table>';w.innerHTML=h;namesPg(r.total);
   }catch(err){w.innerHTML='<div class="empty-state"><p>加载失败</p></div>'}
@@ -400,6 +401,7 @@ async function nameDetail(id){
   let h='<div class="detail-grid">';
   [['ID',n.id],['罗马音',n.romaji],['汉字','<span class="kanji-lg">'+e(n.kanji)+'</span>'],['读音',n.reading],
    ['性别',stBadge(n.gender)],['类型','<span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span>'],
+   ['推定人数',n.estimated_population?Number(n.estimated_population).toLocaleString()+' 人':'\\u2014'],
    ['音节数',n.syllable_count],['年代',n.era||'\\u2014'],['流行度',n.popularity||'\\u2014'],['来源',n.origin_region||'\\u2014'],
    ['书写体系',tgs(p(n.script))],['使用场景',tgs(p(n.use_case))],['气质',tgs(p(n.vibe))],['主题元素',tgs(p(n.element))],
    ['汉字含义',tgs(p(n.kanji_meaning_tags))],
@@ -407,6 +409,7 @@ async function nameDetail(id){
    ['描述 (EN)','<div style="line-height:1.6">'+e(n.description_en||'\\u2014')+'</div>'],
    ['描述 (ZH)','<div style="line-height:1.6">'+e(n.description_zh||'\\u2014')+'</div>'],
    ['知名人物',p(n.famous_bearers).map(f=>f.name+' ('+f.context+')').join(', ')||'\\u2014'],
+   ['家纹',n.kamon_url?'<img src="'+e(n.kamon_url)+'" alt="家纹" style="width:64px;height:64px;object-fit:contain;border-radius:4px;border:1px solid var(--border)">':'\\u2014'],
    ['相关名字',tgs(p(n.related_names))],['状态',stBadge(n.status)],['数据来源',n.source||'\\u2014'],
    ['创建时间',n.created_at],['更新时间',n.updated_at]
   ].forEach(([l,v])=>{h+='<div class="detail-label">'+l+'</div><div class="detail-value">'+v+'</div>'});
@@ -492,10 +495,11 @@ document.getElementById('search-input').addEventListener('input',ev=>{
       const d=(r.data||[]).filter(n=>n.romaji.toLowerCase().includes(q.toLowerCase())||n.kanji.includes(q)||n.reading.includes(q));
       document.getElementById('page-count').textContent=d.length+' 条结果';
       if(!d.length){w.innerHTML='<div class="empty-state"><p>未找到 "'+e(q)+'" 的相关结果</p></div>';return}
-      let h='<table class="data-table"><thead><tr><th>汉字 / 读音</th><th>罗马音</th><th>性别</th><th>类型</th><th>气质</th><th>状态</th></tr></thead><tbody>';
+      let h='<table class="data-table"><thead><tr><th>汉字 / 读音</th><th>罗马音</th><th>性别</th><th>类型</th><th>推定人数</th><th>气质</th><th>状态</th></tr></thead><tbody>';
       d.forEach(n=>{
         const v=typeof n.vibe==='string'?JSON.parse(n.vibe):n.vibe;
-        h+='<tr onclick="nameDetail(\\''+n.id+'\\')"><td><span class="kanji-lg">'+e(n.kanji)+'</span><span class="reading-sm">'+e(n.reading)+'</span></td><td>'+e(n.romaji)+'</td><td>'+stBadge(n.gender)+'</td><td><span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span></td><td>'+tgs(v)+'</td><td>'+stBadge(n.status)+'</td></tr>';
+        const pop=n.estimated_population?Number(n.estimated_population).toLocaleString():'';
+        h+='<tr onclick="nameDetail(\\''+n.id+'\\')"><td><span class="kanji-lg">'+e(n.kanji)+'</span><span class="reading-sm">'+e(n.reading)+'</span></td><td>'+e(n.romaji)+'</td><td>'+stBadge(n.gender)+'</td><td><span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span></td><td style="font-size:.78rem;color:var(--text-muted)">'+pop+'</td><td>'+tgs(v)+'</td><td>'+stBadge(n.status)+'</td></tr>';
       });
       h+='</tbody></table>';w.innerHTML=h;
     }catch(err){w.innerHTML='<div class="empty-state"><p>搜索失败</p></div>'}

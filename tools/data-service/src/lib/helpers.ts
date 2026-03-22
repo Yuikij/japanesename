@@ -25,9 +25,11 @@ const NAME_JSON_FIELDS = [
   "vibe",
   "element",
   "kanji_meaning_tags",
-  "famous_bearers",
-  "related_names",
+  "kanji_breakdown",
+  "alternative_readings",
   "reading_romaji_variants",
+  "related_names",
+  "famous_bearers",
 ];
 
 const KEYWORD_JSON_FIELDS = [

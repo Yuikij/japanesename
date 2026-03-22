@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "brand": "日本名字生成器",
+    "home": "首页",
+    "generator": "AI 取名"
+  },
   "common": {
     "loading": "加载中...",
     "submit": "提交",
@@ -10,14 +15,33 @@
     "switchToChinese": "切换到中文"
   },
   "home": {
-    "familyCrest": {
-      "title": "家族徽章生成器",
-      "description": "通过AI技术，结合日本文化传统，为您生成独特的家族徽章。",
-      "button": "立即生成家族徽章"
-    },
     "title": "日本名字生成器",
-    "subtitle": "AI驱动的个性化日本名字定制服务",
-    "description": "通过深度问答了解您的个性特质，运用先进的AI技术，结合日本文化传统，为您精心定制专属的日本名字。",
+    "subtitle": "探索正宗日本名字，了解其含义与文化传承",
+    "description": "收录超过 4,700 个正宗日本名字 —— 按分类浏览、了解汉字含义，为您的宝宝、角色或创意项目找到完美的日本名字。",
+    "startButton": "试试 AI 取名",
+    "getStarted": "准备好找到您的完美日本名字了吗？",
+    "categories": {
+      "title": "按分类浏览日本名字",
+      "subtitle": "探索我们精心整理的热门分类",
+      "searches": "月搜索量 {count}"
+    },
+    "showcase": {
+      "title": "精选日本名字",
+      "subtitle": "一窥我们收录的正宗日本名字"
+    },
+    "stats": {
+      "title": "最全的日本名字数据库",
+      "names": "正宗名字",
+      "categories": "名字分类",
+      "languages": "支持语言"
+    },
+    "nameLabels": {
+      "givenName": "名",
+      "familyName": "姓",
+      "male": "男",
+      "female": "女",
+      "unisex": "中性"
+    },
     "features": {
       "title": "服务特色",
       "aiPowered": {
@@ -56,8 +80,11 @@
         "description": "详细解释每个名字的文化背景和寓意"
       }
     },
-    "startButton": "开始取名",
-    "getStarted": "立即开启您的专属日本名定制之旅"
+    "familyCrest": {
+      "title": "家族徽章生成器",
+      "description": "通过AI技术，结合日本文化传统，为您生成独特的家族徽章。",
+      "button": "立即生成家族徽章"
+    }
   },
   "header": {
     "title": "🌸 日本名字生成器 🌸",

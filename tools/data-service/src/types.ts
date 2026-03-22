@@ -17,6 +17,18 @@ export interface TagDimension {
 
 // ── Name ──
 
+export interface KanjiBreakdownEntry {
+  kanji: string;
+  meanings_en: string[];
+  reading: string;
+}
+
+export interface FamousBearerEntry {
+  name: string;
+  name_jp?: string;
+  context: string;
+}
+
 export interface NameRecord {
   id: string;
   romaji: string;
@@ -25,23 +37,32 @@ export interface NameRecord {
   gender: "female" | "male" | "unisex";
   name_part: "given_name" | "family_name";
   syllable_count: number;
+  mora_count: number | null;
+  kanji_count: number | null;
   script: string[];
   romaji_initial: string;
   era: string | null;
   popularity: string | null;
   origin_region: string;
+  regional_origin: string | null;
   use_case: string[];
   vibe: string[];
   element: string[];
   kanji_meaning_tags: string[];
+  household_count: number | null;
+  estimated_population: number | null;
+  national_rank: number | null;
+  kanji_breakdown: KanjiBreakdownEntry[];
+  alternative_readings: string[];
+  reading_romaji_variants: string[];
+  related_names: string[];
   meaning_en: string | null;
   meaning_zh: string | null;
   description_en: string | null;
   description_zh: string | null;
-  famous_bearers: { name: string; context: string }[];
-  related_names: string[];
-  reading_romaji_variants: string[];
-  estimated_population: number | null;
+  etymology_en: string | null;
+  famous_bearers: FamousBearerEntry[];
+  kamon_url: string | null;
   status: "raw" | "llm_enriched" | "reviewed" | "complete";
   source: string | null;
   created_at: string;
@@ -56,22 +77,31 @@ export interface NameInput {
   gender: "female" | "male" | "unisex";
   name_part: "given_name" | "family_name";
   syllable_count: number;
+  mora_count?: number;
+  kanji_count?: number;
   script?: string[];
   era?: string;
   popularity?: string;
   origin_region?: string;
+  regional_origin?: string;
   use_case?: string[];
   vibe?: string[];
   element?: string[];
   kanji_meaning_tags?: string[];
+  household_count?: number;
+  estimated_population?: number;
+  national_rank?: number;
+  kanji_breakdown?: KanjiBreakdownEntry[];
+  alternative_readings?: string[];
+  reading_romaji_variants?: string[];
+  related_names?: string[];
   meaning_en?: string;
   meaning_zh?: string;
   description_en?: string;
   description_zh?: string;
-  famous_bearers?: { name: string; context: string }[];
-  related_names?: string[];
-  reading_romaji_variants?: string[];
-  estimated_population?: number;
+  etymology_en?: string;
+  famous_bearers?: FamousBearerEntry[];
+  kamon_url?: string;
   status?: string;
   source?: string;
 }

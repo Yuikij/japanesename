@@ -1,4 +1,9 @@
 {
+  "nav": {
+    "brand": "Japanese Name Generator",
+    "home": "Home",
+    "generator": "Generator"
+  },
   "common": {
     "loading": "Loading...",
     "submit": "Submit",
@@ -11,8 +16,32 @@
   },
   "home": {
     "title": "Japanese Name Generator",
-    "subtitle": "AI-Powered Personalized Japanese Name Creation Service",
-    "description": "Through deep Q&A to understand your personality traits, using advanced AI technology combined with Japanese cultural traditions to carefully create your exclusive Japanese name.",
+    "subtitle": "Discover Authentic Japanese Names with Meanings & Cultural Heritage",
+    "description": "Explore over 4,700 authentic Japanese names — browse by category, learn kanji meanings, and find the perfect name for your baby, character, or creative project.",
+    "startButton": "Try AI Name Generator",
+    "getStarted": "Ready to find your perfect Japanese name?",
+    "categories": {
+      "title": "Browse Japanese Names by Category",
+      "subtitle": "Explore our curated collection across popular categories",
+      "searches": "{count} monthly searches"
+    },
+    "showcase": {
+      "title": "Featured Japanese Names",
+      "subtitle": "A glimpse into our collection of authentic Japanese names"
+    },
+    "stats": {
+      "title": "The Largest Japanese Name Database",
+      "names": "Authentic Names",
+      "categories": "Name Categories",
+      "languages": "Languages Supported"
+    },
+    "nameLabels": {
+      "givenName": "Given Name",
+      "familyName": "Family Name",
+      "male": "Male",
+      "female": "Female",
+      "unisex": "Unisex"
+    },
     "features": {
       "title": "Service Features",
       "aiPowered": {
@@ -51,8 +80,6 @@
         "description": "Detailed explanation of the cultural background and meaning of each name"
       }
     },
-    "startButton": "Start Naming",
-    "getStarted": "Start your exclusive Japanese name customization journey now",
     "familyCrest": {
       "title": "Generate Your Family Crest",
       "description": "Based on the cultural meaning and characteristics of your Japanese name, AI will generate a unique family crest (Kamon) for you, making your new identity even more special.",

@@ -6,6 +6,7 @@ const JSON_ARRAY_FIELDS = new Set([
   "vibe",
   "element",
   "kanji_meaning_tags",
+  "alternative_readings",
 ]);
 
 const VALID_FIELDS = new Set([
@@ -14,8 +15,13 @@ const VALID_FIELDS = new Set([
   "era",
   "popularity",
   "origin_region",
+  "regional_origin",
   "syllable_count",
+  "mora_count",
+  "kanji_count",
+  "household_count",
   "estimated_population",
+  "national_rank",
   "romaji",
   "romaji_initial",
   "status",

@@ -129,13 +129,43 @@
     }
   },
   "syllable_count": {
-    "description": "音节数（罗马字）",
+    "description": "英语音节数（罗马字）",
     "type": "int_range",
-    "values": [
-      1,
-      6
-    ],
+    "values": [1, 6],
     "note": "1-2 视为 short, 3 为 medium, 4+ 为 long"
+  },
+  "mora_count": {
+    "description": "日本語モーラ数（从假名 reading 计算）",
+    "type": "int_range",
+    "values": [1, 8],
+    "note": "日语母语者按 mora 感知长短，与英语 syllable 不一定一致（如 きん=2 mora / 1 syllable）"
+  },
+  "kanji_count": {
+    "description": "名字中的汉字文字数",
+    "type": "int_range",
+    "values": [0, 4],
+    "note": "0 表示纯假名名字（如 さくら），1 表示单字名（如 蓮），2-3 为常见，4 极少"
+  },
+  "household_count": {
+    "description": "世帯数（主要用于 family_name，来自 myoji-yurai.net 等）",
+    "type": "integer",
+    "note": "可用于推导 popularity 枚举。仅 family_name 有数据"
+  },
+  "estimated_population": {
+    "description": "推定人口数（主要用于 family_name）",
+    "type": "integer",
+    "note": "如 新垣≈34000人"
+  },
+  "national_rank": {
+    "description": "全国姓氏排名（仅 family_name）",
+    "type": "integer",
+    "note": "如 新垣=563位，佐藤=1位。可用于 Top N 姓氏聚合页"
+  },
+  "regional_origin": {
+    "description": "名字主要分布/起源地域（仅 family_name）",
+    "type": "string",
+    "examples": ["okinawa", "kanto", "kansai", "tohoku", "kyushu", "hokkaido", "chubu", "chugoku", "shikoku"],
+    "note": "如 新垣 → okinawa（冲绳 2.03%）。支持 Okinawan surnames 等 keyword"
   },
   "kanji_meaning_tags": {
     "description": "汉字含义标签（LLM打标时提取）",
@@ -173,5 +203,40 @@
       "japanese_american",
       "international"
     ]
+  },
+  "kanji_breakdown": {
+    "description": "逐字拆解释义（JSON 数组）",
+    "type": "json_array",
+    "schema": {"kanji": "string", "meanings_en": "string[]", "reading": "string"},
+    "examples": [
+      [{"kanji": "新", "meanings_en": ["new", "fresh", "modern"], "reading": "あら"},
+       {"kanji": "垣", "meanings_en": ["fence", "hedge", "wall"], "reading": "がき"}]
+    ],
+    "note": "LLM 非常擅长生成，内页展示 Kanji Meaning Breakdown 区块的核心数据"
+  },
+  "alternative_readings": {
+    "description": "同一汉字的其他假名读法",
+    "type": "json_array",
+    "examples": [["あらかき", "しんがき", "にいがき", "しんかき"]],
+    "note": "来自 myoji-yurai.net 的【読み】字段"
+  },
+  "reading_romaji_variants": {
+    "description": "罗马字拼写变体",
+    "type": "json_array",
+    "examples": [["Aragaki", "Arakaki"]],
+    "note": "长音等转写差异，如 Ōno / Ohno / Oono"
+  },
+  "etymology_en": {
+    "description": "名字的历史/地理起源说明",
+    "type": "string",
+    "examples": ["Originates from Aragaki village in Nakagusuku, Ryukyu (present-day Okinawa)."],
+    "note": "来自 myoji-yurai.net 由来解説 + LLM 知识"
+  },
+  "famous_bearers": {
+    "description": "知名人物列表",
+    "type": "json_array",
+    "schema": {"name": "string", "name_jp": "string?", "context": "string"},
+    "examples": [[{"name": "Aragaki Yui", "name_jp": "新垣結衣", "context": "actress, singer, born 1988"}, {"name": "Aragaki Takeshi", "name_jp": "新垣武", "context": "Go player, 1956-2022"}]],
+    "note": "name_jp 从 myoji-yurai.net / japanese-names.info 获取，确保日文汉字准确。LLM 不要猜日文名的汉字写法"
   }
 }

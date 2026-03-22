@@ -1,228 +1,220 @@
-'use client'
-
-import { useTranslations } from 'next-intl'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+import { getTranslations } from 'next-intl/server'
+import { Sparkles, ArrowRight, Search, Globe, Database } from 'lucide-react'
 import Link from 'next/link'
-import { Sparkles, Brain, BookOpen, Users, ArrowRight, Star, CheckCircle } from 'lucide-react'
 
-export default function HomePage() {
-  const t = useTranslations()
+interface Keyword {
+  id: string
+  keyword: string
+  search_volume: number
+  search_volume_total?: number
+  strategy: string
+  path: string
+  filter_rule?: { must?: Array<{ field: string; op: string; value: unknown }> }
+}
+
+const FEATURED_NAMES = [
+  { kanji: '結衣', reading: 'ゆい', romaji: 'Yui', gender: 'female', name_part: 'given_name' },
+  { kanji: '蓮', reading: 'れん', romaji: 'Ren', gender: 'male', name_part: 'given_name' },
+  { kanji: '佐藤', reading: 'さとう', romaji: 'Satō', gender: 'unisex', name_part: 'family_name' },
+  { kanji: 'さくら', reading: 'さくら', romaji: 'Sakura', gender: 'female', name_part: 'given_name' },
+  { kanji: '大翔', reading: 'ひろと', romaji: 'Hiroto', gender: 'male', name_part: 'given_name' },
+  { kanji: '鈴木', reading: 'すずき', romaji: 'Suzuki', gender: 'unisex', name_part: 'family_name' },
+  { kanji: '陽菜', reading: 'ひな', romaji: 'Hina', gender: 'female', name_part: 'given_name' },
+  { kanji: '悠真', reading: 'ゆうま', romaji: 'Yūma', gender: 'male', name_part: 'given_name' },
+  { kanji: '高橋', reading: 'たかはし', romaji: 'Takahashi', gender: 'unisex', name_part: 'family_name' },
+  { kanji: '美咲', reading: 'みさき', romaji: 'Misaki', gender: 'female', name_part: 'given_name' },
+  { kanji: '翔太', reading: 'しょうた', romaji: 'Shōta', gender: 'male', name_part: 'given_name' },
+  { kanji: '田中', reading: 'たなか', romaji: 'Tanaka', gender: 'unisex', name_part: 'family_name' },
+]
+
+const CATEGORY_ICONS: Record<string, string> = {
+  '/names/last-names': '👨‍👩‍👧‍👦',
+  '/names/male': '👦',
+  '/names/female': '👧',
+  '/names/all': '📖',
+  '/names/boy': '🧒',
+  '/names/names': '✨',
+  '/names/girl': '🎀',
+  '/names/last-names-with-meanings': '📝',
+  '/names/last-names-common': '🏠',
+  '/names/anime': '🎌',
+}
+
+function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string }> {
+  try {
+    const raw = readFileSync(join(process.cwd(), '新版本PSEO改造/keyword/keyword.json'), 'utf-8')
+    const keywords: Keyword[] = JSON.parse(raw)
+    return keywords
+      .filter(k => k.strategy === 'category_page')
+      .sort((a, b) => (b.search_volume_total ?? b.search_volume) - (a.search_volume_total ?? a.search_volume))
+      .slice(0, 10)
+      .map(k => ({
+        keyword: k.keyword,
+        path: k.path,
+        volume: k.search_volume_total ?? k.search_volume,
+        icon: CATEGORY_ICONS[k.path] ?? '🔖',
+      }))
+  } catch {
+    return []
+  }
+}
+
+function formatVolume(n: number): string {
+  if (n >= 1000) return `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}K`
+  return String(n)
+}
+
+export default async function HomePage() {
+  const t = await getTranslations('home')
+  const categories = loadCategories()
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="text-center py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 flex items-center justify-center gap-x-2 md:gap-x-4">
-            <span>🌸</span>
-            <span className="text-center">{t('home.title')}</span>
-            <span>🌸</span>
+      {/* Hero */}
+      <section className="text-center pt-16 pb-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+            <span className="inline-block mr-2">🌸</span>
+            {t('title')}
+            <span className="inline-block ml-2">🌸</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 mb-8">
-            {t('home.subtitle')}
+          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 max-w-2xl mx-auto">
+            {t('subtitle')}
           </h2>
-          <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-            {t('home.description')}
-          </p>
-          <Link 
-            href="./generate"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-red-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-red-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-          >
-            <Sparkles className="w-6 h-6" />
-            {t('home.startButton')}
-            <ArrowRight className="w-6 h-6" />
-          </Link>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 px-4 bg-white/50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
-            {t('home.features.title')}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Brain className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.features.aiPowered.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.features.aiPowered.description')}
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.features.cultural.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.features.cultural.description')}
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.features.personalized.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.features.personalized.description')}
-              </p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.features.professional.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.features.professional.description')}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">
-            {t('home.process.title')}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 relative">
-                <span className="text-2xl font-bold text-white">1</span>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.process.step1.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.process.step1.description')}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 relative">
-                <span className="text-2xl font-bold text-white">2</span>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.process.step2.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.process.step2.description')}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 relative">
-                <span className="text-2xl font-bold text-white">3</span>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.process.step3.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.process.step3.description')}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 relative">
-                <span className="text-2xl font-bold text-white">4</span>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <CheckCircle className="w-4 h-4 text-white" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                {t('home.process.step4.title')}
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {t('home.process.step4.description')}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section - New H2 */}
-      <section className="py-20 px-4 bg-white/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-            Why Choose Our Japanese Name Generator?
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 text-left">
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-800">Authentic Cultural Heritage</h3>
-              <p className="text-gray-600">Our AI is trained on thousands of traditional Japanese names, ensuring cultural authenticity and historical accuracy in every suggestion.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-800">Deep Personality Analysis</h3>
-              <p className="text-gray-600">Through our advanced questioning system, we understand your unique traits to create names that truly reflect your personality.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-800">Beautiful Meanings</h3>
-              <p className="text-gray-600">Every name comes with detailed explanations of its cultural significance, kanji meanings, and why it suits your character.</p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-800">Multiple Options</h3>
-              <p className="text-gray-600">Receive 10 carefully curated name options, each with different styles and cultural backgrounds to choose from.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Family Crest Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
-            {t('home.familyCrest.title')}
-          </h2>
-          <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-            {t('home.familyCrest.description')}
+          <p className="text-base text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+            {t('description')}
           </p>
           <Link
             href="./generate"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-indigo-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            {t('home.familyCrest.button')}
+            <Sparkles className="w-5 h-5" />
+            {t('startButton')}
+            <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-pink-50 to-red-50">
+      {/* Category Grid */}
+      {categories.length > 0 && (
+        <section className="py-16 px-4 bg-white/40">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+                {t('categories.title')}
+              </h2>
+              <p className="text-gray-500 text-lg">
+                {t('categories.subtitle')}
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              {categories.map((cat) => (
+                <div
+                  key={cat.path}
+                  className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200 cursor-default"
+                >
+                  <div className="text-3xl mb-3">{cat.icon}</div>
+                  <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-2 capitalize">
+                    {cat.keyword}
+                  </h3>
+                  <div className="flex items-center gap-1 text-xs text-gray-400">
+                    <Search className="w-3 h-3" />
+                    <span>{t('categories.searches', { count: formatVolume(cat.volume) })}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Featured Names */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+              {t('showcase.title')}
+            </h2>
+            <p className="text-gray-500 text-lg">
+              {t('showcase.subtitle')}
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {FEATURED_NAMES.map((name) => (
+              <div
+                key={`${name.kanji}-${name.romaji}`}
+                className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 text-center group hover:border-pink-200"
+              >
+                <div className="text-2xl sm:text-3xl font-bold text-gray-800 mb-1.5 group-hover:text-pink-600 transition-colors">
+                  {name.kanji}
+                </div>
+                <div className="text-sm text-gray-400 mb-1">{name.reading}</div>
+                <div className="text-sm font-medium text-gray-600 mb-3">{name.romaji}</div>
+                <div className="flex items-center justify-center gap-2">
+                  <span className={`text-xs px-2.5 py-0.5 rounded-full ${
+                    name.gender === 'male'
+                      ? 'bg-blue-50 text-blue-600'
+                      : name.gender === 'female'
+                        ? 'bg-pink-50 text-pink-600'
+                        : 'bg-purple-50 text-purple-600'
+                  }`}>
+                    {name.gender === 'male' ? '♂' : name.gender === 'female' ? '♀' : '⚥'}{' '}
+                    {t(`nameLabels.${name.gender}`)}
+                  </span>
+                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-gray-50 text-gray-500">
+                    {t(`nameLabels.${name.name_part === 'given_name' ? 'givenName' : 'familyName'}`)}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-16 px-4 bg-white/40">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+            {t('stats.title')}
+          </h2>
+          <div className="grid grid-cols-3 gap-6">
+            <div className="flex flex-col items-center">
+              <Database className="w-8 h-8 text-pink-500 mb-3" />
+              <div className="text-3xl sm:text-4xl font-bold text-gray-800">4,700+</div>
+              <div className="text-sm text-gray-500 mt-1">{t('stats.names')}</div>
+            </div>
+            <div className="flex flex-col items-center">
+              <Search className="w-8 h-8 text-pink-500 mb-3" />
+              <div className="text-3xl sm:text-4xl font-bold text-gray-800">100+</div>
+              <div className="text-sm text-gray-500 mt-1">{t('stats.categories')}</div>
+            </div>
+            <div className="flex flex-col items-center">
+              <Globe className="w-8 h-8 text-pink-500 mb-3" />
+              <div className="text-3xl sm:text-4xl font-bold text-gray-800">2</div>
+              <div className="text-sm text-gray-500 mt-1">{t('stats.languages')}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-            {t('home.getStarted')}
+            {t('getStarted')}
           </h2>
-          <Link 
+          <Link
             href="./generate"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-red-500 text-white px-10 py-5 rounded-full text-xl font-semibold hover:from-pink-600 hover:to-red-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-10 py-5 rounded-full text-xl font-semibold hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            <Sparkles className="w-7 h-7" />
-            {t('home.startButton')}
-            <ArrowRight className="w-7 h-7" />
+            <Sparkles className="w-6 h-6" />
+            {t('startButton')}
+            <ArrowRight className="w-6 h-6" />
           </Link>
         </div>
       </section>
     </div>
   )
-} 
+}

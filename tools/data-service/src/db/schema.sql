@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS names (
   reading_romaji_variants TEXT DEFAULT '[]',
 
   estimated_population INTEGER,
+  kamon_url        TEXT,
 
   status           TEXT NOT NULL DEFAULT 'raw'
                         CHECK (status IN ('raw', 'llm_enriched', 'reviewed', 'complete')),

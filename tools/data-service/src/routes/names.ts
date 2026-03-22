@@ -68,18 +68,20 @@ names.post("/", async (c) => {
   const stmt = c.env.DB.prepare(
     `INSERT INTO names (
       id, romaji, kanji, reading, gender, name_part, syllable_count,
-      script, era, popularity, origin_region,
-      use_case, vibe, element, kanji_meaning_tags,
-      meaning_en, meaning_zh, description_en, description_zh,
-      famous_bearers, related_names, reading_romaji_variants,
-      estimated_population, status, source
+      mora_count, kanji_count, script, era, popularity, origin_region,
+      regional_origin, use_case, vibe, element, kanji_meaning_tags,
+      household_count, estimated_population, national_rank,
+      kanji_breakdown, alternative_readings, reading_romaji_variants, related_names,
+      meaning_en, meaning_zh, description_en, description_zh, etymology_en,
+      famous_bearers, kamon_url, status, source
     ) VALUES (
       ?, ?, ?, ?, ?, ?, ?,
-      ?, ?, ?, ?,
-      ?, ?, ?, ?,
-      ?, ?, ?, ?,
+      ?, ?, ?, ?, ?, ?,
+      ?, ?, ?, ?, ?,
       ?, ?, ?,
-      ?, ?, ?
+      ?, ?, ?, ?,
+      ?, ?, ?, ?, ?,
+      ?, ?, ?, ?
     )`
   );
 
@@ -94,22 +96,31 @@ names.post("/", async (c) => {
       item.gender,
       item.name_part,
       item.syllable_count,
+      item.mora_count ?? null,
+      item.kanji_count ?? null,
       toJsonString(item.script ?? []),
       item.era ?? null,
       item.popularity ?? null,
       item.origin_region ?? "japan_native",
+      item.regional_origin ?? null,
       toJsonString(item.use_case ?? []),
       toJsonString(item.vibe ?? []),
       toJsonString(item.element ?? []),
       toJsonString(item.kanji_meaning_tags ?? []),
+      item.household_count ?? null,
+      item.estimated_population ?? null,
+      item.national_rank ?? null,
+      toJsonString(item.kanji_breakdown ?? []),
+      toJsonString(item.alternative_readings ?? []),
+      toJsonString(item.reading_romaji_variants ?? []),
+      toJsonString(item.related_names ?? []),
       item.meaning_en ?? null,
       item.meaning_zh ?? null,
       item.description_en ?? null,
       item.description_zh ?? null,
+      item.etymology_en ?? null,
       toJsonString(item.famous_bearers ?? []),
-      toJsonString(item.related_names ?? []),
-      toJsonString(item.reading_romaji_variants ?? []),
-      item.estimated_population ?? null,
+      item.kamon_url ?? null,
       item.status ?? "raw",
       item.source ?? null
     );
@@ -136,7 +147,8 @@ names.put("/:id", async (c) => {
 
   const jsonFields = new Set([
     "script", "use_case", "vibe", "element", "kanji_meaning_tags",
-    "famous_bearers", "related_names", "reading_romaji_variants",
+    "kanji_breakdown", "alternative_readings", "reading_romaji_variants",
+    "related_names", "famous_bearers",
   ]);
 
   for (const [key, value] of Object.entries(body)) {

@@ -8,7 +8,8 @@
 
 4. 如果是名的话
 * 访问这个链接
-https://japanese-names.info/first-name/aragaki/
+https://japanese-names.info/first-name/yui-2/    ← 女性名 Yui
+https://japanese-names.info/first-name/yui/       ← 男性名 Yui
 
 5. 根据LLM自己的知识库，和爬取到的信息，以及自己的理解，填充tag等其他信息
 

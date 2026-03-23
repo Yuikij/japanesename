@@ -53,17 +53,45 @@ function extractPopulation(html) {
 function extractEtymology(html) {
   const idx = html.indexOf('由来解説</h2>');
   if (idx < 0) return null;
-  const chunk = html.slice(idx, idx + 5000);
-  const sectionEnd = chunk.slice(50).search(/<h[23]|<div class="ad/);
-  const content = sectionEnd > 0 ? chunk.slice(12, 50 + sectionEnd) : chunk.slice(12, 2000);
-  let text = content.replace(/<a[^>]*>|<\/a>/g, '').replace(/<[^>]+>/g, '');
-  text = text.replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
-  // Remove leading class remnants
-  text = text.replace(/^[a-z]+\s+class="[^"]*">\s*/, '').trim();
+
+  const afterHeader = html.slice(idx);
+
+  // Find the end of this section: next <h2>, <h3>, or ad div
+  const endMatch = afterHeader.slice(50).search(/<h[23][^>]*>|<div[^>]*class="[^"]*ad[^"]*"/i);
+  const sectionHtml = endMatch > 0
+    ? afterHeader.slice(0, 50 + endMatch)
+    : afterHeader.slice(0, 3000);
+
+  let text = sectionHtml
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')  // remove script blocks
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')    // remove style blocks
+    .replace(/<a[^>]*>[\s\S]*?<\/a>/g, '')              // remove anchor elements
+    .replace(/<[^>]*>/g, '')                             // remove remaining tags
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#\d+;/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // Remove the header text itself
+  text = text.replace(/^由来解説\s*/, '');
+
+  // Remove leading class/attribute remnants from partial tag stripping
+  text = text.replace(/^[a-z]+\s+class="[^"]*">\s*/i, '').trim();
+
   const divIdx = text.indexOf('①');
   if (divIdx >= 0) text = text.slice(divIdx);
-  // Trim trailing garbage from links
-  text = text.replace(/\s*$/, '');
+
+  // Final cleanup
+  text = text.replace(/<[^>]*$/, '');                            // trailing partial HTML
+  text = text.replace(/\(function\s*\([\s\S]*$/, '');            // inline JS remnants
+  text = text.replace(/\s*最終更新[\s\S]*$/, '');                 // footer metadata
+  text = text.replace(/\s*名字の情報を送る[\s\S]*$/, '');          // footer links
+  text = text.trim();
+
   return text || null;
 }
 
@@ -78,7 +106,11 @@ function extractRegions(html) {
     if (cells.length >= 2) {
       const pref = cells[0][1].replace(/<[^>]+>/g, '').trim();
       const count = cells[1][1].replace(/<[^>]+>/g, '').trim();
-      if (pref && count) regions.push({ prefecture: pref, count });
+      if (pref && count) {
+        const numMatch = count.match(/(\d[\d,]*)/);
+        const countNum = numMatch ? parseInt(numMatch[1].replace(/,/g, ''), 10) : null;
+        regions.push({ prefecture: pref, count_raw: count, count: countNum });
+      }
     }
   }
   return regions.slice(0, 5);

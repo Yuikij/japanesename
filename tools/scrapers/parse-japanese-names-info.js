@@ -33,9 +33,14 @@ async function main() {
 }
 
 function detectNameType(text) {
-  if (text.includes('/first-name/') || text.includes('Girl Name') || text.includes('Boy Name'))
-    return 'first-name';
-  if (text.includes('/last-name/')) return 'last-name';
+  // URL path is the most stable signal
+  if (/\/first-name\//i.test(text)) return 'first-name';
+  if (/\/last-name\//i.test(text)) return 'last-name';
+  // Fall back to page content signals
+  if (/\b(?:Girl|Boy|Unisex)\s+Name\b/i.test(text)) return 'first-name';
+  if (/\bFamily\s+Name\b/i.test(text)) return 'last-name';
+  if (/\bHouseholds?\b/i.test(text) && !/\bGender\b/i.test(text)) return 'last-name';
+  if (/\bGender\b/i.test(text)) return 'first-name';
   return 'unknown';
 }
 
@@ -79,16 +84,22 @@ function extractVariation(text, kanji) {
 
   const section = sectionMatch[1];
 
-  // Extract feature tags (e.g. [Common], [Flower], [Good Fortune])
+  // Extract feature tags generically: capture all [Tag] patterns,
+  // then normalize known ones. Unknown tags are kept as-is so we
+  // never silently drop data when the source site adds new tags.
+  const TAG_NORMALIZE = {
+    'strength/courage': 'strength_courage',
+    'good fortune': 'good_fortune',
+  };
   const featureTags = [];
-  const featureMatches = section.match(
-    /\[(Common|Flower|Beauty|Good Fortune|Strength\/Courage|Rare|Nature|Music|Smart|Lucky|Happiness|Traditional|Unique|Season|Color)\]/gi
-  );
-  if (featureMatches) {
-    for (const m of featureMatches) {
-      const tag = m.slice(1, -1).toLowerCase().replace(/\//g, '_');
-      if (!featureTags.includes(tag)) featureTags.push(tag);
-    }
+  const featureMatches = section.matchAll(/\[([A-Z][A-Za-z /]+?)\]/g);
+  for (const m of featureMatches) {
+    const raw = m[1].trim();
+    // Skip structural markdown links like [some text](url)
+    const afterBracket = section.slice(m.index + m[0].length);
+    if (afterBracket.startsWith('(')) continue;
+    const tag = (TAG_NORMALIZE[raw.toLowerCase()] || raw.toLowerCase()).replace(/\s+/g, '_').replace(/\//g, '_');
+    if (!featureTags.includes(tag)) featureTags.push(tag);
   }
 
   // Extract kanji breakdown — each kanji char has a "X means ..." line
@@ -114,58 +125,67 @@ function extractVariation(text, kanji) {
 }
 
 function extractFamousPersons(text) {
-  // Real Persons section
-  const realIdx = text.indexOf('## Real Persons');
-  if (realIdx < 0) {
-    const altIdx = text.indexOf('Real Persons');
-    if (altIdx < 0) return [];
-  }
-
   const sectionStart = text.indexOf('Real Persons');
+  if (sectionStart < 0) return [];
+
   const sectionEnd = text.indexOf('## ', sectionStart + 20);
   const section = sectionEnd > 0
     ? text.slice(sectionStart, sectionEnd)
-    : text.slice(sectionStart, sectionStart + 3000);
+    : text.slice(sectionStart, sectionStart + 5000);
+
+  const NATIONALITY = '(?:Japanese|Chinese|American|Korean|Brazilian|British|French|German|Canadian|Australian|Taiwanese|Thai|Filipino|Vietnamese|Indonesian|Indian|Russian|Mexican|Spanish|Italian|Dutch|Swedish|Norwegian|Swiss|Austrian|Belgian|Polish|Czech|Hungarian|Romanian|Turkish|Egyptian|South\\s+African|New\\s+Zealand|Singaporean|Malaysian|Hong\\s+Kong|Okinawan|)';
+  const personMainRegex = new RegExp(
+    `^(.+?)\\s*${NATIONALITY}\\s*(.*?)\\s*\\((\\d{4})-?\\s*(\\d{4})?\\s*\\)`,
+  );
+
+  const CJK_RANGE = '[\\u3000-\\u9fff\\uf900-\\ufaff\\u{20000}-\\u{2fa1f}ぁ-んァ-ヶー]';
+  const namePartsRegex = new RegExp(
+    `(${CJK_RANGE}+)\\s*([A-Za-z''-]+)\\s+(${CJK_RANGE}+)\\s*([A-Za-z''-]+)`, 'u'
+  );
 
   const persons = [];
-  // Pattern: 新垣Aragaki 結衣Yui Japanese idol... (1988- ) wikipedia...
-  // Or: KanjiFirst RomajiFirst KanjiGiven RomajiGiven Description (year) links
-  const personRegex = /([^\n]*?)\s*(?:wikipedia page link|$)/gm;
   const lines = section.split('\n');
   for (const line of lines) {
     if (!line.includes('wikipedia') && !/\(\d{4}/.test(line)) continue;
 
-    // Extract the main content before wikipedia links
-    let content = line.replace(/wikipedia page link\w*/g, '').trim();
+    let content = line.replace(/wikipedia\s*page\s*link\w*/gi, '').trim();
+    if (!content) continue;
 
-    // Try to parse: "KanjiFamily RomajiFamily KanjiGiven RomajiGiven Description (year)"
-    const match = content.match(
-      /^(.+?)\s*(?:Japanese|Chinese|American|Korean|Brazilian|)\s*(.*?)\s*\((\d{4})-?\s*(\d{4})?\s*\)/
-    );
+    const match = content.match(personMainRegex);
     if (match) {
       const nameSection = match[1].trim();
       const description = match[2].trim();
       const birthYear = match[3];
       const deathYear = match[4];
+      const yearStr = deathYear ? `${birthYear}-${deathYear}` : `${birthYear}-`;
 
-      // Try to split name into jp + romaji parts
-      // Pattern like: 新垣Aragaki 結衣Yui
-      const nameParts = nameSection.match(
-        /([一-龥ぁ-んァ-ヶ]+)\s*([A-Za-z]+)\s+([一-龥ぁ-んァ-ヶ]+)\s*([A-Za-z]+)/
-      );
+      const nameParts = nameSection.match(namePartsRegex);
       if (nameParts) {
-        const nameJp = `${nameParts[1]} ${nameParts[3]}`;
-        const nameEn = `${nameParts[2]} ${nameParts[4]}`;
-        const yearStr = deathYear ? `${birthYear}-${deathYear}` : `${birthYear}-`;
-        const ctx = description ? `${description} (${yearStr})` : `(${yearStr})`;
-        persons.push({ name: nameEn, name_jp: nameJp, context: ctx });
+        persons.push({
+          name: `${nameParts[2]} ${nameParts[4]}`,
+          name_jp: `${nameParts[1]}${nameParts[3]}`,
+          context: description ? `${description} (${yearStr})` : `(${yearStr})`,
+          confidence: 'high',
+        });
       } else {
-        // Simpler format
-        const ctx = description
-          ? `${description} (${birthYear}${deathYear ? '-' + deathYear : '-'})`
-          : `(${birthYear}${deathYear ? '-' + deathYear : '-'})`;
-        persons.push({ name: nameSection, name_jp: '', context: ctx });
+        // Partial parse succeeded but name splitting failed — keep raw_text
+        persons.push({
+          name: nameSection,
+          name_jp: null,
+          raw_text: content,
+          context: description ? `${description} (${yearStr})` : `(${yearStr})`,
+          confidence: 'low',
+        });
       }
+    } else if (/\(\d{4}/.test(content)) {
+      // Regex failed entirely — preserve the line for downstream consumption
+      persons.push({
+        name: null,
+        name_jp: null,
+        raw_text: content,
+        context: null,
+        confidence: 'unparsed',
+      });
     }
   }
 

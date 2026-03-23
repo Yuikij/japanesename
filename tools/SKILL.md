@@ -13,7 +13,9 @@ description: >-
 
 API base: `https://japanesenamedata.yuisama.top`
 
-Auth header (all ops): `X-API-Secret: kuboshiori`
+Auth header (all ops): `X-API-Secret: $JAPANESE_NAME_API_SECRET`
+
+> **Security**: Read the secret from the environment variable `JAPANESE_NAME_API_SECRET`. Never hardcode it in code or commit it to the repository.
 
 ---
 
@@ -23,15 +25,15 @@ Auth header (all ops): `X-API-Secret: kuboshiori`
 
 ```bash
 # List with filters
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names?gender=female&name_part=given_name&status=complete&limit=50&offset=0"
 
 # Single record
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names/{id}"
 
 # Stats overview
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names/stats/summary"
 ```
 
@@ -39,7 +41,7 @@ curl -H "X-API-Secret: kuboshiori" \
 
 ```bash
 curl -X POST https://japanesenamedata.yuisama.top/api/names/query \
-  -H "X-API-Secret: kuboshiori" -H "Content-Type: application/json" \
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" -H "Content-Type: application/json" \
   -d '{
     "filter_rule": {
       "must": [
@@ -72,18 +74,18 @@ curl -X POST https://japanesenamedata.yuisama.top/api/names/query \
 ### Read keywords
 
 ```bash
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/keywords?strategy=category_page&status=draft&limit=50"
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/keywords/{id}"
 ```
 
 ### Read tags (enum registry)
 
 ```bash
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/tags"
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/tags?dimension=vibe"
 ```
 
@@ -92,17 +94,17 @@ curl -H "X-API-Secret: kuboshiori" \
 ```bash
 # Insert names (single or batch with { "items": [...] })
 curl -X POST https://japanesenamedata.yuisama.top/api/names \
-  -H "X-API-Secret: kuboshiori" -H "Content-Type: application/json" \
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" -H "Content-Type: application/json" \
   -d '{ "romaji":"Sakura", "kanji":"桜", "reading":"さくら", "gender":"female", "name_part":"given_name", "syllable_count":3 }'
 
 # Update name (partial update — only send fields you want to change)
 curl -X PUT https://japanesenamedata.yuisama.top/api/names/{id} \
-  -H "X-API-Secret: kuboshiori" -H "Content-Type: application/json" \
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" -H "Content-Type: application/json" \
   -d '{ "status":"llm_enriched", "meaning_en":"cherry blossom" }'
 
 # Delete name
 curl -X DELETE https://japanesenamedata.yuisama.top/api/names/{id} \
-  -H "X-API-Secret: kuboshiori"
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET"
 ```
 
 ### Coverage check & Export
@@ -110,12 +112,12 @@ curl -X DELETE https://japanesenamedata.yuisama.top/api/names/{id} \
 ```bash
 # Check keyword coverage (how many names match each keyword's filter_rule)
 curl -X POST https://japanesenamedata.yuisama.top/api/keywords/coverage \
-  -H "X-API-Secret: kuboshiori" -H "Content-Type: application/json" \
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" -H "Content-Type: application/json" \
   -d '{ "keyword_ids": ["kw_0001", "kw_0002"] }'
 
 # Export all data
 curl -X POST https://japanesenamedata.yuisama.top/api/export/all \
-  -H "X-API-Secret: kuboshiori"
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET"
 ```
 
 ---
@@ -206,7 +208,7 @@ Fetches and parses myoji-yurai.net directly. Zero dependencies (Node 18+).
 node tools/scrapers/scrape-myoji-yurai.js 鈴木
 ```
 
-Output fields: `readings`, `national_rank`, `estimated_population`, `etymology`, `top_regions`, `famous_people` (with `name_jp`).
+Output fields: `readings`, `national_rank`, `estimated_population`, `etymology`, `top_regions` (each with `prefecture`, `count_raw`, `count`), `famous_people` (with `name_jp`).
 
 ### parse-japanese-names-info.js (both given_name and family_name)
 
@@ -224,7 +226,7 @@ cat /path/to/fetched-page.txt | node tools/scrapers/parse-japanese-names-info.js
 - Given name: `https://japanese-names.info/first-name/{romaji_lowercase}/`
 - Family name: `https://japanese-names.info/last-name/{romaji_lowercase}/`
 
-Output fields: `gender`, `hiragana`, `katakana`, `english_syllables`, `japanese_morae`, `household_count`, `variations_count`, `target_variation` (with `feature_tags` and `kanji_breakdown`), `famous_persons`, `explore_tags`.
+Output fields: `gender`, `hiragana`, `katakana`, `english_syllables`, `japanese_morae`, `household_count`, `variations_count`, `target_variation` (with `feature_tags` and `kanji_breakdown`), `famous_persons` (each with `confidence`: `high`/`low`/`unparsed`; low-confidence entries include `raw_text`), `explore_tags`.
 
 ---
 
@@ -235,7 +237,7 @@ When enriching a name record from `raw` to `llm_enriched`, follow these steps:
 ### Step 1: Fetch current record
 
 ```bash
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names/{id}"
 ```
 
@@ -273,7 +275,7 @@ cat saved-page.txt | node tools/scrapers/parse-japanese-names-info.js --kanji {k
 - `national_rank` — from `national_rank` (myoji-yurai, family_name only)
 - `alternative_readings` — from `readings` (myoji-yurai, exclude the primary reading)
 - `kanji_breakdown` — from `target_variation.kanji_breakdown`, reformat to `[{"kanji":"鈴","meanings_en":[...],"reading":"すず"}]`
-- `famous_bearers` — combine both scripts' output. `name_jp` MUST come from script data. Pick top 3-5 most notable people.
+- `famous_bearers` — combine both scripts' output. `name_jp` MUST come from script data (only use entries with `confidence: "high"`). Pick top 3-5 most notable people.
 - `regional_origin` — infer from `etymology` + `top_regions` (myoji-yurai, family_name only)
 
 **From LLM knowledge (soft tags):**
@@ -298,7 +300,7 @@ cat saved-page.txt | node tools/scrapers/parse-japanese-names-info.js --kanji {k
 
 ```bash
 curl -X PUT "https://japanesenamedata.yuisama.top/api/names/{id}" \
-  -H "X-API-Secret: kuboshiori" -H "Content-Type: application/json" \
+  -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" -H "Content-Type: application/json" \
   -d '{
     "romaji": "Suzuki",
     "mora_count": 3,
@@ -332,7 +334,7 @@ curl -X PUT "https://japanesenamedata.yuisama.top/api/names/{id}" \
 ### Step 5: Verify
 
 ```bash
-curl -H "X-API-Secret: kuboshiori" \
+curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names/{id}"
 ```
 

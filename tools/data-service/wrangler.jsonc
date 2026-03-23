@@ -16,6 +16,8 @@
     }
   ],
   "vars": {
-    "API_SECRET": "kuboshiori"
+    // Set API_SECRET via `wrangler secret put API_SECRET` or .dev.vars file.
+    // Do NOT hardcode the real secret here.
+    "API_SECRET": "CHANGE_ME"
   }
 }

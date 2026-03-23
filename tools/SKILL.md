@@ -198,35 +198,56 @@ curl -X POST https://japanesenamedata.yuisama.top/api/export/all \
 
 ## 3. Scraper Scripts
 
-Two helper scripts extract structured JSON from reference websites. Located in `tools/scrapers/`.
+Four helper scripts extract structured JSON from reference websites. Located in `tools/scrapers/`. All zero dependencies (Node 18+), direct HTTP fetch.
 
-### scrape-myoji-yurai.js (family_name only)
+### Source priority
 
-Fetches and parses myoji-yurai.net directly. Zero dependencies (Node 18+).
+| Source | Covers | Direct HTTP | Primary use |
+|--------|--------|-------------|-------------|
+| **myoji-yurai.net** | family_name | ✅ | Rank, population, etymology, regions, famous people |
+| **behindthename.com** | given_name + family_name | ✅ | Meaning, vibes, categories, scripts (kanji/kana) |
+| **kanshudo.com** | given_name + family_name | ✅ | Readings, frequency rank, alt readings |
+| japanese-names.info | given_name + family_name | ❌ (WAF) | Fallback only — use if WebFetch succeeds |
+
+### scrape-myoji-yurai.js (family_name — primary)
 
 ```bash
 node tools/scrapers/scrape-myoji-yurai.js 鈴木
 ```
 
-Output fields: `readings`, `national_rank`, `estimated_population`, `etymology`, `top_regions` (each with `prefecture`, `count_raw`, `count`), `famous_people` (with `name_jp`).
+Output: `readings`, `national_rank`, `estimated_population`, `etymology`, `top_regions` (`prefecture`, `count_raw`, `count`), `famous_people` (`name_jp`).
 
-### parse-japanese-names-info.js (both given_name and family_name)
-
-Parses markdown from a WebFetch of japanese-names.info. Zero dependencies (Node 18+).
-
-japanese-names.info has bot protection (BigScoots WAF) that blocks `curl`. The LLM must use its WebFetch/browser tool to fetch the page, save the markdown output to a file, then pipe it through the parser.
+### scrape-behindthename.js (given_name — primary; family_name — supplementary)
 
 ```bash
-# Step 1: LLM fetches the page using WebFetch and saves to a file
-# Step 2: Parse the saved markdown
-cat /path/to/fetched-page.txt | node tools/scrapers/parse-japanese-names-info.js --kanji 愛乃
+# Given name
+node tools/scrapers/scrape-behindthename.js --given aiko
+
+# Family name (uses surnames.behindthename.com)
+node tools/scrapers/scrape-behindthename.js --family suzuki
 ```
 
-**URL patterns:**
-- Given name: `https://japanese-names.info/first-name/{romaji_lowercase}/`
-- Family name: `https://japanese-names.info/last-name/{romaji_lowercase}/`
+Output: `gender`, `usage`, `scripts` (`kanji`, `hiragana`, `katakana`), `meaning` (English etymology with kanji breakdown), `vibes` (trait + weight, given_name only), `categories`.
 
-Output fields: `gender`, `hiragana`, `katakana`, `english_syllables`, `japanese_morae`, `household_count`, `variations_count`, `target_variation` (with `feature_tags` and `kanji_breakdown`), `famous_persons` (each with `confidence`: `high`/`low`/`unparsed`; low-confidence entries include `raw_text`), `explore_tags`.
+### scrape-kanshudo.js (both — supplementary)
+
+```bash
+node tools/scrapers/scrape-kanshudo.js 佐藤
+```
+
+Output: `common_reading` (`hiragana`, `romaji`), `reading_type`, `alternative_readings` (each with `hiragana`, `romaji`, `type`), `frequency_rank`, `external_links`.
+
+### parse-japanese-names-info.js (both — fallback)
+
+Parses markdown from a WebFetch of japanese-names.info. Has WAF bot protection — only works via LLM WebFetch tool, not direct HTTP.
+
+```bash
+# Step 1: LLM fetches page via WebFetch and saves to file
+# Step 2: Parse the saved markdown
+cat saved-page.txt | node tools/scrapers/parse-japanese-names-info.js --kanji 愛乃
+```
+
+Output: `gender`, `hiragana`, `katakana`, `english_syllables`, `japanese_morae`, `household_count`, `variations_count`, `target_variation` (`feature_tags`, `kanji_breakdown`), `famous_persons` (`confidence`: `high`/`low`/`unparsed`), `explore_tags`.
 
 ---
 
@@ -245,49 +266,55 @@ Note the `name_part` (family_name or given_name), `romaji`, `kanji`, `reading`.
 
 ### Step 2: Gather data via scripts
 
-**If family_name (姓) — run both scripts:**
+**If family_name (姓) — run these scripts:**
 
 ```bash
-# 1. japanese-names.info (LLM WebFetch → parser)
-#    Use WebFetch to get https://japanese-names.info/last-name/{romaji_lowercase}/
-#    Save output, then:
-cat saved-page.txt | node tools/scrapers/parse-japanese-names-info.js --kanji {kanji}
-
-# 2. myoji-yurai.net (direct fetch)
+# 1. myoji-yurai.net (primary — rank, population, etymology, regions, famous people)
 node tools/scrapers/scrape-myoji-yurai.js {kanji}
+
+# 2. behindthename.com (supplementary — meaning, kanji breakdown)
+node tools/scrapers/scrape-behindthename.js --family {romaji_lowercase}
+
+# 3. kanshudo.com (supplementary — readings, frequency rank)
+node tools/scrapers/scrape-kanshudo.js {kanji}
 ```
 
-**If given_name (名) — run only japanese-names.info:**
+**If given_name (名) — run these scripts:**
 
 ```bash
-# WebFetch https://japanese-names.info/first-name/{romaji_lowercase}/
-cat saved-page.txt | node tools/scrapers/parse-japanese-names-info.js --kanji {kanji}
-# myoji-yurai.net is for surnames only — skip. Use LLM knowledge instead.
+# 1. behindthename.com (primary — meaning, vibes, categories, scripts)
+node tools/scrapers/scrape-behindthename.js --given {romaji_lowercase}
+
+# 2. kanshudo.com (supplementary — readings, frequency rank)
+node tools/scrapers/scrape-kanshudo.js {kanji}
 ```
+
+**Fallback**: If any primary source fails, try japanese-names.info via WebFetch → `parse-japanese-names-info.js`. Use LLM knowledge to fill remaining gaps.
 
 ### Step 3: Combine script output + LLM knowledge
 
 **From script output (hard data):**
-- `mora_count` — from `japanese_morae` field, or count from hiragana reading
+- `mora_count` — count from hiragana reading, or from kanshudo data
 - `kanji_count` — count kanji characters in the `kanji` field
-- `household_count` — from `household_count` (japanese-names.info)
-- `estimated_population` — from `estimated_population` (myoji-yurai, family_name only)
-- `national_rank` — from `national_rank` (myoji-yurai, family_name only)
-- `alternative_readings` — from `readings` (myoji-yurai, exclude the primary reading)
-- `kanji_breakdown` — from `target_variation.kanji_breakdown`, reformat to `[{"kanji":"鈴","meanings_en":[...],"reading":"すず"}]`
-- `famous_bearers` — combine both scripts' output. `name_jp` MUST come from script data (only use entries with `confidence: "high"`). Pick top 3-5 most notable people.
-- `regional_origin` — infer from `etymology` + `top_regions` (myoji-yurai, family_name only)
+- `household_count` — from japanese-names.info fallback if available
+- `estimated_population` — from myoji-yurai (family_name only)
+- `national_rank` — from myoji-yurai (family_name only); cross-check with kanshudo `frequency_rank`
+- `alternative_readings` — combine myoji-yurai `readings` + kanshudo `alternative_readings`
+- `kanji_breakdown` — parse from behindthename `meaning` field (e.g. "鈴 (suzu) meaning bell"), or from japanese-names.info fallback
+- `famous_bearers` — from myoji-yurai `famous_people` (family_name) or behindthename `meaning` text. `name_jp` MUST come from script data. Pick top 3-5.
+- `regional_origin` — infer from myoji-yurai `etymology` + `top_regions` (family_name only)
+- `scripts` — from behindthename `scripts` field (kanji, hiragana, katakana)
 
-**From LLM knowledge (soft tags):**
+**From LLM knowledge + behindthename vibes/categories (soft tags):**
 - `era` — which era the name is most associated with
-- `popularity` — can also be derived from estimated_population / feature_tags
-- `use_case` — what contexts this name is used in
-- `vibe` — the feeling/atmosphere of the name (pick ≤3)
+- `popularity` — derive from estimated_population / national_rank / behindthename categories (e.g. "top 10 in Japan")
+- `use_case` — from behindthename categories (anime chars → `anime`, etc.) + LLM knowledge
+- `vibe` — map behindthename `vibes` to our enum (e.g. "youthful"→`playful`, "wholesome"→`warm`, "delicate"→`gentle`, "refined"→`elegant`), pick ≤3
 - `element` — natural elements/symbols associated (pick ≤3)
 - `kanji_meaning_tags` — generate 10-20 English tags covering literal, extended, and associative meanings of all kanji
-- `meaning_en` — one concise sentence about the name's meaning
+- `meaning_en` — use behindthename `meaning` as basis, refine with LLM
 - `description_en` — 2-3 sentences with cultural context, ranking, origin
-- `etymology_en` — historical origin story (use myoji-yurai etymology as basis for family_name)
+- `etymology_en` — use myoji-yurai `etymology` as basis for family_name; behindthename `meaning` for given_name
 
 **Important rules:**
 - `name_jp` in `famous_bearers` must come from script data — LLM should NOT guess kanji spellings for person names

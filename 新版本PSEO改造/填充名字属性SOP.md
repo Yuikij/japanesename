@@ -11,7 +11,7 @@
 https://japanese-names.info/first-name/yui-2/    ← 女性名 Yui
 https://japanese-names.info/first-name/yui/       ← 男性名 Yui
 
-5. 根据LLM自己的知识库，和爬取到的信息，以及自己的理解，填充tag等其他信息
+5. 根据AI Agent（你）自己的知识库，和爬取到的信息，以及自己的理解，进行数据清洗，并填充tag等其他信息，请直接在对话/工作区内执行，不要写外部脚本去调用独立的LLM API。
 
 
 

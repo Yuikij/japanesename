@@ -1,0 +1,452 @@
+[
+  {
+    "id": "gn_kengo_716643",
+    "vibe": ["elevated", "ambitious", "personal"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["raise", "plan", "project", "behavior", "actions", "I", "my", "our", "one's own"],
+    "meaning_en": "My elevation.",
+    "description_en": "Kengo (挙吾) merges 'raise/elevate' with 'myself'. Supremely active and ambitious, indicating a man who consistently raises his own standard."
+  },
+  {
+    "id": "gn_kensaku_a5fbdc",
+    "vibe": ["healthy", "active", "creative"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["healthy", "health", "strength", "persistence", "make", "production", "prepare", "build"],
+    "meaning_en": "Making health.",
+    "description_en": "Kensaku (健作) utilizes 'health/strength' and 'make/build'. Depicts a highly industrious, perfectly sound individual actively building a physically strong life."
+  },
+  {
+    "id": "gn_kensaku_1bb287",
+    "vibe": ["healthy", "strategic", "smart"],
+    "element": ["earth", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["healthy", "health", "strength", "persistence", "scheme", "plan", "policy", "step", "means"],
+    "meaning_en": "A healthy strategy.",
+    "description_en": "Kensaku (健策) couples 'healthy' with 'policy/plan'. Denotes a massively capable planner whose mind and body are perfectly synced to execute great strategies."
+  },
+  {
+    "id": "gn_kensaku_9bffa4",
+    "vibe": ["versatile", "creative", "capable"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["concurrently", "and", "beforehand", "in advance", "make", "production", "prepare", "build"],
+    "meaning_en": "Making concurrently/versatility.",
+    "description_en": "Kensaku (兼作) uses 'concurrently' (Ken) and 'make'. Highlights incredible versatility, pointing to someone who brilliantly masters multiple disciplines."
+  },
+  {
+    "id": "gn_kousuke_234cb5",
+    "vibe": ["expanding", "helpful", "supportive"],
+    "element": ["earth", "space"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["broaden", "extend", "expand", "enlarge", "help", "guide", "assistant"],
+    "meaning_en": "Expanding assistance.",
+    "description_en": "Kousuke (拡輔) pairs 'expand' with 'assistant/guide'. Deeply supportive, showing a person with huge capacity to lift up others and steer them smoothly."
+  },
+  {
+    "id": "gn_kousei_8ffb26",
+    "vibe": ["prospering", "successful", "active"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "turn into", "become", "get", "grow", "elapse", "reach"],
+    "meaning_en": "Becoming prosperous.",
+    "description_en": "Kousei (興成) merges 'prosper' with 'become/succeed'. A highly auspicious name predicting massive growth, realization of goals, and lifelong success."
+  },
+  {
+    "id": "gn_kousei_a90c76",
+    "vibe": ["prospering", "righteous", "upright"],
+    "element": ["fire", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "correct", "justice", "righteous", "10**40"],
+    "meaning_en": "Prospering justice.",
+    "description_en": "Kousei (興正) combines 'prosper' and 'justice/correct'. Points to a deeply principled individual who pushes forward positive, honest progress in the world."
+  },
+  {
+    "id": "gn_kousei_db1101",
+    "vibe": ["prospering", "vital", "lively"],
+    "element": ["fire", "wood"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "life", "genuine", "birth"],
+    "meaning_en": "Prosperous life.",
+    "description_en": "Kousei (興生) connects 'prosper' with 'life/birth'. Overflowing with vitality and optimism, indicating a tremendously rich and abundantly growing existence."
+  },
+  {
+    "id": "gn_kouzou_7bdbad",
+    "vibe": ["prospering", "traditional", "classic"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "three"],
+    "meaning_en": "Prosperous third son.",
+    "description_en": "Kouzou (興三) uses 'prosper' and 'three'. Exceptionally traditional, conferring massive active energy and upward momentum to a beloved third son."
+  },
+  {
+    "id": "gn_kouzou_dacbbb",
+    "vibe": ["luminous", "bright", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ray", "light", "three"],
+    "meaning_en": "Bright third son.",
+    "description_en": "Kouzou (光三) pairs 'light' with 'three'. Structurally flawless, visualizing a thirdborn child whose life is filled with brilliance and clarity."
+  },
+  {
+    "id": "gn_kouzou_b69972",
+    "vibe": ["luminous", "wealthy", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ray", "light", "storehouse", "hide", "own", "have", "possess"],
+    "meaning_en": "Storehouse of light.",
+    "description_en": "Kouzou (光蔵) merges 'light' with 'storehouse' (Zou). Exceedingly robust and old-fashioned, aiming for immense accumulated wealth and luminous success."
+  },
+  {
+    "id": "gn_kouta_0a0f59",
+    "vibe": ["radiant", "grand", "expansive"],
+    "element": ["light", "space"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["radiance", "shine", "sparkle", "gleam", "twinkle", "large", "big"],
+    "meaning_en": "Great radiance.",
+    "description_en": "Kouta (輝大) combines 'radiance' with 'large' (Ta). Superbly luminous and dynamic, wishing for perfectly boundless and shining potential."
+  },
+  {
+    "id": "gn_kouta_0a9f9d",
+    "vibe": ["smooth", "robust", "lucky"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["pass through", "go smoothly", "plump", "thick", "big", "around"],
+    "meaning_en": "Robust smoothness.",
+    "description_en": "Kouta (亨太) pairs 'pass freely' with the 'thick' suffix. Exceptionally grounded and auspicious, envisioning a healthy boy moving cleanly through life."
+  },
+  {
+    "id": "gn_kouta_42588b",
+    "vibe": ["prospering", "robust", "active"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "plump", "thick", "big", "around"],
+    "meaning_en": "Robust prosperity.",
+    "description_en": "Kouta (興太) uses 'prosper' and 'thick' (Ta). An immensely energetic name, granting deep physical resilience alongside high-spirited growth."
+  },
+  {
+    "id": "gn_koudai_47bde4",
+    "vibe": ["prospering", "vast", "ambitious"],
+    "element": ["fire", "space"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "large", "big"],
+    "meaning_en": "Great prosperity!",
+    "description_en": "Koudai (興大) pairs 'prosper' with 'large' (Dai). Staggeringly expansive, dreaming of immense success and broadly influential achievements."
+  },
+  {
+    "id": "gn_koudai_b682cd",
+    "vibe": ["lucky", "vast", "gentle"],
+    "element": ["earth", "space"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["happiness", "luck", "large", "big"],
+    "meaning_en": "Great happiness.",
+    "description_en": "Koudai (倖大) matches 'happiness/luck' with 'large' (Dai). Exudes perfect serenity and deep tenderness, promising a vastly fortunate life."
+  },
+  {
+    "id": "gn_koudai_1f9914",
+    "vibe": ["luminous", "vast", "majestic"],
+    "element": ["light", "space"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ray", "light", "large", "big"],
+    "meaning_en": "Great light.",
+    "description_en": "Koudai (光大) combines 'light' with 'large'. Impossibly grand and optimistic, representing a spectacularly bright presence that fills the entire room."
+  },
+  {
+    "id": "gn_kouhei_b7022d",
+    "vibe": ["smooth", "peaceful", "calm"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["pass through", "go smoothly", "even", "flat", "peace"],
+    "meaning_en": "Smooth peace.",
+    "description_en": "Kouhei (亨平) utilizes 'pass freely' with 'even/peace'. Highlights exceptionally graceful stability, meaning a life totally free of rough turbulence."
+  },
+  {
+    "id": "gn_kouhei_835d64",
+    "vibe": ["righteous", "peaceful", "upright"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["correct", "save", "assist", "even", "flat", "peace"],
+    "meaning_en": "Correcting to peace.",
+    "description_en": "Kouhei (匡平) uses 'correct/assist' (Kou) and 'peace'. Deeply moral and stabilizing, depicting an individual who sets things straight and maintains harmony."
+  },
+  {
+    "id": "gn_kouhei_7ff9d7",
+    "vibe": ["respectful", "peaceful", "polite"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["respect", "reverent", "even", "flat", "peace"],
+    "meaning_en": "Respectful peace.",
+    "description_en": "Kouhei (恭平) couples 'respect' with 'peace'. Represents ultimate social grace and humility, projecting a wonderfully calming, polite nature."
+  },
+  {
+    "id": "gn_kouya_bc3f29",
+    "vibe": ["prospering", "exclamatory", "stylish"],
+    "element": ["fire", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "how", "what", "alas", "question mark", "exclamation mark"],
+    "meaning_en": "How prosperous!",
+    "description_en": "Kouya (興哉) blends 'prosper' with an emphatic particle (Ya). Inherently lively and extremely energetic, feeling like a perpetual shout of success."
+  },
+  {
+    "id": "gn_kouya_6d47a0",
+    "vibe": ["prospering", "fluent", "stylish"],
+    "element": ["fire", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "to be", "particle"],
+    "meaning_en": "To be prosperous.",
+    "description_en": "Kouya (興也) pairs 'prosper' with the declarative 'ya'. Crisp, modern, and highly active, combining upward motion with a smooth phonetic finish."
+  },
+  {
+    "id": "gn_kouya_ae2439",
+    "vibe": ["prospering", "sharp", "fast"],
+    "element": ["fire", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["entertain", "revive", "retrieve", "interest", "pleasure", "dart", "arrow"],
+    "meaning_en": "Prosperity's arrow.",
+    "description_en": "Kouya (興矢) matches 'prosper' with 'arrow'. Staggeringly fast and direct, expressing ambition that launches immediately toward success without hesitation."
+  },
+  {
+    "id": "gn_kotarou_160a67",
+    "vibe": ["giant", "grand", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["gigantic", "big", "large", "great", "plump", "thick", "big", "around", "son", "counter for sons"],
+    "meaning_en": "Giant robust son.",
+    "description_en": "Kotarou (巨太郎) utilizes 'giant' (Ko) and 'thick/son' (Tarou). Amazingly large-scaled, wishing for the boy to grow into a truly massive presence."
+  },
+  {
+    "id": "gn_kotarou_9713d7",
+    "vibe": ["classic", "structured", "sturdy"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["warehouse", "storehouse", "plump", "thick", "big", "around", "son", "counter for sons"],
+    "meaning_en": "Warehouse robust son.",
+    "description_en": "Kotarou (库太郎) pairs 'warehouse' (Ko) with the famous 'Tarou' suffix. Very sturdy and secure, bringing a feeling of collected wealth and stability."
+  },
+  {
+    "id": "gn_kotarou_0eb470",
+    "vibe": ["oceanic", "calm", "classic"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["lake", "plump", "thick", "big", "around", "melodious", "clear", "bright", "serene", "cheerful"],
+    "meaning_en": "Bright robust son of the lake.",
+    "description_en": "Kotarou (湖太朗) matches 'lake' with 'bright/robust'. Exceedingly rhythmic, painting a picture of an expansive, deep soul filled with bright cheer."
+  },
+  {
+    "id": "gn_kotetsu_e45dc0",
+    "vibe": ["fierce", "wise", "cool"],
+    "element": ["wood", "metal"],
+    "use_case": ["anime", "real_person"],
+    "kanji_meaning_tags": ["tiger", "drunk", "philosophy", "clear"],
+    "meaning_en": "Tiger philosophy.",
+    "description_en": "Kotetsu (虎哲) pairs 'tiger' and 'philosophy'. Phenomenally striking and deeply cool, suggesting a fiercely strong exterior hiding a profoundly wise mind."
+  },
+  {
+    "id": "gn_kotetsu_dfd668",
+    "vibe": ["youthful", "metallic", "cool"],
+    "element": ["metal"],
+    "use_case": ["anime", "pet"],
+    "kanji_meaning_tags": ["child", "sign of the rat", "11PM-1AM", "first sign of Chinese zodiac", "iron"],
+    "meaning_en": "Child of iron.",
+    "description_en": "Kotetsu (子鉄) utilizes 'child' and 'iron'. Very sharp and memorable, carrying immediate anime or historical energy via unyielding metallic strength."
+  },
+  {
+    "id": "gn_kotetsu_a64a3c",
+    "vibe": ["cute", "metallic", "samurai"],
+    "element": ["metal"],
+    "use_case": ["anime", "pet"],
+    "kanji_meaning_tags": ["little", "small", "iron"],
+    "meaning_en": "Small iron.",
+    "description_en": "Kotetsu (小铁) means 'little iron'. Widely recognized from pet culture and animation, signifying a tiny but completely indestructible spirit."
+  },
+  {
+    "id": "gn_gouki_525309",
+    "vibe": ["strong", "sturdy", "foundational"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["sturdy", "strength", "fundamentals", "radical (chem)", "counter for machines", "foundation"],
+    "meaning_en": "Sturdy foundation.",
+    "description_en": "Gouki (刚基) matches 'sturdy' (Gou) with 'foundation'. Visually imposing, pointing to a man entirely built on absolute, unshakeable bedrock core values."
+  },
+  {
+    "id": "gn_gouki_24d49a",
+    "vibe": ["strong", "hopeful", "determined"],
+    "element": ["metal", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["sturdy", "strength", "hope", "beg", "request", "pray", "beseech", "Greece", "dilute (acid)", "rare", "few", "phenomenal"],
+    "meaning_en": "Sturdy hope.",
+    "description_en": "Gouki (刚希) couples 'sturdy/firm' with 'hope'. Tremendously passionate, wishing for ironclad resilience combined seamlessly with brilliant future goals."
+  },
+  {
+    "id": "gn_gouki_81c676",
+    "vibe": ["unyielding", "masculine", "fierce"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["sturdy", "strength", "strong"],
+    "meaning_en": "Firm and strong.",
+    "description_en": "Gouki (刚毅) doubles down with two characters for 'sturdy/resolute'. The pinnacle of pure unyielding masculinity and supreme martial-arts level toughness."
+  },
+  {
+    "id": "gn_gorou_b13595",
+    "vibe": ["classic", "bright", "cheerful"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["five", "melodious", "clear", "bright", "serene", "cheerful"],
+    "meaning_en": "Bright fifth son.",
+    "description_en": "Gorou (五朗) uses 'five' and 'bright' (Rou). Extremely sunny, applying an overwhelmingly optimistic and clear feeling to a classic numeric naming structure."
+  },
+  {
+    "id": "gn_gorou_f87b54",
+    "vibe": ["classic", "traditional", "historic"],
+    "element": ["earth"],
+    "use_case": ["historical", "real_person"],
+    "kanji_meaning_tags": ["five", "son", "counter for sons"],
+    "meaning_en": "Fifth son.",
+    "description_en": "Gorou (五郎) is the absolute standard for a fifth born son. Impossibly classic, bearing the humble, sturdy momentum of generations of history."
+  },
+  {
+    "id": "gn_gorou_e4d148",
+    "vibe": ["bright", "team-player", "classic"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["five", "five-man squad", "file", "line", "melodious", "clear", "bright", "serene", "cheerful"],
+    "meaning_en": "Bright fifth squad-member.",
+    "description_en": "Gorou (伍朗) substitutes the standard five for the military 'squad of five' (Go). Extremely bright and historically grounded, suggesting a lively team player."
+  },
+  {
+    "id": "gn_sadaki_148095",
+    "vibe": ["perfect", "wise", "sharp"],
+    "element": ["metal", "water"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["perfect", "completion", "end", "wise", "fast learner"],
+    "meaning_en": "Complete wisdom.",
+    "description_en": "Sadaki (完聡) couples 'perfect/complete' (Sada) with 'wise/smart' (Ki). Supremely capable, pointing to an intellect that is perfectly rounded and flawless."
+  },
+  {
+    "id": "gn_sadaki_b44ee5",
+    "vibe": ["chaste", "upright", "dawn"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "daybreak", "dawn", "in the morning"],
+    "meaning_en": "Upright dawn.",
+    "description_en": "Sadaki (贞晓) uses 'chaste/upright' with 'dawn'. Extremely optimistic, visualizing an undeniably honest life that brings the breaking of new light."
+  },
+  {
+    "id": "gn_sadaki_4d176c",
+    "vibe": ["upright", "distinct", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "patent", "clear", "reveal", "indicate"],
+    "meaning_en": "Clear uprightness.",
+    "description_en": "Sadaki (贞彰) combines 'upright' with 'clear/reveal'. Highly distinguished, meant to carve out a massive, clearly highly moral path in society."
+  },
+  {
+    "id": "gn_sadao_008f76",
+    "vibe": ["perfect", "masculine", "solid"],
+    "element": ["earth", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["perfect", "completion", "end", "male", "man"],
+    "meaning_en": "Complete man.",
+    "description_en": "Sadao (完男) pairs 'perfect' with 'man'. Impossibly strong and uncomplicated, projecting the image of a fully-realized, perfectly capable male figure."
+  },
+  {
+    "id": "gn_sadao_e050ad",
+    "vibe": ["upright", "vital", "life"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "life", "genuine", "birth"],
+    "meaning_en": "Upright life.",
+    "description_en": "Sadao (贞生) matches 'upright' continuously with 'life/birth'. Wonderfully grounded, pointing to an intensely pure and steadily growing existence."
+  },
+  {
+    "id": "gn_sadao_540bba",
+    "vibe": ["upright", "traditional", "masculine"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "male", "man"],
+    "meaning_en": "Upright man.",
+    "description_en": "Sadao (贞男) literally means 'upright man'. Completely timeless and profoundly strict, desiring the absolute peak of moral male conduct."
+  },
+  {
+    "id": "gn_sadatsugu_307d42",
+    "vibe": ["upright", "inheriting", "historical"],
+    "element": ["earth"],
+    "use_case": ["real_person", "samurai"],
+    "kanji_meaning_tags": ["chaste", "upright", "heir", "succeed"],
+    "meaning_en": "Inheriting uprightness.",
+    "description_en": "Sadatsugu (贞嗣) uses 'upright' and 'heir' (Tsugu). Staggeringly traditional and aristocratic, carrying massive responsibility to uphold family honor."
+  },
+  {
+    "id": "gn_sadatsugu_ca16df",
+    "vibe": ["upright", "sequential", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "next", "order", "sequence"],
+    "meaning_en": "Next uprightness.",
+    "description_en": "Sadatsugu (贞次) pairs 'upright' with 'next' (often for a second son). Highly reliable, bestowing an undeniably correct moral compass upon a younger child."
+  },
+  {
+    "id": "gn_sadatsugu_f0bf63",
+    "vibe": ["upright", "ruling", "grand"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "overall", "relationship", "ruling", "governing"],
+    "meaning_en": "Upright governance.",
+    "description_en": "Sadatsugu (贞统) matches 'upright' with 'ruling/overall'. Deeply powerful, meant for someone whose unshakeable morality qualifies them perfectly to lead."
+  },
+  {
+    "id": "gn_sadatoshi_5a6657",
+    "vibe": ["true", "agile", "sharp"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["true", "reality", "Buddhist sect", "cleverness", "agile", "alert"],
+    "meaning_en": "True agility.",
+    "description_en": "Sadatoshi (真敏) combines 'true/real' (Sada) with 'agile/clever' (Toshi). Tremendously fast-thinking, suggesting a brilliant strategist grounded in uncompromising reality."
+  },
+  {
+    "id": "gn_sadatoshi_95de4a",
+    "vibe": ["detecting", "excellent", "sharp"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["spy", "sagacious", "genius", "excellence"],
+    "meaning_en": "Sagacious genius.",
+    "description_en": "Sadatoshi (侦俊) links 'spy/detect' with 'genius/excellence'. Intensely observant and quick-witted, projecting massive intellect that easily reads any situation."
+  },
+  {
+    "id": "gn_sadatoshi_751bbc",
+    "vibe": ["upright", "record-keeping", "historical"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "chronicle", "account", "narrative", "history", "annals", "geologic period"],
+    "meaning_en": "An upright chronicle.",
+    "description_en": "Sadatoshi (贞纪) uses 'upright' and 'chronicle/record'. Superbly precise, marking the writing of an unyielding historic legacy through perfect discipline."
+  },
+  {
+    "id": "gn_sadaharu_bf0317",
+    "vibe": ["upright", "governing", "healing"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "reign", "be at peace", "calm down", "subdue", "quell", "govt", "cure", "heal", "rule", "conserve"],
+    "meaning_en": "Upright governance.",
+    "description_en": "Sadaharu (贞治) merges 'upright' with 'govern/heal' (Haru). Staggeringly calm and moral, indicating a leader who naturally maintains perfect, peaceful order."
+  },
+  {
+    "id": "gn_sadaharu_425ab3",
+    "vibe": ["upright", "spring", "warm"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "springtime", "spring (season)"],
+    "meaning_en": "Upright spring.",
+    "description_en": "Sadaharu (贞春) pairs 'upright' with 'spring'. Very balanced, bringing an energetic, youthful seasonal warmth to otherwise strictly principled kanji."
+  },
+  {
+    "id": "gn_sadaharu_9a48e4",
+    "vibe": ["upright", "benevolent", "moral"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chaste", "upright", "humanity", "virtue", "benevolence", "charity", "man", "kernel"],
+    "meaning_en": "Upright benevolence.",
+    "description_en": "Sadaharu (贞仁) uniquely applies 'upright' and 'benevolence' (Haru). The absolute peak of morality, creating a flawlessly gentle and impeccably honest spirit."
+  }
+]

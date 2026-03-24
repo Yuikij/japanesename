@@ -1,0 +1,452 @@
+[
+  {
+    "id": "gn_eisuke_18b99a",
+    "vibe": ["helpful", "bright", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflect", "reflection", "projection", "help", "guide", "assistant"],
+    "meaning_en": "Brilliant assistance.",
+    "description_en": "Eisuke (映輔) combines 'reflect/shine' with 'assistant/guide'. Signifies a deeply supportive, capable boy who brings light and clarity to his team."
+  },
+  {
+    "id": "gn_eisuke_bb6284",
+    "vibe": ["prosperous", "helpful", "classic"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["flourish", "prosperity", "honor", "glory", "splendor", "jammed in", "shellfish", "mediate", "concern oneself with"],
+    "meaning_en": "Glorious assistance.",
+    "description_en": "Eisuke (栄介) brings 'glory/flourish' together with 'mediate/help'. Highlights a traditionally strong, successful individual who prospers while helping others."
+  },
+  {
+    "id": "gn_eita_8bafd4",
+    "vibe": ["prosperous", "strong", "classic"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["flourish", "prosperity", "honor", "glory", "splendor", "plump", "thick", "big", "around"],
+    "meaning_en": "Grand prosperity.",
+    "description_en": "Eita (栄太) matches 'flourish' with the classic, robust 'thick/big' suffix. Exceedingly energetic and auspicious, ensuring a vastly successful and robust life."
+  },
+  {
+    "id": "gn_eita_8dda61",
+    "vibe": ["eternal", "grand", "classic"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["eternity", "long", "lengthy", "large", "big"],
+    "meaning_en": "Eternally great.",
+    "description_en": "Eita (永大) uses 'eternity' and 'large/grand'. Deeply stable and grounded, painting a picture of an endlessly expansive and reliably large presence."
+  },
+  {
+    "id": "gn_eita_e3fbcf",
+    "vibe": ["sparkling", "abundant", "modern"],
+    "element": ["light"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["crystal", "much", "many", "frequent"],
+    "meaning_en": "Many crystals.",
+    "description_en": "Eita (瑛多) couples 'crystal' with 'many'. A very modern, shining combination that suggests an abundance of brilliance and multi-faceted talent."
+  },
+  {
+    "id": "gn_eito_af039f",
+    "vibe": ["bright", "capable", "modern"],
+    "element": ["light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflect", "reflection", "projection", "person", "man"],
+    "meaning_en": "A reflecting person.",
+    "description_en": "Eito (映人) pairs 'reflect/shine' with 'person'. Indicates a visibly brilliant, impactful individual who constantly reflects surrounding light and joy."
+  },
+  {
+    "id": "gn_eito_492e0e",
+    "vibe": ["prosperous", "strong", "classic"],
+    "element": ["wood"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["flourish", "prosperity", "honor", "glory", "splendor", "person", "man"],
+    "meaning_en": "A prosperous person.",
+    "description_en": "Eito (栄人) merges 'glory' with 'person'. Highly auspicious, intending for the bearer to become a person of distinguished honor and flourishing success."
+  },
+  {
+    "id": "gn_eito_4e8f3f",
+    "vibe": ["soaring", "ambitious", "modern"],
+    "element": ["wind", "wood"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["flourish", "prosperity", "honor", "glory", "splendor", "soar", "fly"],
+    "meaning_en": "Glorious flight.",
+    "description_en": "Eito (栄翔) matches 'glory/flourish' with the extremely popular 'soar/fly'. Exceptionally dynamic and contemporary, depicting a brilliantly soaring trajectory."
+  },
+  {
+    "id": "gn_etsushi_58f23c",
+    "vibe": ["joyful", "capable", "responsible"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ecstasy", "joy", "rapture", "director", "official", "govt office", "rule", "administer"],
+    "meaning_en": "Joyful governance.",
+    "description_en": "Etsushi (悦司) brings 'joy' alongside 'administer/rule'. Suggests an incredibly positive, happy leader who manages responsibilities with a cheerful heart."
+  },
+  {
+    "id": "gn_etsushi_c5b42e",
+    "vibe": ["historical", "scholarly", "joyful"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ecstasy", "joy", "rapture", "history", "chronicle"],
+    "meaning_en": "Joyous history.",
+    "description_en": "Etsushi (悦史) couples 'joy' with 'history/chronicle'. Gives a deeply scholarly, academic impression, hinting at a life full of pleasant, recorded achievements."
+  },
+  {
+    "id": "gn_etsushi_1d9a47",
+    "vibe": ["gentlemanly", "joyful", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "samurai"],
+    "kanji_meaning_tags": ["ecstasy", "joy", "rapture", "gentleman", "scholar", "samurai"],
+    "meaning_en": "A joyful gentleman.",
+    "description_en": "Etsushi (悦士) uses 'joy' and 'samurai/gentleman'. Depicts a remarkably high-minded, cheerful, and honorable man of excellent character."
+  },
+  {
+    "id": "gn_etsuji_0845be",
+    "vibe": ["joyful", "capable", "responsible"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ecstasy", "joy", "rapture", "director", "official", "govt office", "rule", "administer"],
+    "meaning_en": "Joyful administration.",
+    "description_en": "Etsuji (悦司) is the 'ji' reading of 'joy' and 'govern'. Shares exactly the same happy, confident leadership connotations, just with softer phonetics."
+  },
+  {
+    "id": "gn_etsuji_036e64",
+    "vibe": ["historical", "scholarly", "joyful"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["ecstasy", "joy", "rapture", "history", "chronicle"],
+    "meaning_en": "A joyful chronicler.",
+    "description_en": "Etsuji (悦史) is the 'ji' reading of 'joy' and 'history'. Academic and warm, perfect for a deeply intellectual, positive individual."
+  },
+  {
+    "id": "gn_etsuji_404620",
+    "vibe": ["classic", "joyful", "historical"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["ecstasy", "joy", "rapture", "heir", "succeed"],
+    "meaning_en": "A joyful heir.",
+    "description_en": "Etsuji (悦嗣) places 'joy' with 'heir/succeed'. A highly traditional name wishing for the exceptionally happy succession of family lineage."
+  },
+  {
+    "id": "gn_osamu_de2ab6",
+    "vibe": ["noble", "dreamy", "unique"],
+    "element": ["earth"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["king", "rule", "magnate", "assistant", "help", "dream", "vision", "illusion"],
+    "meaning_en": "A king's helpful dream.",
+    "description_en": "Osamu (王佐夢) utilizes 'king', 'help', and 'dream'. An outrageously unique, extremely charismatic phonetic spelling carrying regal and ethereal weight."
+  },
+  {
+    "id": "gn_osamu_0b63e3",
+    "vibe": ["flawless", "complete", "strong"],
+    "element": ["metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["perfect", "completion", "end"],
+    "meaning_en": "Complete; flawless.",
+    "description_en": "Osamu (完) uses the single kanji for 'complete'. Absolutely resolute, aiming for uncompromised integrity, self-discipline, and total mastery of oneself."
+  },
+  {
+    "id": "gn_osamu_190418",
+    "vibe": ["historical", "methodical", "scholarly"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chronicle", "account", "narrative", "history", "annals", "geologic period"],
+    "meaning_en": "Chronicle or history.",
+    "description_en": "Osamu (紀) means 'chronicle/history'. Deeply intelligent and methodical, pointing to an intellectual tasked with creating lasting structures and records."
+  },
+  {
+    "id": "gn_kaito_874db5",
+    "vibe": ["cheerful", "refreshing", "modern"],
+    "element": ["wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["cheerful", "pleasant", "agreeable", "comfortable", "person", "man"],
+    "meaning_en": "A cheerful person.",
+    "description_en": "Kaito (快人) pairs 'cheerful/pleasant' with 'person'. Incredibly bright, positive, and active, depicting a boy who brings a refreshing breeze everywhere."
+  },
+  {
+    "id": "gn_kaito_f77f4d",
+    "vibe": ["stellar", "cheerful", "modern"],
+    "element": ["wind", "space"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["cheerful", "pleasant", "agreeable", "comfortable", "Big Dipper", "ten liters"],
+    "meaning_en": "A cheerful star.",
+    "description_en": "Kaito (快斗) blends 'cheerful' with the popular 'Big Dipper' character. Vastly popular, energetic, and cosmically bright."
+  },
+  {
+    "id": "gn_kaito_d1d28d",
+    "vibe": ["leading", "strong", "pioneering"],
+    "element": ["earth", "fire"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["charging ahead of others", "person", "man"],
+    "meaning_en": "A leading person.",
+    "description_en": "Kaito (魁人) uses 'charging ahead/pioneer' and 'person'. Shows immense initiative, raw power, and a natural, unyielding masculine leadership quality."
+  },
+  {
+    "id": "gn_kazuaki_87da46",
+    "vibe": ["abundant", "natural", "sturdy"],
+    "element": ["wood"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "sub", "Asia", "tree", "wood", "plant"],
+    "meaning_en": "One grand tree.",
+    "description_en": "Kazuaki (一亜樹) combines 'one', phonetic 'a', and 'tree'. Extremely sturdy and botanical, suggesting a uniquely large, unshakeable natural presence."
+  },
+  {
+    "id": "gn_kazuaki_df67ca",
+    "vibe": ["bright", "hopeful", "heroic"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "morning sun", "sunrise"],
+    "meaning_en": "One morning sun.",
+    "description_en": "Kazuaki (一旭) pairs 'one' with 'morning sun'. Simple but incredibly powerful, likening the child to the first blinding beam of a new day."
+  },
+  {
+    "id": "gn_kazuaki_9a6177",
+    "vibe": ["crystal", "bright", "pure"],
+    "element": ["light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "crystal"],
+    "meaning_en": "One crystal.",
+    "description_en": "Kazuaki (一瑛) uses 'one' and 'crystal'. Indicates peerless purity, exceptional clarity of mind, and a sharply brilliant aesthetic."
+  },
+  {
+    "id": "gn_kazuo_716711",
+    "vibe": ["central", "core", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "center", "middle"],
+    "meaning_en": "One center.",
+    "description_en": "Kazuo (一央) matches 'one' with 'center'. Depicts an incredibly grounded individual acting as the absolute core or pillar for everyone around him."
+  },
+  {
+    "id": "gn_kazuo_ac78bd",
+    "vibe": ["responsive", "intellectual", "classic"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "apply", "answer", "yes", "OK", "reply", "accept"],
+    "meaning_en": "One answer.",
+    "description_en": "Kazuo (一応) pairs 'one' with 'answer/apply'. Suggests a highly reliable, responsive nature. Always present when called upon."
+  },
+  {
+    "id": "gn_kazuo_81bbae",
+    "vibe": ["unique", "historical", "artistic"],
+    "element": ["earth", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "the latter", "duplicate", "strange", "witty", "fishguts", "second"],
+    "meaning_en": "First and second (the unique one).",
+    "description_en": "Kazuo (一乙) uses 'one' and the calendar/second-rank sign 'Otsu'. An extremely eccentric, highly artistic, and esoteric name with great cultural depth."
+  },
+  {
+    "id": "gn_kazuki_0712dc",
+    "vibe": ["floral", "bright", "modern"],
+    "element": ["flower", "plant"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "hollyhock"],
+    "meaning_en": "One hollyhock.",
+    "description_en": "Kazuki (一葵) pairs 'one' with 'hollyhock'. Reflects deep familial roots (hollyhock is a famous Tokugawa crest) combined with bright, sun-facing flora."
+  },
+  {
+    "id": "gn_kazuki_1ecfc7",
+    "vibe": ["bright", "glowing", "heroic"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "morning sun", "sunrise"],
+    "meaning_en": "One sunrise.",
+    "description_en": "Kazuki (一旭) is read as Kazuki here, again capturing 'one morning sun'. Absolute radiant warmth and pure optimism for a first son."
+  },
+  {
+    "id": "gn_kazuki_602ccb",
+    "vibe": ["coastal", "strong", "nature"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "seashore", "beach"],
+    "meaning_en": "One seashore.",
+    "description_en": "Kazuki (一磯) merges 'one' with 'rocky seashore'. An incredibly rugged, naturalistic name signifying standing firm against the ocean waves of life."
+  },
+  {
+    "id": "gn_kazushi_3e85b3",
+    "vibe": ["capable", "lead", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "director", "official", "govt office", "rule", "administer"],
+    "meaning_en": "One ruler/manager.",
+    "description_en": "Kazushi (一司) uses 'one' and 'rule/manage'. Very sleek and intelligent, depicting the ultimate capable leader who seamlessly manages all affairs."
+  },
+  {
+    "id": "gn_kazushi_de3449",
+    "vibe": ["historical", "scholarly", "disciplined"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "history", "chronicle"],
+    "meaning_en": "One history.",
+    "description_en": "Kazushi (一史) pairs 'one' with 'history'. Greatly suited for a boy expected to live an academic, meticulously ethical, and historically significant life."
+  },
+  {
+    "id": "gn_kazushi_792b79",
+    "vibe": ["traditional", "noble", "connected"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "heir", "succeed"],
+    "meaning_en": "First heir.",
+    "description_en": "Kazushi (一嗣) blends 'one' with 'heir'. Extremely explicit in its wish for the child to successfully and honorably succeed the family line."
+  },
+  {
+    "id": "gn_kazushige_67f114",
+    "vibe": ["nurturing", "abundant", "gentle"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "nourishing", "more & more", "be luxuriant", "planting", "turbidity"],
+    "meaning_en": "One nourishment.",
+    "description_en": "Kazushige (一滋) uses 'one' and 'nourishing/luxuriant'. Portrays a deeply compassionate, life-giving personality that helps everything around them grow."
+  },
+  {
+    "id": "gn_kazushige_4586d8",
+    "vibe": ["natural", "steady", "strong"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "tree", "wood", "plant"],
+    "meaning_en": "One tree.",
+    "description_en": "Kazushige (一樹) pairs 'one' with 'tree' (often read 'ki', here 'shige'). Extremely stalwart and majestic, wishing for towering, unshakeable growth."
+  },
+  {
+    "id": "gn_kazushige_9c7d0d",
+    "vibe": ["heavy", "profound", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "heavy", "heap up", "pile up", "nest o' boxes", "-fold"],
+    "meaning_en": "One profound weight.",
+    "description_en": "Kazushige (一重) combines 'one' with 'heavy/layered'. Suggests an immensely grounded, dignified individual possessing deep, multi-layered intellect."
+  },
+  {
+    "id": "gn_kazutaka_7b0c03",
+    "vibe": ["prosperous", "glorious", "classic"],
+    "element": ["wood", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "flourish", "prosperity", "honor", "glory", "splendor"],
+    "meaning_en": "First glory.",
+    "description_en": "Kazutaka (一栄) uses 'one' and '栄' (honor/glory). An extremely prestigious formulation, demanding unmatched success and high social esteem."
+  },
+  {
+    "id": "gn_kazutaka_21ea17",
+    "vibe": ["resolute", "strong", "unbending"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person", "samurai"],
+    "kanji_meaning_tags": ["one", "strong", "unyielding", "manly"],
+    "meaning_en": "First to be unyielding.",
+    "description_en": "Kazutaka (一毅) matches 'one' with 'unyielding/manly'. Deeply masculine and stoic, aiming for a warrior's absolute, unshakable resolve."
+  },
+  {
+    "id": "gn_kazutaka_96982a",
+    "vibe": ["noble", "precious", "classic"],
+    "element": ["earth", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "precious", "noble", "expensive"],
+    "meaning_en": "First nobility.",
+    "description_en": "Kazutaka (一貴) combines 'one' with 'noble'. Extravagantly elegant and distinguished, implying an irreplaceable, highly valued aristocrat or leader."
+  },
+  {
+    "id": "gn_kazuto_906c8a",
+    "vibe": ["solitary", "pure", "straightforward"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "person", "man"],
+    "meaning_en": "One person (often meaning 'unique/individual').",
+    "description_en": "Kazuto (一人) literally means 'one person'. Exceedingly simple and sincere, focusing purely on individual humanity and solitary strength."
+  },
+  {
+    "id": "gn_kazuto_8791c0",
+    "vibe": ["humane", "benevolent", "classic"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "humanity", "virtue", "benevolence", "charity", "man", "kernel"],
+    "meaning_en": "First benevolence.",
+    "description_en": "Kazuto (一仁) pairs 'one' and the Confucian 'benevolence' (Jin). A fundamentally moral, kind-hearted name envisioning a perfect gentleman."
+  },
+  {
+    "id": "gn_kazuto_1db318",
+    "vibe": ["clear", "pure", "serene"],
+    "element": ["water"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "lucidity", "be clear", "clear", "clarify", "settle", "strain", "look grave"],
+    "meaning_en": "First clarity.",
+    "description_en": "Kazuto (一澄) matches 'one' with 'lucidity/clear'. Depicts exceptionally transparent, truthful motives and a deeply calming, undisturbed nature."
+  },
+  {
+    "id": "gn_kazutoshi_96588f",
+    "vibe": ["respectful", "honorable", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "awe", "respect", "honor", "revere"],
+    "meaning_en": "First respect.",
+    "description_en": "Kazutoshi (一敬) utilizes 'one' and 'respect'. Deeply polite and structured, raising a boy who reveres tradition and naturally commands deep honor."
+  },
+  {
+    "id": "gn_kazutoshi_855db7",
+    "vibe": ["magnificent", "grand", "heroic"],
+    "element": ["earth", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "overpowering", "great", "powerful", "excelling", "Australia"],
+    "meaning_en": "First magnificent power.",
+    "description_en": "Kazutoshi (一豪) couples 'one' with 'great/overpowering'. Intensely bold and big-hearted; a true hero character with a genuinely vast, unconstrained spirit."
+  },
+  {
+    "id": "gn_kazutoshi_399fb5",
+    "vibe": ["auspicious", "long-lived", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "longevity", "congratulations", "life"],
+    "meaning_en": "First longevity.",
+    "description_en": "Kazutoshi (一寿) blends 'one' with 'longevity'. Heavily auspicious, casting the fundamental wish for endless health and an incredibly blessed lifespan."
+  },
+  {
+    "id": "gn_kazutomo_66cf96",
+    "vibe": ["tolerant", "generous", "gentle"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "tolerant", "leniency", "generosity", "relax", "feel at home", "be at ease", "broadminded"],
+    "meaning_en": "First tolerance.",
+    "description_en": "Kazutomo (一寛) uses 'one' and 'tolerant/generous'. Represents a monumentally broad-minded, profoundly forgiving leader who puts everyone at ease."
+  },
+  {
+    "id": "gn_kazutomo_a6c4e6",
+    "vibe": ["public", "fair", "noble"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "public", "prince", "official", "governmental"],
+    "meaning_en": "First prince/public servant.",
+    "description_en": "Kazutomo (一公) matches 'one' with 'public/prince' (Kou). Carries extreme civic duty and nobility. Suits an exceptionally fair, distinguished magistrate type."
+  },
+  {
+    "id": "gn_kazutomo_9eb19a",
+    "vibe": ["balanced", "equitable", "steady"],
+    "element": ["earth", "metal"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "equilibrium", "measuring scale", "machine"],
+    "meaning_en": "First equilibrium.",
+    "description_en": "Kazutomo (一衡) uses 'one' and 'equilibrium/balance'. Highlights a perfectly centered, strictly fair individual who never sways toward harmful extremes."
+  },
+  {
+    "id": "gn_kazunari_1c4b6b",
+    "vibe": ["meritorious", "successful", "active"],
+    "element": ["metal", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "achievement", "merits", "success", "honor", "credit"],
+    "meaning_en": "First achievement.",
+    "description_en": "Kazunari (一功) pairs 'one' with 'achievement/success' (Kou/Nari). An immensely hard-working name, focused absolutely on carving out major personal success."
+  },
+  {
+    "id": "gn_kazunari_9e2fbb",
+    "vibe": ["helpful", "resolving", "calm"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "finish", "come to an end", "excusable", "need not"],
+    "meaning_en": "First to resolve (or save).",
+    "description_en": "Kazunari (一済) uses 'one' and 'finish/resolve/save'. Deeply reassuring, indicating an incredibly capable problem-solver who heals and soothes naturally."
+  },
+  {
+    "id": "gn_kazunari_ae91c8",
+    "vibe": ["complete", "steady", "full"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "circumference", "circuit", "lap"],
+    "meaning_en": "One full circle.",
+    "description_en": "Kazunari (一周) blends 'one' with 'circuit/circumference'. Symbolizes wholeness, thorough consistency, and a smoothly unshakeable path through life."
+  }
+]

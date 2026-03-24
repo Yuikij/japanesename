@@ -326,7 +326,7 @@ function strBadge(s){
 }
 function tgs(arr){
   if(!arr||!arr.length)return'<span style="color:var(--text-muted)">\\u2014</span>';
-  const a=typeof arr==='string'?JSON.parse(arr):arr;
+  const a=typeof arr==='string'?(arr?JSON.parse(arr):[]):arr;
   return '<div class="tag-group">'+a.slice(0,4).map(v=>'<span class="badge badge-muted">'+v+'</span>').join('')+(a.length>4?'<span class="badge badge-muted">+' +(a.length-4)+'</span>':'')+'</div>';
 }
 function e(s){return s?String(s).replace(/</g,'&lt;').replace(/>/g,'&gt;'):''}
@@ -379,7 +379,7 @@ async function loadNames(){
     if(!r.data||!r.data.length){w.innerHTML='<div class="empty-state"><p>未找到名字</p></div>';namesPg(0);return}
     let h='<table class="data-table"><thead><tr><th>汉字 / 读音</th><th>罗马音</th><th>性别</th><th>类型</th><th>推定人数</th><th>气质</th><th>状态</th></tr></thead><tbody>';
     r.data.forEach(n=>{
-      const v=typeof n.vibe==='string'?JSON.parse(n.vibe):n.vibe;
+      const v=typeof n.vibe==='string'?(n.vibe?JSON.parse(n.vibe):[]):n.vibe;
       const pop=n.estimated_population?Number(n.estimated_population).toLocaleString():'';
       h+='<tr onclick="nameDetail(\\''+n.id+'\\')"><td><span class="kanji-lg">'+e(n.kanji)+'</span><span class="reading-sm">'+e(n.reading)+'</span></td><td>'+e(n.romaji)+'</td><td>'+stBadge(n.gender)+'</td><td><span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span></td><td style="font-size:.78rem;color:var(--text-muted)">'+pop+'</td><td>'+tgs(v)+'</td><td>'+stBadge(n.status)+'</td></tr>';
     });
@@ -397,7 +397,7 @@ function namesPg(total){
 
 async function nameDetail(id){
   const r=await api('/api/names/'+id);if(!r.data)return;const n=r.data;
-  const p=v=>typeof v==='string'?JSON.parse(v):v||[];
+  const p=v=>{if(!v)return[];if(typeof v==='string'){try{return JSON.parse(v)}catch{return[]}}return v};
   let h='<div class="detail-grid">';
   [['ID',n.id],['罗马音',n.romaji],['汉字','<span class="kanji-lg">'+e(n.kanji)+'</span>'],['读音',n.reading],
    ['性别',stBadge(n.gender)],['类型','<span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span>'],
@@ -497,7 +497,7 @@ document.getElementById('search-input').addEventListener('input',ev=>{
       if(!d.length){w.innerHTML='<div class="empty-state"><p>未找到 "'+e(q)+'" 的相关结果</p></div>';return}
       let h='<table class="data-table"><thead><tr><th>汉字 / 读音</th><th>罗马音</th><th>性别</th><th>类型</th><th>推定人数</th><th>气质</th><th>状态</th></tr></thead><tbody>';
       d.forEach(n=>{
-        const v=typeof n.vibe==='string'?JSON.parse(n.vibe):n.vibe;
+        const v=typeof n.vibe==='string'?(n.vibe?JSON.parse(n.vibe):[]):n.vibe;
         const pop=n.estimated_population?Number(n.estimated_population).toLocaleString():'';
         h+='<tr onclick="nameDetail(\\''+n.id+'\\')"><td><span class="kanji-lg">'+e(n.kanji)+'</span><span class="reading-sm">'+e(n.reading)+'</span></td><td>'+e(n.romaji)+'</td><td>'+stBadge(n.gender)+'</td><td><span class="badge badge-muted">'+(n.name_part==='given_name'?'名':'姓')+'</span></td><td style="font-size:.78rem;color:var(--text-muted)">'+pop+'</td><td>'+tgs(v)+'</td><td>'+stBadge(n.status)+'</td></tr>';
       });

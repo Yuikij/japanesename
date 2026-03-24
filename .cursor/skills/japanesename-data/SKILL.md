@@ -5,8 +5,10 @@ description: >-
   Use when working with Japanese name data: looking up names by filters (gender,
   vibe, era, popularity), checking keyword SEO data, querying tag enums,
   importing/exporting name records, building filter rules, or checking keyword
-  coverage against the name database. Also use when writing code that interacts
-  with the data service API at japanesenamedata.yuisama.top.
+  coverage against the name database. Also use when building multi-source
+  evidence packets from external websites and asking an LLM to analyze,
+  reconcile, and fill structured fields before writing back to
+  japanesenamedata.yuisama.top.
 ---
 
 # Japanese Name Data Service
@@ -209,6 +211,46 @@ Four helper scripts extract structured JSON from reference websites. Located in 
 | **kanshudo.com** | given_name + family_name | ✅ | Readings, frequency rank, alt readings |
 | japanese-names.info | given_name + family_name | ❌ (WAF) | Fallback only — use if WebFetch succeeds |
 
+### Candidate direct-URL sources (evaluate before production use)
+
+| Source | Useful for | Reliability / Anti-bot | Recommendation |
+|--------|------------|------------------------|----------------|
+| **kanjiapi.dev** | Single-kanji meaning/reading metadata (`kanji_breakdown` fallback) | High (public JSON API) | ✅ Supplementary fallback for kanji-level facts |
+| **jisho.org** | Dictionary-style kanji/word meanings, reading hints | Medium (HTML can change) | ✅ Supplementary for semantic hints only |
+| **forebears.io** | Global surname distribution and coarse prevalence | Medium (Japan specificity is limited) | ⚠️ Optional: only for coarse rarity/popularity hints |
+| **ja.wikipedia.org / en.wikipedia.org** | Person-level references (famous bearers context) | Medium (page ambiguity, disambiguation noise) | ⚠️ Use only as person-level evidence, not surname authority |
+| **ancestry.com** | Generic surname-origin pages | Low (strong anti-bot + weak JP coverage) | ❌ Avoid in automated batch pipeline |
+
+Rules for adding new sources:
+
+1. Must have stable direct URL pattern for kanji or romaji input.
+2. Must return parseable content for at least 60% of probe samples.
+3. Must clearly improve at least one field group (`rank/population`, `readings`, `kanji_breakdown`, `famous_bearers`).
+4. If anti-bot blocks are frequent, keep source in optional/manual tier only.
+
+### probe-source-urls.js (source feasibility checker)
+
+Use this before integrating any new website into batch runs.
+
+```bash
+node tools/scrapers/probe-source-urls.js --timeoutMs 12000 --outFile tools/scrapers/source-probe-result.json
+```
+
+Optional custom samples:
+
+```bash
+node tools/scrapers/probe-source-urls.js --samples "佐藤:sato:family_name,結衣:yui:given_name"
+```
+
+Output includes per-source:
+
+- `ok_rate`
+- `marker_hit_rate`
+- `blocked_rate`
+- `status_counts`
+
+Use these metrics to decide `primary / supplementary / optional / avoid`.
+
 ### scrape-myoji-yurai.js (family_name — primary)
 
 ```bash
@@ -251,9 +293,16 @@ Output: `gender`, `hiragana`, `katakana`, `english_syllables`, `japanese_morae`,
 
 ---
 
-## 4. Name Enrichment SOP
+## 4. Evidence-Driven Name Enrichment SOP
 
-When enriching a name record from `raw` to `llm_enriched`, follow these steps:
+When enriching a name from `raw` to `llm_enriched`, use an **evidence-first** pipeline:
+
+1. Collect structured outputs from multiple websites.
+2. Keep source provenance (which source said what).
+3. Ask LLM to reconcile conflicts and fill missing fields.
+4. Write the consolidated result back to the API.
+
+Do **not** hardcode a strict source→field mapping. Any source can contribute evidence for multiple fields.
 
 ### Step 1: Fetch current record
 
@@ -262,110 +311,107 @@ curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names/{id}"
 ```
 
-Note the `name_part` (family_name or given_name), `romaji`, `kanji`, `reading`.
+Use `name_part`, `romaji`, `kanji`, and `reading` as query seeds for scraping.
 
-### Step 2: Gather data via scripts
+### Step 2: Collect multi-source evidence
 
-**If family_name (姓) — run these scripts:**
+Run all available scrapers for the record type (family/given), then capture raw outputs as evidence items.
 
 ```bash
-# 1. myoji-yurai.net (primary — rank, population, etymology, regions, famous people)
+# family_name example
 node tools/scrapers/scrape-myoji-yurai.js {kanji}
-
-# 2. behindthename.com (supplementary — meaning, kanji breakdown)
 node tools/scrapers/scrape-behindthename.js --family {romaji_lowercase}
-
-# 3. kanshudo.com (supplementary — readings, frequency rank)
 node tools/scrapers/scrape-kanshudo.js {kanji}
-```
 
-**If given_name (名) — run these scripts:**
-
-```bash
-# 1. behindthename.com (primary — meaning, vibes, categories, scripts)
+# given_name example
 node tools/scrapers/scrape-behindthename.js --given {romaji_lowercase}
-
-# 2. kanshudo.com (supplementary — readings, frequency rank)
 node tools/scrapers/scrape-kanshudo.js {kanji}
 ```
 
-**Fallback**: If any primary source fails, try japanese-names.info via WebFetch → `parse-japanese-names-info.js`. Use LLM knowledge to fill remaining gaps.
+Fallback if needed: WebFetch + `parse-japanese-names-info.js`.
 
-### Step 3: Combine script output + LLM knowledge
+### Step 3: Build an evidence packet (intermediate layer)
 
-**From script output (hard data):**
-- `mora_count` — count from hiragana reading, or from kanshudo data
-- `kanji_count` — count kanji characters in the `kanji` field
-- `household_count` — from japanese-names.info fallback if available
-- `estimated_population` — from myoji-yurai (family_name only)
-- `national_rank` — from myoji-yurai (family_name only); cross-check with kanshudo `frequency_rank`
-- `alternative_readings` — combine myoji-yurai `readings` + kanshudo `alternative_readings`
-- `kanji_breakdown` — parse from behindthename `meaning` field (e.g. "鈴 (suzu) meaning bell"), or from japanese-names.info fallback
-- `famous_bearers` — from myoji-yurai `famous_people` (family_name) or behindthename `meaning` text. `name_jp` MUST come from script data. Pick top 3-5.
-- `regional_origin` — infer from myoji-yurai `etymology` + `top_regions` (family_name only)
-- `scripts` — from behindthename `scripts` field (kanji, hiragana, katakana)
+Before prompting the LLM, normalize all source outputs into a common packet with provenance.
 
-**From LLM knowledge + behindthename vibes/categories (soft tags):**
-- `era` — which era the name is most associated with
-- `popularity` — derive from estimated_population / national_rank / behindthename categories (e.g. "top 10 in Japan")
-- `use_case` — from behindthename categories (anime chars → `anime`, etc.) + LLM knowledge
-- `vibe` — map behindthename `vibes` to our enum (e.g. "youthful"→`playful`, "wholesome"→`warm`, "delicate"→`gentle`, "refined"→`elegant`), pick ≤3
-- `element` — natural elements/symbols associated (pick ≤3)
-- `kanji_meaning_tags` — generate 10-20 English tags covering literal, extended, and associative meanings of all kanji
-- `meaning_en` — use behindthename `meaning` as basis, refine with LLM
-- `description_en` — 2-3 sentences with cultural context, ranking, origin
-- `etymology_en` — use myoji-yurai `etymology` as basis for family_name; behindthename `meaning` for given_name
+```json
+{
+  "record_seed": { "id": "...", "name_part": "family_name", "kanji": "鈴木", "romaji": "Suzuki" },
+  "evidence": [
+    {
+      "source": "myoji-yurai.net",
+      "captured_at": "2026-03-23T10:00:00Z",
+      "url": "https://...",
+      "facts": { "national_rank": 2, "estimated_population": 1745000 },
+      "raw_excerpt": "..."
+    },
+    {
+      "source": "kanshudo.com",
+      "facts": { "alternative_readings": ["..."] }
+    }
+  ]
+}
+```
 
-**Important rules:**
-- `name_jp` in `famous_bearers` must come from script data — LLM should NOT guess kanji spellings for person names
-- `kanji_meaning_tags` should be extensive (10-20 tags) — this is the catch-all field for SEO keyword matching
-- `vibe` and `element` are limited to ≤3 each — pick the most representative ones
-- Chinese fields (`meaning_zh`, `description_zh`) are optional and lower priority
-- Fix any data quality issues (e.g. trailing `\r` in romaji, wrong capitalization)
+Recommended evidence item fields: `source`, `url`, `captured_at`, `facts`, `raw_excerpt`, `confidence`.
 
-### Step 4: Update via API
+### Step 4: Ask LLM to reconcile + enrich
+
+Prompt the LLM with the evidence packet and require two output layers:
+
+- `verified_facts`: Values directly supported by one or more sources.
+- `inferred_fields`: Semantic enrichments inferred from evidence + world knowledge (with rationale).
+
+Required behaviors:
+
+- Resolve conflicts by source reliability + recency + cross-source agreement.
+- Keep uncertain values nullable and record why.
+- Prefer conservative outputs over fabricated specifics.
+- Preserve provenance notes for human review.
+
+### Step 5: Produce final patch payload
+
+Generate one merged payload for the API update. Keep `source` as a summary of used sources.
+
+```json
+{
+  "status": "llm_enriched",
+  "source": "myoji-yurai.net, behindthename.com, kanshudo.com, llm",
+  "national_rank": 2,
+  "estimated_population": 1745000,
+  "alternative_readings": ["すすぎ", "すすき"],
+  "meaning_en": "...",
+  "description_en": "...",
+  "kanji_meaning_tags": ["bell", "tree", "shrine", "nature"]
+}
+```
+
+### Step 6: Update + verify
+
+Update via API:
 
 ```bash
 curl -X PUT "https://japanesenamedata.yuisama.top/api/names/{id}" \
   -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" -H "Content-Type: application/json" \
-  -d '{
-    "romaji": "Suzuki",
-    "mora_count": 3,
-    "kanji_count": 2,
-    "era": "traditional",
-    "popularity": "very_common",
-    "regional_origin": "kansai",
-    "use_case": ["real_person", "historical"],
-    "vibe": ["warm", "gentle"],
-    "element": ["earth"],
-    "kanji_meaning_tags": ["bell", "chime", "tree", "wood", "nature", ...],
-    "household_count": 400000,
-    "estimated_population": 1745000,
-    "national_rank": 2,
-    "kanji_breakdown": [
-      {"kanji": "鈴", "meanings_en": ["bell", "chime", "ring"], "reading": "すず"},
-      {"kanji": "木", "meanings_en": ["tree", "wood", "simple"], "reading": "き"}
-    ],
-    "alternative_readings": ["すすぎ", "すすき", "すずぎ"],
-    "famous_bearers": [
-      {"name": "Suzuki Ichiro", "name_jp": "鈴木一朗", "context": "MLB legend, born 1973"}
-    ],
-    "meaning_en": "Bell tree — a sacred staff with bells used in Shinto rituals.",
-    "description_en": "Japan'"'"'s 2nd most common surname with ~1.75 million bearers...",
-    "etymology_en": "Originates from the Hotaka clan of Kii Province...",
-    "status": "llm_enriched",
-    "source": "japanese-names.info, myoji-yurai.net, llm"
-  }'
+  -d '{ ...merged_payload_from_evidence_and_llm... }'
 ```
 
-### Step 5: Verify
+Verify:
 
 ```bash
 curl -H "X-API-Secret: $JAPANESE_NAME_API_SECRET" \
   "https://japanesenamedata.yuisama.top/api/names/{id}"
 ```
 
-Confirm all fields are populated and status is `llm_enriched`.
+Confirm status and core fields are updated, and provenance is retained in `source`.
+
+### Quality rules (still required)
+
+- `name_jp` in `famous_bearers` must come from scraped evidence, never guessed.
+- `kanji_meaning_tags` should stay broad (10-20) for SEO recall.
+- `vibe` and `element` are capped at ≤3 representative tags.
+- Chinese fields are optional.
+- Clean obvious data issues before writing (capitalization, trailing control chars, duplicate tags).
 
 ---
 
@@ -414,3 +460,109 @@ No fixed enum. Examples: `beauty`, `truth`, `dragon`, `village`, `field`, `river
 - `filter_rule` (object?): FilterRule DSL for matching names
 - `seo` (object?): `{ "title", "h1", "description", "keywords" }`
 - `related_keywords` (object[]): `[{ "label", "path" }]`
+
+---
+
+## 7. Batch Enrichment at Scale (e.g. 200 names)
+
+Goal: maximize **speed**, **accuracy**, and **coverage** while minimizing **LLM token cost**.
+
+### 7.1 Recommended architecture (3-stage)
+
+1. **Stage A — Fast scrape fan-out (non-LLM)**
+   - Run scrapers in parallel and store raw JSON per source per name.
+   - Keep strict timeout/retry policy per source.
+2. **Stage B — Evidence normalization (non-LLM)**
+   - Convert source outputs into compact evidence packets.
+   - Deduplicate repeated facts before LLM.
+3. **Stage C — LLM reconcile + enrich (LLM)**
+   - Send only compact evidence, not full raw pages.
+   - Return `verified_facts` + `inferred_fields` + `uncertainties`.
+
+### 7.2 Throughput settings for 200 records
+
+Use a queue with bounded concurrency:
+
+- Scraper worker concurrency: **8-12**
+- LLM worker concurrency: **3-5**
+- API write batch size (`POST /api/names` with `items`): **20-50** per request
+- Retry policy: exponential backoff (`1s`, `2s`, `4s`), max **3** attempts
+
+Practical execution order:
+
+- Pass 1: all 200 records run Stage A + B.
+- Pass 2: only records with enough evidence go to Stage C.
+- Pass 3: fallback sources only for records still missing critical fields.
+
+### 7.3 Accuracy strategy (without large token increase)
+
+Use a confidence gate before LLM output is accepted:
+
+- **High confidence**: 2+ sources agree, or 1 high-trust source + internal consistency.
+- **Medium confidence**: single source but coherent; allow write with nullable uncertain fields.
+- **Low confidence**: conflict or sparse evidence; mark for retry/review, do not hallucinate.
+
+Conflict resolution priority (default):
+
+1. Cross-source agreement
+2. Source reliability for the specific fact type
+3. Recency/timestamp
+4. Conservative null fallback
+
+### 7.4 Token minimization playbook
+
+For each name, reduce LLM input size aggressively:
+
+- Send **facts only** (normalized JSON), avoid long raw HTML/markdown.
+- Truncate long text to short excerpts (e.g. max 300-500 chars per source excerpt).
+- Remove duplicate facts across sources before prompt.
+- Use a fixed response schema (JSON only) to avoid verbose prose.
+- Split generation:
+  - Step C1 (cheap): reconcile factual fields only.
+  - Step C2 (only if needed): generate narrative fields (`meaning_en`, `description_en`, `etymology_en`).
+- Skip C2 when factual confidence is low.
+
+### 7.5 Minimal prompt contract for batch mode
+
+Require this output object for each record:
+
+```json
+{
+  "id": "...",
+  "verified_facts": { "...": "..." },
+  "inferred_fields": { "...": "..." },
+  "uncertainties": ["..."],
+  "confidence": "high|medium|low",
+  "source_summary": ["myoji-yurai.net", "kanshudo.com"]
+}
+```
+
+Keep prompts deterministic:
+
+- temperature: low (e.g. `0-0.2`)
+- strict JSON mode / schema validation
+- no chain-of-thought in output
+
+### 7.6 “Fastest + best quality” default profile
+
+Use this profile as a starting point for 200 records:
+
+- Scraper concurrency: `10`
+- LLM concurrency: `4`
+- API write chunk: `25`
+- LLM calls per record:
+  - `1` factual reconcile call (always)
+  - `+1` narrative call only when confidence ≥ medium and key facts present
+- Target retries:
+  - source fetch failures: up to `3`
+  - LLM schema failures: up to `2`
+
+### 7.7 Batch quality KPIs (track every run)
+
+- Completion rate: `% records written as llm_enriched`
+- Evidence sufficiency rate: `% records with >=2 sources`
+- Low-confidence rate: `% records flagged low`
+- Avg tokens per record: input/output and total cost
+- Rework rate: `% records requiring manual patch`
+
+If token budget is tight, reduce narrative generation first, not factual reconciliation.

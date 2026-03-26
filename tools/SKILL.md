@@ -24,7 +24,7 @@ Related docs (same `tools/` directory):
 
 - **Write deterministic mapping scripts** (e.g. `if kanji.includes('花') → vibe = ['cute']`). Kanji meaning depends on context, combination, and cultural usage — a mapping table cannot capture this. These scripts produce garbage data.
 - **Call external LLM APIs** (OpenAI, Gemini, Anthropic, etc.) via `fetch`, SDKs, or subprocess. You ARE the LLM. Do the reasoning in your working session.
-- **Bulk-default fields** (e.g. setting every name to `["gentle"]`). If you lack confidence, leave the field `null`.
+- **Bulk-default fields** (e.g. setting every name to `["gentle"]`). Every name deserves individual reasoning.
 
 ---
 
@@ -56,6 +56,7 @@ Related docs (same `tools/` directory):
 | `meaning_en` | string | One-line English meaning synthesized from kanji breakdown |
 | `description_en` | string | 2-3 sentence cultural context |
 | `etymology_en` | string | Historical/geographic origin |
+| `kamon_prompt` | string | **family_name only.** English prompt for generating a kamon (family crest) image. Describe the crest's visual motifs based on the family name's kanji meanings and cultural associations |
 | `script` | string[] | Which writing systems — just inspect the kanji/reading fields |
 | `origin_region` | enum | Default `japan_native` unless evidence says otherwise |
 | `mora_count` | int | Count mora from reading (さくら = 3) |
@@ -69,6 +70,7 @@ Related docs (same `tools/` directory):
 | `national_rank` / `estimated_population` | Exact numbers from myoji-yurai only |
 | `household_count` | Exact number from japanese-names.info only |
 | `kamon_url` | Requires a verified image URL |
+| `kamon_prompt` | Only for `family_name`; leave null for `given_name` |
 
 ---
 
@@ -96,7 +98,7 @@ Some records have pre-existing data from earlier automated runs that may contain
 | `era` / `popularity` | May have been set by a deterministic mapping script | Re-evaluate using your own judgment; override if the existing value feels wrong |
 | `vibe` / `element` / `use_case` | If present and all records share suspiciously similar values | Override with your own judgment |
 
-**Rule of thumb**: if a soft field already has a value, treat it as a *hint* you can override, not as a confirmed fact. Your fresh judgment based on kanji meaning is more reliable than pre-existing script-generated values.
+**Rule of thumb**: if a soft field already has a value, treat it as a *hint* you can override, not as a confirmed fact. Your fresh judgment based on kanji meaning is more reliable than pre-existing script-generated values. Override with a **better value** — never clear a soft field to null just because you distrust the old value.
 
 ### Step 4 — how to reason (two examples)
 
@@ -120,6 +122,16 @@ Some records have pre-existing data from earlier automated runs that may contain
 - **element**: `["earth", "fire"]` — iron from earth, forged in fire
 - **era**: `"traditional"` — old-school masculine name
 - **kanji_meaning_tags**: `["iron", "steel", "strength", "metal", "forge", "hard", "unyielding", "industrial", "masculine", "endurance", "warrior"]`
+- **kamon_prompt**: `null` — given_name, not applicable
+
+**Example C**: `kanji=藤原`, `reading=ふじわら`, `name_part=family_name`
+
+- 藤 = wisteria vine; 原 = field/plain
+- **vibe**: `["elegant", "noble"]` — aristocratic clan name
+- **element**: `["flower"]` — wisteria is literal
+- **era**: `"ancient"` — one of the oldest and most powerful clan surnames
+- **kanji_meaning_tags**: `["wisteria", "vine", "field", "plain", "noble", "aristocratic", "clan", "purple", "flower", "heian", "court", "elegance"]`
+- **kamon_prompt**: `"A Japanese family crest (kamon) in solid black on white background. Circular design featuring stylized wisteria (fuji) flowers hanging in elegant cascading clusters, with curving vines and leaves arranged in a symmetrical pattern within a round frame. Clean, geometric, traditional mon style."`
 
 ### Batch processing
 
@@ -166,7 +178,8 @@ No fixed enum. Cover: literal kanji meanings, extended associations, colors, emo
 - `famous_bearers.name_jp` — must come from scraped evidence, NEVER fabricate
 - `kanji_meaning_tags` — aim for 10-20 for SEO breadth
 - `vibe` and `element` — max 3 each, pick the most representative
-- If uncertain → leave **null**, do not guess
+- **Soft fields** (`vibe`, `element`, `era`, `meaning_en`, `kanji_meaning_tags`, etc.) — be **confident and decisive**. You know enough about kanji semantics and Japanese culture to make a good call. Fill these for every name. Only leave null if you genuinely cannot read the kanji or the name is completely opaque to you.
+- **Hard fields** (`famous_bearers`, `national_rank`, `estimated_population`, etc.) — these require exact data. Leave null if no scraped evidence exists. Never fabricate.
 - Clean data before writing: consistent capitalization, no trailing whitespace, no duplicate tags
 - Chinese fields (`meaning_zh`, `description_zh`) are optional / lower priority
 - Set `status` to `"llm_enriched"` after enrichment
@@ -197,6 +210,7 @@ No fixed enum. Cover: literal kanji meanings, extended associations, colors, emo
 | `reading_romaji_variants` | string[] | `["Ohno","Ōno","Oono"]` |
 | `related_names` | string[] | IDs of related names |
 | `famous_bearers` | object[] | `[{"name":"Suzuki Ichiro","name_jp":"鈴木一朗","context":"MLB player"}]` |
+| `kamon_prompt` | string | family_name only: English prompt describing kamon visual motifs |
 
 ### Management
 

@@ -8,6 +8,8 @@ ALTER TABLE names ADD COLUMN kanji_breakdown TEXT DEFAULT '[]';
 ALTER TABLE names ADD COLUMN alternative_readings TEXT DEFAULT '[]';
 ALTER TABLE names ADD COLUMN etymology_en TEXT;
 
+ALTER TABLE names ADD COLUMN kamon_prompt TEXT;
+
 -- 新增索引
 CREATE INDEX IF NOT EXISTS idx_names_mora ON names(mora_count);
 CREATE INDEX IF NOT EXISTS idx_names_kanji_count ON names(kanji_count);

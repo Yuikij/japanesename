@@ -143,6 +143,8 @@ POST /api/names/query
 | `gte` / `lte` / `gt` / `lt` | 数值比较 | `syllable_count` 等数值字段 |
 | `starts_with` | 前缀匹配 | `romaji`（单字母时走 `romaji_initial` 索引）|
 | `contains` | 包含匹配 | 普通字段 LIKE，JSON 数组字段 EXISTS |
+| `is_empty` | 空值检测 | JSON 数组: `IS NULL` 或 `'[]'`；普通字段: `IS NULL` 或空字符串。`value: true` 查空，`false` 查非空 |
+| `is_null` | NULL 检测 | `value: true` 查 NULL，`false` 查非 NULL |
 
 **可过滤字段:** `gender`, `name_part`, `era`, `popularity`, `origin_region`, `syllable_count`, `romaji`, `romaji_initial`, `status`, `script`, `use_case`, `vibe`, `element`, `kanji_meaning_tags`
 
@@ -383,6 +385,7 @@ POST /api/export/all
 | `description_en` | string? | 英文描述 |
 | `description_zh` | string? | 中文描述 |
 | `famous_bearers` | object[] | `[{ "name": "...", "context": "..." }]` |
+| `kamon_prompt` | string? | 家纹生图提示词（仅 family_name） |
 | `related_names` | string[] | 相关名字 |
 | `status` | enum | `raw` / `llm_enriched` / `reviewed` / `complete` |
 | `source` | string? | 数据来源 |

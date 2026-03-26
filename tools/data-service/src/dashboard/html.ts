@@ -410,6 +410,7 @@ async function nameDetail(id){
    ['描述 (ZH)','<div style="line-height:1.6">'+e(n.description_zh||'\\u2014')+'</div>'],
    ['知名人物',p(n.famous_bearers).map(f=>f.name+' ('+f.context+')').join(', ')||'\\u2014'],
    ['家纹',n.kamon_url?'<img src="'+e(n.kamon_url)+'" alt="家纹" style="width:64px;height:64px;object-fit:contain;border-radius:4px;border:1px solid var(--border)">':'\\u2014'],
+   ['家纹提示词','<div style="line-height:1.6;font-size:0.85em">'+e(n.kamon_prompt||'\\u2014')+'</div>'],
    ['相关名字',tgs(p(n.related_names))],['状态',stBadge(n.status)],['数据来源',n.source||'\\u2014'],
    ['创建时间',n.created_at],['更新时间',n.updated_at]
   ].forEach(([l,v])=>{h+='<div class="detail-label">'+l+'</div><div class="detail-value">'+v+'</div>'});

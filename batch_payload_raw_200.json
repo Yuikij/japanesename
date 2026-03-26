@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "gn_hyuga_fb94df",
+    "vibe": ["bright", "fresh", "serene"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["sun", "facing", "direction", "warmth", "brightness", "openness", "vitality"],
+    "meaning_en": "Hyuga is a Japanese male name associated with facing the sun, warmth, and bright openness.",
+    "description_en": "Hyuga (日向) combines 日, meaning sun or day, with 向, meaning facing toward. The name feels bright, open, and warmly energetic."
+  },
+  {
+    "id": "gn_hiroaki_25f7d5",
+    "vibe": ["clean", "bright", "balanced"],
+    "element": ["light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "light", "radiance", "clarity", "balance", "presence", "brightness"],
+    "meaning_en": "Hiroaki is a Japanese male name associated with centered light and balanced radiance.",
+    "description_en": "Hiroaki (央光) combines 央, meaning center, with 光, meaning light. It gives the name a clear, balanced, and quietly luminous feel."
+  },
+  {
+    "id": "gn_hiroaki_71812f",
+    "vibe": ["bright", "elegant", "serene"],
+    "element": ["light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "shine", "brightness", "clarity", "balance", "presence", "refinement"],
+    "meaning_en": "Hiroaki is a Japanese male name associated with centered brilliance and refined brightness.",
+    "description_en": "Hiroaki (央晃) combines 央, meaning center, with 晃, meaning bright or shining. The result feels poised, luminous, and refined."
+  },
+  {
+    "id": "gn_hiroaki_ba29c3",
+    "vibe": ["clean", "bright", "noble"],
+    "element": ["light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "clarity", "brightness", "intellect", "balance", "openness", "light"],
+    "meaning_en": "Hiroaki is a Japanese male name associated with centered clarity and open brightness.",
+    "description_en": "Hiroaki (央明) combines 央, meaning center, with 明, meaning bright or clear. It feels intelligent, balanced, and plainly luminous."
+  },
+  {
+    "id": "gn_hirokazu_6d9a0e",
+    "vibe": ["minimal", "balanced", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "one", "unity", "balance", "focus", "stability", "simplicity"],
+    "meaning_en": "Hirokazu is a Japanese male name associated with centered unity and simple stability.",
+    "description_en": "Hirokazu (央一) combines 央, meaning center, with 一, meaning one. The name feels balanced, focused, and quietly straightforward."
+  },
+  {
+    "id": "gn_hirokazu_801626",
+    "vibe": ["gentle", "balanced", "warm"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "harmony", "peace", "balance", "cooperation", "stability", "gentleness"],
+    "meaning_en": "Hirokazu is a Japanese male name associated with centered harmony and peaceful balance.",
+    "description_en": "Hirokazu (央和) combines 央, meaning center, with 和, meaning harmony or peace. It gives the name a calm, cooperative, and balanced tone."
+  },
+  {
+    "id": "gn_hirokazu_16af1f",
+    "vibe": ["noble", "warm", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["praise", "one", "goodness", "honor", "auspiciousness", "singularity", "esteem"],
+    "meaning_en": "Hirokazu is a Japanese male name associated with singular goodness and praiseworthy honor.",
+    "description_en": "Hirokazu (嘉一) combines 嘉, meaning praiseworthy or auspicious, with 一, meaning one. The name feels honorable, fortunate, and classically composed."
+  },
+  {
+    "id": "gn_hirokatsu_1e4aab",
+    "vibe": ["strong", "serene", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "victory", "tolerance", "strength", "success", "stability", "composure"],
+    "meaning_en": "Hirokatsu is a Japanese male name associated with broad composure and steady victory.",
+    "description_en": "Hirokatsu (寛勝) combines 寛, meaning broad or tolerant, with 勝, meaning victory. It feels calm, strong, and confidently successful."
+  },
+  {
+    "id": "gn_hirokatsu_3c6671",
+    "vibe": ["sharp", "strong", "scholarly"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["awaken", "overcome", "insight", "victory", "strength", "discipline", "achievement"],
+    "meaning_en": "Hirokatsu is a Japanese male name associated with awakened insight and overcoming strength.",
+    "description_en": "Hirokatsu (啓克) combines 啓, meaning to open or enlighten, with 克, meaning to overcome. The name feels intelligent, disciplined, and capable."
+  },
+  {
+    "id": "gn_hirokatsu_cab14a",
+    "vibe": ["bright", "strong", "confident"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["awaken", "victory", "insight", "success", "clarity", "achievement", "drive"],
+    "meaning_en": "Hirokatsu is a Japanese male name associated with bright insight and confident victory.",
+    "description_en": "Hirokatsu (啓勝) combines 啓, meaning to enlighten or open, with 勝, meaning victory. It feels forward-moving, capable, and brightly ambitious."
+  },
+  {
+    "id": "gn_hiroki_90831b",
+    "vibe": ["mysterious", "grounded", "cool"],
+    "element": ["sky", "earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["universe", "foundation", "space", "origin", "stability", "depth", "scale"],
+    "meaning_en": "Hiroki is a Japanese male name associated with cosmic scale and foundational steadiness.",
+    "description_en": "Hiroki (宇基) combines 宇, meaning eaves, cosmos, or vast space, with 基, meaning foundation. The name feels spacious, grounded, and quietly impressive."
+  },
+  {
+    "id": "gn_hiroki_c2392e",
+    "vibe": ["joyful", "balanced", "bright"],
+    "element": ["light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "joy", "cheer", "balance", "warmth", "brightness", "happiness"],
+    "meaning_en": "Hiroki is a Japanese male name associated with centered joy and bright cheerfulness.",
+    "description_en": "Hiroki (央喜) combines 央, meaning center, with 喜, meaning joy. It gives the name a warm, happy, and well-balanced feeling."
+  },
+  {
+    "id": "gn_hiroki_dd2c5d",
+    "vibe": ["gentle", "hopeful", "balanced"],
+    "element": ["light", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "hope", "aspiration", "balance", "openness", "possibility", "clarity"],
+    "meaning_en": "Hiroki is a Japanese male name associated with centered hope and open possibility.",
+    "description_en": "Hiroki (央希) combines 央, meaning center, with 希, meaning hope or aspiration. The result feels calm, modern, and quietly uplifting."
+  },
+  {
+    "id": "gn_hiroshi_b3bda5",
+    "vibe": ["noble", "strong", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["greatness", "arrival", "achievement", "dignity", "completion", "presence", "strength"],
+    "meaning_en": "Hiroshi is a Japanese male name associated with noble greatness brought to completion.",
+    "description_en": "Hiroshi (偉至) combines 偉, meaning great or admirable, with 至, meaning to arrive at or reach. The name feels dignified, accomplished, and quietly powerful."
+  },
+  {
+    "id": "gn_hiroshi_48f33b",
+    "vibe": ["minimal", "strong", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "warrior", "scholar", "discipline", "integrity", "simplicity", "masculinity"],
+    "meaning_en": "Hiroshi is a Japanese male name associated with singular discipline and a warrior-like masculine bearing.",
+    "description_en": "Hiroshi (一士) combines 一, meaning one, with 士, meaning gentleman, scholar, or warrior. It feels spare, disciplined, and traditionally masculine."
+  },
+  {
+    "id": "gn_hiroshi_bd4f40",
+    "vibe": ["literary", "classic", "quirky"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["one", "story", "history", "record", "narrative", "uniqueness", "tradition"],
+    "meaning_en": "Hiroshi is a Japanese male name associated with singularity, story, and a distinctive literary tone.",
+    "description_en": "Hiroshi (一呂史) uses 一, meaning one, together with characters linked to sound and history. The name feels unusual, literary, and memorably old-style."
+  },
+  {
+    "id": "gn_hiroshige_cc38e0",
+    "vibe": ["strong", "earthy", "expansive"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["expand", "lush growth", "breadth", "abundance", "vigor", "prosperity", "reach"],
+    "meaning_en": "Hiroshige is a Japanese male name associated with expansive growth and robust abundance.",
+    "description_en": "Hiroshige (拡茂) combines 拡, meaning expand or broaden, with 茂, meaning lush growth. It feels large in scale, fertile, and energetically prosperous."
+  },
+  {
+    "id": "gn_hiroshige_daefd6",
+    "vibe": ["gentle", "strong", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "weight", "importance", "tolerance", "gravity", "stability", "presence"],
+    "meaning_en": "Hiroshige is a Japanese male name associated with broad composure and weighty presence.",
+    "description_en": "Hiroshige (寛重) combines 寛, meaning broad or tolerant, with 重, meaning heavy or important. The name feels composed, substantial, and dignified."
+  },
+  {
+    "id": "gn_hiroshige_ef35c7",
+    "vibe": ["gentle", "upright", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "accomplishment", "completion", "tolerance", "growth", "stability", "maturity"],
+    "meaning_en": "Hiroshige is a Japanese male name associated with broad-hearted maturity and accomplished growth.",
+    "description_en": "Hiroshige (寛成) combines 寛, meaning broad or tolerant, with 成, meaning to become or accomplish. It feels generous, mature, and steadily fulfilled."
+  },
+  {
+    "id": "gn_hirosuke_d6175f",
+    "vibe": ["bright", "classic", "auspicious"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "prosperity", "clarity", "balance", "flourishing", "support", "good fortune"],
+    "meaning_en": "Hirosuke is a Japanese male name associated with centered prosperity and auspicious support.",
+    "description_en": "Hirosuke (央昌) combines 央, meaning center, with 昌, meaning flourishing brightness or prosperity. The name feels balanced, favorable, and quietly distinguished."
+  },
+  {
+    "id": "gn_hirosuke_2aa461",
+    "vibe": ["noble", "warm", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["praise", "help", "support", "auspiciousness", "guidance", "grace", "honor"],
+    "meaning_en": "Hirosuke is a Japanese male name associated with praiseworthy support and graceful guidance.",
+    "description_en": "Hirosuke (嘉介) combines 嘉, meaning praiseworthy or auspicious, with 介, meaning to assist or mediate. It feels honorable, supportive, and classically refined."
+  },
+  {
+    "id": "gn_hirosuke_164150",
+    "vibe": ["gentle", "classic", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "mutuality", "tolerance", "support", "relationship", "balance", "composure"],
+    "meaning_en": "Hirosuke is a Japanese male name associated with tolerant balance and supportive reciprocity.",
+    "description_en": "Hirosuke (寛相) combines 寛, meaning broad or tolerant, with 相, meaning mutuality, aspect, or support. The name feels composed, relational, and quietly steady."
+  },
+  {
+    "id": "gn_hirota_4967bb",
+    "vibe": ["strong", "open", "classic"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["vastness", "greatness", "breadth", "scale", "strength", "generosity", "presence"],
+    "meaning_en": "Hirota is a Japanese male name associated with broad greatness and open strength.",
+    "description_en": "Hirota (宏太) combines 宏, meaning vast or spacious, with 太, a robust masculine element. It feels expansive, strong, and generously confident."
+  },
+  {
+    "id": "gn_hirota_d7cde9",
+    "vibe": ["open", "bright", "strong"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["broad", "greatness", "openness", "scale", "reach", "clarity", "confidence"],
+    "meaning_en": "Hirota is a Japanese male name associated with broad openness and confident masculine scale.",
+    "description_en": "Hirota (広太) combines 広, meaning broad or wide, with 太, a masculine suffix of largeness. The name feels straightforward, open, and physically substantial."
+  },
+  {
+    "id": "gn_hirota_ea51ea",
+    "vibe": ["learned", "warm", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad learning", "greatness", "knowledge", "abundance", "intellect", "stature", "tradition"],
+    "meaning_en": "Hirota is a Japanese male name associated with learned breadth and substantial masculine presence.",
+    "description_en": "Hirota (博太) combines 博, meaning broad learning or extensive knowledge, with 太, a strong masculine ending. It feels educated, solid, and traditionally impressive."
+  },
+  {
+    "id": "gn_hirotaka_1bfd32",
+    "vibe": ["poetic", "refined", "scholarly"],
+    "element": ["water", "light"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["performance", "expression", "filial respect", "artistry", "culture", "discipline", "grace"],
+    "meaning_en": "Hirotaka is a Japanese male name associated with expressive refinement and respectful cultivation.",
+    "description_en": "Hirotaka (演孝) combines 演, meaning to perform or elaborate, with 孝, meaning filial devotion or respect. The name feels cultured, thoughtful, and slightly literary."
+  },
+  {
+    "id": "gn_hirotaka_825486",
+    "vibe": ["noble", "balanced", "bright"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "precious", "honor", "worth", "balance", "esteem", "dignity"],
+    "meaning_en": "Hirotaka is a Japanese male name associated with centered nobility and precious worth.",
+    "description_en": "Hirotaka (央貴) combines 央, meaning center, with 貴, meaning precious or noble. It gives the name a poised, dignified, and well-regarded feeling."
+  },
+  {
+    "id": "gn_hirotaka_92fa40",
+    "vibe": ["scholarly", "calm", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "consideration", "thought", "judgment", "balance", "reflection", "intellect"],
+    "meaning_en": "Hirotaka is a Japanese male name associated with centered thoughtfulness and reflective judgment.",
+    "description_en": "Hirotaka (央考) combines 央, meaning center, with 考, meaning to think or consider. The result feels measured, intelligent, and composed."
+  },
+  {
+    "id": "gn_hirochika_0998f1",
+    "vibe": ["gentle", "balanced", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "center", "tolerance", "balance", "poise", "composure", "stability"],
+    "meaning_en": "Hirochika is a Japanese male name associated with broad-minded balance and centered composure.",
+    "description_en": "Hirochika (寛央) combines 寛, meaning broad or tolerant, with 央, meaning center. The name feels even-tempered, poised, and quietly noble."
+  },
+  {
+    "id": "gn_hirochika_d1118a",
+    "vibe": ["classic", "grounded", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["vastness", "nearness", "reach", "closeness", "breadth", "accessibility", "stability"],
+    "meaning_en": "Hirochika is a Japanese male name associated with broad reach joined to approachable nearness.",
+    "description_en": "Hirochika (宏近) combines 宏, meaning vast or spacious, with 近, meaning near. It creates a contrast of scale and closeness, giving the name a grounded and approachable feel."
+  },
+  {
+    "id": "gn_hirochika_ca9da3",
+    "vibe": ["open", "gentle", "modern"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["vastness", "being", "presence", "breadth", "openness", "scale", "balance"],
+    "meaning_en": "Hirochika is a Japanese male name associated with spacious presence and gentle openness.",
+    "description_en": "Hirochika (宏哉) combines 宏, meaning vast or spacious, with 哉, a classical emphatic ending. The name feels open, expansive, and softly modern-traditional."
+  },
+  {
+    "id": "gn_hirotsugu_62e32c",
+    "vibe": ["mysterious", "elegant", "classic"],
+    "element": ["sky", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["universe", "introduce", "inheritance", "continuity", "refinement", "lineage", "depth"],
+    "meaning_en": "Hirotsugu is a Japanese male name associated with expansive depth and refined inheritance.",
+    "description_en": "Hirotsugu (宇紹) combines 宇, suggesting vast space, with 紹, meaning to introduce, inherit, or continue. It feels cultivated, slightly rare, and lineage-conscious."
+  },
+  {
+    "id": "gn_hirotsugu_12f3ea",
+    "vibe": ["strong", "expansive", "classic"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["expand", "heir", "continuity", "lineage", "growth", "reach", "legacy"],
+    "meaning_en": "Hirotsugu is a Japanese male name associated with expanding legacy and inherited continuity.",
+    "description_en": "Hirotsugu (拡嗣) combines 拡, meaning to expand, with 嗣, meaning heir or succession. The name feels large in scope, lineage-aware, and strongly traditional."
+  },
+  {
+    "id": "gn_hirotsugu_d46e01",
+    "vibe": ["gentle", "classic", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "heir", "succession", "tolerance", "legacy", "stability", "continuity"],
+    "meaning_en": "Hirotsugu is a Japanese male name associated with tolerant nobility and lasting succession.",
+    "description_en": "Hirotsugu (寛嗣) combines 寛, meaning broad or tolerant, with 嗣, meaning heir or succession. It feels calm, dignified, and rooted in continuity."
+  },
+  {
+    "id": "gn_hiroto_9ffb33",
+    "vibe": ["balanced", "gentle", "modern"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "person", "presence", "balance", "humanity", "warmth", "openness"],
+    "meaning_en": "Hiroto is a Japanese male name associated with centered humanity and balanced presence.",
+    "description_en": "Hiroto (央人) combines 央, meaning center, with 人, meaning person. The name feels human, balanced, and calmly approachable."
+  },
+  {
+    "id": "gn_hiroto_644e25",
+    "vibe": ["warm", "noble", "gentle"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["praise", "person", "goodness", "honor", "humanity", "auspiciousness", "kindness"],
+    "meaning_en": "Hiroto is a Japanese male name associated with praiseworthy character and warm humanity.",
+    "description_en": "Hiroto (嘉人) combines 嘉, meaning praiseworthy or auspicious, with 人, meaning person. It feels kind, honorable, and warmly well-regarded."
+  },
+  {
+    "id": "gn_hiroto_40828f",
+    "vibe": ["open", "strong", "modern"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["expand", "person", "breadth", "growth", "humanity", "reach", "energy"],
+    "meaning_en": "Hiroto is a Japanese male name associated with expansive humanity and outward-reaching growth.",
+    "description_en": "Hiroto (拡人) combines 拡, meaning to expand, with 人, meaning person. The result feels progressive, open, and full of outward energy."
+  },
+  {
+    "id": "gn_hirotoshi_0f0b6c",
+    "vibe": ["mysterious", "practical", "cool"],
+    "element": ["sky", "earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["universe", "benefit", "foundation", "usefulness", "scale", "competence", "stability"],
+    "meaning_en": "Hirotoshi is a Japanese male name associated with vast grounding and practical usefulness.",
+    "description_en": "Hirotoshi (宇利) combines 宇, suggesting the cosmos or vast space, with 利, meaning benefit or practical skill. The name feels unusual, capable, and coolly grounded."
+  },
+  {
+    "id": "gn_hirotoshi_a454f3",
+    "vibe": ["strong", "practical", "expansive"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["expand", "benefit", "advantage", "growth", "competence", "reach", "success"],
+    "meaning_en": "Hirotoshi is a Japanese male name associated with expanding advantage and practical success.",
+    "description_en": "Hirotoshi (拡利) combines 拡, meaning to expand, with 利, meaning benefit or advantage. It feels competent, effective, and strongly forward-moving."
+  },
+  {
+    "id": "gn_hirotoshi_41595e",
+    "vibe": ["gentle", "classic", "seasoned"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "years", "maturity", "longevity", "tolerance", "stability", "age"],
+    "meaning_en": "Hirotoshi is a Japanese male name associated with broad-hearted maturity and lasting years.",
+    "description_en": "Hirotoshi (寛歳) combines 寛, meaning broad or tolerant, with 歳, meaning years or age. The name feels seasoned, patient, and quietly enduring."
+  },
+  {
+    "id": "gn_hironao_92e183",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "esteem", "elevation", "tolerance", "dignity", "grace", "balance"],
+    "meaning_en": "Hironao is a Japanese male name associated with broad-hearted dignity and elevated grace.",
+    "description_en": "Hironao (寛尚) combines 寛, meaning broad or tolerant, with 尚, meaning esteem or nobility. The name feels gracious, calm, and quietly elevated."
+  },
+  {
+    "id": "gn_hironao_07b79c",
+    "vibe": ["upright", "clean", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "straight", "integrity", "tolerance", "honesty", "stability", "sincerity"],
+    "meaning_en": "Hironao is a Japanese male name associated with tolerant integrity and straightforward sincerity.",
+    "description_en": "Hironao (寛直) combines 寛, meaning broad or tolerant, with 直, meaning straight or honest. It feels upright, patient, and deeply sincere."
+  },
+  {
+    "id": "gn_hironao_4917aa",
+    "vibe": ["bright", "upright", "scholarly"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["awaken", "straight", "clarity", "integrity", "guidance", "honesty", "insight"],
+    "meaning_en": "Hironao is a Japanese male name associated with awakened clarity and direct integrity.",
+    "description_en": "Hironao (啓直) combines 啓, meaning to enlighten or open, with 直, meaning straight or honest. The result feels intelligent, principled, and clear-minded."
+  },
+  {
+    "id": "gn_hironari_2abb69",
+    "vibe": ["expansive", "modern", "open"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["expand", "being", "presence", "growth", "breadth", "energy", "reach"],
+    "meaning_en": "Hironari is a Japanese male name associated with expansive presence and outward-moving growth.",
+    "description_en": "Hironari (拡哉) combines 拡, meaning to expand, with 哉, a classical emphatic ending. The name feels open, energetic, and broad in scale."
+  },
+  {
+    "id": "gn_hironari_1ecb81",
+    "vibe": ["formal", "classic", "upright"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["official", "accomplishment", "order", "duty", "structure", "success", "public role"],
+    "meaning_en": "Hironari is a Japanese male name associated with official dignity and orderly accomplishment.",
+    "description_en": "Hironari (官成) combines 官, meaning official or public office, with 成, meaning to accomplish. It feels formal, disciplined, and rooted in duty."
+  },
+  {
+    "id": "gn_hironari_7a6536",
+    "vibe": ["elegant", "gentle", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "elegance", "refinement", "tolerance", "grace", "cultivation", "beauty"],
+    "meaning_en": "Hironari is a Japanese male name associated with broad-hearted elegance and cultivated refinement.",
+    "description_en": "Hironari (寛雅) combines 寛, meaning broad or tolerant, with 雅, meaning elegance or refinement. The name feels graceful, composed, and classically cultivated."
+  },
+  {
+    "id": "gn_hironobu_269ab1",
+    "vibe": ["balanced", "gentle", "refined"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "rightness", "suitability", "balance", "grace", "stability", "appropriateness"],
+    "meaning_en": "Hironobu is a Japanese male name associated with centered rightness and refined balance.",
+    "description_en": "Hironobu (央宜) combines 央, meaning center, with 宜, meaning suitable, proper, or fitting. It feels even, graceful, and thoughtfully composed."
+  },
+  {
+    "id": "gn_hironobu_d3a6be",
+    "vibe": ["open", "strong", "progressive"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["center", "extension", "growth", "balance", "development", "reach", "continuity"],
+    "meaning_en": "Hironobu is a Japanese male name associated with centered growth and unfolding continuity.",
+    "description_en": "Hironobu (央展) combines 央, meaning center, with 展, meaning to expand or unfold. The result feels balanced, developmental, and forward-looking."
+  },
+  {
+    "id": "gn_hironobu_8da9e8",
+    "vibe": ["gentle", "classic", "enduring"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "extend", "continuity", "tolerance", "legacy", "patience", "duration"],
+    "meaning_en": "Hironobu is a Japanese male name associated with broad patience and lasting continuity.",
+    "description_en": "Hironobu (寛延) combines 寛, meaning broad or tolerant, with 延, meaning to extend or continue. It feels patient, enduring, and rooted in long perspective."
+  },
+  {
+    "id": "gn_hironori_391679",
+    "vibe": ["balanced", "classic", "scholarly"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "canon", "order", "principle", "balance", "learning", "tradition"],
+    "meaning_en": "Hironori is a Japanese male name associated with centered order and principled learning.",
+    "description_en": "Hironori (央典) combines 央, meaning center, with 典, meaning canon, law, or standard. The name feels orderly, learned, and traditionally grounded."
+  },
+  {
+    "id": "gn_hironori_517fd2",
+    "vibe": ["strong", "formal", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "unify", "govern", "order", "integration", "authority", "stability"],
+    "meaning_en": "Hironori is a Japanese male name associated with centered order and unifying authority.",
+    "description_en": "Hironori (央統) combines 央, meaning center, with 統, meaning to govern or unify. It carries a stable, organized, and leadership-oriented tone."
+  },
+  {
+    "id": "gn_hironori_635680",
+    "vibe": ["strong", "expansive", "upright"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["expand", "constitution", "law", "principle", "reach", "order", "authority"],
+    "meaning_en": "Hironori is a Japanese male name associated with expanding order and principled authority.",
+    "description_en": "Hironori (拡憲) combines 拡, meaning to expand, with 憲, meaning constitution or law. It feels broad in ambition, structured, and firmly upright."
+  },
+  {
+    "id": "gn_hirofumi_6b7f46",
+    "vibe": ["scholarly", "cool", "classic"],
+    "element": ["sky", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["universe", "history", "record", "scale", "culture", "knowledge", "depth"],
+    "meaning_en": "Hirofumi is a Japanese male name associated with expansive depth and a literary sense of history.",
+    "description_en": "Hirofumi (宇史) combines 宇, suggesting vast space, with 史, meaning history or record. The name feels intellectual, spacious, and strongly literary."
+  },
+  {
+    "id": "gn_hirofumi_e3a68d",
+    "vibe": ["noble", "refined", "warm"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["praise", "chapter", "culture", "honor", "writing", "grace", "refinement"],
+    "meaning_en": "Hirofumi is a Japanese male name associated with praiseworthy culture and refined expression.",
+    "description_en": "Hirofumi (嘉章) combines 嘉, meaning praiseworthy or auspicious, with 章, meaning chapter, composition, or emblem. It feels cultured, distinguished, and elegantly written."
+  },
+  {
+    "id": "gn_hirofumi_c3d5ef",
+    "vibe": ["modern", "scholarly", "open"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["expand", "history", "record", "growth", "expression", "breadth", "culture"],
+    "meaning_en": "Hirofumi is a Japanese male name associated with expansive culture and a widening written record.",
+    "description_en": "Hirofumi (拡史) combines 拡, meaning to expand, with 史, meaning history or record. It feels forward-looking, articulate, and intellectually broad."
+  },
+  {
+    "id": "gn_hiromasa_110e90",
+    "vibe": ["strong", "balanced", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "protect", "correctness", "balance", "guardianship", "authority", "stability"],
+    "meaning_en": "Hiromasa is a Japanese male name associated with centered protection and upright strength.",
+    "description_en": "Hiromasa (央匡) combines 央, meaning center, with 匡, meaning to correct, support, or protect. The name feels stable, upright, and quietly authoritative."
+  },
+  {
+    "id": "gn_hiromasa_b72169",
+    "vibe": ["gentle", "upright", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "protect", "correctness", "tolerance", "guardianship", "integrity", "stability"],
+    "meaning_en": "Hiromasa is a Japanese male name associated with tolerant integrity and protective steadiness.",
+    "description_en": "Hiromasa (寛匡) combines 寛, meaning broad or tolerant, with 匡, meaning to protect or set right. It feels kind, firm, and morally grounded."
+  },
+  {
+    "id": "gn_hiromasa_2d7d76",
+    "vibe": ["strong", "classic", "commanding"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "commander", "leadership", "tolerance", "authority", "direction", "strength"],
+    "meaning_en": "Hiromasa is a Japanese male name associated with tolerant leadership and commanding strength.",
+    "description_en": "Hiromasa (寛将) combines 寛, meaning broad or tolerant, with 将, meaning commander or leader. The result feels disciplined, generous, and capable of guiding others."
+  },
+  {
+    "id": "gn_hiromichi_9c33a6",
+    "vibe": ["expansive", "energetic", "modern"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["expand", "fullness", "development", "growth", "reach", "vitality", "capacity"],
+    "meaning_en": "Hiromichi is a Japanese male name associated with expanding fullness and energetic development.",
+    "description_en": "Hiromichi (拡充) combines 拡, meaning to expand, with 充, meaning fullness or sufficiency. It feels energetic, growth-oriented, and rich in momentum."
+  },
+  {
+    "id": "gn_hiromichi_e6d2b9",
+    "vibe": ["gentle", "scholarly", "classic"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "instruction", "teaching", "tolerance", "guidance", "learning", "discipline"],
+    "meaning_en": "Hiromichi is a Japanese male name associated with tolerant guidance and cultivated instruction.",
+    "description_en": "Hiromichi (寛訓) combines 寛, meaning broad or tolerant, with 訓, meaning instruction or teaching. The name feels educated, measured, and gently authoritative."
+  },
+  {
+    "id": "gn_hiromichi_883517",
+    "vibe": ["gentle", "warm", "steady"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["broad-minded", "fullness", "tolerance", "abundance", "stability", "kindness", "calm"],
+    "meaning_en": "Hiromichi is a Japanese male name associated with broad-hearted fullness and steady warmth.",
+    "description_en": "Hiromichi (寛充) combines 寛, meaning broad or tolerant, with 充, meaning fullness or sufficiency. It feels generous, calm, and quietly abundant."
+  },
+  {
+    "id": "gn_hiromu_2a2c0d",
+    "vibe": ["gentle", "balanced", "warm"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "harmony", "friendship", "peace", "balance", "warmth", "companionship"],
+    "meaning_en": "Hiromu is a Japanese male name associated with centered harmony and peaceful companionship.",
+    "description_en": "Hiromu (央睦) combines 央, meaning center, with 睦, meaning harmony or close affection. The name feels friendly, balanced, and warmly cooperative."
+  },
+  {
+    "id": "gn_hiromu_7a8902",
+    "vibe": ["minimal", "bold", "expansive"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["expansion", "breadth", "reach", "growth", "openness", "scale", "energy"],
+    "meaning_en": "Hiromu is a Japanese male name associated with pure expansion and open-reaching growth.",
+    "description_en": "Hiromu (拡) uses a single character meaning expansion or widening. The name feels unusually bold, minimal, and large in scope."
+  },
+  {
+    "id": "gn_hiromu_5ab8f5",
+    "vibe": ["strong", "gentle", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["broad-minded", "martial", "strength", "tolerance", "discipline", "masculinity", "stability"],
+    "meaning_en": "Hiromu is a Japanese male name associated with tolerant strength and disciplined masculinity.",
+    "description_en": "Hiromu (寛武) combines 寛, meaning broad or tolerant, with 武, meaning martial strength. It feels kind yet firm, with a quietly disciplined core."
+  },
+  {
+    "id": "gn_hiroya_e6fcb1",
+    "vibe": ["open", "modern", "balanced"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "presence", "being", "balance", "openness", "scale", "clarity"],
+    "meaning_en": "Hiroya is a Japanese male name associated with centered presence and open balance.",
+    "description_en": "Hiroya (央哉) combines 央, meaning center, with 哉, a classical emphatic ending. The name feels open, balanced, and softly contemporary."
+  },
+  {
+    "id": "gn_hiroya_4d4040",
+    "vibe": ["minimal", "gentle", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "being", "presence", "balance", "identity", "stability", "simplicity"],
+    "meaning_en": "Hiroya is a Japanese male name associated with centered identity and calm personal presence.",
+    "description_en": "Hiroya (央也) combines 央, meaning center, with 也, a classical marker of being. It feels plain, balanced, and quietly traditional."
+  },
+  {
+    "id": "gn_hiroya_96f1d6",
+    "vibe": ["gentle", "flowing", "hopeful"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "extension", "openness", "balance", "continuity", "softness", "growth"],
+    "meaning_en": "Hiroya is a Japanese male name associated with centered openness and softly extending growth.",
+    "description_en": "Hiroya (央弥) combines 央, meaning center, with 弥, meaning more and more, or extending. The name feels gentle, open-ended, and lightly hopeful."
+  },
+  {
+    "id": "gn_hiroyasu_03ec84",
+    "vibe": ["serene", "vast", "steady"],
+    "element": ["sky", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["universe", "peace", "calm", "stability", "vastness", "safety", "endurance"],
+    "meaning_en": "Hiroyasu is a Japanese male name associated with vast calm and enduring peace.",
+    "description_en": "Hiroyasu (宇泰) combines 宇, suggesting vast space, with 泰, meaning peaceful or great calm. The result feels spacious, stable, and deeply composed."
+  },
+  {
+    "id": "gn_hiroyasu_72c68d",
+    "vibe": ["noble", "serene", "refined"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "respect", "courtesy", "balance", "calm", "grace", "discipline"],
+    "meaning_en": "Hiroyasu is a Japanese male name associated with centered courtesy and composed refinement.",
+    "description_en": "Hiroyasu (央恭) combines 央, meaning center, with 恭, meaning respectful or humble. It feels refined, steady, and classically dignified."
+  },
+  {
+    "id": "gn_hiroyasu_36790a",
+    "vibe": ["balanced", "serene", "bright"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "peace", "great calm", "balance", "stability", "openness", "ease"],
+    "meaning_en": "Hiroyasu is a Japanese male name associated with centered peace and calm stability.",
+    "description_en": "Hiroyasu (央泰) combines 央, meaning center, with 泰, meaning peace or great calm. The name feels well-balanced, easygoing, and stable."
+  },
+  {
+    "id": "gn_hiroyuki_3050b3",
+    "vibe": ["warm", "bright", "gentle"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["center", "happiness", "fortune", "balance", "warmth", "joy", "well-being"],
+    "meaning_en": "Hiroyuki is a Japanese male name associated with centered happiness and balanced good fortune.",
+    "description_en": "Hiroyuki (央幸) combines 央, meaning center, with 幸, meaning happiness or good fortune. It feels cheerful, stable, and warmly positive."
+  },
+  {
+    "id": "gn_hiroyuki_6a264b",
+    "vibe": ["active", "balanced", "clean"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["center", "journey", "movement", "going", "balance", "direction", "progress"],
+    "meaning_en": "Hiroyuki is a Japanese male name associated with centered movement and purposeful direction.",
+    "description_en": "Hiroyuki (央行) combines 央, meaning center, with 行, meaning to go or move forward. The name feels active, directed, and calmly purposeful."
+  },
+  {
+    "id": "gn_hiroyuki_f04e4f",
+    "vibe": ["minimal", "classic", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["center", "of", "relation", "balance", "connection", "classical tone", "presence"],
+    "meaning_en": "Hiroyuki is a Japanese male name associated with centered presence and a classical relational tone.",
+    "description_en": "Hiroyuki (央之) combines 央, meaning center, with 之, a classical connective character. It feels traditional, balanced, and quietly elegant."
+  },
+  {
+    "id": "gn_hiroyoshi_5ce24b",
+    "vibe": ["refined", "serious", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["garment", "righteousness", "decorum", "morality", "formality", "dignity", "principle"],
+    "meaning_en": "Hiroyoshi is a Japanese male name associated with formal dignity and principled righteousness.",
+    "description_en": "Hiroyoshi (衣義) combines 衣, meaning garment or attire, with 義, meaning righteousness or moral duty. The name feels formal, principled, and distinctly classical."
+  },
+  {
+    "id": "gn_hiroyoshi_22d4f6",
+    "vibe": ["mysterious", "gentle", "cool"],
+    "element": ["sky", "water"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["universe", "origin", "source", "depth", "calm", "flow", "openness"],
+    "meaning_en": "Hiroyoshi is a Japanese male name associated with expansive depth and a quietly flowing origin.",
+    "description_en": "Hiroyoshi (宇由) combines 宇, suggesting vast space, with 由, meaning origin or reason. It feels cool, slightly enigmatic, and reflective."
+  },
+  {
+    "id": "gn_hiroyoshi_95911c",
+    "vibe": ["expansive", "joyful", "bright"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["expand", "celebration", "joy", "growth", "auspiciousness", "success", "cheer"],
+    "meaning_en": "Hiroyoshi is a Japanese male name associated with expanding joy and celebratory good fortune.",
+    "description_en": "Hiroyoshi (拡慶) combines 拡, meaning to expand, with 慶, meaning joy or celebration. The result feels upbeat, favorable, and large in emotional scale."
+  },
+  {
+    "id": "gn_fumiya_2223be",
+    "vibe": ["refined", "warm", "poetic"],
+    "element": ["wood", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["fragrance", "cultivation", "presence", "elegance", "growth", "grace", "sensitivity"],
+    "meaning_en": "Fumiya is a Japanese male name associated with cultivated fragrance and graceful presence.",
+    "description_en": "Fumiya (郁哉) combines 郁, meaning fragrant, cultivated, or richly expressive, with 哉, a classical ending of presence. It feels elegant, warm, and softly poetic."
+  },
+  {
+    "id": "gn_fumiya_fa1f69",
+    "vibe": ["refined", "gentle", "classic"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["fragrance", "cultivation", "being", "elegance", "depth", "grace", "presence"],
+    "meaning_en": "Fumiya is a Japanese male name associated with cultivated elegance and graceful being.",
+    "description_en": "Fumiya (郁也) combines 郁, meaning cultivated fragrance or richness, with 也, a classical marker of being. The name feels composed, thoughtful, and elegant."
+  },
+  {
+    "id": "gn_fumiya_9258d3",
+    "vibe": ["poetic", "gentle", "flowing"],
+    "element": ["wood", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["fragrance", "extension", "growth", "cultivation", "softness", "continuity", "beauty"],
+    "meaning_en": "Fumiya is a Japanese male name associated with cultivated fragrance and softly extending beauty.",
+    "description_en": "Fumiya (郁弥) combines 郁, meaning cultivated fragrance or richness, with 弥, meaning increasingly or extending. It feels lyrical, gentle, and softly expansive."
+  },
+  {
+    "id": "gn_hokuto_07f5fc",
+    "vibe": ["cool", "strong", "celestial"],
+    "element": ["sky", "star"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["north", "big dipper", "guidance", "constellation", "direction", "clarity", "destiny"],
+    "meaning_en": "Hokuto is a Japanese male name associated with the northern stars, guidance, and destiny.",
+    "description_en": "Hokuto (北斗) combines 北, meaning north, with 斗, referring to the dipper constellation. The name feels celestial, directional, and strikingly cool."
+  },
+  {
+    "id": "gn_makoto_da175e",
+    "vibe": ["minimal", "upright", "pure"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["truth", "genuineness", "sincerity", "integrity", "purity", "honesty", "essence"],
+    "meaning_en": "Makoto is a Japanese male name associated with truth, sincerity, and pure integrity.",
+    "description_en": "Makoto (真) uses a single character meaning truth or genuineness. The name feels direct, pure, and deeply sincere."
+  },
+  {
+    "id": "gn_makoto_a4467d",
+    "vibe": ["refined", "pure", "poetic"],
+    "element": ["earth", "sound"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["truth", "zither", "music", "sincerity", "beauty", "artistry", "harmony"],
+    "meaning_en": "Makoto is a Japanese male name associated with truthful beauty and musical harmony.",
+    "description_en": "Makoto (真琴) combines 真, meaning truth, with 琴, meaning zither or koto. It feels refined, artistic, and quietly elegant."
+  },
+  {
+    "id": "gn_makoto_f47496",
+    "vibe": ["spiritual", "serious", "classic"],
+    "element": ["sound", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["truth", "word", "speech", "teaching", "sincerity", "philosophy", "depth"],
+    "meaning_en": "Makoto is a Japanese male name associated with true speech and serious spiritual depth.",
+    "description_en": "Makoto (真言) combines 真, meaning truth, with 言, meaning word or speech. The name feels thoughtful, doctrinal, and strongly rooted in meaning."
+  },
+  {
+    "id": "gn_masaki_0dd26a",
+    "vibe": ["bright", "balanced", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "clarity", "brightness", "fairness", "light", "balance", "openness"],
+    "meaning_en": "Masaki is a Japanese male name associated with fair openness and balanced brightness.",
+    "description_en": "Masaki (允昭) combines 允, meaning to allow or be fair, with 昭, meaning bright or clear. The name feels open, balanced, and quietly luminous."
+  },
+  {
+    "id": "gn_masaki_2ea2fa",
+    "vibe": ["gentle", "auspicious", "warm"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "omen", "blessing", "fairness", "fortune", "grace", "peace"],
+    "meaning_en": "Masaki is a Japanese male name associated with fair-minded blessing and auspicious peace.",
+    "description_en": "Masaki (允祥) combines 允, meaning fairness or allowance, with 祥, meaning auspicious sign or blessing. It feels favorable, gentle, and well-balanced."
+  },
+  {
+    "id": "gn_masaki_c7da74",
+    "vibe": ["refined", "bright", "balanced"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "chapter", "clarity", "culture", "fairness", "order", "grace"],
+    "meaning_en": "Masaki is a Japanese male name associated with fair refinement and cultured clarity.",
+    "description_en": "Masaki (允章) combines 允, meaning fair or proper, with 章, meaning composition, chapter, or emblem. It feels ordered, cultured, and clear-minded."
+  },
+  {
+    "id": "gn_masao_c23ccc",
+    "vibe": ["gentle", "vital", "balanced"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "life", "birth", "fairness", "growth", "vitality", "warmth"],
+    "meaning_en": "Masao is a Japanese male name associated with fair-minded vitality and living growth.",
+    "description_en": "Masao (允生) combines 允, meaning fairness or allowance, with 生, meaning life or birth. The name feels wholesome, balanced, and naturally alive."
+  },
+  {
+    "id": "gn_masao_687247",
+    "vibe": ["strong", "upright", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "heroism", "manliness", "fairness", "strength", "dignity", "presence"],
+    "meaning_en": "Masao is a Japanese male name associated with fair strength and dignified manly presence.",
+    "description_en": "Masao (允雄) combines 允, meaning fairness or integrity, with 雄, meaning heroism or masculine strength. It feels upright, capable, and traditional."
+  },
+  {
+    "id": "gn_masao_f16078",
+    "vibe": ["elegant", "balanced", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "center", "refinement", "grace", "balance", "beauty", "composure"],
+    "meaning_en": "Masao is a Japanese male name associated with elegant balance and centered refinement.",
+    "description_en": "Masao (雅央) combines 雅, meaning elegance or refinement, with 央, meaning center. The name feels poised, graceful, and quietly distinguished."
+  },
+  {
+    "id": "gn_masakazu_16fe28",
+    "vibe": ["refined", "balanced", "serene"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "harmony", "continuity", "peace", "balance", "order", "stability"],
+    "meaning_en": "Masakazu is a Japanese male name associated with preserving harmony and steady continuity.",
+    "description_en": "Masakazu (維和) combines 維, meaning to maintain or sustain, with 和, meaning harmony or peace. It feels orderly, balanced, and gently enduring."
+  },
+  {
+    "id": "gn_masakazu_539dac",
+    "vibe": ["gentle", "balanced", "clean"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "harmony", "fairness", "peace", "balance", "kindness", "cooperation"],
+    "meaning_en": "Masakazu is a Japanese male name associated with fair harmony and calm cooperation.",
+    "description_en": "Masakazu (允和) combines 允, meaning fair or proper, with 和, meaning harmony. The name feels kind, even-tempered, and easy to trust."
+  },
+  {
+    "id": "gn_masakazu_602596",
+    "vibe": ["joyful", "classic", "auspicious"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["celebration", "one", "blessing", "fortune", "singularity", "joy", "honor"],
+    "meaning_en": "Masakazu is a Japanese male name associated with singular blessing and celebratory good fortune.",
+    "description_en": "Masakazu (賀一) combines 賀, meaning congratulations or celebration, with 一, meaning one. It feels lucky, honored, and openly auspicious."
+  },
+  {
+    "id": "gn_masashi_8146aa",
+    "vibe": ["minimal", "serious", "upright"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "uphold", "continuity", "order", "stability", "discipline", "principle"],
+    "meaning_en": "Masashi is a Japanese male name associated with upholding order and steady principle.",
+    "description_en": "Masashi (維) uses a single character meaning to maintain, support, or uphold. The name feels disciplined, stable, and conceptually strong."
+  },
+  {
+    "id": "gn_masashi_595f39",
+    "vibe": ["scholarly", "steady", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "will", "resolve", "continuity", "principle", "discipline", "purpose"],
+    "meaning_en": "Masashi is a Japanese male name associated with sustained resolve and principled purpose.",
+    "description_en": "Masashi (維志) combines 維, meaning to sustain or uphold, with 志, meaning will or aspiration. It feels purposeful, steadfast, and quietly intellectual."
+  },
+  {
+    "id": "gn_masashi_33432e",
+    "vibe": ["classic", "serene", "literary"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "of", "continuity", "tradition", "connection", "stability", "elegance"],
+    "meaning_en": "Masashi is a Japanese male name associated with maintained continuity and classical elegance.",
+    "description_en": "Masashi (維之) combines 維, meaning to sustain, with 之, a classical connective character. The name feels old-style, steady, and elegantly traditional."
+  },
+  {
+    "id": "gn_masashige_9139f4",
+    "vibe": ["elegant", "weighty", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "weight", "importance", "dignity", "grace", "presence", "stability"],
+    "meaning_en": "Masashige is a Japanese male name associated with elegant dignity and weighty presence.",
+    "description_en": "Masashige (雅重) combines 雅, meaning elegance, with 重, meaning heavy or important. It feels dignified, substantial, and richly traditional."
+  },
+  {
+    "id": "gn_masashige_d87692",
+    "vibe": ["elegant", "prosperous", "refined"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "abundance", "flourishing", "grace", "complexity", "growth", "prestige"],
+    "meaning_en": "Masashige is a Japanese male name associated with elegant flourishing and prestigious abundance.",
+    "description_en": "Masashige (雅繁) combines 雅, meaning elegance, with 繁, meaning abundant or flourishing. The name feels rich, cultivated, and socially distinguished."
+  },
+  {
+    "id": "gn_masashige_a98585",
+    "vibe": ["elegant", "earthy", "warm"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "lush growth", "grace", "abundance", "nature", "prosperity", "vigor"],
+    "meaning_en": "Masashige is a Japanese male name associated with elegant abundance and lush vitality.",
+    "description_en": "Masashige (雅茂) combines 雅, meaning elegance, with 茂, meaning luxuriant growth. It feels graceful, fertile, and generously alive."
+  },
+  {
+    "id": "gn_masataka_28bc74",
+    "vibe": ["noble", "elevated", "bright"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "high", "nobility", "fairness", "elevation", "dignity", "grace"],
+    "meaning_en": "Masataka is a Japanese male name associated with fair nobility and elevated dignity.",
+    "description_en": "Masataka (允喬) combines 允, meaning fair or proper, with 喬, meaning lofty or exalted. The name feels elevated, graceful, and well-composed."
+  },
+  {
+    "id": "gn_masataka_c3f5c7",
+    "vibe": ["upright", "warm", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "filial piety", "respect", "fairness", "virtue", "discipline", "honor"],
+    "meaning_en": "Masataka is a Japanese male name associated with fair virtue and respectful honor.",
+    "description_en": "Masataka (允孝) combines 允, meaning proper or fair, with 孝, meaning filial devotion or respect. It feels ethical, steady, and classically honorable."
+  },
+  {
+    "id": "gn_masataka_92a41d",
+    "vibe": ["strong", "serene", "auspicious"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "prosperity", "fairness", "abundance", "growth", "stability", "fortune"],
+    "meaning_en": "Masataka is a Japanese male name associated with fair prosperity and stable abundance.",
+    "description_en": "Masataka (允隆) combines 允, meaning fair or proper, with 隆, meaning prosperity or fullness. It feels substantial, fortunate, and stable."
+  },
+  {
+    "id": "gn_masato_7f28fe",
+    "vibe": ["gentle", "balanced", "clean"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "person", "fairness", "humanity", "balance", "kindness", "presence"],
+    "meaning_en": "Masato is a Japanese male name associated with fair humanity and balanced personal presence.",
+    "description_en": "Masato (允人) combines 允, meaning fair or proper, with 人, meaning person. The name feels kind, even, and naturally approachable."
+  },
+  {
+    "id": "gn_masato_86d781",
+    "vibe": ["active", "modern", "balanced"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["allow", "dipper", "movement", "fairness", "drive", "direction", "energy"],
+    "meaning_en": "Masato is a Japanese male name associated with fair strength and active forward motion.",
+    "description_en": "Masato (允斗) combines 允, meaning fair or proper, with 斗, the dipper measure often used in names for active momentum. It feels modern, brisk, and balanced."
+  },
+  {
+    "id": "gn_masato_673131",
+    "vibe": ["quirky", "upright", "minimal"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["right side", "person", "direction", "humanity", "individuality", "clarity", "distinctiveness"],
+    "meaning_en": "Masato is a Japanese male name associated with directional clarity and a distinctive human presence.",
+    "description_en": "Masato (右人) combines 右, meaning right side, with 人, meaning person. It feels unusual, direct, and memorable because of its striking simplicity."
+  },
+  {
+    "id": "gn_masatoshi_4b0807",
+    "vibe": ["practical", "steady", "scholarly"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "benefit", "order", "advantage", "continuity", "competence", "stability"],
+    "meaning_en": "Masatoshi is a Japanese male name associated with sustained competence and practical advantage.",
+    "description_en": "Masatoshi (維利) combines 維, meaning to maintain, with 利, meaning benefit or practical skill. The name feels capable, orderly, and dependable."
+  },
+  {
+    "id": "gn_masatoshi_657917",
+    "vibe": ["warm", "auspicious", "gentle"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "longevity", "fairness", "celebration", "health", "well-being", "endurance"],
+    "meaning_en": "Masatoshi is a Japanese male name associated with fair longevity and gentle well-being.",
+    "description_en": "Masatoshi (允寿) combines 允, meaning proper or fair, with 寿, meaning longevity or celebration. It feels kind, healthy, and blessed with long life."
+  },
+  {
+    "id": "gn_masatoshi_3e1d2e",
+    "vibe": ["bright", "talented", "balanced"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "talent", "fairness", "excellence", "skill", "clarity", "promise"],
+    "meaning_en": "Masatoshi is a Japanese male name associated with fair excellence and bright natural talent.",
+    "description_en": "Masatoshi (允俊) combines 允, meaning fair or proper, with 俊, meaning talented or excellent. The name feels gifted, balanced, and full of promise."
+  },
+  {
+    "id": "gn_masatomo_56ae1d",
+    "vibe": ["gentle", "smart", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "knowledge", "friendship", "fairness", "understanding", "companionship", "wisdom"],
+    "meaning_en": "Masatomo is a Japanese male name associated with fair understanding and wise friendship.",
+    "description_en": "Masatomo (允知) combines 允, meaning fair or proper, with 知, meaning knowledge or understanding. It feels thoughtful, friendly, and quietly wise."
+  },
+  {
+    "id": "gn_masatomo_768f31",
+    "vibe": ["warm", "supportive", "classic"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["respond", "friend", "loyalty", "companionship", "support", "connection", "kindness"],
+    "meaning_en": "Masatomo is a Japanese male name associated with responsive loyalty and friendly support.",
+    "description_en": "Masatomo (応友) combines 応, meaning respond or answer, with 友, meaning friend. The name feels sociable, dependable, and warmly supportive."
+  },
+  {
+    "id": "gn_masatomo_0f5ff5",
+    "vibe": ["elegant", "unusual", "social"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["elegance", "group", "gathering", "refinement", "community", "presence", "rarity"],
+    "meaning_en": "Masatomo is a Japanese male name associated with elegant social presence and unusual distinction.",
+    "description_en": "Masatomo (雅群) combines 雅, meaning elegance, with 群, meaning group or gathering. It feels refined, distinctive, and socially vivid."
+  },
+  {
+    "id": "gn_masanao_9df710",
+    "vibe": ["elegant", "noble", "calm"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "esteem", "refinement", "dignity", "grace", "elevation", "composure"],
+    "meaning_en": "Masanao is a Japanese male name associated with elegant dignity and calm distinction.",
+    "description_en": "Masanao (雅尚) combines 雅, meaning elegance, with 尚, meaning esteem or noble refinement. It feels composed, cultivated, and high-minded."
+  },
+  {
+    "id": "gn_masanao_4eb45c",
+    "vibe": ["pure", "elegant", "serious"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "truth", "sincerity", "refinement", "integrity", "beauty", "depth"],
+    "meaning_en": "Masanao is a Japanese male name associated with elegant truth and refined sincerity.",
+    "description_en": "Masanao (雅真) combines 雅, meaning elegance, with 真, meaning truth. The name feels beautiful, sincere, and morally centered."
+  },
+  {
+    "id": "gn_masanao_c4c717",
+    "vibe": ["upright", "elegant", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "straightness", "integrity", "refinement", "honesty", "principle", "clarity"],
+    "meaning_en": "Masanao is a Japanese male name associated with elegant integrity and direct honesty.",
+    "description_en": "Masanao (雅直) combines 雅, meaning elegance, with 直, meaning straight or honest. It feels principled, refined, and quietly strong."
+  },
+  {
+    "id": "gn_masanobu_a0ca97",
+    "vibe": ["balanced", "trustworthy", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "trust", "fairness", "faith", "reliability", "integrity", "stability"],
+    "meaning_en": "Masanobu is a Japanese male name associated with fair trust and dependable integrity.",
+    "description_en": "Masanobu (允信) combines 允, meaning fair or proper, with 信, meaning trust or faith. The name feels reliable, balanced, and deeply steady."
+  },
+  {
+    "id": "gn_masanobu_cb0d0c",
+    "vibe": ["formal", "balanced", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "proclaim", "fairness", "guidance", "order", "clarity", "public voice"],
+    "meaning_en": "Masanobu is a Japanese male name associated with fair guidance and clear public expression.",
+    "description_en": "Masanobu (允宣) combines 允, meaning fair or proper, with 宣, meaning to proclaim or make clear. It feels orderly, articulate, and socially responsible."
+  },
+  {
+    "id": "gn_masanobu_dd5e0f",
+    "vibe": ["responsive", "trustworthy", "steady"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["respond", "trust", "faith", "reliability", "connection", "loyalty", "support"],
+    "meaning_en": "Masanobu is a Japanese male name associated with responsive faith and reliable support.",
+    "description_en": "Masanobu (応信) combines 応, meaning respond, with 信, meaning trust or faith. It feels loyal, communicative, and dependable."
+  },
+  {
+    "id": "gn_masanori_d8e870",
+    "vibe": ["distinctive", "formal", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["exceptional", "unify", "order", "governance", "authority", "individuality", "reach"],
+    "meaning_en": "Masanori is a Japanese male name associated with exceptional presence and unifying order.",
+    "description_en": "Masanori (逸統) combines 逸, meaning exceptional or outstanding, with 統, meaning to govern or unify. It feels unusual, commanding, and conceptually strong."
+  },
+  {
+    "id": "gn_masanori_9b65ab",
+    "vibe": ["balanced", "scholarly", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "chronicle", "order", "fairness", "record", "continuity", "principle"],
+    "meaning_en": "Masanori is a Japanese male name associated with fair order and a principled sense of continuity.",
+    "description_en": "Masanori (允紀) combines 允, meaning fair or proper, with 紀, meaning chronicle or order. It feels measured, historical, and well-structured."
+  },
+  {
+    "id": "gn_masanori_bc002a",
+    "vibe": ["upright", "classic", "measured"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "rule", "fairness", "law", "order", "discipline", "stability"],
+    "meaning_en": "Masanori is a Japanese male name associated with fair rule and measured discipline.",
+    "description_en": "Masanori (允則) combines 允, meaning fair or proper, with 則, meaning rule or standard. The name feels structured, principled, and firmly balanced."
+  },
+  {
+    "id": "gn_masaharu_b50d03",
+    "vibe": ["gentle", "warm", "serene"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "warmth", "gentleness", "fairness", "kindness", "calm", "comfort"],
+    "meaning_en": "Masaharu is a Japanese male name associated with fair warmth and gentle calm.",
+    "description_en": "Masaharu (允温) combines 允, meaning fair or proper, with 温, meaning warmth or gentleness. It feels kind, mild, and easy to be near."
+  },
+  {
+    "id": "gn_masaharu_05d430",
+    "vibe": ["bright", "gentle", "open"],
+    "element": ["light", "spring"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "clear weather", "fairness", "brightness", "springlike", "openness", "ease"],
+    "meaning_en": "Masaharu is a Japanese male name associated with fair brightness and clear, open weather.",
+    "description_en": "Masaharu (允晴) combines 允, meaning fair or proper, with 晴, meaning clear weather. The name feels bright, gentle, and seasonally uplifting."
+  },
+  {
+    "id": "gn_masaharu_552a55",
+    "vibe": ["elegant", "balanced", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "governance", "order", "refinement", "stability", "discipline", "grace"],
+    "meaning_en": "Masaharu is a Japanese male name associated with elegant order and refined steadiness.",
+    "description_en": "Masaharu (雅治) combines 雅, meaning elegance, with 治, meaning to govern or set in order. It feels composed, cultivated, and well-regulated."
+  },
+  {
+    "id": "gn_masahiko_317dad",
+    "vibe": ["formal", "classic", "upright"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "prince", "continuity", "masculinity", "tradition", "stability", "lineage"],
+    "meaning_en": "Masahiko is a Japanese male name associated with upheld tradition and dignified masculine lineage.",
+    "description_en": "Masahiko (維彦) combines 維, meaning to maintain or uphold, with 彦, a classical male title. It feels formal, stable, and rooted in continuity."
+  },
+  {
+    "id": "gn_masahiko_3c984d",
+    "vibe": ["balanced", "noble", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "prince", "fairness", "masculinity", "dignity", "poise", "honor"],
+    "meaning_en": "Masahiko is a Japanese male name associated with fair dignity and princely masculine poise.",
+    "description_en": "Masahiko (允彦) combines 允, meaning fair or proper, with 彦, a classical male suffix. The name feels poised, honorable, and deeply traditional."
+  },
+  {
+    "id": "gn_masahiko_f71dd6",
+    "vibe": ["elegant", "noble", "refined"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "prince", "grace", "masculinity", "beauty", "culture", "dignity"],
+    "meaning_en": "Masahiko is a Japanese male name associated with elegant masculine dignity and cultivated grace.",
+    "description_en": "Masahiko (雅彦) combines 雅, meaning elegance or refinement, with 彦, a classical male title. It feels noble, graceful, and beautifully traditional."
+  },
+  {
+    "id": "gn_masahide_1b29dd",
+    "vibe": ["aspirational", "bright", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["respond", "glory", "success", "recognition", "aspiration", "achievement", "brightness"],
+    "meaning_en": "Masahide is a Japanese male name associated with rising response and visible success.",
+    "description_en": "Masahide (応栄) combines 応, meaning to respond, with 栄, meaning glory or prosperity. The name feels aspirational, positive, and publicly bright."
+  },
+  {
+    "id": "gn_masahide_e0cf38",
+    "vibe": ["elegant", "majestic", "strong"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["elegance", "greatness", "distinction", "grace", "presence", "admiration", "strength"],
+    "meaning_en": "Masahide is a Japanese male name associated with elegant greatness and distinguished strength.",
+    "description_en": "Masahide (雅偉) combines 雅, meaning elegance, with 偉, meaning great or admirable. It feels stately, polished, and quietly commanding."
+  },
+  {
+    "id": "gn_masahide_dfbfe5",
+    "vibe": ["elegant", "bright", "classic"],
+    "element": ["light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "excellence", "heroism", "refinement", "talent", "clarity", "beauty"],
+    "meaning_en": "Masahide is a Japanese male name associated with elegant excellence and cultivated brilliance.",
+    "description_en": "Masahide (雅英) combines 雅, meaning elegance, with 英, meaning excellence or heroic talent. The name feels refined, capable, and luminously accomplished."
+  },
+  {
+    "id": "gn_masahito_89bc0b",
+    "vibe": ["formal", "protective", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["officer", "person", "responsibility", "humanity", "service", "structure", "presence"],
+    "meaning_en": "Masahito is a Japanese male name associated with dutiful presence and responsible humanity.",
+    "description_en": "Masahito (尉人) combines 尉, meaning officer or official rank, with 人, meaning person. It feels formal, responsible, and quietly authoritative."
+  },
+  {
+    "id": "gn_masahito_f586fc",
+    "vibe": ["elegant", "scholarly", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "history", "record", "culture", "humanity", "learning", "refinement"],
+    "meaning_en": "Masahito is a Japanese male name associated with elegant culture and historically grounded humanity.",
+    "description_en": "Masahito (雅史) combines 雅, meaning elegance, with 史, meaning history or record. It feels cultivated, literary, and deeply classical."
+  },
+  {
+    "id": "gn_masahito_05b5a9",
+    "vibe": ["elegant", "warm", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["elegance", "person", "humanity", "grace", "kindness", "refinement", "presence"],
+    "meaning_en": "Masahito is a Japanese male name associated with elegant humanity and refined personal grace.",
+    "description_en": "Masahito (雅人) combines 雅, meaning elegance, with 人, meaning person. The name feels cultured, kind, and naturally distinguished."
+  },
+  {
+    "id": "gn_masahiro_5fc3a9",
+    "vibe": ["steady", "expansive", "balanced"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["maintain", "vastness", "continuity", "breadth", "stability", "depth", "order"],
+    "meaning_en": "Masahiro is a Japanese male name associated with upheld breadth and stable depth.",
+    "description_en": "Masahiro (維浩) combines 維, meaning to sustain, with 浩, meaning vast or abundant. It feels broad, composed, and steadily far-reaching."
+  },
+  {
+    "id": "gn_masahiro_ba189f",
+    "vibe": ["gentle", "open", "classic"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "broad-minded", "fairness", "tolerance", "breadth", "stability", "generosity"],
+    "meaning_en": "Masahiro is a Japanese male name associated with fair breadth and tolerant generosity.",
+    "description_en": "Masahiro (允寛) combines 允, meaning fair or proper, with 寛, meaning broad or tolerant. The name feels spacious, kind, and quietly stable."
+  },
+  {
+    "id": "gn_masahiro_66891d",
+    "vibe": ["bright", "scholarly", "balanced"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "awaken", "clarity", "fairness", "guidance", "insight", "intellect"],
+    "meaning_en": "Masahiro is a Japanese male name associated with fair insight and awakened clarity.",
+    "description_en": "Masahiro (允啓) combines 允, meaning fair or proper, with 啓, meaning to open or enlighten. It feels intelligent, balanced, and mentally bright."
+  },
+  {
+    "id": "gn_masafumi_812ba3",
+    "vibe": ["elegant", "poetic", "warm"],
+    "element": ["wood", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "fragrance", "cultivation", "grace", "expression", "refinement", "beauty"],
+    "meaning_en": "Masafumi is a Japanese male name associated with elegant fragrance and cultivated expression.",
+    "description_en": "Masafumi (雅郁) combines 雅, meaning elegance, with 郁, meaning fragrant richness or cultivated depth. The name feels refined, expressive, and softly poetic."
+  },
+  {
+    "id": "gn_masafumi_098a24",
+    "vibe": ["elegant", "scholarly", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "history", "record", "culture", "writing", "refinement", "depth"],
+    "meaning_en": "Masafumi is a Japanese male name associated with elegant history and cultured expression.",
+    "description_en": "Masafumi (雅史) combines 雅, meaning elegance, with 史, meaning history or record. It feels literary, cultivated, and deeply traditional."
+  },
+  {
+    "id": "gn_masafumi_b8712c",
+    "vibe": ["elegant", "literary", "refined"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "writing", "culture", "refinement", "learning", "expression", "beauty"],
+    "meaning_en": "Masafumi is a Japanese male name associated with elegant writing and refined culture.",
+    "description_en": "Masafumi (雅文) combines 雅, meaning elegance, with 文, meaning writing, literature, or culture. The name feels polished, learned, and beautifully composed."
+  },
+  {
+    "id": "gn_masamichi_ce6d67",
+    "vibe": ["balanced", "upright", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "road", "path", "fairness", "direction", "principle", "journey"],
+    "meaning_en": "Masamichi is a Japanese male name associated with a fair path and principled direction.",
+    "description_en": "Masamichi (允道) combines 允, meaning fair or proper, with 道, meaning path or way. It feels upright, directional, and rooted in principle."
+  },
+  {
+    "id": "gn_masamichi_1d55c0",
+    "vibe": ["elegant", "warm", "steady"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "fullness", "refinement", "abundance", "stability", "kindness", "grace"],
+    "meaning_en": "Masamichi is a Japanese male name associated with elegant abundance and steady warmth.",
+    "description_en": "Masamichi (雅充) combines 雅, meaning elegance, with 充, meaning fullness or sufficiency. The name feels graceful, substantial, and well-rounded."
+  },
+  {
+    "id": "gn_masamichi_cfbfa1",
+    "vibe": ["elegant", "active", "capable"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "attainment", "reach", "refinement", "achievement", "movement", "success"],
+    "meaning_en": "Masamichi is a Japanese male name associated with elegant attainment and capable forward reach.",
+    "description_en": "Masamichi (雅達) combines 雅, meaning elegance, with 達, meaning to attain or reach. It feels cultured, competent, and effectively accomplished."
+  },
+  {
+    "id": "gn_masaya_3b0c3c",
+    "vibe": ["balanced", "gentle", "modern"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "presence", "being", "fairness", "balance", "openness", "clarity"],
+    "meaning_en": "Masaya is a Japanese male name associated with fair presence and balanced openness.",
+    "description_en": "Masaya (允哉) combines 允, meaning fair or proper, with 哉, a classical emphatic ending. It feels open, balanced, and pleasantly modern-traditional."
+  },
+  {
+    "id": "gn_masaya_042fd7",
+    "vibe": ["minimal", "gentle", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "being", "fairness", "presence", "stability", "identity", "simplicity"],
+    "meaning_en": "Masaya is a Japanese male name associated with fair being and simple, stable presence.",
+    "description_en": "Masaya (允也) combines 允, meaning fair or proper, with 也, a classical marker of being. It feels plain, calm, and grounded."
+  },
+  {
+    "id": "gn_masaya_c6366e",
+    "vibe": ["responsive", "gentle", "modern"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["respond", "being", "connection", "presence", "adaptability", "calm", "openness"],
+    "meaning_en": "Masaya is a Japanese male name associated with responsive presence and adaptable calm.",
+    "description_en": "Masaya (応也) combines 応, meaning to respond, with 也, a classical ending of being. The name feels flexible, open, and socially aware."
+  },
+  {
+    "id": "gn_masayasu_4624bf",
+    "vibe": ["serene", "supportive", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["respond", "peace", "calm", "support", "stability", "reliability", "harmony"],
+    "meaning_en": "Masayasu is a Japanese male name associated with responsive peace and reliable calm.",
+    "description_en": "Masayasu (応泰) combines 応, meaning to respond, with 泰, meaning peace or great calm. It feels dependable, stable, and easygoing."
+  },
+  {
+    "id": "gn_masayasu_241364",
+    "vibe": ["elegant", "gentle", "warm"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["elegance", "peace", "safety", "grace", "kindness", "calm", "comfort"],
+    "meaning_en": "Masayasu is a Japanese male name associated with elegant peace and gentle reassurance.",
+    "description_en": "Masayasu (雅安) combines 雅, meaning elegance, with 安, meaning peace or safety. The name feels graceful, tender, and quietly comforting."
+  },
+  {
+    "id": "gn_masayasu_92605a",
+    "vibe": ["elegant", "healthy", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["elegance", "health", "ease", "well-being", "refinement", "stability", "kindness"],
+    "meaning_en": "Masayasu is a Japanese male name associated with elegant well-being and stable ease.",
+    "description_en": "Masayasu (雅康) combines 雅, meaning elegance, with 康, meaning health or ease. It feels polished, wholesome, and warmly composed."
+  },
+  {
+    "id": "gn_masayuki_21cf52",
+    "vibe": ["minimal", "classic", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "of", "fairness", "connection", "presence", "tradition", "balance"],
+    "meaning_en": "Masayuki is a Japanese male name associated with fair presence and classical balance.",
+    "description_en": "Masayuki (允之) combines 允, meaning fair or proper, with 之, a classical connective character. It feels traditional, balanced, and understated."
+  },
+  {
+    "id": "gn_masayuki_eabd6b",
+    "vibe": ["responsive", "classic", "serene"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["respond", "of", "connection", "adaptability", "continuity", "calm", "presence"],
+    "meaning_en": "Masayuki is a Japanese male name associated with responsive continuity and calm presence.",
+    "description_en": "Masayuki (応之) combines 応, meaning to respond, with 之, a classical connective character. The name feels adaptable, traditional, and softly composed."
+  },
+  {
+    "id": "gn_masayuki_07a03f",
+    "vibe": ["elegant", "warm", "bright"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["elegance", "happiness", "fortune", "grace", "joy", "well-being", "kindness"],
+    "meaning_en": "Masayuki is a Japanese male name associated with elegant happiness and graceful good fortune.",
+    "description_en": "Masayuki (雅幸) combines 雅, meaning elegance, with 幸, meaning happiness or good fortune. It feels polished, cheerful, and warmly auspicious."
+  },
+  {
+    "id": "gn_masayoshi_ab7c17",
+    "vibe": ["elegant", "gentle", "bright"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["elegance", "excellent", "beauty", "refinement", "goodness", "grace", "worthiness"],
+    "meaning_en": "Masayoshi is a Japanese male name associated with elegant goodness and beautiful refinement.",
+    "description_en": "Masayoshi (雅佳) combines 雅, meaning elegance, with 佳, meaning excellent or beautiful. The result feels graceful, pleasant, and quietly distinguished."
+  },
+  {
+    "id": "gn_masayoshi_632908",
+    "vibe": ["elegant", "noble", "auspicious"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["elegance", "praise", "honor", "refinement", "auspiciousness", "grace", "esteem"],
+    "meaning_en": "Masayoshi is a Japanese male name associated with elegant honor and praiseworthy grace.",
+    "description_en": "Masayoshi (雅嘉) combines 雅, meaning elegance, with 嘉, meaning praiseworthy or auspicious. It feels noble, refined, and ceremonially warm."
+  },
+  {
+    "id": "gn_masayoshi_56ecd4",
+    "vibe": ["joyful", "elegant", "warm"],
+    "element": ["light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["elegance", "joy", "delight", "grace", "brightness", "warmth", "cheer"],
+    "meaning_en": "Masayoshi is a Japanese male name associated with elegant joy and bright delight.",
+    "description_en": "Masayoshi (雅喜) combines 雅, meaning elegance, with 喜, meaning joy. It feels cheerful, polished, and warmly likable."
+  },
+  {
+    "id": "gn_masaru_9d851d",
+    "vibe": ["majestic", "minimal", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["greatness", "distinction", "power", "admiration", "presence", "strength", "rarity"],
+    "meaning_en": "Masaru is a Japanese male name associated with greatness, distinction, and pure presence.",
+    "description_en": "Masaru (偉) uses a single character meaning great or admirable. The name feels concentrated, majestic, and quietly powerful."
+  },
+  {
+    "id": "gn_masaru_c5c207",
+    "vibe": ["bright", "talented", "clean"],
+    "element": ["light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["excellence", "heroism", "talent", "clarity", "promise", "brightness", "ability"],
+    "meaning_en": "Masaru is a Japanese male name associated with excellence, talent, and bright ability.",
+    "description_en": "Masaru (英) uses a single character meaning excellence, heroism, or distinguished talent. It feels bright, capable, and confidently simple."
+  },
+  {
+    "id": "gn_masaru_3ff696",
+    "vibe": ["protective", "upright", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["guard", "defend", "protection", "duty", "strength", "loyalty", "service"],
+    "meaning_en": "Masaru is a Japanese male name associated with protection, duty, and loyal strength.",
+    "description_en": "Masaru (衛) uses a single character meaning to guard or protect. The name feels responsible, steadfast, and deeply reliable."
+  },
+  {
+    "id": "gn_masuhiro_25af02",
+    "vibe": ["helpful", "bright", "open"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["benefit", "awaken", "support", "guidance", "growth", "clarity", "kindness"],
+    "meaning_en": "Masuhiro is a Japanese male name associated with beneficial guidance and bright growth.",
+    "description_en": "Masuhiro (益啓) combines 益, meaning benefit or increase, with 啓, meaning to open or enlighten. It feels helpful, bright, and positively developmental."
+  },
+  {
+    "id": "gn_masuhiro_83f4d0",
+    "vibe": ["prosperous", "open", "steady"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["benefit", "vastness", "increase", "breadth", "abundance", "growth", "stability"],
+    "meaning_en": "Masuhiro is a Japanese male name associated with beneficial abundance and broad steadiness.",
+    "description_en": "Masuhiro (益宏) combines 益, meaning benefit or increase, with 宏, meaning vast or spacious. The name feels generous, prosperous, and open-hearted."
+  },
+  {
+    "id": "gn_masuhiro_a2f39c",
+    "vibe": ["open", "positive", "strong"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["benefit", "broad", "increase", "openness", "growth", "reach", "confidence"],
+    "meaning_en": "Masuhiro is a Japanese male name associated with expanding benefit and confident openness.",
+    "description_en": "Masuhiro (益広) combines 益, meaning benefit or increase, with 広, meaning broad or wide. It feels optimistic, expansive, and steadily strong."
+  },
+  {
+    "id": "gn_manabu_a81d4e",
+    "vibe": ["scholarly", "clean", "minimal"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["study", "learning", "knowledge", "growth", "discipline", "intellect", "curiosity"],
+    "meaning_en": "Manabu is a Japanese male name associated with study, knowledge, and disciplined growth.",
+    "description_en": "Manabu (学) uses a single character meaning study or learning. The name feels direct, intelligent, and strongly education-oriented."
+  },
+  {
+    "id": "gn_manabu_f1616f",
+    "vibe": ["hardworking", "earnest", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["effort", "diligence", "study", "discipline", "persistence", "earnestness", "growth"],
+    "meaning_en": "Manabu is a Japanese male name associated with diligence, earnest effort, and steady learning.",
+    "description_en": "Manabu (勉) uses a single character meaning effort or diligence. It feels hardworking, sincere, and grounded in persistence."
+  },
+  {
+    "id": "gn_mahiro_c13c9b",
+    "vibe": ["pure", "open", "balanced"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["truth", "vastness", "breadth", "sincerity", "scale", "stability", "openness"],
+    "meaning_en": "Mahiro is a Japanese male name associated with true breadth and sincere openness.",
+    "description_en": "Mahiro (真宏) combines 真, meaning truth, with 宏, meaning vast or spacious. The name feels honest, open, and quietly grand."
+  },
+  {
+    "id": "gn_mahiro_2d17e1",
+    "vibe": ["pure", "bright", "open"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["truth", "broadness", "openness", "sincerity", "scale", "clarity", "reach"],
+    "meaning_en": "Mahiro is a Japanese male name associated with truthful openness and broad reach.",
+    "description_en": "Mahiro (真広) combines 真, meaning truth, with 広, meaning broad or wide. It feels straightforward, open, and spacious."
+  },
+  {
+    "id": "gn_mahiro_541cce",
+    "vibe": ["pure", "classic", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["truth", "vastness", "tradition", "sincerity", "grandeur", "depth", "stability"],
+    "meaning_en": "Mahiro is a Japanese male name associated with true grandeur and stable classical depth.",
+    "description_en": "Mahiro (真弘) combines 真, meaning truth, with 弘, meaning broad, vast, or expansive in a classical sense. It feels sincere, noble, and rooted in tradition."
+  },
+  {
+    "id": "gn_mamoru_8c2b1b",
+    "vibe": ["fresh", "gentle", "elegant"],
+    "element": ["wood", "spring"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["hollyhock", "growth", "purity", "nature", "renewal", "beauty", "calm"],
+    "meaning_en": "Mamoru is a Japanese male name associated with fresh growth and quietly elegant natural beauty.",
+    "description_en": "Mamoru (葵) uses the hollyhock character, often associated with fresh upright growth and refined natural beauty. The name feels clean, gentle, and distinctive."
+  },
+  {
+    "id": "gn_mamoru_3f2249",
+    "vibe": ["protective", "upright", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["guard", "protect", "duty", "loyalty", "responsibility", "strength", "service"],
+    "meaning_en": "Mamoru is a Japanese male name associated with protection, duty, and loyal strength.",
+    "description_en": "Mamoru (衛) uses a single character meaning to guard or protect. It feels reliable, dutiful, and firmly grounded in service."
+  },
+  {
+    "id": "gn_mamoru_a72010",
+    "vibe": ["earthy", "unusual", "strong"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["harvest", "gain", "effort", "reward", "abundance", "work", "result"],
+    "meaning_en": "Mamoru is a Japanese male name associated with harvest, earned reward, and grounded abundance.",
+    "description_en": "Mamoru (穫) uses a character meaning harvest or reaping. It feels unusual, earthy, and tied to effort bringing tangible results."
+  },
+  {
+    "id": "gn_manzou_9d4392",
+    "vibe": ["abundant", "classic", "earthy"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["ten thousand", "storehouse", "abundance", "wealth", "plenitude", "stability", "tradition"],
+    "meaning_en": "Manzou is a Japanese male name associated with abundant wealth and storehouse-like stability.",
+    "description_en": "Manzou (万蔵) combines 万, meaning ten thousand, with 蔵, meaning storehouse. The name feels prosperous, old-style, and materially grounded."
+  },
+  {
+    "id": "gn_mampei_168ab3",
+    "vibe": ["warm", "steady", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["ten thousand", "peace", "abundance", "stability", "calm", "plenitude", "ease"],
+    "meaning_en": "Mampei is a Japanese male name associated with abundant peace and stable calm.",
+    "description_en": "Mampei (万平) combines 万, meaning ten thousand, with 平, meaning peace or evenness. It feels settled, generous, and peacefully substantial."
+  },
+  {
+    "id": "gn_mikio_eeff01",
+    "vibe": ["expansive", "classic", "vital"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["sea", "chronicle", "man", "breadth", "history", "masculinity", "depth"],
+    "meaning_en": "Mikio is a Japanese male name associated with oceanic breadth and historically rooted masculine presence.",
+    "description_en": "Mikio (海紀男) combines 海, meaning sea, 紀, meaning chronicle or order, and 男, meaning man. It feels broad, serious, and richly traditional."
+  },
+  {
+    "id": "gn_mikio_106822",
+    "vibe": ["strong", "grounded", "classic"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["trunk", "tree", "man", "foundation", "growth", "stability", "masculinity"],
+    "meaning_en": "Mikio is a Japanese male name associated with rooted strength and tree-like masculine stability.",
+    "description_en": "Mikio (幹樹夫) combines 幹, meaning trunk or main support, 樹, meaning tree, and 夫, meaning man. It feels solid, earthy, and deeply grounded."
+  },
+  {
+    "id": "gn_mikio_cec467",
+    "vibe": ["strong", "vital", "minimal"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["trunk", "life", "growth", "foundation", "vitality", "stability", "core"],
+    "meaning_en": "Mikio is a Japanese male name associated with core strength and living rooted growth.",
+    "description_en": "Mikio (幹生) combines 幹, meaning trunk or core support, with 生, meaning life. The name feels sturdy, alive, and strongly centered."
+  },
+  {
+    "id": "gn_mikihiro_8e06e8",
+    "vibe": ["strong", "gentle", "balanced"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["trunk", "broad-minded", "foundation", "tolerance", "stability", "growth", "strength"],
+    "meaning_en": "Mikihiro is a Japanese male name associated with grounded strength and tolerant breadth.",
+    "description_en": "Mikihiro (幹寛) combines 幹, meaning trunk or main support, with 寛, meaning broad or tolerant. It feels stable, sturdy, and quietly generous."
+  },
+  {
+    "id": "gn_mikihiro_74ce79",
+    "vibe": ["strong", "bright", "scholarly"],
+    "element": ["wood", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["trunk", "awaken", "foundation", "clarity", "guidance", "growth", "insight"],
+    "meaning_en": "Mikihiro is a Japanese male name associated with grounded guidance and awakened clarity.",
+    "description_en": "Mikihiro (幹啓) combines 幹, meaning trunk or core support, with 啓, meaning to enlighten or open. The name feels stable, insightful, and mentally bright."
+  },
+  {
+    "id": "gn_mikihiro_706dbd",
+    "vibe": ["open", "strong", "steady"],
+    "element": ["wood", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["trunk", "vastness", "foundation", "breadth", "growth", "scale", "stability"],
+    "meaning_en": "Mikihiro is a Japanese male name associated with rooted stability and expansive breadth.",
+    "description_en": "Mikihiro (幹宏) combines 幹, meaning trunk or main support, with 宏, meaning vast or spacious. It feels grounded, expansive, and confidently steady."
+  },
+  {
+    "id": "gn_michiaki_aee146",
+    "vibe": ["upright", "bright", "classic"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["path", "manifest", "clarity", "direction", "reputation", "vision", "truth"],
+    "meaning_en": "Michiaki is a Japanese male name associated with a clear path and visibly manifest brightness.",
+    "description_en": "Michiaki (通顕) combines 通, meaning path or through, with 顕, meaning manifest or evident. The name feels clear, visible, and directed."
+  },
+  {
+    "id": "gn_michiaki_888e0e",
+    "vibe": ["bright", "refined", "celebratory"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["path", "brightness", "clarity", "direction", "radiance", "expression", "culture"],
+    "meaning_en": "Michiaki is a Japanese male name associated with a bright path and refined radiance.",
+    "description_en": "Michiaki (通彰) combines 通, meaning path or passage, with 彰, meaning bright or evident. It feels articulate, visible, and elegantly luminous."
+  },
+  {
+    "id": "gn_michiaki_9e8a7e",
+    "vibe": ["upright", "noble", "clear"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["way", "manifest", "truth", "direction", "clarity", "visibility", "principle"],
+    "meaning_en": "Michiaki is a Japanese male name associated with the true way made clear and visible.",
+    "description_en": "Michiaki (道顕) combines 道, meaning way or path, with 顕, meaning to appear clearly or be made manifest. It feels principled, visible, and noble."
+  },
+  {
+    "id": "gn_michio_d9157c",
+    "vibe": ["abundant", "warm", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["three thousand", "life", "abundance", "growth", "plenitude", "vitality", "scale"],
+    "meaning_en": "Michio is a Japanese male name associated with abundant life and large-hearted vitality.",
+    "description_en": "Michio (三千生) combines 三千, meaning three thousand, with 生, meaning life. The name feels abundant, energetic, and old-style in scale."
+  },
+  {
+    "id": "gn_michio_9d7224",
+    "vibe": ["strong", "classic", "abundant"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["three thousand", "man", "abundance", "masculinity", "presence", "scale", "tradition"],
+    "meaning_en": "Michio is a Japanese male name associated with abundant scale and strong masculine presence.",
+    "description_en": "Michio (三千男) combines 三千, meaning three thousand, with 男, meaning man. It feels large in scale, traditional, and firmly masculine."
+  },
+  {
+    "id": "gn_michio_21c786",
+    "vibe": ["steady", "classic", "warm"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["three thousand", "man", "support", "abundance", "household", "stability", "tradition"],
+    "meaning_en": "Michio is a Japanese male name associated with abundant steadiness and traditional masculine support.",
+    "description_en": "Michio (三千夫) combines 三千, meaning three thousand, with 夫, meaning man. The name feels enduring, substantial, and familiarly traditional."
+  },
+  {
+    "id": "gn_michitaka_7baded",
+    "vibe": ["warm", "upright", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["fullness", "respect", "growth", "virtue", "abundance", "discipline", "kindness"],
+    "meaning_en": "Michitaka is a Japanese male name associated with full-hearted virtue and respectful growth.",
+    "description_en": "Michitaka (充孝) combines 充, meaning fullness or sufficiency, with 孝, meaning filial respect. It feels wholesome, ethical, and steady."
+  },
+  {
+    "id": "gn_michitaka_e8c92c",
+    "vibe": ["elevated", "strong", "steady"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["fullness", "reverence", "height", "growth", "abundance", "nobility", "strength"],
+    "meaning_en": "Michitaka is a Japanese male name associated with abundant depth and elevated nobility.",
+    "description_en": "Michitaka (充崇) combines 充, meaning fullness, with 崇, meaning lofty or revered. The name feels substantial, elevated, and quietly powerful."
+  },
+  {
+    "id": "gn_michitaka_f50d80",
+    "vibe": ["prosperous", "strong", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["fullness", "prosperity", "abundance", "growth", "elevation", "success", "stability"],
+    "meaning_en": "Michitaka is a Japanese male name associated with abundant prosperity and rising fullness.",
+    "description_en": "Michitaka (充隆) combines 充, meaning fullness or sufficiency, with 隆, meaning prosperity or elevation. It feels rich, stable, and successful."
+  },
+  {
+    "id": "gn_mitsuaki_7301d1",
+    "vibe": ["bright", "noble", "clear"],
+    "element": ["light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["light", "manifest", "clarity", "radiance", "visibility", "honor", "truth"],
+    "meaning_en": "Mitsuaki is a Japanese male name associated with light made manifest and clearly visible.",
+    "description_en": "Mitsuaki (光顕) combines 光, meaning light, with 顕, meaning manifest or evident. The name feels bright, visible, and distinguished."
+  },
+  {
+    "id": "gn_mitsuaki_a96ed5",
+    "vibe": ["bright", "elegant", "serene"],
+    "element": ["light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "shine", "clarity", "radiance", "beauty", "presence", "brightness"],
+    "meaning_en": "Mitsuaki is a Japanese male name associated with shining light and elegant radiance.",
+    "description_en": "Mitsuaki (光晃) combines 光, meaning light, with 晃, meaning bright or shining. It feels luminous, polished, and gracefully clear."
+  },
+  {
+    "id": "gn_mitsuaki_ac9474",
+    "vibe": ["bright", "seasonal", "gentle"],
+    "element": ["light", "autumn"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "autumn", "clarity", "season", "radiance", "maturity", "beauty"],
+    "meaning_en": "Mitsuaki is a Japanese male name associated with radiant autumnal clarity and gentle maturity.",
+    "description_en": "Mitsuaki (光秋) combines 光, meaning light, with 秋, meaning autumn. The name feels luminous, seasonal, and calmly mature."
+  },
+  {
+    "id": "gn_mitsuharu_355b39",
+    "vibe": ["bright", "stable", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["light", "govern", "order", "clarity", "stability", "guidance", "discipline"],
+    "meaning_en": "Mitsuharu is a Japanese male name associated with guiding light and orderly stability.",
+    "description_en": "Mitsuharu (光治) combines 光, meaning light, with 治, meaning to govern or bring order. It feels clear, dependable, and composed."
+  },
+  {
+    "id": "gn_mitsuharu_d88b17",
+    "vibe": ["bright", "seasonal", "hopeful"],
+    "element": ["light", "spring"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "spring", "renewal", "warmth", "clarity", "youth", "growth"],
+    "meaning_en": "Mitsuharu is a Japanese male name associated with spring light and renewed hopeful growth.",
+    "description_en": "Mitsuharu (光春) combines 光, meaning light, with 春, meaning spring. The name feels bright, youthful, and warmly renewing."
+  },
+  {
+    "id": "gn_mitsuharu_4942a8",
+    "vibe": ["bright", "clean", "open"],
+    "element": ["light", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "clear weather", "clarity", "sunshine", "openness", "ease", "brightness"],
+    "meaning_en": "Mitsuharu is a Japanese male name associated with bright sunshine and clear open skies.",
+    "description_en": "Mitsuharu (光晴) combines 光, meaning light, with 晴, meaning clear weather. It feels cheerful, bright, and easy to love."
+  },
+  {
+    "id": "gn_mitsuhiro_01d4b6",
+    "vibe": ["balanced", "open", "steady"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "vastness", "fairness", "breadth", "openness", "stability", "scale"],
+    "meaning_en": "Mitsuhiro is a Japanese male name associated with fair breadth and open spaciousness.",
+    "description_en": "Mitsuhiro (允宏) combines 允, meaning fair or proper, with 宏, meaning vast or spacious. The name feels balanced, broad, and quietly confident."
+  },
+  {
+    "id": "gn_mitsuhiro_784f5d",
+    "vibe": ["balanced", "deep", "serene"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["allow", "vastness", "water", "fairness", "depth", "stability", "calm"],
+    "meaning_en": "Mitsuhiro is a Japanese male name associated with fair depth and calm spaciousness.",
+    "description_en": "Mitsuhiro (允浩) combines 允, meaning fair or proper, with 浩, meaning vast or abundant. It feels deep, composed, and expansively calm."
+  },
+  {
+    "id": "gn_mitsuhiro_a5aed5",
+    "vibe": ["gentle", "prosperous", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["allow", "abundance", "fairness", "prosperity", "generosity", "calm", "fullness"],
+    "meaning_en": "Mitsuhiro is a Japanese male name associated with fair abundance and composed generosity.",
+    "description_en": "Mitsuhiro (允裕) combines 允, meaning fair or proper, with 裕, meaning abundant or generous. The name feels prosperous, kind, and spacious."
+  },
+  {
+    "id": "gn_mitsumasa_454f4b",
+    "vibe": ["bright", "upright", "strong"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["radiance", "correctness", "clarity", "justice", "leadership", "strength", "honor"],
+    "meaning_en": "Mitsumasa is a Japanese male name associated with radiant clarity and upright correctness.",
+    "description_en": "Mitsumasa (輝正) combines 輝, meaning radiance, with 正, meaning correct or upright. It feels bright, honorable, and firmly grounded."
+  },
+  {
+    "id": "gn_mitsumasa_e4e0e5",
+    "vibe": ["elegant", "bright", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["light", "elegance", "clarity", "grace", "refinement", "beauty", "presence"],
+    "meaning_en": "Mitsumasa is a Japanese male name associated with graceful light and elegant presence.",
+    "description_en": "Mitsumasa (光雅) combines 光, meaning light, with 雅, meaning elegance. The name feels polished, luminous, and culturally refined."
+  },
+  {
+    "id": "gn_mitsumasa_b9104b",
+    "vibe": ["bright", "commanding", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["light", "commander", "clarity", "leadership", "authority", "direction", "strength"],
+    "meaning_en": "Mitsumasa is a Japanese male name associated with bright leadership and commanding clarity.",
+    "description_en": "Mitsumasa (光将) combines 光, meaning light, with 将, meaning commander or leader. It feels clear, capable, and naturally directive."
+  },
+  {
+    "id": "gn_mitsuya_3c077c",
+    "vibe": ["bright", "gentle", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "being", "presence", "clarity", "openness", "warmth", "balance"],
+    "meaning_en": "Mitsuya is a Japanese male name associated with bright presence and gentle openness.",
+    "description_en": "Mitsuya (光也) combines 光, meaning light, with 也, a classical marker of being. It feels warm, straightforward, and quietly luminous."
+  },
+  {
+    "id": "gn_mitsuya_26a804",
+    "vibe": ["bright", "flowing", "soft"],
+    "element": ["light", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "extension", "clarity", "growth", "continuity", "softness", "openness"],
+    "meaning_en": "Mitsuya is a Japanese male name associated with extending light and softly growing openness.",
+    "description_en": "Mitsuya (光弥) combines 光, meaning light, with 弥, meaning increasingly or extending. The name feels gentle, bright, and softly expansive."
+  },
+  {
+    "id": "gn_mitsuya_408988",
+    "vibe": ["minimal", "classic", "quirky"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["three", "extension", "growth", "continuity", "simplicity", "tradition", "individuality"],
+    "meaning_en": "Mitsuya is a Japanese male name associated with simple continuity and understated individuality.",
+    "description_en": "Mitsuya (三弥) combines 三, meaning three, with 弥, meaning increasingly or extending. It feels spare, old-style, and quietly distinctive."
+  },
+  {
+    "id": "gn_mitsuyasu_6d2bde",
+    "vibe": ["bright", "refined", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["light", "respect", "clarity", "courtesy", "peace", "grace", "balance"],
+    "meaning_en": "Mitsuyasu is a Japanese male name associated with bright courtesy and refined calm.",
+    "description_en": "Mitsuyasu (光恭) combines 光, meaning light, with 恭, meaning respectful or humble. The name feels luminous, graceful, and composed."
+  },
+  {
+    "id": "gn_mitsuyasu_56fdf9",
+    "vibe": ["bright", "healthy", "warm"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["light", "health", "ease", "clarity", "well-being", "kindness", "stability"],
+    "meaning_en": "Mitsuyasu is a Japanese male name associated with bright well-being and warm steadiness.",
+    "description_en": "Mitsuyasu (光康) combines 光, meaning light, with 康, meaning health or ease. It feels wholesome, clear, and warmly stable."
+  }
+]

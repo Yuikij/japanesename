@@ -73,7 +73,7 @@ names.post("/", async (c) => {
       household_count, estimated_population, national_rank,
       kanji_breakdown, alternative_readings, reading_romaji_variants, related_names,
       meaning_en, meaning_zh, description_en, description_zh, etymology_en,
-      famous_bearers, kamon_url, status, source
+      famous_bearers, kamon_url, kamon_prompt, status, source
     ) VALUES (
       ?, ?, ?, ?, ?, ?, ?,
       ?, ?, ?, ?, ?, ?,
@@ -81,7 +81,7 @@ names.post("/", async (c) => {
       ?, ?, ?,
       ?, ?, ?, ?,
       ?, ?, ?, ?, ?,
-      ?, ?, ?, ?
+      ?, ?, ?, ?, ?
     )`
   );
 
@@ -121,6 +121,7 @@ names.post("/", async (c) => {
       item.etymology_en ?? null,
       toJsonString(item.famous_bearers ?? []),
       item.kamon_url ?? null,
+      item.kamon_prompt ?? null,
       item.status ?? "raw",
       item.source ?? null
     );

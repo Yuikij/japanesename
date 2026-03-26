@@ -63,6 +63,7 @@ export interface NameRecord {
   etymology_en: string | null;
   famous_bearers: FamousBearerEntry[];
   kamon_url: string | null;
+  kamon_prompt: string | null;
   status: "raw" | "llm_enriched" | "reviewed" | "complete";
   source: string | null;
   created_at: string;
@@ -102,6 +103,7 @@ export interface NameInput {
   etymology_en?: string;
   famous_bearers?: FamousBearerEntry[];
   kamon_url?: string;
+  kamon_prompt?: string;
   status?: string;
   source?: string;
 }
@@ -146,7 +148,9 @@ export type FilterOp =
   | "gt"
   | "lt"
   | "starts_with"
-  | "contains";
+  | "contains"
+  | "is_empty"
+  | "is_null";
 
 export interface FilterCondition {
   field: string;

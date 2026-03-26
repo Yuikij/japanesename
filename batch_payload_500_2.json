@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "gn_eisuke_18b99a",
+    "vibe": ["cool", "gentle", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflection", "support", "clarity", "guidance", "presence", "reliability", "polish"],
+    "meaning_en": "Eisuke is a Japanese male name associated with reflected clarity and supportive reliability.",
+    "description_en": "Eisuke (映輔) combines 映, meaning reflected light, with 輔, meaning assistance or support. It feels polished, calm, and dependable."
+  },
+  {
+    "id": "gn_eisuke_bb6284",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["glory", "support", "prosperity", "guidance", "stability", "favor", "reliability"],
+    "meaning_en": "Eisuke is a Japanese male name associated with flourishing support and dependable strength.",
+    "description_en": "Eisuke (栄介) combines 栄, meaning flourishing, with 介, meaning to assist or support. The name feels favorable, supportive, and traditionally reliable."
+  },
+  {
+    "id": "gn_eita_8bafd4",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["light", "sun"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["glory", "greatness", "prosperity", "brightness", "strength", "growth", "success"],
+    "meaning_en": "Eita is a Japanese male name associated with flourishing greatness and bright strength.",
+    "description_en": "Eita (栄太) combines 栄, meaning flourishing or glory, with 太, meaning broad or great. It gives the name a bright, healthy, and strongly masculine feel."
+  },
+  {
+    "id": "gn_eita_8dda61",
+    "vibe": ["noble", "serene", "strong"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["eternity", "greatness", "continuity", "stability", "endurance", "scale", "presence"],
+    "meaning_en": "Eita is a Japanese male name associated with enduring greatness and lasting stability.",
+    "description_en": "Eita (永大) combines 永, meaning eternal, with 大, meaning great. The result feels large in scale, calm, and quietly enduring."
+  },
+  {
+    "id": "gn_eita_e3fbcf",
+    "vibe": ["elegant", "noble", "warm"],
+    "element": ["light", "star"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["crystal", "brilliance", "abundance", "beauty", "value", "radiance", "refinement"],
+    "meaning_en": "Eita is a Japanese male name associated with jewel-like brilliance and rich abundance.",
+    "description_en": "Eita (瑛多) combines 瑛, meaning crystal brightness, with 多, meaning abundance or many. It feels vivid, refined, and pleasantly full of life."
+  },
+  {
+    "id": "gn_eito_af039f",
+    "vibe": ["gentle", "cool", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["reflection", "person", "clarity", "presence", "humanity", "light", "calm"],
+    "meaning_en": "Eito is a Japanese male name associated with reflected clarity and humane presence.",
+    "description_en": "Eito (映人) combines 映, meaning reflected light, with 人, meaning person. The name feels clear, modern, and gently self-possessed."
+  },
+  {
+    "id": "gn_eito_492e0e",
+    "vibe": ["warm", "gentle", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["glory", "person", "humanity", "prosperity", "presence", "warmth", "growth"],
+    "meaning_en": "Eito is a Japanese male name associated with flourishing humanity and bright presence.",
+    "description_en": "Eito (栄人) combines 栄, meaning glory or flourishing, with 人, meaning person. It feels warm, positive, and very approachable."
+  },
+  {
+    "id": "gn_eito_4e8f3f",
+    "vibe": ["cool", "strong", "playful"],
+    "element": ["light", "sky"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["glory", "flight", "soaring", "freedom", "prosperity", "motion", "brightness"],
+    "meaning_en": "Eito is a Japanese male name associated with flourishing flight and a bright, soaring spirit.",
+    "description_en": "Eito (栄翔) combines 栄, meaning flourishing, with 翔, meaning to soar or fly. It gives the name a lively and upward-moving energy."
+  },
+  {
+    "id": "gn_etsushi_58f23c",
+    "vibe": ["warm", "serene", "gentle"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["joy", "leadership", "management", "cheer", "order", "warmth", "stability"],
+    "meaning_en": "Etsushi is a Japanese male name associated with joyful steadiness and calm responsibility.",
+    "description_en": "Etsushi (悦司) combines 悦, meaning delight or joy, with 司, meaning to manage or govern. It feels pleasant, composed, and reliably mature."
+  },
+  {
+    "id": "gn_etsushi_c5b42e",
+    "vibe": ["warm", "elegant", "serene"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["joy", "history", "culture", "cheer", "reflection", "warmth", "refinement"],
+    "meaning_en": "Etsushi is a Japanese male name associated with joyful culture and reflective warmth.",
+    "description_en": "Etsushi (悦史) combines 悦, meaning delight, with 史, meaning history. The name feels bright yet thoughtful, with a mild literary elegance."
+  },
+  {
+    "id": "gn_etsushi_1d9a47",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "gentleman", "goodwill", "cheer", "maturity", "dignity", "warmth"],
+    "meaning_en": "Etsushi is a Japanese male name associated with joyful goodwill and gentlemanly dignity.",
+    "description_en": "Etsushi (悦士) combines 悦, meaning delight, with 士, meaning gentleman or warrior. It gives the name warm good humor with a composed masculine backbone."
+  },
+  {
+    "id": "gn_etsuji_0845be",
+    "vibe": ["warm", "serene", "gentle"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["joy", "leadership", "management", "cheer", "order", "warmth", "stability"],
+    "meaning_en": "Etsuji is a Japanese male name associated with joyful steadiness and calm responsibility.",
+    "description_en": "Etsuji (悦司) uses the same kanji as Etsushi but with a different reading. It still feels composed, warm, and quietly dependable."
+  },
+  {
+    "id": "gn_etsuji_036e64",
+    "vibe": ["warm", "elegant", "serene"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["joy", "history", "culture", "cheer", "reflection", "warmth", "refinement"],
+    "meaning_en": "Etsuji is a Japanese male name associated with joyful culture and reflective warmth.",
+    "description_en": "Etsuji (悦史) combines 悦, meaning delight, with 史, meaning history. The result is bright, cultured, and gently thoughtful."
+  },
+  {
+    "id": "gn_etsuji_404620",
+    "vibe": ["noble", "serene", "warm"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "succession", "lineage", "goodwill", "continuity", "dignity", "family"],
+    "meaning_en": "Etsuji is a Japanese male name associated with joyful continuity and dignified succession.",
+    "description_en": "Etsuji (悦嗣) combines 悦, meaning joy, with 嗣, meaning heir or succession. It feels favorable, family-oriented, and formally dignified."
+  },
+  {
+    "id": "gn_osamu_de2ab6",
+    "vibe": ["mysterious", "playful", "edgy"],
+    "element": ["earth", "star"],
+    "use_case": ["fantasy", "anime"],
+    "kanji_meaning_tags": ["king", "support", "dream", "fantasy", "ambition", "symbolic", "dramatic"],
+    "meaning_en": "Osamu is a Japanese male name associated with kingly symbolism, support, and dreamlike fantasy.",
+    "description_en": "Osamu (王佐夢) is an unusual and highly stylized spelling, combining 王, king, 佐, support, and 夢, dream. It feels dramatic and much more fictional than everyday-name oriented."
+  },
+  {
+    "id": "gn_osamu_0b63e3",
+    "vibe": ["strong", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["completion", "wholeness", "stability", "perfection", "maturity", "strength", "finality"],
+    "meaning_en": "Osamu is a Japanese male name associated with completion, wholeness, and stable maturity.",
+    "description_en": "Osamu (完) uses a single kanji meaning complete or finished. It gives the name a solid, self-contained, and mature masculine tone."
+  },
+  {
+    "id": "gn_osamu_190418",
+    "vibe": ["elegant", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["chronicle", "record", "culture", "history", "order", "restraint", "refinement"],
+    "meaning_en": "Osamu is a Japanese male name associated with cultured order and thoughtful historical refinement.",
+    "description_en": "Osamu (紀) uses a single kanji meaning chronicle or record. It feels restrained, literary, and quietly intelligent."
+  },
+  {
+    "id": "gn_kaito_874db5",
+    "vibe": ["playful", "cool", "gentle"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["pleasant", "person", "speed", "cheer", "movement", "kindness", "energy"],
+    "meaning_en": "Kaito is a Japanese male name associated with cheerful quickness and an energetic human presence.",
+    "description_en": "Kaito (快人) combines 快, meaning pleasant or brisk, with 人, meaning person. It feels upbeat, easy to like, and naturally lively."
+  },
+  {
+    "id": "gn_kaito_f77f4d",
+    "vibe": ["playful", "cool", "strong"],
+    "element": ["wind", "star"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["pleasant", "dipper", "constellation", "speed", "clarity", "future", "energy"],
+    "meaning_en": "Kaito is a Japanese male name associated with brisk brightness and a lively star-linked image.",
+    "description_en": "Kaito (快斗) combines 快, meaning brisk or pleasant, with 斗, a kanji tied to the dipper constellation. It feels modern, energetic, and slightly celestial."
+  },
+  {
+    "id": "gn_kaito_d1d28d",
+    "vibe": ["strong", "noble", "cool"],
+    "element": ["earth", "thunder"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["vanguard", "person", "leadership", "presence", "strength", "prominence", "individuality"],
+    "meaning_en": "Kaito is a Japanese male name associated with standout presence and leader-like individuality.",
+    "description_en": "Kaito (魁人) combines 魁, meaning vanguard or standout, with 人, meaning person. The name feels distinctive, confident, and strongly characterful."
+  },
+  {
+    "id": "gn_kazuaki_87da46",
+    "vibe": ["gentle", "serene", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "tree", "growth", "stability", "nature", "rootedness", "clarity"],
+    "meaning_en": "Kazuaki is a Japanese male name associated with singular rooted growth and natural stability.",
+    "description_en": "Kazuaki (一亜樹) centers most strongly on 一, meaning one, and 樹, meaning tree. It feels grounded, growing, and quietly stable."
+  },
+  {
+    "id": "gn_kazuaki_df67ca",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "rising_sun", "dawn", "brightness", "energy", "clarity", "momentum"],
+    "meaning_en": "Kazuaki is a Japanese male name associated with singular focus and dawnlike brightness.",
+    "description_en": "Kazuaki (一旭) combines 一, meaning one, with 旭, meaning rising sun. It feels bright, direct, and full of clear forward energy."
+  },
+  {
+    "id": "gn_kazuaki_9a6177",
+    "vibe": ["elegant", "noble", "cool"],
+    "element": ["light", "star"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "crystal", "radiance", "clarity", "beauty", "refinement", "brightness"],
+    "meaning_en": "Kazuaki is a Japanese male name associated with singular brilliance and refined radiance.",
+    "description_en": "Kazuaki (一瑛) combines 一, meaning one, with 瑛, meaning crystal brightness. The name feels polished, luminous, and quietly distinguished."
+  },
+  {
+    "id": "gn_kazuo_716711",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "center", "balance", "stability", "calm", "simplicity", "composure"],
+    "meaning_en": "Kazuo is a Japanese male name associated with singular balance and centered composure.",
+    "description_en": "Kazuo (一央) combines 一, meaning one, with 央, meaning center. It feels balanced, quiet, and modestly steady."
+  },
+  {
+    "id": "gn_kazuo_ac78bd",
+    "vibe": ["cool", "serene", "edgy"],
+    "element": ["earth"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["one", "response", "answer", "reaction", "clarity", "presence", "individuality"],
+    "meaning_en": "Kazuo is a Japanese male name associated with singular response, alertness, and a slightly unusual individuality.",
+    "description_en": "Kazuo (一応) is an uncommon spelling using 応, meaning response or answer. It feels quirky and cerebral, more unusual than standard Kazuo forms."
+  },
+  {
+    "id": "gn_kazuo_81bbae",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "second", "succession", "simplicity", "restraint", "clarity", "tradition"],
+    "meaning_en": "Kazuo is a Japanese male name associated with singular simplicity and restrained traditional continuity.",
+    "description_en": "Kazuo (一乙) combines 一, meaning one, with 乙, a classical secondary marker. It feels concise, old-style, and unusually restrained."
+  },
+  {
+    "id": "gn_kazuki_0712dc",
+    "vibe": ["gentle", "elegant", "warm"],
+    "element": ["flower", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "hollyhock", "growth", "beauty", "nature", "grace", "freshness"],
+    "meaning_en": "Kazuki is a Japanese male name associated with singular growth and graceful plant-like freshness.",
+    "description_en": "Kazuki (一葵) combines 一, meaning one, with 葵, hollyhock. The name feels fresh, modern, and softly nature-oriented."
+  },
+  {
+    "id": "gn_kazuki_1ecfc7",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "rising_sun", "brightness", "clarity", "dawn", "energy", "hope"],
+    "meaning_en": "Kazuki is a Japanese male name associated with singular brightness and rising-sun energy.",
+    "description_en": "Kazuki (一旭) combines 一, meaning one, with 旭, rising sun. It feels bright, clean, and strongly optimistic."
+  },
+  {
+    "id": "gn_kazuki_602ccb",
+    "vibe": ["serene", "cool", "mysterious"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "shore", "rock", "coast", "stability", "nature", "depth"],
+    "meaning_en": "Kazuki is a Japanese male name associated with singular steadiness and rocky coastal depth.",
+    "description_en": "Kazuki (一磯) combines 一, meaning one, with 磯, meaning rocky shore. It gives the name a calm, natural, and grounded sturdiness."
+  },
+  {
+    "id": "gn_kazushi_3e85b3",
+    "vibe": ["cool", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "leadership", "governance", "order", "clarity", "responsibility", "balance"],
+    "meaning_en": "Kazushi is a Japanese male name associated with singular steadiness and responsible order.",
+    "description_en": "Kazushi (一司) combines 一, meaning one, with 司, meaning to govern or manage. The name feels balanced, dependable, and quietly responsible."
+  },
+  {
+    "id": "gn_kazushi_de3449",
+    "vibe": ["elegant", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "history", "culture", "record", "reflection", "intellect", "simplicity"],
+    "meaning_en": "Kazushi is a Japanese male name associated with singular clarity and thoughtful cultural depth.",
+    "description_en": "Kazushi (一史) combines 一, meaning one, with 史, meaning history. It feels measured, reflective, and slightly literary."
+  },
+  {
+    "id": "gn_kazushi_792b79",
+    "vibe": ["noble", "serene", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "succession", "lineage", "continuity", "stability", "tradition", "dignity"],
+    "meaning_en": "Kazushi is a Japanese male name associated with singular continuity and dignified succession.",
+    "description_en": "Kazushi (一嗣) combines 一, meaning one, with 嗣, meaning heir or succession. It has a classical, lineage-conscious dignity."
+  },
+  {
+    "id": "gn_kazushige_67f114",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "nourishment", "growth", "moisture", "continuity", "life", "stability"],
+    "meaning_en": "Kazushige is a Japanese male name associated with singular nourishment and steady growth.",
+    "description_en": "Kazushige (一滋) combines 一, meaning one, with 滋, meaning nourishment or luxuriant growth. It feels fertile, steady, and quietly life-giving."
+  },
+  {
+    "id": "gn_kazushige_4586d8",
+    "vibe": ["strong", "serene", "gentle"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "tree", "growth", "rootedness", "nature", "stability", "strength"],
+    "meaning_en": "Kazushige is a Japanese male name associated with singular rooted growth and natural strength.",
+    "description_en": "Kazushige (一樹) combines 一, meaning one, with 樹, meaning tree. The result is grounded, healthy, and reassuringly stable."
+  },
+  {
+    "id": "gn_kazushige_9c7d0d",
+    "vibe": ["serene", "noble", "elegant"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "weight", "importance", "dignity", "gravity", "substance", "stability"],
+    "meaning_en": "Kazushige is a Japanese male name associated with singular weight, substance, and dignity.",
+    "description_en": "Kazushige (一重) uses 重, meaning heavy or weighty. It gives the name a calm seriousness and a sense of substantial presence."
+  },
+  {
+    "id": "gn_kazutaka_7b0c03",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["light", "sun"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "glory", "flourishing", "brightness", "promise", "clarity", "favor"],
+    "meaning_en": "Kazutaka is a Japanese male name associated with singular flourishing and bright promise.",
+    "description_en": "Kazutaka (一栄) combines 一, meaning one, with 栄, meaning glory or flourishing. It feels favorable, stable, and comfortably traditional."
+  },
+  {
+    "id": "gn_kazutaka_21ea17",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "resolve", "fortitude", "discipline", "strength", "tenacity", "integrity"],
+    "meaning_en": "Kazutaka is a Japanese male name associated with singular resolve and disciplined strength.",
+    "description_en": "Kazutaka (一毅) combines 一, meaning one, with 毅, meaning steadfast or resolute. The name feels firm, disciplined, and morally steady."
+  },
+  {
+    "id": "gn_kazutaka_96982a",
+    "vibe": ["noble", "elegant", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "nobility", "value", "dignity", "refinement", "clarity", "presence"],
+    "meaning_en": "Kazutaka is a Japanese male name associated with singular nobility and refined value.",
+    "description_en": "Kazutaka (一貴) combines 一, meaning one, with 貴, meaning noble or precious. It gives the name a polished and respectable dignity."
+  },
+  {
+    "id": "gn_kazuto_906c8a",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "person", "humanity", "simplicity", "kindness", "presence", "balance"],
+    "meaning_en": "Kazuto is a Japanese male name associated with singular humanity and calm simplicity.",
+    "description_en": "Kazuto (一人) combines 一, meaning one, with 人, meaning person. It feels simple, humane, and modestly grounded."
+  },
+  {
+    "id": "gn_kazuto_8791c0",
+    "vibe": ["gentle", "warm", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "benevolence", "kindness", "humanity", "compassion", "softness", "integrity"],
+    "meaning_en": "Kazuto is a Japanese male name associated with singular benevolence and warm humanity.",
+    "description_en": "Kazuto (一仁) combines 一, meaning one, with 仁, meaning benevolence. It gives the name a kind, humane, and especially gentle moral tone."
+  },
+  {
+    "id": "gn_kazuto_1db318",
+    "vibe": ["serene", "cool", "elegant"],
+    "element": ["water", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "clarity", "purity", "transparency", "calm", "refinement", "stillness"],
+    "meaning_en": "Kazuto is a Japanese male name associated with singular clarity, purity, and calm refinement.",
+    "description_en": "Kazuto (一澄) combines 一, meaning one, with 澄, meaning clear or transparent. It gives the name a pure, composed, and very clean feeling."
+  },
+  {
+    "id": "gn_kazutoshi_96588f",
+    "vibe": ["noble", "serene", "gentle"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "respect", "courtesy", "dignity", "calm", "humility", "discipline"],
+    "meaning_en": "Kazutoshi is a Japanese male name associated with singular respect, courtesy, and calm dignity.",
+    "description_en": "Kazutoshi (一敬) combines 一, meaning one, with 敬, meaning respect. It feels well-mannered, composed, and quietly noble."
+  },
+  {
+    "id": "gn_kazutoshi_855db7",
+    "vibe": ["strong", "noble", "fierce"],
+    "element": ["earth", "thunder"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "greatness", "power", "boldness", "strength", "stature", "impact"],
+    "meaning_en": "Kazutoshi is a Japanese male name associated with singular power, boldness, and strong stature.",
+    "description_en": "Kazutoshi (一豪) combines 一, meaning one, with 豪, meaning great, powerful, or heroic. The name feels forceful, bold, and unmistakably masculine."
+  },
+  {
+    "id": "gn_kazutoshi_399fb5",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "longevity", "blessing", "stability", "favor", "tradition", "continuity"],
+    "meaning_en": "Kazutoshi is a Japanese male name associated with singular blessing and auspicious longevity.",
+    "description_en": "Kazutoshi (一寿) combines 一, meaning one, with 寿, meaning long life or celebration. It feels favorable, mature, and traditionally reassuring."
+  },
+  {
+    "id": "gn_kazutomo_66cf96",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "generosity", "breadth", "friendship", "calm", "kindness", "warmth"],
+    "meaning_en": "Kazutomo is a Japanese male name associated with singular generosity and warm companionship.",
+    "description_en": "Kazutomo (一寛) combines 一, meaning one, with 寛, meaning broad-minded or tolerant. It feels open-hearted, calm, and gently companionable."
+  },
+  {
+    "id": "gn_kazutomo_a6c4e6",
+    "vibe": ["noble", "serene", "cool"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "fairness", "public_mindedness", "balance", "dignity", "order", "stability"],
+    "meaning_en": "Kazutomo is a Japanese male name associated with singular fairness and public-minded balance.",
+    "description_en": "Kazutomo (一公) combines 一, meaning one, with 公, meaning fair or public. It has a composed, ethical, and quietly formal dignity."
+  },
+  {
+    "id": "gn_kazutomo_9eb19a",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "balance", "measure", "judgment", "equilibrium", "clarity", "standards"],
+    "meaning_en": "Kazutomo is a Japanese male name associated with singular balance, measure, and thoughtful judgment.",
+    "description_en": "Kazutomo (一衡) combines 一, meaning one, with 衡, meaning balance or measure. The name feels precise, orderly, and intellectually composed."
+  },
+  {
+    "id": "gn_kazunari_1c4b6b",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "achievement", "merit", "success", "ability", "drive", "accomplishment"],
+    "meaning_en": "Kazunari is a Japanese male name associated with singular merit, achievement, and ability.",
+    "description_en": "Kazunari (一功) combines 一, meaning one, with 功, meaning merit or achievement. It gives the name a practical, accomplished, and quietly capable tone."
+  },
+  {
+    "id": "gn_kazunari_9e2fbb",
+    "vibe": ["serene", "noble", "cool"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "completion", "settlement", "calm", "order", "clarity", "stability"],
+    "meaning_en": "Kazunari is a Japanese male name associated with singular completion, settlement, and calm order.",
+    "description_en": "Kazunari (一済) combines 一, meaning one, with 済, meaning to finish, settle, or complete. It feels settled, practical, and calmly self-contained."
+  },
+  {
+    "id": "gn_kazunari_ae91c8",
+    "vibe": ["serene", "noble", "gentle"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "completeness", "breadth", "harmony", "stability", "balance", "calm"],
+    "meaning_en": "Kazunari is a Japanese male name associated with singular completeness and balanced breadth.",
+    "description_en": "Kazunari (一周) combines 一, meaning one, with 周, meaning complete or encompassing. The name feels round, balanced, and quietly whole."
+  },
+  {
+    "id": "gn_kazunobu_9ea019",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "sincerity", "fairness", "trust", "integrity", "calm", "reliability"],
+    "meaning_en": "Kazunobu is a Japanese male name associated with singular sincerity and trustworthy steadiness.",
+    "description_en": "Kazunobu (一允) combines 一, meaning one, with 允, meaning fair or sincere. It feels balanced, ethical, and gently dependable."
+  },
+  {
+    "id": "gn_kazunobu_c2fe64",
+    "vibe": ["warm", "gentle", "noble"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "joy", "goodwill", "cheer", "kindness", "warmth", "favor"],
+    "meaning_en": "Kazunobu is a Japanese male name associated with singular joy, goodwill, and warmth.",
+    "description_en": "Kazunobu (一喜) combines 一, meaning one, with 喜, meaning joy. It gives the name a favorable, friendly, and emotionally bright tone."
+  },
+  {
+    "id": "gn_kazunobu_fd407d",
+    "vibe": ["elegant", "gentle", "noble"],
+    "element": ["wind", "flower"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "fragrance", "virtue", "refinement", "grace", "culture", "kindness"],
+    "meaning_en": "Kazunobu is a Japanese male name associated with singular fragrance-like virtue and refined grace.",
+    "description_en": "Kazunobu (一薫) combines 一, meaning one, with 薫, meaning fragrance or noble scent. The result feels cultivated, graceful, and gently distinguished."
+  },
+  {
+    "id": "gn_kazunori_a55c7a",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "celebration", "auspiciousness", "favor", "brightness", "promise", "good_fortune"],
+    "meaning_en": "Kazunori is a Japanese male name associated with singular auspiciousness and favorable promise.",
+    "description_en": "Kazunori (一賀) combines 一, meaning one, with 賀, meaning celebration. It feels positive, auspicious, and comfortably traditional."
+  },
+  {
+    "id": "gn_kazunori_c66e35",
+    "vibe": ["cool", "elegant", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "learning", "study", "knowledge", "intellect", "discipline", "clarity"],
+    "meaning_en": "Kazunori is a Japanese male name associated with singular learning and disciplined intelligence.",
+    "description_en": "Kazunori (一学) combines 一, meaning one, with 学, meaning learning. It gives the name a studious, clean, and intellectually grounded tone."
+  },
+  {
+    "id": "gn_kazunori_7c09e6",
+    "vibe": ["serene", "strong", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "foundation", "stability", "support", "groundedness", "clarity", "reliability"],
+    "meaning_en": "Kazunori is a Japanese male name associated with singular foundation and steady reliability.",
+    "description_en": "Kazunori (一基) combines 一, meaning one, with 基, meaning foundation. It feels grounded, stable, and quietly dependable."
+  },
+  {
+    "id": "gn_kazuhiko_fbc06d",
+    "vibe": ["noble", "serene", "elegant"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "classical", "refined_man", "tradition", "poise", "old_style", "dignity"],
+    "meaning_en": "Kazuhiko is a Japanese male name associated with singularity and classical refined-male dignity.",
+    "description_en": "Kazuhiko (一比古) uses a very old-style spelling, with 比古 functioning as a classical refined-male ending. It feels archaic, dignified, and distinctly traditional."
+  },
+  {
+    "id": "gn_kazuhiko_701024",
+    "vibe": ["noble", "elegant", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "refined_man", "talent", "dignity", "poise", "classical", "clarity"],
+    "meaning_en": "Kazuhiko is a Japanese male name associated with singular poise and refined masculine dignity.",
+    "description_en": "Kazuhiko (一彦) combines 一, meaning one, with 彦, a classical masculine kanji associated with an accomplished man. The result is polished and traditional."
+  },
+  {
+    "id": "gn_kazuhiko_b26a79",
+    "vibe": ["noble", "cool", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["member", "refined_man", "status", "stature", "dignity", "formality", "tradition"],
+    "meaning_en": "Kazuhiko is a Japanese male name associated with formal status and refined masculine dignity.",
+    "description_en": "Kazuhiko (員彦) combines 員, meaning member or personnel, with 彦, meaning refined man. It feels formal, unusual, and slightly status-conscious."
+  },
+  {
+    "id": "gn_kazuhisa_a3613b",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "longevity", "continuity", "stability", "restraint", "calm", "endurance"],
+    "meaning_en": "Kazuhisa is a Japanese male name associated with singular longevity and calm endurance.",
+    "description_en": "Kazuhisa (一久) combines 一, meaning one, with 久, meaning long-lasting. The name feels restrained, stable, and enduring in a very classic way."
+  },
+  {
+    "id": "gn_kazuhisa_c93a00",
+    "vibe": ["serene", "gentle", "elegant"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "paulownia", "nobility", "growth", "nature", "refinement", "calm"],
+    "meaning_en": "Kazuhisa is a Japanese male name associated with singular growth, calm refinement, and paulownia-like nobility.",
+    "description_en": "Kazuhisa (一桐) combines 一, meaning one, with 桐, the paulownia tree long associated with refinement and prestige. It feels natural, elegant, and quietly dignified."
+  },
+  {
+    "id": "gn_kazuhisa_635d84",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "longevity", "blessing", "continuity", "favor", "stability", "tradition"],
+    "meaning_en": "Kazuhisa is a Japanese male name associated with singular blessing and auspicious longevity.",
+    "description_en": "Kazuhisa (一寿) combines 一, meaning one, with 寿, meaning long life or celebration. It feels favorable, mature, and classically reassuring."
+  },
+  {
+    "id": "gn_kazuhito_847407",
+    "vibe": ["gentle", "cool", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "support", "assistance", "reliability", "humility", "service", "balance"],
+    "meaning_en": "Kazuhito is a Japanese male name associated with singular reliability and a supportive nature.",
+    "description_en": "Kazuhito (一介) combines 一, meaning one, with 介, meaning assistance or mediation. It feels modest, useful, and quietly dependable."
+  },
+  {
+    "id": "gn_kazuhito_e41682",
+    "vibe": ["elegant", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "history", "culture", "record", "reflection", "intellect", "clarity"],
+    "meaning_en": "Kazuhito is a Japanese male name associated with singular cultural depth and reflective clarity.",
+    "description_en": "Kazuhito (一史) combines 一, meaning one, with 史, meaning history. It gives the name a reflective, thoughtful, and quietly intellectual feel."
+  },
+  {
+    "id": "gn_kazuhito_3c44a7",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "person", "humanity", "simplicity", "presence", "kindness", "balance"],
+    "meaning_en": "Kazuhito is a Japanese male name associated with singular humanity and balanced simplicity.",
+    "description_en": "Kazuhito (一人) combines 一, meaning one, with 人, meaning person. The result is simple, humane, and calmly grounded."
+  },
+  {
+    "id": "gn_kazuhiro_c7e660",
+    "vibe": ["mysterious", "noble", "serene"],
+    "element": ["sky", "star"],
+    "use_case": ["real_person", "fantasy"],
+    "kanji_meaning_tags": ["one", "universe", "vastness", "space", "expanse", "clarity", "scale"],
+    "meaning_en": "Kazuhiro is a Japanese male name associated with singular vastness and cosmic breadth.",
+    "description_en": "Kazuhiro (一宇) combines 一, meaning one, with 宇, meaning the universe or cosmic space. It feels broad, slightly unusual, and quietly grand."
+  },
+  {
+    "id": "gn_kazuhiro_3cfe6e",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "center", "balance", "breadth", "calm", "stability", "poise"],
+    "meaning_en": "Kazuhiro is a Japanese male name associated with singular balance and broad centered calm.",
+    "description_en": "Kazuhiro (一央) combines 一, meaning one, with 央, meaning center. The name feels balanced, open, and quietly composed."
+  },
+  {
+    "id": "gn_kazuhiro_04b5ff",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "expansion", "breadth", "growth", "opening", "scale", "energy"],
+    "meaning_en": "Kazuhiro is a Japanese male name associated with singular expansion and broad outward growth.",
+    "description_en": "Kazuhiro (一拡) combines 一, meaning one, with 拡, meaning to expand. It gives the name an active, broadening, and forward-moving image."
+  },
+  {
+    "id": "gn_kazufumi_ac148a",
+    "vibe": ["elegant", "gentle", "noble"],
+    "element": ["flower", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "fragrance", "culture", "refinement", "grace", "expression", "virtue"],
+    "meaning_en": "Kazufumi is a Japanese male name associated with singular cultured grace and fragrant refinement.",
+    "description_en": "Kazufumi (一郁) combines 一, meaning one, with 郁, meaning rich fragrance or cultivated elegance. It feels artistic, mild, and refined."
+  },
+  {
+    "id": "gn_kazufumi_2fe453",
+    "vibe": ["elegant", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "history", "culture", "record", "reflection", "clarity", "intellect"],
+    "meaning_en": "Kazufumi is a Japanese male name associated with singular historical depth and cultured reflection.",
+    "description_en": "Kazufumi (一史) combines 一, meaning one, with 史, meaning history. It gives the name a measured, reflective, and slightly literary quality."
+  },
+  {
+    "id": "gn_kazufumi_9e3118",
+    "vibe": ["cool", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "model", "order", "culture", "clarity", "standards", "stability"],
+    "meaning_en": "Kazufumi is a Japanese male name associated with singular order, cultural refinement, and clear standards.",
+    "description_en": "Kazufumi (一典) combines 一, meaning one, with 典, meaning code, model, or order. The name feels orderly, thoughtful, and formally composed."
+  },
+  {
+    "id": "gn_kazuma_e71506",
+    "vibe": ["serene", "strong", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "truth", "sincerity", "integrity", "clarity", "stability", "focus"],
+    "meaning_en": "Kazuma is a Japanese male name associated with singular truth and stable sincerity.",
+    "description_en": "Kazuma (一真) combines 一, meaning one, with 真, meaning truth. It feels clear, straightforward, and morally grounded."
+  },
+  {
+    "id": "gn_kazuma_9ba32b",
+    "vibe": ["strong", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "sincerity", "truthfulness", "integrity", "earnestness", "stability", "honesty"],
+    "meaning_en": "Kazuma is a Japanese male name associated with singular sincerity and earnest integrity.",
+    "description_en": "Kazuma (一誠) combines 一, meaning one, with 誠, meaning sincerity. It gives the name a very honest, earnest, and dependable character."
+  },
+  {
+    "id": "gn_kazuma_e1d757",
+    "vibe": ["strong", "playful", "cool"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["one", "horse", "speed", "energy", "motion", "vitality", "strength"],
+    "meaning_en": "Kazuma is a Japanese male name associated with singular vitality, speed, and horse-like energy.",
+    "description_en": "Kazuma (一馬) combines 一, meaning one, with 馬, meaning horse. It feels active, lively, and strongly masculine in a spirited way."
+  },
+  {
+    "id": "gn_kazumasa_f6317a",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "fairness", "sincerity", "balance", "integrity", "calm", "dignity"],
+    "meaning_en": "Kazumasa is a Japanese male name associated with singular sincerity and balanced dignity.",
+    "description_en": "Kazumasa (一允) combines 一, meaning one, with 允, meaning fair or sincere. The result is calm, ethical, and respectfully composed."
+  },
+  {
+    "id": "gn_kazumasa_5714fc",
+    "vibe": ["elegant", "noble", "serene"],
+    "element": ["flower", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "elegance", "grace", "refinement", "clarity", "poise", "culture"],
+    "meaning_en": "Kazumasa is a Japanese male name associated with singular elegance and refined grace.",
+    "description_en": "Kazumasa (一雅) combines 一, meaning one, with 雅, meaning elegance. It feels polished, cultured, and quietly beautiful."
+  },
+  {
+    "id": "gn_kazumasa_12afcd",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "character", "standards", "structure", "judgment", "stability", "form"],
+    "meaning_en": "Kazumasa is a Japanese male name associated with singular character, standards, and structural steadiness.",
+    "description_en": "Kazumasa (一格) combines 一, meaning one, with 格, meaning standards or character. It gives the name a thoughtful, stable, and slightly formal quality."
+  },
+  {
+    "id": "gn_kazumichi_f2480a",
+    "vibe": ["cool", "elegant", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "learning", "path", "study", "direction", "intellect", "clarity"],
+    "meaning_en": "Kazumichi is a Japanese male name associated with singular learning and a clear path of study.",
+    "description_en": "Kazumichi (一学) combines 一, meaning one, with 学, meaning learning. The name feels studious, composed, and mentally clear."
+  },
+  {
+    "id": "gn_kazumichi_bc2cd1",
+    "vibe": ["serene", "cool", "elegant"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "path", "narrow_way", "clarity", "direction", "discipline", "focus"],
+    "meaning_en": "Kazumichi is a Japanese male name associated with singular direction, focus, and disciplined path-making.",
+    "description_en": "Kazumichi (一径) combines 一, meaning one, with 径, meaning path or route. It gives the name a neat, focused, and quietly disciplined image."
+  },
+  {
+    "id": "gn_kazumichi_dc92ad",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["earth", "sun"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["one", "celebration", "joy", "blessing", "favor", "brightness", "warmth"],
+    "meaning_en": "Kazumichi is a Japanese male name associated with singular joy and auspicious celebration.",
+    "description_en": "Kazumichi (一慶) combines 一, meaning one, with 慶, meaning joy or celebration. It feels favorable, bright, and gently uplifting."
+  },
+  {
+    "id": "gn_kazumitsu_e08aa5",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "fairness", "sincerity", "balance", "integrity", "calm", "clarity"],
+    "meaning_en": "Kazumitsu is a Japanese male name associated with singular sincerity and balanced clarity.",
+    "description_en": "Kazumitsu (一允) combines 一, meaning one, with 允, meaning fair or sincere. It feels ethically grounded, mild, and composed."
+  },
+  {
+    "id": "gn_kazumitsu_3cd398",
+    "vibe": ["serene", "elegant", "noble"],
+    "element": ["light", "sun"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "light", "radiance", "clarity", "brightness", "purity", "presence"],
+    "meaning_en": "Kazumitsu is a Japanese male name associated with singular light and clear radiance.",
+    "description_en": "Kazumitsu (一光) combines 一, meaning one, with 光, meaning light. The result is clean, bright, and quietly uplifting."
+  },
+  {
+    "id": "gn_kazumitsu_209358",
+    "vibe": ["warm", "gentle", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "fullness", "abundance", "completion", "kindness", "stability", "warmth"],
+    "meaning_en": "Kazumitsu is a Japanese male name associated with singular fullness, completion, and warm steadiness.",
+    "description_en": "Kazumitsu (一充) combines 一, meaning one, with 充, meaning fullness or sufficiency. It feels complete, grounded, and gently positive."
+  },
+  {
+    "id": "gn_kazuya_3d9cc9",
+    "vibe": ["noble", "strong", "serene"],
+    "element": ["wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "classical", "emphasis", "presence", "dignity", "masculinity", "tradition"],
+    "meaning_en": "Kazuya is a Japanese male name associated with singular presence and classical masculine dignity.",
+    "description_en": "Kazuya (一哉) combines 一, meaning one, with 哉, a classical emphatic ending. It feels old-style, firm, and distinctly masculine."
+  },
+  {
+    "id": "gn_kazuya_2b8ba0",
+    "vibe": ["strong", "cool", "minimal"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "eight", "expansion", "breadth", "openness", "good fortune", "simplicity"],
+    "meaning_en": "Kazuya is a Japanese male name associated with singular simplicity and broad, expanding fortune.",
+    "description_en": "Kazuya (一八) combines 一, meaning one, with 八, meaning eight, a number often linked with widening prosperity. The name feels plain, broad, and quietly lucky."
+  },
+  {
+    "id": "gn_kazuya_7b9a5a",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "being", "presence", "wholeness", "stability", "identity", "balance"],
+    "meaning_en": "Kazuya is a Japanese male name associated with singular wholeness and calm personal presence.",
+    "description_en": "Kazuya (一也) combines 一, meaning one, with 也, a classical marker of being. It gives the name a balanced, understated, and traditionally masculine feel."
+  },
+  {
+    "id": "gn_kazuyasu_d117a2",
+    "vibe": ["gentle", "serene", "warm"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "peace", "safety", "steadiness", "calm", "protection", "reliability"],
+    "meaning_en": "Kazuyasu is a Japanese male name associated with singular peace and dependable calm.",
+    "description_en": "Kazuyasu (一安) combines 一, meaning one, with 安, meaning peace or safety. The name feels stable, kind, and reassuringly grounded."
+  },
+  {
+    "id": "gn_kazuyasu_018c2d",
+    "vibe": ["noble", "serene", "refined"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "respect", "discipline", "courtesy", "balance", "grace", "self-command"],
+    "meaning_en": "Kazuyasu is a Japanese male name associated with singular dignity and respectful composure.",
+    "description_en": "Kazuyasu (一恭) combines 一, meaning one, with 恭, meaning respectful or humble. It carries a refined, disciplined, and courtly tone."
+  },
+  {
+    "id": "gn_kazuyasu_08b104",
+    "vibe": ["warm", "serene", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "health", "ease", "peace", "well-being", "stability", "kindness"],
+    "meaning_en": "Kazuyasu is a Japanese male name associated with singular well-being and peaceful steadiness.",
+    "description_en": "Kazuyasu (一康) combines 一, meaning one, with 康, meaning health and ease. The name feels wholesome, steady, and quietly strong."
+  },
+  {
+    "id": "gn_kazuyuki_e59507",
+    "vibe": ["poetic", "serene", "cool"],
+    "element": ["water", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["one", "journey", "movement", "passing", "direction", "distance", "flow"],
+    "meaning_en": "Kazuyuki is a Japanese male name associated with a singular journey and flowing movement forward.",
+    "description_en": "Kazuyuki (一往) combines 一, meaning one, with 往, meaning to go or proceed onward. It feels literary, directional, and quietly adventurous."
+  },
+  {
+    "id": "gn_kazuyuki_0cb20a",
+    "vibe": ["minimal", "cool", "scholarly"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "mediate", "assist", "entry", "modesty", "usefulness", "service"],
+    "meaning_en": "Kazuyuki is a Japanese male name associated with singular usefulness and modest supportive strength.",
+    "description_en": "Kazuyuki (一介) combines 一, meaning one, with 介, meaning to mediate, assist, or stand between. The name feels restrained, useful, and classically literate."
+  },
+  {
+    "id": "gn_kazuyuki_7264ff",
+    "vibe": ["noble", "strong", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "prosperity", "success", "continuity", "fortune", "stability", "growth"],
+    "meaning_en": "Kazuyuki is a Japanese male name associated with singular prosperity and steady success.",
+    "description_en": "Kazuyuki (一亨) combines 一, meaning one, with 亨, meaning success, prosperity, or smooth passage. It carries a composed and auspicious traditional tone."
+  },
+  {
+    "id": "gn_kazuyoshi_4f647f",
+    "vibe": ["gentle", "refined", "bright"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "excellent", "grace", "beauty", "worthiness", "harmony", "goodness"],
+    "meaning_en": "Kazuyoshi is a Japanese male name associated with singular excellence and graceful goodness.",
+    "description_en": "Kazuyoshi (一佳) combines 一, meaning one, with 佳, meaning excellent or beautiful. The result feels polished, pleasant, and gently distinguished."
+  },
+  {
+    "id": "gn_kazuyoshi_2cb911",
+    "vibe": ["noble", "warm", "refined"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "praise", "goodness", "honor", "worth", "celebration", "esteem"],
+    "meaning_en": "Kazuyoshi is a Japanese male name associated with singular goodness worthy of praise and honor.",
+    "description_en": "Kazuyoshi (一嘉) combines 一, meaning one, with 嘉, meaning excellent, praiseworthy, or auspicious. It feels honorable, warm, and ceremonially refined."
+  },
+  {
+    "id": "gn_kazuyoshi_cdf56e",
+    "vibe": ["festive", "noble", "warm"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "celebration", "joy", "auspiciousness", "blessing", "honor", "good fortune"],
+    "meaning_en": "Kazuyoshi is a Japanese male name associated with singular celebration and auspicious joy.",
+    "description_en": "Kazuyoshi (一賀) combines 一, meaning one, with 賀, meaning congratulations or celebration. The name feels auspicious, bright, and publicly honored."
+  },
+  {
+    "id": "gn_katsuaki_098b58",
+    "vibe": ["bright", "strong", "serene"],
+    "element": ["light", "sun"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "clarity", "brightness", "vision", "openness", "plainness", "hope"],
+    "meaning_en": "Katsuaki is a Japanese male name associated with singular clarity and bright openness.",
+    "description_en": "Katsuaki (一昭) combines 一, meaning one, with 昭, meaning bright, clear, or luminous. It feels straightforward, hopeful, and confidently bright."
+  },
+  {
+    "id": "gn_katsuaki_4310fe",
+    "vibe": ["strong", "energetic", "bright"],
+    "element": ["fire", "light"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["vitality", "life", "clarity", "brightness", "energy", "forward force", "presence"],
+    "meaning_en": "Katsuaki is a Japanese male name associated with living vitality and bright energetic force.",
+    "description_en": "Katsuaki (活明) combines 活, meaning lively or active, with 明, meaning bright or clear. The name feels spirited, active, and vividly positive."
+  },
+  {
+    "id": "gn_katsuaki_b7c231",
+    "vibe": ["cool", "minimal", "scholarly"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["moreover", "balance", "clarity", "reason", "plainness", "intellect", "composure"],
+    "meaning_en": "Katsuaki is a Japanese male name associated with measured balance and clear-minded composure.",
+    "description_en": "Katsuaki (且明) combines 且, a classical character suggesting moreover or balance, with 明, meaning bright or clear. It feels lean, thoughtful, and intellectually composed."
+  },
+  {
+    "id": "gn_katsushige_2f1ddc",
+    "vibe": ["strong", "earthy", "energetic"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["vitality", "growth", "abundance", "thickness", "life force", "prosperity", "endurance"],
+    "meaning_en": "Katsushige is a Japanese male name associated with living vigor, growth, and abundant strength.",
+    "description_en": "Katsushige (活茂) combines 活, meaning lively or active, with 茂, meaning lush growth or abundance. The result feels vigorous, fertile, and robust."
+  },
+  {
+    "id": "gn_katsushige_234254",
+    "vibe": ["poetic", "refined", "serene"],
+    "element": ["wind", "wood"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["moreover", "fragrance", "grace", "cultivation", "elegance", "memory", "depth"],
+    "meaning_en": "Katsushige is a Japanese male name associated with balanced refinement and lingering fragrance.",
+    "description_en": "Katsushige (且薫) combines 且, a classical balancing character, with 薫, meaning fragrance or cultivated grace. It feels literary, elegant, and softly memorable."
+  },
+  {
+    "id": "gn_katsushige_3db80d",
+    "vibe": ["noble", "strong", "classic"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["overcome", "victory", "prosperity", "honor", "success", "legacy", "strength"],
+    "meaning_en": "Katsushige is a Japanese male name associated with victorious strength and flourishing honor.",
+    "description_en": "Katsushige (克栄) combines 克, meaning to overcome or prevail, with 栄, meaning prosperity or glory. The name feels traditional, capable, and achievement-oriented."
+  },
+  {
+    "id": "gn_katsutoshi_0bad94",
+    "vibe": ["bright", "agile", "clean"],
+    "element": ["light", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "quickness", "wisdom", "sharpness", "clarity", "responsiveness", "talent"],
+    "meaning_en": "Katsutoshi is a Japanese male name associated with singular sharpness and quick intelligence.",
+    "description_en": "Katsutoshi (一敏) combines 一, meaning one, with 敏, meaning quick, sharp, or intelligent. It gives the name a brisk, capable, and clear-minded tone."
+  },
+  {
+    "id": "gn_katsutoshi_6afdd6",
+    "vibe": ["minimal", "cool", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "benefit", "advantage", "skill", "practicality", "success", "competence"],
+    "meaning_en": "Katsutoshi is a Japanese male name associated with singular practical skill and advantageous success.",
+    "description_en": "Katsutoshi (一利) combines 一, meaning one, with 利, meaning benefit, sharpness, or advantage. It feels efficient, practical, and quietly competent."
+  },
+  {
+    "id": "gn_katsutoshi_4d500c",
+    "vibe": ["warm", "classic", "refined"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["add", "harbor", "skill", "talent", "courtesy", "growth", "cultivation"],
+    "meaning_en": "Katsutoshi is a Japanese male name associated with cultivated talent and steadily added refinement.",
+    "description_en": "Katsutoshi (加津俊) uses 加, meaning to add, 津, suggesting harbor or crossing, and 俊, meaning talented or excellent. The name feels cultivated, capable, and classically polished."
+  },
+  {
+    "id": "gn_katsunobu_1589c5",
+    "vibe": ["noble", "serene", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "sincerity", "truth", "integrity", "steadfastness", "honor", "faithfulness"],
+    "meaning_en": "Katsunobu is a Japanese male name associated with singular sincerity and steadfast integrity.",
+    "description_en": "Katsunobu (一誠) combines 一, meaning one, with 誠, meaning sincerity or truth. It carries an upright, honorable, and deeply trustworthy tone."
+  },
+  {
+    "id": "gn_katsunobu_b81042",
+    "vibe": ["gentle", "serene", "refined"],
+    "element": ["water", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "ease", "openness", "flow", "calm", "clarity", "continuity"],
+    "meaning_en": "Katsunobu is a Japanese male name associated with singular openness and smooth, easy continuity.",
+    "description_en": "Katsunobu (一暢) combines 一, meaning one, with 暢, meaning smooth, open, or unblocked. The name feels relaxed, clear, and naturally flowing."
+  },
+  {
+    "id": "gn_katsunobu_3ef64b",
+    "vibe": ["strong", "modern", "confident"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["vitality", "extension", "growth", "action", "development", "reach", "energy"],
+    "meaning_en": "Katsunobu is a Japanese male name associated with living energy and confident outward growth.",
+    "description_en": "Katsunobu (活伸) combines 活, meaning lively or active, with 伸, meaning to extend or grow. It feels vigorous, progressive, and forward-moving."
+  },
+  {
+    "id": "gn_katsuhiko_29500c",
+    "vibe": ["refined", "gentle", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["excellent", "harbor", "prince", "grace", "dignity", "cultivation", "goodness"],
+    "meaning_en": "Katsuhiko is a Japanese male name associated with cultivated excellence and princely dignity.",
+    "description_en": "Katsuhiko (佳津彦) combines 佳, meaning excellent, 津, suggesting harbor or a meeting place, and 彦, a classical male suffix. The name feels polished, gentle, and noble."
+  },
+  {
+    "id": "gn_katsuhiko_818e5a",
+    "vibe": ["warm", "classic", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["increase", "harbor", "prince", "support", "dignity", "stability", "tradition"],
+    "meaning_en": "Katsuhiko is a Japanese male name associated with supportive growth and dignified masculine tradition.",
+    "description_en": "Katsuhiko (加津彦) combines 加, meaning to add, 津, suggesting a port or crossing, and 彦, a classical male title. It feels grounded, supportive, and traditionally noble."
+  },
+  {
+    "id": "gn_katsuhiko_9bf112",
+    "vibe": ["noble", "festive", "refined"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["praise", "harbor", "prince", "honor", "auspiciousness", "prestige", "grace"],
+    "meaning_en": "Katsuhiko is a Japanese male name associated with praised dignity and auspicious masculine grace.",
+    "description_en": "Katsuhiko (嘉津彦) combines 嘉, meaning praiseworthy or auspicious, 津, suggesting harbor, and 彦, a classical male suffix. The name feels ceremonial, noble, and well-regarded."
+  },
+  {
+    "id": "gn_katsuhisa_cf3926",
+    "vibe": ["warm", "strong", "joyful"],
+    "element": ["earth", "wood"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["vitality", "longevity", "life", "health", "abundance", "endurance", "celebration"],
+    "meaning_en": "Katsuhisa is a Japanese male name associated with lively vitality and long, healthy endurance.",
+    "description_en": "Katsuhisa (活寿) combines 活, meaning lively or active, with 寿, meaning longevity or celebration. It feels wholesome, energetic, and blessed with long life."
+  },
+  {
+    "id": "gn_katsuhisa_f15a43",
+    "vibe": ["minimal", "serene", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["moreover", "long time", "continuity", "endurance", "plainness", "restraint", "stability"],
+    "meaning_en": "Katsuhisa is a Japanese male name associated with measured restraint and enduring continuity.",
+    "description_en": "Katsuhisa (且久) combines 且, a classical balancing character, with 久, meaning long-lasting. The result feels spare, composed, and enduring."
+  },
+  {
+    "id": "gn_katsuhisa_cd98c9",
+    "vibe": ["strong", "noble", "steady"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["achievement", "merit", "long time", "legacy", "success", "endurance", "worth"],
+    "meaning_en": "Katsuhisa is a Japanese male name associated with meritorious achievement that lasts over time.",
+    "description_en": "Katsuhisa (功久) combines 功, meaning achievement or merit, with 久, meaning long duration. It carries a solid, accomplished, and enduring tone."
+  },
+  {
+    "id": "gn_katsuhiro_9632b1",
+    "vibe": ["strong", "open", "serene"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "vastness", "breadth", "capacity", "scale", "openness", "stability"],
+    "meaning_en": "Katsuhiro is a Japanese male name associated with singular breadth and spacious inner strength.",
+    "description_en": "Katsuhiro (一宏) combines 一, meaning one, with 宏, meaning vast or spacious. The name feels open-hearted, large in scale, and quietly powerful."
+  },
+  {
+    "id": "gn_katsuhiro_abeb17",
+    "vibe": ["bright", "strong", "open"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "broad", "expansion", "reach", "openness", "confidence", "clarity"],
+    "meaning_en": "Katsuhiro is a Japanese male name associated with singular breadth and expansive confidence.",
+    "description_en": "Katsuhiro (一広) combines 一, meaning one, with 広, meaning broad or wide. It feels open, straightforward, and generously expansive."
+  },
+  {
+    "id": "gn_katsuhiro_2f6edb",
+    "vibe": ["noble", "gentle", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "abundance", "generosity", "prosperity", "composure", "fullness", "grace"],
+    "meaning_en": "Katsuhiro is a Japanese male name associated with singular abundance and composed generosity.",
+    "description_en": "Katsuhiro (一裕) combines 一, meaning one, with 裕, meaning abundance or spacious grace. The result feels generous, calm, and well-favored."
+  },
+  {
+    "id": "gn_katsumasa_4e7c93",
+    "vibe": ["cool", "classic", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["moreover", "command", "leadership", "authority", "direction", "discipline", "presence"],
+    "meaning_en": "Katsumasa is a Japanese male name associated with balanced authority and commanding presence.",
+    "description_en": "Katsumasa (且将) combines 且, a classical balancing character, with 将, meaning commander or leader. It feels disciplined, martial, and traditionally authoritative."
+  },
+  {
+    "id": "gn_katsumasa_96b8ae",
+    "vibe": ["bright", "classic", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["moreover", "prosperity", "clarity", "flourishing", "continuity", "order", "stability"],
+    "meaning_en": "Katsumasa is a Japanese male name associated with balanced flourishing and orderly prosperity.",
+    "description_en": "Katsumasa (且昌) combines 且, a classical balancing character, with 昌, meaning bright prosperity. The name feels composed, well-ordered, and auspicious."
+  },
+  {
+    "id": "gn_katsumasa_32dcfe",
+    "vibe": ["strong", "noble", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["moreover", "governance", "order", "leadership", "authority", "stability", "responsibility"],
+    "meaning_en": "Katsumasa is a Japanese male name associated with balanced governance and responsible authority.",
+    "description_en": "Katsumasa (且政) combines 且, a classical balancing character, with 政, meaning governance or political order. It carries a sober, capable, and leadership-oriented tone."
+  },
+  {
+    "id": "gn_katsuya_298a51",
+    "vibe": ["sharp", "strong", "cool"],
+    "element": ["metal", "wind"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["one", "arrow", "directness", "focus", "speed", "precision", "resolve"],
+    "meaning_en": "Katsuya is a Japanese male name associated with singular focus and arrow-like directness.",
+    "description_en": "Katsuya (一矢) combines 一, meaning one, with 矢, meaning arrow. The name feels precise, fast, and strongly goal-directed."
+  },
+  {
+    "id": "gn_katsuya_3ca523",
+    "vibe": ["warm", "classic", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["add", "harbor", "being", "support", "presence", "stability", "tradition"],
+    "meaning_en": "Katsuya is a Japanese male name associated with supportive growth and steady personal presence.",
+    "description_en": "Katsuya (加津也) combines 加, meaning to add, 津, suggesting harbor or crossing, and 也, a classical marker of being. It feels grounded, traditional, and quietly dependable."
+  },
+  {
+    "id": "gn_katsuya_f9df95",
+    "vibe": ["bright", "warm", "seasonal"],
+    "element": ["fire", "water"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["summer", "harbor", "being", "brightness", "openness", "warmth", "presence"],
+    "meaning_en": "Katsuya is a Japanese male name associated with summery brightness and open, grounded presence.",
+    "description_en": "Katsuya (夏津也) combines 夏, meaning summer, 津, suggesting harbor or crossing, and 也, a classical ending. The name feels seasonal, open, and warmly approachable."
+  },
+  {
+    "id": "gn_kanta_6f8feb",
+    "vibe": ["sharp", "strong", "scholarly"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["discernment", "judgment", "greatness", "intellect", "solidity", "focus", "capacity"],
+    "meaning_en": "Kanta is a Japanese male name associated with discernment, intelligence, and solid masculine strength.",
+    "description_en": "Kanta (勘太) combines 勘, meaning intuition or discernment, with 太, a common masculine suffix meaning great or robust. It feels sharp-minded, solid, and traditionally strong."
+  },
+  {
+    "id": "gn_kanta_b0a8b1",
+    "vibe": ["warm", "open", "encouraging"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["encourage", "invite", "greatness", "openness", "warmth", "cheer", "positivity"],
+    "meaning_en": "Kanta is a Japanese male name associated with encouraging warmth and open-hearted strength.",
+    "description_en": "Kanta (勧太) combines 勧, meaning to encourage or invite, with 太, a broad masculine ending. The result feels positive, outgoing, and supportive."
+  },
+  {
+    "id": "gn_kanta_82e37d",
+    "vibe": ["gentle", "strong", "serene"],
+    "element": ["sky", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["broad-minded", "tolerance", "greatness", "calm", "breadth", "kindness", "stability"],
+    "meaning_en": "Kanta is a Japanese male name associated with broad tolerance and calm, generous strength.",
+    "description_en": "Kanta (寛太) combines 寛, meaning broad, tolerant, or at ease, with 太, a masculine suffix of largeness. It feels generous, relaxed, and reassuringly sturdy."
+  },
+  {
+    "id": "gn_kichi_f402d0",
+    "vibe": ["fresh", "elegant", "gentle"],
+    "element": ["wood", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hollyhock", "growth", "one", "freshness", "purity", "renewal", "singularity"],
+    "meaning_en": "Kichi is a Japanese male name associated with fresh growth and singular purity.",
+    "description_en": "Kichi (葵一) combines 葵, the hollyhock associated with freshness and upright growth, with 一, meaning one. The name feels clean, elegant, and quietly distinctive."
+  },
+  {
+    "id": "gn_kichi_4b83a8",
+    "vibe": ["noble", "warm", "refined"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["praise", "auspiciousness", "one", "honor", "goodness", "singularity", "esteem"],
+    "meaning_en": "Kichi is a Japanese male name associated with singular goodness worthy of praise.",
+    "description_en": "Kichi (嘉一) combines 嘉, meaning praiseworthy or auspicious, with 一, meaning one. It carries a polished, fortunate, and honorable tone."
+  },
+  {
+    "id": "gn_kichi_9a6a94",
+    "vibe": ["joyful", "bright", "warm"],
+    "element": ["light", "fire"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["joy", "delight", "one", "cheer", "positivity", "brightness", "warmth"],
+    "meaning_en": "Kichi is a Japanese male name associated with singular joy and brighthearted warmth.",
+    "description_en": "Kichi (喜一) combines 喜, meaning joy or delight, with 一, meaning one. The name feels cheerful, straightforward, and warmly positive."
+  },
+  {
+    "id": "gn_kitarou_a20e99",
+    "vibe": ["joyful", "classic", "literary"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["joy", "many", "brightness", "abundance", "cheer", "storybook tone", "warmth"],
+    "meaning_en": "Kitarou is a Japanese male name associated with abundant joy and bright classic charm.",
+    "description_en": "Kitarou (喜多朗) combines 喜, meaning joy, 多, meaning many, and 朗, meaning bright or clear. It has an old-fashioned, cheerful, and story-like warmth."
+  },
+  {
+    "id": "gn_kitarou_dda0af",
+    "vibe": ["joyful", "strong", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "greatness", "son", "brightness", "vitality", "tradition", "warmth"],
+    "meaning_en": "Kitarou is a Japanese male name associated with joyful vitality and classic masculine brightness.",
+    "description_en": "Kitarou (喜太郎) combines 喜, meaning joy, 太, a robust masculine element, and 郎, a classic male suffix. The result feels energetic, traditional, and warmly familiar."
+  },
+  {
+    "id": "gn_kitarou_dbaf92",
+    "vibe": ["gentle", "hopeful", "classic"],
+    "element": ["light", "sky"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "greatness", "son", "aspiration", "brightness", "tradition", "openness"],
+    "meaning_en": "Kitarou is a Japanese male name associated with hopeful aspiration and classic masculine brightness.",
+    "description_en": "Kitarou (希太郎) combines 希, meaning hope or aspiration, with 太郎, a strongly traditional male ending. It feels hopeful, open, and rooted in classic naming style."
+  },
+  {
+    "id": "gn_kippei_4e1855",
+    "vibe": ["bright", "clean", "balanced"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["radiance", "flatness", "peace", "clarity", "balance", "stability", "shine"],
+    "meaning_en": "Kippei is a Japanese male name associated with radiance, balance, and even-tempered peace.",
+    "description_en": "Kippei (輝平) combines 輝, meaning radiance, with 平, meaning flat, calm, or peaceful. The name feels bright, composed, and well-balanced."
+  },
+  {
+    "id": "gn_kippei_64f683",
+    "vibe": ["warm", "classic", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["good fortune", "peace", "luck", "balance", "stability", "kindness", "prosperity"],
+    "meaning_en": "Kippei is a Japanese male name associated with good fortune and peaceful stability.",
+    "description_en": "Kippei (吉平) combines 吉, meaning good luck or auspiciousness, with 平, meaning peace or balance. It feels old-style, fortunate, and calmly grounded."
+  },
+  {
+    "id": "gn_kimiaki_599902",
+    "vibe": ["elegant", "noble", "bright"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["precious", "beauty", "clarity", "honor", "brightness", "refinement", "esteem"],
+    "meaning_en": "Kimiaki is a Japanese male name associated with precious beauty and honored clarity.",
+    "description_en": "Kimiaki (貴美昭) combines 貴, meaning precious or noble, 美, meaning beauty, and 昭, meaning bright or clear. The name feels elegant, esteemed, and luminously refined."
+  },
+  {
+    "id": "gn_kimiaki_2690fe",
+    "vibe": ["noble", "bright", "serene"],
+    "element": ["light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["lord", "brightness", "honor", "clarity", "presence", "dignity", "light"],
+    "meaning_en": "Kimiaki is a Japanese male name associated with noble presence and bright clarity.",
+    "description_en": "Kimiaki (君晃) combines 君, meaning lord or respected person, with 晃, meaning bright or shining. It gives the name a dignified, luminous, and composed tone."
+  },
+  {
+    "id": "gn_kimiaki_2b218a",
+    "vibe": ["noble", "clean", "bright"],
+    "element": ["light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["lord", "clarity", "light", "honor", "frankness", "intellect", "dignity"],
+    "meaning_en": "Kimiaki is a Japanese male name associated with noble clarity and straightforward brightness.",
+    "description_en": "Kimiaki (君明) combines 君, meaning lord or respected person, with 明, meaning bright or clear. The result feels dignified, intelligent, and plainly luminous."
+  },
+  {
+    "id": "gn_kimio_b739ca",
+    "vibe": ["majestic", "strong", "classic"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["king", "man", "authority", "leadership", "masculinity", "presence", "power"],
+    "meaning_en": "Kimio is a Japanese male name associated with kingly presence and strong masculine authority.",
+    "description_en": "Kimio (王夫) combines 王, meaning king, with 夫, meaning man or husband. The name feels bold, old-fashioned, and powerfully masculine."
+  },
+  {
+    "id": "gn_kimio_9782d1",
+    "vibe": ["joyful", "strong", "warm"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "three", "man", "cheer", "abundance", "masculinity", "vitality"],
+    "meaning_en": "Kimio is a Japanese male name associated with joyful abundance and lively masculine warmth.",
+    "description_en": "Kimio (喜三男) combines 喜, meaning joy, 三, meaning three, and 男, meaning man. It feels cheerful, robust, and distinctly traditional."
+  },
+  {
+    "id": "gn_kimio_aa08e7",
+    "vibe": ["warm", "classic", "steady"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "three", "man", "support", "household", "stability", "warmth"],
+    "meaning_en": "Kimio is a Japanese male name associated with joyful stability and dependable masculine support.",
+    "description_en": "Kimio (喜三夫) combines 喜, meaning joy, 三, meaning three, and 夫, meaning man. The result feels family-oriented, sturdy, and warmly traditional."
+  },
+  {
+    "id": "gn_kiminobu_e1d980",
+    "vibe": ["noble", "classic", "steady"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["public", "extension", "continuity", "reputation", "legacy", "order", "stability"],
+    "meaning_en": "Kiminobu is a Japanese male name associated with public dignity and an enduring legacy.",
+    "description_en": "Kiminobu (公延) combines 公, meaning public or fair-minded, with 延, meaning to extend or prolong. It feels civic-minded, steady, and lasting."
+  },
+  {
+    "id": "gn_kiminobu_27a79c",
+    "vibe": ["strong", "open", "balanced"],
+    "element": ["wood", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["public", "growth", "extension", "development", "fairness", "reach", "stability"],
+    "meaning_en": "Kiminobu is a Japanese male name associated with fair-minded growth and steady extension outward.",
+    "description_en": "Kiminobu (公伸) combines 公, meaning public or impartial, with 伸, meaning to stretch or grow. The name feels upright, capable, and quietly expansive."
+  },
+  {
+    "id": "gn_kiminobu_2ff6e6",
+    "vibe": ["noble", "trustworthy", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["public", "trust", "faith", "integrity", "fairness", "reliability", "honor"],
+    "meaning_en": "Kiminobu is a Japanese male name associated with public trust and honorable reliability.",
+    "description_en": "Kiminobu (公信) combines 公, meaning public or fair, with 信, meaning trust or faith. It carries an upright, dependable, and honorable tone."
+  },
+  {
+    "id": "gn_kimiharu_a3fad2",
+    "vibe": ["noble", "calm", "balanced"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["lord", "govern", "order", "leadership", "discipline", "responsibility", "dignity"],
+    "meaning_en": "Kimiharu is a Japanese male name associated with noble order and responsible leadership.",
+    "description_en": "Kimiharu (君治) combines 君, meaning lord or respected person, with 治, meaning to govern or bring order. The name feels disciplined, responsible, and dignified."
+  },
+  {
+    "id": "gn_kimiharu_9b19f5",
+    "vibe": ["gentle", "seasonal", "noble"],
+    "element": ["wood", "spring"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["lord", "spring", "renewal", "warmth", "youth", "elegance", "hope"],
+    "meaning_en": "Kimiharu is a Japanese male name associated with noble springtime renewal and gentle hope.",
+    "description_en": "Kimiharu (君春) combines 君, meaning lord or respected person, with 春, meaning spring. It feels elegant, youthful, and softly optimistic."
+  },
+  {
+    "id": "gn_kimiharu_c43e5f",
+    "vibe": ["classic", "serene", "upright"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["public", "govern", "order", "fairness", "stability", "civic duty", "responsibility"],
+    "meaning_en": "Kimiharu is a Japanese male name associated with fair governance and stable public responsibility.",
+    "description_en": "Kimiharu (公治) combines 公, meaning public or fair, with 治, meaning to govern or put in order. The name feels principled, stable, and civic-minded."
+  },
+  {
+    "id": "gn_kyouta_3a1f3e",
+    "vibe": ["fresh", "warm", "bright"],
+    "element": ["wood", "spring"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["apricot", "greatness", "sweetness", "spring", "growth", "vitality", "warmth"],
+    "meaning_en": "Kyouta is a Japanese male name associated with springlike sweetness and lively masculine growth.",
+    "description_en": "Kyouta (杏太) combines 杏, meaning apricot, with 太, a broad masculine ending. It feels fresh, bright, and softly warm with a youthful seasonal charm."
+  },
+  {
+    "id": "gn_kyouta_8d551c",
+    "vibe": ["bold", "energetic", "strong"],
+    "element": ["wind", "sky"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["raise", "lift", "greatness", "motion", "energy", "ambition", "force"],
+    "meaning_en": "Kyouta is a Japanese male name associated with rising force and energetic ambition.",
+    "description_en": "Kyouta (挙大) combines 挙, meaning to raise or lift up, with 大, meaning great. The name feels active, upward-driving, and boldly expansive."
+  },
+  {
+    "id": "gn_kyouta_ae9889",
+    "vibe": ["noble", "serene", "auspicious"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["prosperity", "success", "greatness", "smooth passage", "fortune", "stability", "honor"],
+    "meaning_en": "Kyouta is a Japanese male name associated with prosperous success and dignified greatness.",
+    "description_en": "Kyouta (亨太) combines 亨, meaning prosperity or smooth success, with 太, a robust masculine ending. It feels auspicious, substantial, and traditionally strong."
+  },
+  {
+    "id": "gn_kiyokazu_4c1c7d",
+    "vibe": ["warm", "gentle", "classic"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "generation", "one", "continuity", "family line", "cheer", "stability"],
+    "meaning_en": "Kiyokazu is a Japanese male name associated with joyful continuity across generations.",
+    "description_en": "Kiyokazu (喜代一) combines 喜, meaning joy, 代, meaning generation or era, and 一, meaning one. It feels familial, steady, and warmly traditional."
+  },
+  {
+    "id": "gn_kiyokazu_79d56c",
+    "vibe": ["scholarly", "clean", "modern"],
+    "element": ["earth"],
+    "use_case": ["real_person", "fictional"],
+    "kanji_meaning_tags": ["joy", "generation", "number", "reason", "order", "intellect", "clarity"],
+    "meaning_en": "Kiyokazu is a Japanese male name associated with joyful order and an intelligent sense of structure.",
+    "description_en": "Kiyokazu (喜代数) combines 喜, meaning joy, 代, meaning generation, and 数, meaning number or order. The name feels unusual, cerebral, and neatly structured."
+  }
+]

@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "gn_akio_71701e",
+    "vibe": ["warm", "playful", "noble"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["joy", "brightness", "center", "warmth", "goodwill", "cheer", "balance"],
+    "meaning_en": "Akio is a Japanese male name associated with joyful brightness and a centered, warm presence.",
+    "description_en": "Akio (亜喜央) combines 喜, meaning joy, with 央, meaning center. Although 亜 is often phonetic here, the overall impression is bright, friendly, and pleasantly balanced."
+  },
+  {
+    "id": "gn_akio_114484",
+    "vibe": ["warm", "noble", "gentle"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["joy", "manhood", "warmth", "goodwill", "cheer", "maturity", "kindness"],
+    "meaning_en": "Akio is a Japanese male name associated with joy, warmth, and mature masculine steadiness.",
+    "description_en": "Akio (亜喜夫) combines 喜, meaning joy, with 夫, meaning man or adult male. The name feels cheerful but settled, with a classic masculine warmth."
+  },
+  {
+    "id": "gn_akio_76c59c",
+    "vibe": ["gentle", "warm", "serene"],
+    "element": ["star", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "life", "growth", "gentleness", "future", "warmth", "vitality"],
+    "meaning_en": "Akio is a Japanese male name associated with hopeful life, growth, and gentle vitality.",
+    "description_en": "Akio (亜希生) combines 希, meaning hope, with 生, meaning life. It gives the name a soft, modern brightness centered on growth and possibility."
+  },
+  {
+    "id": "gn_akisuke_57cff8",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["dawn", "clarity", "order", "support", "brightness", "guidance", "stability"],
+    "meaning_en": "Akisuke is a Japanese male name associated with dawnlike clarity and steady supportive character.",
+    "description_en": "Akisuke (暁典) combines 暁, meaning dawn, with 典, meaning code, order, or model. The name feels composed, intelligent, and classically dependable."
+  },
+  {
+    "id": "gn_akisuke_153555",
+    "vibe": ["gentle", "noble", "warm"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["dawn", "help", "support", "brightness", "kindness", "protection", "guidance"],
+    "meaning_en": "Akisuke is a Japanese male name associated with dawnlike brightness and helpful support.",
+    "description_en": "Akisuke (暁祐) combines 暁, meaning dawn, with 祐, meaning help or divine support. It feels kind, favorable, and gently dependable."
+  },
+  {
+    "id": "gn_akisuke_16a67e",
+    "vibe": ["elegant", "serene", "noble"],
+    "element": ["light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["radiance", "clarity", "order", "brightness", "guidance", "refinement", "stability"],
+    "meaning_en": "Akisuke is a Japanese male name associated with radiance, clear judgment, and refined steadiness.",
+    "description_en": "Akisuke (晃典) combines 晃, meaning shining light, with 典, meaning model or order. The result feels polished, bright, and quietly authoritative."
+  },
+  {
+    "id": "gn_akitaka_f3d41d",
+    "vibe": ["noble", "serene", "gentle"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["chronicle", "filial_piety", "virtue", "record", "dignity", "tradition", "respect"],
+    "meaning_en": "Akitaka is a Japanese male name associated with cultured dignity, recorded legacy, and filial virtue.",
+    "description_en": "Akitaka (亜紀孝) combines 紀, meaning chronicle or record, with 孝, meaning filial devotion. The feeling is thoughtful, traditional, and morally grounded."
+  },
+  {
+    "id": "gn_akitaka_9add99",
+    "vibe": ["warm", "noble", "strong"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["rising_sun", "retainer", "loyalty", "brightness", "service", "dignity", "dawn"],
+    "meaning_en": "Akitaka is a Japanese male name associated with rising brightness and loyal service.",
+    "description_en": "Akitaka (旭臣) combines 旭, meaning rising sun, with 臣, meaning retainer or subject. It feels bright yet dutiful, with a loyal and dignified old-style tone."
+  },
+  {
+    "id": "gn_akitaka_bb2ab0",
+    "vibe": ["serene", "strong", "noble"],
+    "element": ["mountain", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["prosperity", "mountain", "peak", "stability", "scale", "success", "endurance"],
+    "meaning_en": "Akitaka is a Japanese male name associated with prosperous steadiness and mountain-like strength.",
+    "description_en": "Akitaka (亨岳) combines 亨, meaning prosperity or smooth success, with 岳, meaning mountain peak. It gives the name a calm, substantial masculine weight."
+  },
+  {
+    "id": "gn_akitsugu_84f2ad",
+    "vibe": ["cool", "strong", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["radiance", "assistance", "succession", "brightness", "support", "continuity", "distinction"],
+    "meaning_en": "Akitsugu is a Japanese male name associated with radiant distinction and supportive succession.",
+    "description_en": "Akitsugu (輝丞) combines 輝, meaning brilliance, with 丞, meaning assistant or one who supports authority. The name feels bright, capable, and slightly formal."
+  },
+  {
+    "id": "gn_akitsugu_3e6c99",
+    "vibe": ["noble", "serene", "cool"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["clarity", "prominence", "succession", "lineage", "visibility", "dignity", "legacy"],
+    "meaning_en": "Akitsugu is a Japanese male name associated with visible distinction and dignified succession.",
+    "description_en": "Akitsugu (顕嗣) combines 顕, meaning manifest or eminent, with 嗣, meaning heir or succession. It carries a formal, legacy-conscious dignity."
+  },
+  {
+    "id": "gn_akitsugu_fea92b",
+    "vibe": ["serene", "noble", "elegant"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["light", "radiance", "succession", "legacy", "lineage", "clarity", "continuity"],
+    "meaning_en": "Akitsugu is a Japanese male name associated with radiant legacy and clear succession.",
+    "description_en": "Akitsugu (光嗣) combines 光, meaning light, with 嗣, meaning heir. The name feels graceful, orderly, and tied to continuity of family or role."
+  },
+  {
+    "id": "gn_akito_74466c",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["star", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "person", "future", "kindness", "growth", "possibility", "humanity"],
+    "meaning_en": "Akito is a Japanese male name associated with hope, humanity, and a future-facing spirit.",
+    "description_en": "Akito (亜希人) combines 希, meaning hope, with 人, meaning person. The result is soft, modern, and centered on human warmth and possibility."
+  },
+  {
+    "id": "gn_akito_3e5679",
+    "vibe": ["mysterious", "cool", "gentle"],
+    "element": ["star", "sky"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["hope", "dipper", "constellation", "future", "star", "imagination", "clarity"],
+    "meaning_en": "Akito is a Japanese male name associated with hope, stars, and future-oriented imagination.",
+    "description_en": "Akito (亜希斗) combines 希, meaning hope, with 斗, a character linked to the dipper constellation. It feels modern, bright, and slightly celestial."
+  },
+  {
+    "id": "gn_akito_bf80f0",
+    "vibe": ["elegant", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["chronicle", "person", "culture", "record", "humanity", "refinement", "history"],
+    "meaning_en": "Akito is a Japanese male name associated with cultured humanity and a sense of recorded legacy.",
+    "description_en": "Akito (亜紀人) combines 紀, meaning chronicle or record, with 人, meaning person. It gives the name a thoughtful, refined, and slightly literary feel."
+  },
+  {
+    "id": "gn_akitoshi_a599e8",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["rising_sun", "longevity", "auspiciousness", "brightness", "blessing", "dawn", "stability"],
+    "meaning_en": "Akitoshi is a Japanese male name associated with dawnlike brightness and auspicious longevity.",
+    "description_en": "Akitoshi (旭寿) combines 旭, meaning rising sun, with 寿, meaning long life or celebration. It feels favorable, mature, and bright in a classic way."
+  },
+  {
+    "id": "gn_akitoshi_4f1f9c",
+    "vibe": ["serene", "cool", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["center", "wisdom", "balance", "judgment", "clarity", "stability", "intellect"],
+    "meaning_en": "Akitoshi is a Japanese male name associated with centered intelligence and balanced judgment.",
+    "description_en": "Akitoshi (央賢) combines 央, meaning center, with 賢, meaning wise or intelligent. The name feels balanced, thoughtful, and quietly distinguished."
+  },
+  {
+    "id": "gn_akitoshi_459449",
+    "vibe": ["cool", "elegant", "noble"],
+    "element": ["light", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["dawn", "talent", "speed", "brightness", "distinction", "clarity", "ability"],
+    "meaning_en": "Akitoshi is a Japanese male name associated with dawnlike brilliance and gifted ability.",
+    "description_en": "Akitoshi (暁俊) combines 暁, meaning dawn, with 俊, meaning talented or gifted. It feels bright, sharp, and capable without sounding harsh."
+  },
+  {
+    "id": "gn_akitomo_87fa41",
+    "vibe": ["warm", "gentle", "noble"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["rising_sun", "companion", "friendship", "brightness", "loyalty", "warmth", "dawn"],
+    "meaning_en": "Akitomo is a Japanese male name associated with dawnlike brightness and loyal companionship.",
+    "description_en": "Akitomo (旭伴) combines 旭, meaning rising sun, with 伴, meaning companion. It gives the name a friendly, supportive, and optimistic warmth."
+  },
+  {
+    "id": "gn_akitomo_5df7ab",
+    "vibe": ["gentle", "warm", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["dawn", "friendship", "companionship", "warmth", "kindness", "support", "brightness"],
+    "meaning_en": "Akitomo is a Japanese male name associated with dawn, friendship, and supportive warmth.",
+    "description_en": "Akitomo (暁友) combines 暁, meaning dawn, with 友, meaning friend. The name feels approachable, kind, and naturally companionable."
+  },
+  {
+    "id": "gn_akitomo_ce304a",
+    "vibe": ["cool", "gentle", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["enlightenment", "sincerity", "clarity", "friendship", "truthfulness", "refinement", "trust"],
+    "meaning_en": "Akitomo is a Japanese male name associated with enlightened clarity and sincere friendship.",
+    "description_en": "Akitomo (啓誠) combines 啓, meaning to open or enlighten, with 誠, meaning sincerity. The name feels thoughtful, trustworthy, and gently refined."
+  },
+  {
+    "id": "gn_akinobu_81bb5d",
+    "vibe": ["warm", "noble", "strong"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["rising_sun", "leadership", "command", "brightness", "authority", "dawn", "strength"],
+    "meaning_en": "Akinobu is a Japanese male name associated with dawnlike brightness and commanding leadership.",
+    "description_en": "Akinobu (旭将) combines 旭, meaning rising sun, with 将, meaning leader or commander. It gives the name a bright but authoritative masculine force."
+  },
+  {
+    "id": "gn_akinobu_7979a6",
+    "vibe": ["serene", "noble", "gentle"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["rising_sun", "balance", "steadiness", "brightness", "moderation", "warmth", "dawn"],
+    "meaning_en": "Akinobu is a Japanese male name associated with dawnlike brightness and balanced steadiness.",
+    "description_en": "Akinobu (旭庸) combines 旭, meaning rising sun, with 庸, which can suggest balance, constancy, or ordinary steadiness. The name feels calm, dependable, and quietly warm."
+  },
+  {
+    "id": "gn_akinobu_3baedd",
+    "vibe": ["cool", "serene", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflection", "trust", "clarity", "integrity", "light", "sincerity", "presence"],
+    "meaning_en": "Akinobu is a Japanese male name associated with clear reflection and trustworthy sincerity.",
+    "description_en": "Akinobu (映信) combines 映, meaning reflected light, with 信, meaning trust or faith. It gives the name a clean, composed, and reliable image."
+  },
+  {
+    "id": "gn_akihiko_aedd63",
+    "vibe": ["gentle", "elegant", "noble"],
+    "element": ["star", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "refined_man", "future", "grace", "talent", "kindness", "poise"],
+    "meaning_en": "Akihiko is a Japanese male name associated with hope and refined masculine grace.",
+    "description_en": "Akihiko (亜希彦) combines 希, meaning hope, with 彦, a classical kanji associated with an accomplished man. The name feels gentle, polished, and quietly dignified."
+  },
+  {
+    "id": "gn_akihiko_003203",
+    "vibe": ["elegant", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["chronicle", "refined_man", "culture", "history", "poise", "record", "dignity"],
+    "meaning_en": "Akihiko is a Japanese male name associated with cultured refinement and historical dignity.",
+    "description_en": "Akihiko (亜紀彦) combines 紀, meaning chronicle or record, with 彦, a classical refined-male kanji. It feels thoughtful, traditional, and literate."
+  },
+  {
+    "id": "gn_akihiko_1f3c86",
+    "vibe": ["cool", "elegant", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["order", "standard", "refined_man", "structure", "judgment", "poise", "clarity"],
+    "meaning_en": "Akihiko is a Japanese male name associated with order, standards, and refined masculine poise.",
+    "description_en": "Akihiko (亜規彦) combines 規, meaning rule or standard, with 彦, meaning refined man. The result feels orderly, intelligent, and classically well-composed."
+  },
+  {
+    "id": "gn_akihisa_4abea8",
+    "vibe": ["gentle", "serene", "warm"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["life", "longevity", "growth", "continuity", "warmth", "vitality", "future"],
+    "meaning_en": "Akihisa is a Japanese male name associated with life, longevity, and quiet continued growth.",
+    "description_en": "Akihisa (亜生久) combines 生, meaning life, with 久, meaning long-lasting. The name feels gentle, wholesome, and centered on enduring vitality."
+  },
+  {
+    "id": "gn_akihisa_c1577e",
+    "vibe": ["gentle", "warm", "serene"],
+    "element": ["earth", "star"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["peace", "hope", "center", "balance", "kindness", "calm", "stability"],
+    "meaning_en": "Akihisa is a Japanese male name associated with peaceful hope and centered calm.",
+    "description_en": "Akihisa (安希央) combines 安, meaning peace, 希, meaning hope, and 央, meaning center. It gives the name a very balanced, kind, and quietly optimistic tone."
+  },
+  {
+    "id": "gn_akihisa_6c0cdf",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["earth", "star"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["peace", "hope", "longevity", "calm", "continuity", "kindness", "stability"],
+    "meaning_en": "Akihisa is a Japanese male name associated with peaceful hope and long-lasting steadiness.",
+    "description_en": "Akihisa (安希久) combines 安, meaning peace, 希, meaning hope, and 久, meaning long-lasting. The impression is calm, reassuring, and gently enduring."
+  },
+  {
+    "id": "gn_akihide_1a5b08",
+    "vibe": ["cool", "noble", "elegant"],
+    "element": ["light", "flower"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["radiance", "excellence", "distinction", "brightness", "talent", "polish", "refinement"],
+    "meaning_en": "Akihide is a Japanese male name associated with brilliant excellence and polished distinction.",
+    "description_en": "Akihide (阿輝英) combines 輝, meaning brilliance, with 英, meaning excellence. Even with 阿 used phonetically, the overall feeling is bright, high-achieving, and refined."
+  },
+  {
+    "id": "gn_akihide_08ff5a",
+    "vibe": ["elegant", "cool", "serene"],
+    "element": ["light", "flower"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflection", "excellence", "clarity", "beauty", "distinction", "refinement", "grace"],
+    "meaning_en": "Akihide is a Japanese male name associated with reflected brilliance and refined excellence.",
+    "description_en": "Akihide (映秀) combines 映, meaning reflected light, with 秀, meaning excellence. It feels polished, artistic, and quietly distinguished."
+  },
+  {
+    "id": "gn_akihide_488098",
+    "vibe": ["elegant", "noble", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["chronicle", "excellence", "record", "culture", "talent", "history", "refinement"],
+    "meaning_en": "Akihide is a Japanese male name associated with cultured excellence and a refined sense of legacy.",
+    "description_en": "Akihide (紀秀) combines 紀, meaning chronicle or record, with 秀, meaning excellence. The name feels thoughtful, accomplished, and classically refined."
+  },
+  {
+    "id": "gn_akihito_ec3330",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["foundation", "person", "stability", "humanity", "groundedness", "warmth", "balance"],
+    "meaning_en": "Akihito is a Japanese male name associated with grounded humanity and stable character.",
+    "description_en": "Akihito (亜基人) combines 基, meaning foundation, with 人, meaning person. It feels centered, stable, and calmly humane."
+  },
+  {
+    "id": "gn_akihito_2f1cc1",
+    "vibe": ["gentle", "warm", "noble"],
+    "element": ["star", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "benevolence", "kindness", "humanity", "future", "compassion", "softness"],
+    "meaning_en": "Akihito is a Japanese male name associated with hope, benevolence, and warm humanity.",
+    "description_en": "Akihito (亜希仁) combines 希, meaning hope, with 仁, meaning benevolence. The name feels especially kind and humane, with a soft but dignified warmth."
+  },
+  {
+    "id": "gn_akihito_7b41ff",
+    "vibe": ["gentle", "elegant", "serene"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["season", "person", "time", "humanity", "grace", "continuity", "poetic"],
+    "meaning_en": "Akihito is a Japanese male name associated with seasonal grace and quietly human warmth.",
+    "description_en": "Akihito (亜季人) combines 季, meaning season, with 人, meaning person. It gives the name a poetic, gentle tone shaped by time and natural rhythm."
+  },
+  {
+    "id": "gn_akihiro_837ab1",
+    "vibe": ["elegant", "noble", "serene"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chronicle", "breadth", "culture", "expansion", "history", "refinement", "scale"],
+    "meaning_en": "Akihiro is a Japanese male name associated with cultured breadth and refined expansiveness.",
+    "description_en": "Akihiro (亜紀弘) combines 紀, meaning chronicle, with 弘, meaning broad or expansive. It feels thoughtful, learned, and broad-minded."
+  },
+  {
+    "id": "gn_akihiro_1a8534",
+    "vibe": ["noble", "elegant", "strong"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["value", "breadth", "nobility", "expansion", "stature", "generosity", "dignity"],
+    "meaning_en": "Akihiro is a Japanese male name associated with noble value and broad, generous stature.",
+    "description_en": "Akihiro (亜貴弘) combines 貴, meaning precious or noble, with 弘, meaning broad. The name feels substantial, respectable, and open-handed."
+  },
+  {
+    "id": "gn_akihiro_5f9891",
+    "vibe": ["warm", "gentle", "noble"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["rising_sun", "generosity", "breadth", "warmth", "dawn", "kindness", "openness"],
+    "meaning_en": "Akihiro is a Japanese male name associated with dawnlike warmth and broad generosity.",
+    "description_en": "Akihiro (旭寛) combines 旭, meaning rising sun, with 寛, meaning broad-minded or tolerant. It gives the name an open, warm, and reassuring brightness."
+  },
+  {
+    "id": "gn_akifumi_eb8d89",
+    "vibe": ["gentle", "elegant", "serene"],
+    "element": ["star", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "literature", "culture", "expression", "future", "refinement", "intellect"],
+    "meaning_en": "Akifumi is a Japanese male name associated with hopeful expression and literary refinement.",
+    "description_en": "Akifumi (亜希文) combines 希, meaning hope, with 文, meaning writing or culture. It feels soft, thoughtful, and quietly intellectual."
+  },
+  {
+    "id": "gn_akifumi_f9bb66",
+    "vibe": ["warm", "elegant", "noble"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["rising_sun", "history", "culture", "record", "brightness", "reflection", "dawn"],
+    "meaning_en": "Akifumi is a Japanese male name associated with bright cultural memory and reflective depth.",
+    "description_en": "Akifumi (旭史) combines 旭, meaning rising sun, with 史, meaning history. The name feels bright yet thoughtful, with a cultured maturity."
+  },
+  {
+    "id": "gn_akifumi_6523b1",
+    "vibe": ["cool", "elegant", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflection", "history", "record", "culture", "clarity", "memory", "refinement"],
+    "meaning_en": "Akifumi is a Japanese male name associated with reflective clarity and cultured historical depth.",
+    "description_en": "Akifumi (映史) combines 映, meaning reflected light, with 史, meaning history. It has a polished, thoughtful, and slightly literary quality."
+  },
+  {
+    "id": "gn_akiyoshi_063246",
+    "vibe": ["noble", "cool", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["chronicle", "righteousness", "virtue", "history", "ethics", "record", "dignity"],
+    "meaning_en": "Akiyoshi is a Japanese male name associated with historical dignity and principled righteousness.",
+    "description_en": "Akiyoshi (亜紀義) combines 紀, meaning chronicle, with 義, meaning righteousness. The name feels ethical, thoughtful, and classically upright."
+  },
+  {
+    "id": "gn_akiyoshi_e4ef77",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["rising_sun", "victory", "strength", "brightness", "drive", "success", "dawn"],
+    "meaning_en": "Akiyoshi is a Japanese male name associated with victorious brightness and rising strength.",
+    "description_en": "Akiyoshi (旭克) combines 旭, meaning rising sun, with 克, meaning to overcome or prevail. It feels energetic, determined, and strongly masculine."
+  },
+  {
+    "id": "gn_akiyoshi_3b851a",
+    "vibe": ["warm", "elegant", "gentle"],
+    "element": ["sun", "flower"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["rising_sun", "fragrance", "virtue", "warmth", "beauty", "grace", "brightness"],
+    "meaning_en": "Akiyoshi is a Japanese male name associated with bright warmth and graceful fragrant virtue.",
+    "description_en": "Akiyoshi (旭芳) combines 旭, meaning rising sun, with 芳, meaning fragrance or virtue. It gives the name a warm, cultured, and gently favorable tone."
+  },
+  {
+    "id": "gn_akira_c694df",
+    "vibe": ["warm", "gentle", "serene"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["joy", "goodness", "kindness", "clarity", "warmth", "balance", "softness"],
+    "meaning_en": "Akira is a Japanese male name associated with joy, goodness, and a calm bright-hearted nature.",
+    "description_en": "Akira (亜喜良) combines 喜, meaning joy, with 良, meaning good or fine. The overall feeling is friendly, positive, and pleasantly warm."
+  },
+  {
+    "id": "gn_akira_07c5de",
+    "vibe": ["gentle", "elegant", "noble"],
+    "element": ["star", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["hope", "goodness", "kindness", "future", "clarity", "grace", "positivity"],
+    "meaning_en": "Akira is a Japanese male name associated with hope, goodness, and graceful clarity.",
+    "description_en": "Akira (亜希良) combines 希, meaning hope, with 良, meaning good. It feels clean, optimistic, and soft in a very approachable way."
+  },
+  {
+    "id": "gn_akira_ebbbd9",
+    "vibe": ["elegant", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["chronicle", "goodness", "culture", "history", "kindness", "refinement", "record"],
+    "meaning_en": "Akira is a Japanese male name associated with cultured goodness and thoughtful refinement.",
+    "description_en": "Akira (亜紀良) combines 紀, meaning chronicle, with 良, meaning good. The name feels measured, cultivated, and gently dignified."
+  },
+  {
+    "id": "gn_asahi_5d016d",
+    "vibe": ["playful", "cool", "strong"],
+    "element": ["sky", "wind"],
+    "use_case": ["anime", "real_person"],
+    "kanji_meaning_tags": ["flight", "morning", "speed", "sunrise", "sky", "motion", "brightness"],
+    "meaning_en": "Asahi is a Japanese male name associated with flight, speed, and sunrise-like brightness.",
+    "description_en": "Asahi (阿佐飛) uses 飛, meaning to fly, and overall feels dynamic and airy. Even with phonetic support characters, the image is fast, bright, and energetic."
+  },
+  {
+    "id": "gn_asahi_90d207",
+    "vibe": ["warm", "gentle", "playful"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["sunlight", "brightness", "warmth", "morning", "glow", "cheer", "clarity"],
+    "meaning_en": "Asahi is a Japanese male name associated with sunlight, warmth, and morning brightness.",
+    "description_en": "Asahi (阿沙陽) centers on 陽, meaning sunlight or sunny positivity. The name feels bright, youthful, and very naturally cheerful."
+  },
+  {
+    "id": "gn_asahi_4071db",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["rising_sun", "dawn", "brightness", "energy", "hope", "morning", "radiance"],
+    "meaning_en": "Asahi is a Japanese male name associated with the rising sun, hope, and bright energy.",
+    "description_en": "Asahi (旭) uses the kanji for the rising sun. It is one of the clearest bright-image names, giving a vivid, optimistic, and upward-moving impression."
+  },
+  {
+    "id": "gn_asahiko_e21019",
+    "vibe": ["gentle", "elegant", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["morning", "refined_man", "softness", "culture", "poise", "classical", "calm"],
+    "meaning_en": "Asahiko is a Japanese male name associated with gentle morning softness and refined masculine poise.",
+    "description_en": "Asahiko (阿佐彦) is shaped largely for sound, but 彦 adds a classical refined-male quality. The name feels old-style, composed, and softly dignified."
+  },
+  {
+    "id": "gn_asahiko_9483fc",
+    "vibe": ["serene", "elegant", "gentle"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["shallow", "clarity", "refined_man", "simplicity", "poise", "restraint", "calm"],
+    "meaning_en": "Asahiko is a Japanese male name associated with restrained clarity and classical refinement.",
+    "description_en": "Asahiko (浅彦) combines 浅, meaning shallow or light, with 彦, meaning refined man. Rather than force, the name suggests restraint, simplicity, and a quiet old-style elegance."
+  },
+  {
+    "id": "gn_asahiko_e8af1d",
+    "vibe": ["warm", "noble", "elegant"],
+    "element": ["sun", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["morning", "refined_man", "dawn", "brightness", "poise", "classical", "warmth"],
+    "meaning_en": "Asahiko is a Japanese male name associated with morning brightness and refined classical masculinity.",
+    "description_en": "Asahiko (朝彦) combines 朝, meaning morning, with 彦, a classical refined-male kanji. The name feels bright, noble, and gently traditional."
+  },
+  {
+    "id": "gn_atsuo_af5349",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["crossing", "port", "manhood", "stability", "traditional", "plain_strength", "maturity"],
+    "meaning_en": "Atsuo is a Japanese male name associated with steady masculine maturity and a traditional, grounded feel.",
+    "description_en": "Atsuo (亜津夫) uses 夫 for adult masculine steadiness, while 亜 and 津 mainly support the reading here. The overall impression is old-style, calm, and dependable."
+  },
+  {
+    "id": "gn_atsuo_389d86",
+    "vibe": ["strong", "fierce", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "warrior", "historical"],
+    "kanji_meaning_tags": ["pressure", "force", "heroic", "strength", "masculinity", "power", "intensity"],
+    "meaning_en": "Atsuo is a Japanese male name associated with pressure, force, and strongly masculine power.",
+    "description_en": "Atsuo (圧雄) combines 圧, meaning pressure or force, with 雄, meaning heroic masculinity. It gives the name a bold, heavy, and very forceful tone."
+  },
+  {
+    "id": "gn_atsuo_beaab8",
+    "vibe": ["warm", "gentle", "serene"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "life", "kindness", "gentleness", "growth", "vitality", "comfort"],
+    "meaning_en": "Atsuo is a Japanese male name associated with warm life, kindness, and gentle vitality.",
+    "description_en": "Atsuo (温生) combines 温, meaning warm or mild, with 生, meaning life. The result is soft, humane, and quietly wholesome."
+  },
+  {
+    "id": "gn_atsuki_38e570",
+    "vibe": ["gentle", "elegant", "serene"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "chronicle", "culture", "gentleness", "history", "poise", "refinement"],
+    "meaning_en": "Atsuki is a Japanese male name associated with warm refinement and cultured calm.",
+    "description_en": "Atsuki (温紀) combines 温, meaning warm or gentle, with 紀, meaning chronicle or record. It feels mild, thoughtful, and softly cultivated."
+  },
+  {
+    "id": "gn_atsuki_5f98c6",
+    "vibe": ["strong", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["core", "tree", "growth", "stability", "foundation", "nature", "strength"],
+    "meaning_en": "Atsuki is a Japanese male name associated with strong roots, growth, and stable development.",
+    "description_en": "Atsuki (幹樹) combines 幹, meaning trunk or core, with 樹, meaning tree. The name feels grounded, healthy, and steadily strong."
+  },
+  {
+    "id": "gn_atsuki_135489",
+    "vibe": ["noble", "elegant", "cool"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["nobility", "value", "record", "order", "memory", "dignity", "refinement"],
+    "meaning_en": "Atsuki is a Japanese male name associated with noble value, dignity, and cultured order.",
+    "description_en": "Atsuki (貴記) combines 貴, meaning noble or precious, with 記, meaning record or account. It gives the name a refined, respectable, and composed image."
+  },
+  {
+    "id": "gn_atsushi_3001d3",
+    "vibe": ["cool", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["port", "leadership", "administration", "duty", "order", "responsibility", "balance"],
+    "meaning_en": "Atsushi is a Japanese male name associated with calm responsibility and steady administrative strength.",
+    "description_en": "Atsushi (亜津司) uses 司, meaning to govern or manage, as its main semantic core. The name feels orderly, capable, and quietly responsible."
+  },
+  {
+    "id": "gn_atsushi_27a05f",
+    "vibe": ["gentle", "noble", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["port", "will", "purpose", "resolve", "ambition", "integrity", "drive"],
+    "meaning_en": "Atsushi is a Japanese male name associated with clear purpose, inner resolve, and quiet ambition.",
+    "description_en": "Atsushi (亜津志) centers on 志, meaning will or aspiration. It gives the name a thoughtful but determined masculine character."
+  },
+  {
+    "id": "gn_atsushi_924e5b",
+    "vibe": ["cool", "strong", "noble"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["passage", "communication", "will", "purpose", "movement", "resolve", "direction"],
+    "meaning_en": "Atsushi is a Japanese male name associated with purposeful movement, resolve, and directed communication.",
+    "description_en": "Atsushi (亜通志) combines 通, meaning to pass through or communicate, with 志, meaning will. The name feels active, purposeful, and mentally clear."
+  },
+  {
+    "id": "gn_atsushige_509d26",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["purity", "sincerity", "achievement", "growth", "calm", "success", "honesty"],
+    "meaning_en": "Atsushige is a Japanese male name associated with sincere purity and steady achievement.",
+    "description_en": "Atsushige (淳成) combines 淳, meaning pure or sincere, with 成, meaning to become or accomplish. It feels honest, stable, and quietly successful."
+  },
+  {
+    "id": "gn_atsushige_aa40ff",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["purity", "prosperity", "abundance", "sincerity", "growth", "continuity", "stability"],
+    "meaning_en": "Atsushige is a Japanese male name associated with sincere purity and flourishing abundance.",
+    "description_en": "Atsushige (淳繁) combines 淳, meaning pure or sincere, with 繁, meaning abundant or flourishing. The impression is calm, fertile, and steadily prosperous."
+  },
+  {
+    "id": "gn_atsushige_e073eb",
+    "vibe": ["noble", "elegant", "serene"],
+    "element": ["wind", "flower"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["loyalty", "fragrance", "virtue", "devotion", "grace", "incense", "refinement"],
+    "meaning_en": "Atsushige is a Japanese male name associated with loyal devotion and refined fragrance-like grace.",
+    "description_en": "Atsushige (忠薫) combines 忠, meaning loyalty, with 薫, meaning fragrance or a wafting noble scent. The result is refined, faithful, and quietly distinguished."
+  },
+  {
+    "id": "gn_atsunobu_69e34e",
+    "vibe": ["gentle", "warm", "serene"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "trust", "faith", "kindness", "sincerity", "reliability", "comfort"],
+    "meaning_en": "Atsunobu is a Japanese male name associated with warm trust and gentle reliability.",
+    "description_en": "Atsunobu (温信) combines 温, meaning warm or mild, with 信, meaning trust or faith. It feels kind, dependable, and softly reassuring."
+  },
+  {
+    "id": "gn_atsunobu_cf35a7",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["thickness", "depth", "growth", "extension", "strength", "stability", "breadth"],
+    "meaning_en": "Atsunobu is a Japanese male name associated with deep strength and steady outward growth.",
+    "description_en": "Atsunobu (厚伸) combines 厚, meaning deep, thick, or kind, with 伸, meaning to extend or grow. The name feels substantial and steadily expanding."
+  },
+  {
+    "id": "gn_atsunobu_0a5f3a",
+    "vibe": ["strong", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["thickness", "depth", "trust", "sincerity", "stability", "integrity", "strength"],
+    "meaning_en": "Atsunobu is a Japanese male name associated with deep sincerity and reliable strength.",
+    "description_en": "Atsunobu (厚信) combines 厚, meaning depth or heartfelt kindness, with 信, meaning trust. It gives the name a solid, reliable, and morally steady presence."
+  },
+  {
+    "id": "gn_atsunori_942361",
+    "vibe": ["gentle", "serene", "noble"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["warmth", "teaching", "guidance", "learning", "kindness", "calm", "wisdom"],
+    "meaning_en": "Atsunori is a Japanese male name associated with warm guidance and thoughtful teaching.",
+    "description_en": "Atsunori (温教) combines 温, meaning warm or gentle, with 教, meaning to teach. It feels kind, instructive, and quietly wise."
+  },
+  {
+    "id": "gn_atsunori_cee2f8",
+    "vibe": ["serene", "cool", "noble"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["warmth", "rule", "order", "guidance", "balance", "stability", "discipline"],
+    "meaning_en": "Atsunori is a Japanese male name associated with warm steadiness and ordered judgment.",
+    "description_en": "Atsunori (温則) combines 温, meaning warmth or mildness, with 則, meaning rule or standard. The name suggests calm self-control and balanced principles."
+  },
+  {
+    "id": "gn_atsunori_539eb9",
+    "vibe": ["noble", "cool", "elegant"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["nobility", "thought", "reflection", "value", "judgment", "dignity", "intellect"],
+    "meaning_en": "Atsunori is a Japanese male name associated with noble thought and reflective judgment.",
+    "description_en": "Atsunori (貴考) combines 貴, meaning noble or precious, with 考, meaning to think or consider. It gives the name an intelligent and respectable tone."
+  },
+  {
+    "id": "gn_atsuhisa_61b847",
+    "vibe": ["gentle", "serene", "warm"],
+    "element": ["fire", "water"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "longevity", "continuity", "calm", "comfort", "stability", "kindness"],
+    "meaning_en": "Atsuhisa is a Japanese male name associated with warm longevity and quiet continuity.",
+    "description_en": "Atsuhisa (温久) combines 温, meaning warm or gentle, with 久, meaning long-lasting. It feels mild, enduring, and quietly reassuring."
+  },
+  {
+    "id": "gn_atsuhisa_807f24",
+    "vibe": ["elegant", "noble", "warm"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["nobility", "literature", "culture", "expression", "value", "refinement", "intellect"],
+    "meaning_en": "Atsuhisa is a Japanese male name associated with noble refinement and literary culture.",
+    "description_en": "Atsuhisa (貴文) combines 貴, meaning noble, with 文, meaning writing or culture. The name feels polished, educated, and quietly prestigious."
+  },
+  {
+    "id": "gn_atsuhisa_92e68a",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["depth", "kindness", "longevity", "stability", "blessing", "maturity", "endurance"],
+    "meaning_en": "Atsuhisa is a Japanese male name associated with deep kindness and auspicious longevity.",
+    "description_en": "Atsuhisa (厚寿) combines 厚, meaning depth or heartfelt warmth, with 寿, meaning long life. It feels favorable, mature, and gently substantial."
+  },
+  {
+    "id": "gn_atsuhide_b530f8",
+    "vibe": ["gentle", "cool", "elegant"],
+    "element": ["water", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["purity", "sincerity", "excellence", "talent", "clarity", "distinction", "refinement"],
+    "meaning_en": "Atsuhide is a Japanese male name associated with sincere purity and refined excellence.",
+    "description_en": "Atsuhide (淳英) combines 淳, meaning pure or sincere, with 英, meaning excellence. The name feels honest, polished, and quietly distinguished."
+  },
+  {
+    "id": "gn_atsuhide_1e2d5f",
+    "vibe": ["strong", "noble", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["devotion", "sincerity", "excellence", "talent", "integrity", "discipline", "distinction"],
+    "meaning_en": "Atsuhide is a Japanese male name associated with deep devotion and distinguished excellence.",
+    "description_en": "Atsuhide (篤英) combines 篤, meaning sincere, earnest, or devoted, with 英, meaning excellence. It gives the name moral weight and polished masculine dignity."
+  },
+  {
+    "id": "gn_atsuhide_d3a3e8",
+    "vibe": ["strong", "elegant", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["devotion", "earnestness", "excellence", "refinement", "talent", "discipline", "grace"],
+    "meaning_en": "Atsuhide is a Japanese male name associated with earnest devotion and refined excellence.",
+    "description_en": "Atsuhide (篤秀) combines 篤, meaning deeply sincere or devoted, with 秀, meaning excellence. The name feels serious, cultivated, and highly respectable."
+  },
+  {
+    "id": "gn_atsuhiro_c89d01",
+    "vibe": ["gentle", "serene", "warm"],
+    "element": ["fire", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "breadth", "expansion", "kindness", "openness", "calm", "generosity"],
+    "meaning_en": "Atsuhiro is a Japanese male name associated with warm openness and broad-hearted calm.",
+    "description_en": "Atsuhiro (温広) combines 温, meaning warm or mild, with 広, meaning broad or wide. It gives the name a friendly, open, and reassuring breadth."
+  },
+  {
+    "id": "gn_atsuhiro_2300d2",
+    "vibe": ["noble", "warm", "elegant"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["nobility", "abundance", "wealth", "value", "prosperity", "generosity", "dignity"],
+    "meaning_en": "Atsuhiro is a Japanese male name associated with noble abundance and generous prosperity.",
+    "description_en": "Atsuhiro (貴裕) combines 貴, meaning noble or precious, with 裕, meaning abundance or richness. The name feels prosperous, refined, and substantial."
+  },
+  {
+    "id": "gn_atsuhiro_fbc6fc",
+    "vibe": ["noble", "strong", "serene"],
+    "element": ["earth", "sky"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["capital", "greatness", "breadth", "stature", "scale", "dignity", "presence"],
+    "meaning_en": "Atsuhiro is a Japanese male name associated with grand scale, breadth, and dignified presence.",
+    "description_en": "Atsuhiro (京宏) combines 京, which can suggest capital-scale grandeur, with 宏, meaning vast or broad. The name feels large in scope, stately, and impressive."
+  },
+  {
+    "id": "gn_atsumasa_8fac45",
+    "vibe": ["gentle", "elegant", "warm"],
+    "element": ["fire", "flower"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "elegance", "grace", "kindness", "refinement", "softness", "poise"],
+    "meaning_en": "Atsumasa is a Japanese male name associated with warm elegance and gentle refinement.",
+    "description_en": "Atsumasa (温雅) combines 温, meaning warm or mild, with 雅, meaning elegant or courtly. The name feels graceful, cultured, and especially soft in tone."
+  },
+  {
+    "id": "gn_atsumasa_cba572",
+    "vibe": ["noble", "elegant", "serene"],
+    "element": ["earth", "flower"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["depth", "generosity", "elegance", "grace", "dignity", "refinement", "stability"],
+    "meaning_en": "Atsumasa is a Japanese male name associated with deep-hearted generosity and elegant dignity.",
+    "description_en": "Atsumasa (厚雅) combines 厚, meaning deep, heartfelt, or generous, with 雅, meaning elegance. It gives the name a stately and cultivated warmth."
+  },
+  {
+    "id": "gn_atsumasa_99d9ce",
+    "vibe": ["strong", "serene", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["depth", "truth", "sincerity", "integrity", "stability", "substance", "clarity"],
+    "meaning_en": "Atsumasa is a Japanese male name associated with deep sincerity and substantial truthfulness.",
+    "description_en": "Atsumasa (厚真) combines 厚, meaning deep or heartfelt, with 真, meaning truth. The result feels solid, honest, and quietly strong."
+  },
+  {
+    "id": "gn_atsuya_9a31fb",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["classical", "softness", "presence", "calm", "traditional", "balance", "plain_grace"],
+    "meaning_en": "Atsuya is a Japanese male name associated with calm classical softness and understated presence.",
+    "description_en": "Atsuya (亜津也) is shaped mostly for sound, with 也 adding a classical, restrained ending. The name feels plain, stable, and old-style in a gentle way."
+  },
+  {
+    "id": "gn_atsuya_542356",
+    "vibe": ["gentle", "warm", "serene"],
+    "element": ["fire", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "classical", "softness", "kindness", "calm", "ease", "mildness"],
+    "meaning_en": "Atsuya is a Japanese male name associated with warm softness and calm, easygoing character.",
+    "description_en": "Atsuya (温也) combines 温, meaning warm or mild, with 也, a classical ending. It feels gentle, approachable, and quietly comfortable."
+  },
+  {
+    "id": "gn_atsuya_8179d2",
+    "vibe": ["noble", "strong", "elegant"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["nobility", "classical", "emphasis", "value", "presence", "dignity", "poise"],
+    "meaning_en": "Atsuya is a Japanese male name associated with noble value and a dignified classical presence.",
+    "description_en": "Atsuya (貴哉) combines 貴, meaning precious or noble, with 哉, a classical emphatic ending. The result feels elevated, stately, and distinctly masculine."
+  },
+  {
+    "id": "gn_atsuyuki_5e392e",
+    "vibe": ["warm", "gentle", "serene"],
+    "element": ["fire", "sun"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "happiness", "fortune", "kindness", "comfort", "goodwill", "blessing"],
+    "meaning_en": "Atsuyuki is a Japanese male name associated with warm happiness and gentle good fortune.",
+    "description_en": "Atsuyuki (温幸) combines 温, meaning warm, with 幸, meaning happiness or blessing. It gives the name a soft and favorable human warmth."
+  },
+  {
+    "id": "gn_atsuyuki_f5db24",
+    "vibe": ["noble", "elegant", "serene"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["nobility", "classical", "continuity", "value", "poise", "dignity", "tradition"],
+    "meaning_en": "Atsuyuki is a Japanese male name associated with noble continuity and classical poise.",
+    "description_en": "Atsuyuki (貴之) combines 貴, meaning noble or precious, with 之, a classical connective ending. The name feels refined, traditional, and quietly dignified."
+  },
+  {
+    "id": "gn_atsuyuki_df4727",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["capital", "correctness", "rightness", "judgment", "clarity", "standards", "dignity"],
+    "meaning_en": "Atsuyuki is a Japanese male name associated with dignified correctness and clear standards.",
+    "description_en": "Atsuyuki (京是) combines 京, suggesting capital-scale dignity, with 是, meaning correct or right. It feels crisp, formal, and somewhat intellectual."
+  },
+  {
+    "id": "gn_atsuyoshi_8b348a",
+    "vibe": ["elegant", "warm", "noble"],
+    "element": ["earth", "flower"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["nobility", "beauty", "goodness", "grace", "value", "kindness", "refinement"],
+    "meaning_en": "Atsuyoshi is a Japanese male name associated with noble beauty and graceful goodness.",
+    "description_en": "Atsuyoshi (貴佳) combines 貴, meaning noble, with 佳, meaning fine or beautiful. It feels polished, favorable, and gently refined."
+  },
+  {
+    "id": "gn_atsuyoshi_7a11c9",
+    "vibe": ["warm", "noble", "gentle"],
+    "element": ["earth", "sun"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["depth", "joy", "kindness", "warmth", "generosity", "goodwill", "favor"],
+    "meaning_en": "Atsuyoshi is a Japanese male name associated with deep-hearted joy and generous warmth.",
+    "description_en": "Atsuyoshi (厚喜) combines 厚, meaning deep or heartfelt, with 喜, meaning joy. The name feels generous, friendly, and emotionally warm."
+  },
+  {
+    "id": "gn_atsuyoshi_e5076f",
+    "vibe": ["noble", "strong", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["depth", "righteousness", "virtue", "integrity", "stability", "ethics", "dignity"],
+    "meaning_en": "Atsuyoshi is a Japanese male name associated with deep integrity and principled righteousness.",
+    "description_en": "Atsuyoshi (厚義) combines 厚, meaning depth or heartfelt strength, with 義, meaning righteousness. It gives the name a serious and morally grounded tone."
+  },
+  {
+    "id": "gn_atsurou_6f4a19",
+    "vibe": ["warm", "gentle", "serene"],
+    "element": ["fire", "light"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["warmth", "brightness", "clarity", "cheer", "kindness", "openness", "comfort"],
+    "meaning_en": "Atsurou is a Japanese male name associated with warm brightness and cheerful openness.",
+    "description_en": "Atsurou (温朗) combines 温, meaning warm, with 朗, meaning bright and clear. It has a welcoming, easygoing, and lightly classical masculine feel."
+  },
+  {
+    "id": "gn_atsurou_3df454",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["depth", "brightness", "clarity", "kindness", "stability", "maturity", "warmth"],
+    "meaning_en": "Atsurou is a Japanese male name associated with deep warmth and bright mature steadiness.",
+    "description_en": "Atsurou (厚朗) combines 厚, meaning depth or heartfelt warmth, with 朗, meaning bright and clear. It feels substantial, generous, and pleasantly open."
+  },
+  {
+    "id": "gn_atsurou_7cfda4",
+    "vibe": ["warm", "noble", "strong"],
+    "element": ["earth", "sun"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["depth", "son", "classical_masculine", "stability", "tradition", "warmth", "maturity"],
+    "meaning_en": "Atsurou is a Japanese male name associated with deep substance and classic masculine maturity.",
+    "description_en": "Atsurou (厚郎) combines 厚, meaning depth or hearty warmth, with 郎, a traditional masculine suffix. The name feels solid, old-style, and comfortably substantial."
+  },
+  {
+    "id": "gn_ayataka_e13287",
+    "vibe": ["elegant", "noble", "serene"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["design", "nobility", "beauty", "value", "pattern", "refinement", "grace"],
+    "meaning_en": "Ayataka is a Japanese male name associated with elegant design and noble refinement.",
+    "description_en": "Ayataka (綾貴) combines 綾, meaning figured pattern or design, with 貴, meaning noble or precious. It feels polished, graceful, and high-born in tone."
+  },
+  {
+    "id": "gn_ayataka_806157",
+    "vibe": ["elegant", "warm", "noble"],
+    "element": ["flower", "earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["color", "beauty", "nobility", "brightness", "value", "refinement", "grace"],
+    "meaning_en": "Ayataka is a Japanese male name associated with colorful beauty and noble elegance.",
+    "description_en": "Ayataka (彩貴) combines 彩, meaning color or brilliance, with 貴, meaning noble. The result feels stylish, refined, and pleasantly vivid."
+  },
+  {
+    "id": "gn_ayataka_978f7e",
+    "vibe": ["noble", "serene", "strong"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["literature", "culture", "nobility", "stature", "refinement", "growth", "dignity"],
+    "meaning_en": "Ayataka is a Japanese male name associated with cultured dignity and elevated stature.",
+    "description_en": "Ayataka (文隆) combines 文, meaning letters or culture, with 隆, meaning noble, prosperous, or elevated. It feels learned, formal, and quietly grand."
+  },
+  {
+    "id": "gn_ayumu_eb385e",
+    "vibe": ["mysterious", "gentle", "playful"],
+    "element": ["water", "star"],
+    "use_case": ["real_person", "baby", "fantasy"],
+    "kanji_meaning_tags": ["sweetfish", "dream", "river", "journey", "imagination", "nature", "movement"],
+    "meaning_en": "Ayumu is a Japanese male name associated with river-nature imagery and dreamlike movement.",
+    "description_en": "Ayumu (鮎夢) combines 鮎, sweetfish, with 夢, dream. It feels imaginative, a little unusual, and softly tied to flowing natural imagery."
+  },
+  {
+    "id": "gn_ayumu_d66ca5",
+    "vibe": ["cool", "serene", "noble"],
+    "element": ["water", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["crossing", "journey", "progress", "movement", "flow", "growth", "path"],
+    "meaning_en": "Ayumu is a Japanese male name associated with crossing forward, movement, and steady progress.",
+    "description_en": "Ayumu (渉) uses a kanji meaning to ford or cross over. The name feels mobile, forward-looking, and naturally connected to progress."
+  },
+  {
+    "id": "gn_ayumu_e20c37",
+    "vibe": ["serene", "noble", "cool"],
+    "element": ["earth", "wind"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["road", "path", "journey", "direction", "progress", "way", "growth"],
+    "meaning_en": "Ayumu is a Japanese male name associated with path, direction, and steady forward movement.",
+    "description_en": "Ayumu (道) uses the kanji for road or way. It is one of the clearest names for life-path imagery, giving a calm and purposeful sense of progress."
+  },
+  {
+    "id": "gn_arata_b8b34d",
+    "vibe": ["mysterious", "strong", "playful"],
+    "element": ["earth"],
+    "use_case": ["fantasy", "anime", "real_person"],
+    "kanji_meaning_tags": ["many", "gathering", "newness", "exotic", "density", "unusual", "presence"],
+    "meaning_en": "Arata is a Japanese male name associated with unusual density, variety, and a strongly distinctive presence.",
+    "description_en": "Arata (亜羅多) is driven heavily by sound, but 羅 and 多 make it feel dense, decorative, and a little exotic. It comes across as distinctive and somewhat dramatic."
+  },
+  {
+    "id": "gn_arata_d8ed16",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["reform", "renewal", "change", "newness", "correction", "fresh_start", "progress"],
+    "meaning_en": "Arata is a Japanese male name associated with reform, renewal, and a fresh start.",
+    "description_en": "Arata (改) uses a single kanji meaning to reform or change. The name feels direct, modern, and strongly tied to renewal and new beginnings."
+  },
+  {
+    "id": "gn_arata_9ee10e",
+    "vibe": ["strong", "cool", "edgy"],
+    "element": ["earth"],
+    "use_case": ["real_person", "anime", "fantasy"],
+    "kanji_meaning_tags": ["revolution", "change", "renewal", "breaking_old", "transformation", "boldness", "newness"],
+    "meaning_en": "Arata is a Japanese male name associated with radical change, transformation, and bold renewal.",
+    "description_en": "Arata (革) uses the kanji for leather or reform, often associated with change and renewal. It has a sharper, more forceful edge than softer Arata spellings."
+  },
+  {
+    "id": "gn_ikuo_e7894b",
+    "vibe": ["warm", "strong", "serene"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["continuity", "longevity", "manliness", "stability", "endurance", "maturity", "strength"],
+    "meaning_en": "Ikuo is a Japanese male name associated with lasting endurance and mature masculine steadiness.",
+    "description_en": "Ikuo (以久男) combines 久, meaning long-lasting, with 男, meaning man. The name feels old-style, stable, and straightforwardly masculine."
+  },
+  {
+    "id": "gn_ikuo_02b614",
+    "vibe": ["gentle", "noble", "serene"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["longevity", "manhood", "maturity", "stability", "calm", "continuity", "dignity"],
+    "meaning_en": "Ikuo is a Japanese male name associated with long-lasting maturity and calm masculine dignity.",
+    "description_en": "Ikuo (伊久夫) combines 久, meaning long-lasting, with 夫, meaning man or adult male. It gives the name a composed, mature, and traditional feel."
+  },
+  {
+    "id": "gn_ikuo_72abea",
+    "vibe": ["strong", "noble", "serene"],
+    "element": ["earth", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["longevity", "heroic", "strength", "masculinity", "continuity", "stability", "presence"],
+    "meaning_en": "Ikuo is a Japanese male name associated with enduring strength and heroic masculine steadiness.",
+    "description_en": "Ikuo (伊久雄) combines 久, meaning long-lasting, with 雄, meaning heroic or masculine. It feels sturdier and more forceful than softer Ikuo spellings."
+  },
+  {
+    "id": "gn_isao_845ed6",
+    "vibe": ["strong", "warm", "serene"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["assistant", "manliness", "plain_strength", "traditional", "maturity", "stability", "masculinity"],
+    "meaning_en": "Isao is a Japanese male name associated with plain, steady masculine strength and a traditional feel.",
+    "description_en": "Isao (以佐男) is shaped largely for sound, but 男 firmly anchors it in classic masculinity. The overall tone is straightforward, stable, and old-fashioned in a familiar way."
+  },
+  {
+    "id": "gn_isao_8b51b7",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["assistant", "center", "balance", "support", "stability", "calm", "composure"],
+    "meaning_en": "Isao is a Japanese male name associated with centered calm and supportive stability.",
+    "description_en": "Isao (伊佐央) combines 央, meaning center, with phonetic support characters. It feels balanced, composed, and modestly dependable."
+  },
+  {
+    "id": "gn_isao_0fbdb6",
+    "vibe": ["elegant", "serene", "gentle"],
+    "element": ["wind"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["thread", "continuity", "connection", "refinement", "calm", "line", "restraint"],
+    "meaning_en": "Isao is a Japanese male name associated with continuity, quiet connection, and refined restraint.",
+    "description_en": "Isao (伊佐緒) uses 緒, which can mean cord, thread, or beginning. It gives the name a more delicate and literary nuance than more muscular spellings."
+  },
+  {
+    "id": "gn_isami_f6fe2f",
+    "vibe": ["gentle", "cool", "serene"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["sea", "support", "breadth", "flow", "calm", "depth", "openness"],
+    "meaning_en": "Isami is a Japanese male name associated with calm breadth, sea-like depth, and quiet support.",
+    "description_en": "Isami (伊佐海) uses 海, meaning sea, as its clearest semantic center. The name feels open, steady, and gently expansive."
+  },
+  {
+    "id": "gn_isami_bb16c9",
+    "vibe": ["serene", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["truth", "substance", "reality", "groundedness", "stability", "sincerity", "calm"],
+    "meaning_en": "Isami is a Japanese male name associated with grounded sincerity and calm substance.",
+    "description_en": "Isami (伊佐実) uses 実, meaning truth, fruit, or substance. It gives the name a stable, grounded, and quietly honest feeling."
+  },
+  {
+    "id": "gn_isami_3d8706",
+    "vibe": ["elegant", "gentle", "warm"],
+    "element": ["flower"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["beauty", "abundance", "grace", "softness", "refinement", "warmth", "cultivation"],
+    "meaning_en": "Isami is a Japanese male name associated with beauty, grace, and cultivated warmth.",
+    "description_en": "Isami (伊佐美) includes 美, meaning beauty. That adds a softer and more refined quality, making this spelling gentler and more graceful than tougher Isami variants."
+  },
+  {
+    "id": "gn_isamu_b9ef16",
+    "vibe": ["strong", "noble", "cool"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical", "warrior"],
+    "kanji_meaning_tags": ["greatness", "admiration", "strength", "stature", "power", "presence", "dignity"],
+    "meaning_en": "Isamu is a Japanese male name associated with admirable greatness and strong masculine presence.",
+    "description_en": "Isamu (偉) uses a single kanji meaning great or admirable. It feels bold, direct, and highly masculine, with a simple but forceful dignity."
+  },
+  {
+    "id": "gn_isamu_6e8472",
+    "vibe": ["strong", "fierce", "noble"],
+    "element": ["thunder", "earth"],
+    "use_case": ["real_person", "historical", "warrior"],
+    "kanji_meaning_tags": ["majesty", "martial", "power", "command", "strength", "intensity", "masculinity"],
+    "meaning_en": "Isamu is a Japanese male name associated with authority, martial force, and intense masculine power.",
+    "description_en": "Isamu (威佐武) centers on 威, meaning authority or majesty, and 武, meaning martial strength. It gives the name a forceful, warrior-like image."
+  },
+  {
+    "id": "gn_isamu_21cd5f",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical", "warrior"],
+    "kanji_meaning_tags": ["one", "support", "martial", "strength", "discipline", "focus", "masculinity"],
+    "meaning_en": "Isamu is a Japanese male name associated with focused martial strength and disciplined individuality.",
+    "description_en": "Isamu (一支武) combines 一, meaning one, with 武, meaning martial, creating a firm masculine core. The name feels disciplined, singular, and sturdy."
+  },
+  {
+    "id": "gn_ichirou_3aae01",
+    "vibe": ["warm", "elegant", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["knowledge", "brightness", "first_son", "clarity", "classic", "family", "warmth"],
+    "meaning_en": "Ichirou is a Japanese male name associated with knowledge, brightness, and classic first-son masculinity.",
+    "description_en": "Ichirou (以知朗) combines 知, meaning knowledge, with 朗, meaning bright and clear. Together with the classic -rou ending, it feels intelligent, bright, and traditionally masculine."
+  },
+  {
+    "id": "gn_ichirou_fa310b",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["knowledge", "first_son", "clarity", "maturity", "tradition", "family", "stability"],
+    "meaning_en": "Ichirou is a Japanese male name associated with knowledge and mature first-son steadiness.",
+    "description_en": "Ichirou (以知郎) combines 知, meaning knowledge, with 郎, a classic masculine suffix. It has the familiar old-style solidity expected of an Ichirou spelling."
+  },
+  {
+    "id": "gn_ichirou_710ff0",
+    "vibe": ["warm", "gentle", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["thousand", "first_son", "abundance", "family", "tradition", "continuity", "classic"],
+    "meaning_en": "Ichirou is a Japanese male name associated with abundance and classic first-son continuity.",
+    "description_en": "Ichirou (伊千郎) uses 千, meaning thousand, with 郎, a traditional masculine suffix. The result feels old-fashioned, steady, and comfortably classic."
+  },
+  {
+    "id": "gn_ikki_d631e8",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["sun", "light"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["one", "rising_sun", "dawn", "brightness", "energy", "focus", "momentum"],
+    "meaning_en": "Ikki is a Japanese male name associated with singular focus and rising-sun energy.",
+    "description_en": "Ikki (一旭) combines 一, meaning one, with 旭, meaning rising sun. The name feels vivid, energetic, and strongly forward-moving."
+  },
+  {
+    "id": "gn_ikki_c38218",
+    "vibe": ["cool", "gentle", "noble"],
+    "element": ["star", "light"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["one", "hope", "future", "clarity", "possibility", "focus", "brightness"],
+    "meaning_en": "Ikki is a Japanese male name associated with focused hope and a bright future orientation.",
+    "description_en": "Ikki (一希) combines 一, meaning one, with 希, meaning hope. It feels concise, modern, and optimistic without becoming overly soft."
+  },
+  {
+    "id": "gn_ikki_131102",
+    "vibe": ["strong", "edgy", "cool"],
+    "element": ["wind"],
+    "use_case": ["anime", "fantasy", "real_person"],
+    "kanji_meaning_tags": ["one", "banner", "standard", "identity", "battle", "signal", "presence"],
+    "meaning_en": "Ikki is a Japanese male name associated with singular identity, standards, and banner-like presence.",
+    "description_en": "Ikki (一旗) combines 一, meaning one, with 旗, meaning banner or flag. It gives the name a sharper, more declarative identity, with a strong emblematic feel."
+  },
+  {
+    "id": "gn_issei_d4f89a",
+    "vibe": ["cool", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "purity", "discipline", "focus", "simplicity", "restraint", "clarity"],
+    "meaning_en": "Issei is a Japanese male name associated with singular focus, purity, and disciplined clarity.",
+    "description_en": "Issei (一斎) combines 一, meaning one, with 斎, meaning purity, discipline, or ritual restraint. The name feels clean, formal, and strongly focused."
+  },
+  {
+    "id": "gn_issei_c2857b",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["one", "force", "momentum", "presence", "collective_energy", "drive", "impact"],
+    "meaning_en": "Issei is a Japanese male name associated with singular impact and forceful momentum.",
+    "description_en": "Issei (一勢) combines 一, meaning one, with 勢, meaning force or momentum. It gives the name a strong, energetic, and assertive charge."
+  },
+  {
+    "id": "gn_issei_b3c4f0",
+    "vibe": ["strong", "cool", "noble"],
+    "element": ["wind", "earth"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["one", "advance", "campaign", "purpose", "drive", "progress", "direction"],
+    "meaning_en": "Issei is a Japanese male name associated with singular direction, drive, and forward advance.",
+    "description_en": "Issei (一征) combines 一, meaning one, with 征, meaning to set out or advance. The name feels decisive, energetic, and action-oriented."
+  },
+  {
+    "id": "gn_ittetsu_da126d",
+    "vibe": ["cool", "strong", "noble"],
+    "element": ["earth", "light"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "wisdom", "philosophy", "focus", "clarity", "discipline", "intellect"],
+    "meaning_en": "Ittetsu is a Japanese male name associated with singular wisdom and disciplined clarity.",
+    "description_en": "Ittetsu (一哲) combines 一, meaning one, with 哲, meaning wisdom or philosophy. It feels intellectually sharp, focused, and self-possessed."
+  },
+  {
+    "id": "gn_ittetsu_51a790",
+    "vibe": ["strong", "fierce", "cool"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical", "warrior"],
+    "kanji_meaning_tags": ["one", "unyielding", "stubbornness", "resolve", "discipline", "single_mindedness", "strength"],
+    "meaning_en": "Ittetsu is a Japanese male name associated with unyielding resolve and single-minded strength.",
+    "description_en": "Ittetsu (一徹) combines 一, meaning one, with 徹, meaning penetrating or unwavering. It is famous for carrying a stubborn, iron-willed, highly disciplined image."
+  },
+  {
+    "id": "gn_ippei_38bfeb",
+    "vibe": ["strong", "serene", "noble"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "soldier", "steadiness", "duty", "masculinity", "service", "plain_strength"],
+    "meaning_en": "Ippei is a Japanese male name associated with simple duty, steady service, and masculine strength.",
+    "description_en": "Ippei (一兵) combines 一, meaning one, with 兵, meaning soldier. It feels direct, sturdy, and traditionally masculine."
+  },
+  {
+    "id": "gn_ippei_903ecb",
+    "vibe": ["serene", "gentle", "warm"],
+    "element": ["earth"],
+    "use_case": ["real_person", "baby"],
+    "kanji_meaning_tags": ["one", "peace", "balance", "stability", "calm", "simplicity", "harmony"],
+    "meaning_en": "Ippei is a Japanese male name associated with singular calm and balanced peace.",
+    "description_en": "Ippei (一平) combines 一, meaning one, with 平, meaning peace or balance. The name feels simple, easygoing, and pleasantly stable."
+  },
+  {
+    "id": "gn_ippei_ceb925",
+    "vibe": ["serene", "noble", "gentle"],
+    "element": ["earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["one", "peace", "stability", "traditional", "balance", "calm", "dignity"],
+    "meaning_en": "Ippei is a Japanese male name associated with singular steadiness and traditional peace.",
+    "description_en": "Ippei (壱平) uses the formal variant 壱 for one, paired with 平 for peace. It feels slightly more formal and classical than the simpler 一平 spelling."
+  },
+  {
+    "id": "gn_ibuki_593bf5",
+    "vibe": ["cool", "strong", "playful"],
+    "element": ["wind", "mountain"],
+    "use_case": ["real_person", "baby", "anime"],
+    "kanji_meaning_tags": ["breath", "wind", "blow", "nature", "mountain", "freshness", "motion"],
+    "meaning_en": "Ibuki is a Japanese male name associated with breath, wind, and vivid natural force.",
+    "description_en": "Ibuki (伊吹) is strongly tied to the idea of blowing wind or breath. It feels fresh, natural, and energetic, with a modern outdoorsy appeal."
+  },
+  {
+    "id": "gn_ibuki_fbe630",
+    "vibe": ["noble", "serene", "warm"],
+    "element": ["earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["abundance", "fortune", "good_omen", "classical", "dignity", "presence", "tradition"],
+    "meaning_en": "Ibuki is a Japanese male name associated with abundance, dignity, and an old-style favorable presence.",
+    "description_en": "Ibuki (伊富岐) is shaped largely for sound, but 富 contributes a sense of wealth or abundance. The result feels uncommon, stately, and slightly old-fashioned."
+  },
+  {
+    "id": "gn_ibuki_3fb3fc",
+    "vibe": ["gentle", "elegant", "mysterious"],
+    "element": ["flower", "earth"],
+    "use_case": ["real_person", "fantasy"],
+    "kanji_meaning_tags": ["lotus", "tree", "beauty", "growth", "nature", "softness", "refinement"],
+    "meaning_en": "Ibuki is a Japanese male name associated with plant-like grace, beauty, and natural growth.",
+    "description_en": "Ibuki (伊芙樹) includes 芙, often linked to lotus-like beauty, and 樹, tree. This gives the name a gentler, more decorative and nature-oriented feeling."
+  },
+  {
+    "id": "gn_eichi_0b6c1a",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["light"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["wisdom", "one", "clarity", "insight", "intellect", "distinction", "focus"],
+    "meaning_en": "Eichi is a Japanese male name associated with singular wisdom and clear insight.",
+    "description_en": "Eichi (叡一) combines 叡, meaning deep wisdom, with 一, meaning one. It feels intelligent, focused, and somewhat scholarly."
+  },
+  {
+    "id": "gn_eichi_24eb96",
+    "vibe": ["mysterious", "cool", "edgy"],
+    "element": ["dark", "light"],
+    "use_case": ["anime", "fantasy", "real_person"],
+    "kanji_meaning_tags": ["shadow", "one", "contrast", "depth", "presence", "individuality", "darkness"],
+    "meaning_en": "Eichi is a Japanese male name associated with singular shadow, contrast, and striking individuality.",
+    "description_en": "Eichi (影一) combines 影, meaning shadow, with 一, meaning one. It gives the name a darker, more stylized and visually dramatic feeling."
+  },
+  {
+    "id": "gn_eichi_490dcd",
+    "vibe": ["elegant", "serene", "cool"],
+    "element": ["light"],
+    "use_case": ["real_person", "anime"],
+    "kanji_meaning_tags": ["reflection", "one", "clarity", "radiance", "image", "refinement", "presence"],
+    "meaning_en": "Eichi is a Japanese male name associated with singular reflected brilliance and visual clarity.",
+    "description_en": "Eichi (映一) combines 映, meaning reflected light, with 一, meaning one. The name feels neat, bright, and aesthetically polished."
+  },
+  {
+    "id": "gn_eikichi_918a62",
+    "vibe": ["warm", "playful", "elegant"],
+    "element": ["light", "sun"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["reflection", "good_fortune", "brightness", "cheer", "favor", "luck", "warmth"],
+    "meaning_en": "Eikichi is a Japanese male name associated with bright good fortune and cheerful reflected light.",
+    "description_en": "Eikichi (映吉) combines 映, meaning reflected light, with 吉, meaning good luck. It feels favorable, bright, and slightly old-school in a friendly way."
+  },
+  {
+    "id": "gn_eikichi_f6aa2e",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["light", "sun"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["glory", "good_fortune", "prosperity", "favor", "luck", "stability", "brightness"],
+    "meaning_en": "Eikichi is a Japanese male name associated with flourishing good fortune and favorable stability.",
+    "description_en": "Eikichi (栄吉) combines 栄, meaning flourishing, with 吉, meaning good luck. The name feels auspicious, hearty, and comfortably traditional."
+  },
+  {
+    "id": "gn_eikichi_849951",
+    "vibe": ["serene", "warm", "noble"],
+    "element": ["water", "sun"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["eternity", "good_fortune", "continuity", "luck", "stability", "blessing", "calm"],
+    "meaning_en": "Eikichi is a Japanese male name associated with lasting good fortune and enduring favorable stability.",
+    "description_en": "Eikichi (永吉) combines 永, meaning eternal, with 吉, meaning good luck. It gives the name a durable, reassuringly auspicious quality."
+  },
+  {
+    "id": "gn_eigo_f6c078",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["wisdom", "speech", "language", "clarity", "intellect", "expression", "insight"],
+    "meaning_en": "Eigo is a Japanese male name associated with wise speech and clear, intelligent expression.",
+    "description_en": "Eigo (叡吾) combines 叡, meaning deep wisdom, with 吾, meaning I or self. The result feels intellectual, articulate, and self-possessed."
+  },
+  {
+    "id": "gn_eigo_f17626",
+    "vibe": ["warm", "noble", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["glory", "selfhood", "presence", "prosperity", "identity", "warmth", "stability"],
+    "meaning_en": "Eigo is a Japanese male name associated with flourishing selfhood and a stable noble presence.",
+    "description_en": "Eigo (栄吾) combines 栄, meaning flourishing, with 吾, meaning self. It gives the name a solid, self-possessed, and favorable tone."
+  },
+  {
+    "id": "gn_eigo_79d342",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["glory", "understanding", "insight", "awakening", "prosperity", "intellect", "clarity"],
+    "meaning_en": "Eigo is a Japanese male name associated with flourishing insight and clear understanding.",
+    "description_en": "Eigo (栄悟) combines 栄, meaning flourishing, with 悟, meaning understanding or awakening. It feels reflective, intelligent, and mature."
+  },
+  {
+    "id": "gn_eisaku_c82f54",
+    "vibe": ["warm", "strong", "noble"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["glory", "creation", "work", "achievement", "prosperity", "effort", "success"],
+    "meaning_en": "Eisaku is a Japanese male name associated with flourishing work, achievement, and productive strength.",
+    "description_en": "Eisaku (栄作) combines 栄, meaning flourishing, with 作, meaning to make or create. It has a productive, solid, and mature masculine quality."
+  },
+  {
+    "id": "gn_eisaku_3c9558",
+    "vibe": ["cool", "noble", "strong"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["glory", "plan", "strategy", "success", "prosperity", "judgment", "ability"],
+    "meaning_en": "Eisaku is a Japanese male name associated with flourishing strategy and capable achievement.",
+    "description_en": "Eisaku (栄策) combines 栄, meaning flourishing, with 策, meaning plan or strategy. It feels deliberate, competent, and slightly more cerebral than 作-based spellings."
+  },
+  {
+    "id": "gn_eisaku_f6754b",
+    "vibe": ["serene", "noble", "warm"],
+    "element": ["water", "earth"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["eternity", "creation", "continuity", "work", "stability", "endurance", "maturity"],
+    "meaning_en": "Eisaku is a Japanese male name associated with enduring work and long-lasting productive steadiness.",
+    "description_en": "Eisaku (永作) combines 永, meaning eternal, with 作, meaning to create or make. The result feels durable, industrious, and quietly dependable."
+  },
+  {
+    "id": "gn_eiji_39871b",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["wisdom", "governance", "clarity", "leadership", "intellect", "order", "distinction"],
+    "meaning_en": "Eiji is a Japanese male name associated with wise governance and clear intelligence.",
+    "description_en": "Eiji (叡司) combines 叡, meaning deep wisdom, with 司, meaning to govern or manage. It feels intelligent, composed, and naturally leaderly."
+  },
+  {
+    "id": "gn_eiji_c9e6f9",
+    "vibe": ["cool", "noble", "serene"],
+    "element": ["light", "water"],
+    "use_case": ["real_person", "historical"],
+    "kanji_meaning_tags": ["wisdom", "order", "governance", "clarity", "discipline", "intellect", "stability"],
+    "meaning_en": "Eiji is a Japanese male name associated with wise order, discipline, and calm governance.",
+    "description_en": "Eiji (叡治) combines 叡, meaning wisdom, with 治, meaning order or governance. It carries a thoughtful, mature, and highly composed masculine tone."
+  },
+  {
+    "id": "gn_eiji_3a4adf",
+    "vibe": ["elegant", "cool", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflection", "governance", "clarity", "presence", "order", "visual_brightness", "refinement"],
+    "meaning_en": "Eiji is a Japanese male name associated with reflected clarity and orderly presence.",
+    "description_en": "Eiji (映司) combines 映, meaning reflected light, with 司, meaning to govern. The name feels polished, orderly, and visually bright."
+  },
+  {
+    "id": "gn_eisuke_ddf646",
+    "vibe": ["gentle", "cool", "serene"],
+    "element": ["light", "earth"],
+    "use_case": ["real_person"],
+    "kanji_meaning_tags": ["reflection", "support", "clarity", "guidance", "presence", "reliability", "polish"],
+    "meaning_en": "Eisuke is a Japanese male name associated with reflected clarity and supportive reliability.",
+    "description_en": "Eisuke (映介) combines 映, meaning reflected light, with 介, meaning assistance or support. It gives the name a clear, polished, and dependable impression."
+  }
+]

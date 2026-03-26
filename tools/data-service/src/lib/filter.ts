@@ -120,6 +120,28 @@ function conditionToSql(
       };
     }
 
+    case "is_empty": {
+      const isEmpty = c.value === true || c.value === "true";
+      if (isJson) {
+        const condition = isEmpty
+          ? `(n.${c.field} IS NULL OR n.${c.field} = '[]')`
+          : `(n.${c.field} IS NOT NULL AND n.${c.field} != '[]')`;
+        return { sql: condition, params: [], nextIdx: paramIdx };
+      }
+      const condition = isEmpty
+        ? `(n.${c.field} IS NULL OR n.${c.field} = '')`
+        : `(n.${c.field} IS NOT NULL AND n.${c.field} != '')`;
+      return { sql: condition, params: [], nextIdx: paramIdx };
+    }
+
+    case "is_null": {
+      const isNull = c.value === true || c.value === "true";
+      const condition = isNull
+        ? `n.${c.field} IS NULL`
+        : `n.${c.field} IS NOT NULL`;
+      return { sql: condition, params: [], nextIdx: paramIdx };
+    }
+
     default:
       throw new Error(`Unknown filter op: ${c.op}`);
   }

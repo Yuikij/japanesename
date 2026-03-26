@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS names (
 
   estimated_population INTEGER,
   kamon_url        TEXT,
+  kamon_prompt     TEXT,
 
   status           TEXT NOT NULL DEFAULT 'raw'
                         CHECK (status IN ('raw', 'llm_enriched', 'reviewed', 'complete')),

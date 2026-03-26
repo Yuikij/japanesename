@@ -14,5 +14,10 @@
       // 创建 D1 后将 database_id 填入此处: wrangler d1 create japanesename-data
       "database_id": "a0ffc580-c7ff-419b-b165-5369e6618082"
     }
-  ]
+  ],
+  "vars": {
+    // Set API_SECRET via `wrangler secret put API_SECRET` or .dev.vars file.
+    // Do NOT hardcode the real secret here.
+    "API_SECRET": "CHANGE_ME"
+  }
 }

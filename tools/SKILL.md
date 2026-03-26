@@ -18,6 +18,7 @@ Related docs (same `tools/` directory):
 
 - **Use your own knowledge** to fill soft fields. You are a large language model trained on extensive Japanese language and culture data. That training IS the tool for semantic fields.
 - **Understand the compound meaning first.** Multi-kanji names form a combined concept — 細井 means "narrow well," not "slender + well." Always synthesize the overall meaning before filling any field. This compound meaning drives `meaning_en`, `description_en`, `etymology_en`, and informs every other soft field.
+- **Recognize phonetic kanji (当て字).** Some kanji in names are purely phonetic — chosen for their reading, not their meaning. Common examples: 亜 (あ), 也 (や), 奈 (な). When a kanji is phonetic, do NOT force its dictionary meaning into `meaning_en` or `kanji_meaning_tags`. Acknowledge it as phonetic in `description_en`/`etymology_en`. Example: 亜喜央 → meaning should focus on 喜 (joy) + 央 (center), not treat 亜 as "subtle."
 - Process each name by **reading its kanji → understanding each character's meaning → synthesizing the compound meaning → making a judgment**.
 - Execute API writes via `curl` or simple inline `fetch` calls (no external dependencies needed).
 
@@ -49,7 +50,7 @@ Related docs (same `tools/` directory):
 | Field | Type | How to judge |
 |-------|------|-------------|
 | `vibe` | string[] **2-3** | What feeling does this name evoke? **Aim for 2-3 tags** for SEO coverage. Only use 1 if truly single-dimensional |
-| `element` | string[] **2-3** | What natural/thematic element does the name connect to? **Aim for 2-3.** Think broadly: 井→water+earth, 桜→flower+wind, 鉄→earth+fire |
+| `element` | string[] **2-3** | What natural/thematic element does the name connect to? **Aim for 2-3** when kanji support it (井→water+earth, 桜→flower+wind). But **never pad with weak connections** — if the name only genuinely links to 1 element, use 1. Not every name has strong elemental associations |
 | `era` | enum | When was this name popular? Use your knowledge of Japanese naming trends |
 | `popularity` | enum | How common? Cross-reference `national_rank`/`estimated_population` if available |
 | `use_case` | string[] | Where would this name appear? Think broadly: historical figures in `famous_bearers` → add `historical`; traditional but still used → add `baby` |
@@ -169,8 +170,14 @@ Some records have pre-existing data from earlier automated runs that may contain
 ❌ `kanji_meaning_tags: ["ほそい", "hosoi", "japanese surname", "family name", "serene"]` — readings + generic filler + vibe leak
 ✅ `kanji_meaning_tags: ["narrow", "slender", "well", "water_source", "depth", "purity"]` — semantic associations only
 
-❌ `element: ["water"]` (only 1) — too sparse for SEO matching
-✅ `element: ["water", "earth"]` (2-3) — better coverage
+❌ `element: ["water"]` for 細井 (only 1 when 井 clearly links to water AND earth) — missing obvious connection
+✅ `element: ["water", "earth"]` for 細井 — both justified by kanji meaning
+
+❌ `element: ["sun", "earth", "light"]` for 亜喜央 — "earth" has no basis, padding to hit 2-3
+✅ `element: ["light"]` for 亜喜央 — only genuine connection (joy → brightness → light)
+
+❌ `meaning_en: "Subtle joy at the center"` for 亜喜央 — treats phonetic 亜 as meaningful "subtle"
+✅ `meaning_en: "Joyful center"` for 亜喜央 — focuses on the meaningful kanji (喜, 央)
 
 ### Batch processing
 
@@ -222,7 +229,7 @@ No fixed enum. Cover: literal kanji meanings, extended associations, colors, emo
 ### Tag coverage (critical for SEO keyword matching)
 
 - `vibe` — **aim for 2-3 tags**. Think about the name from multiple angles (sound feel, kanji connotation, cultural context). Only use 1 if the name is truly one-dimensional.
-- `element` — **aim for 2-3 tags**. Think broadly about what the kanji connect to. Most kanji touch multiple elements (e.g. 井=water+earth, 鉄=earth+fire, 桜=flower+wind).
+- `element` — **aim for 2-3 tags** when kanji genuinely support it (e.g. 井=water+earth, 鉄=earth+fire). But **1 is fine** if the name's kanji don't have strong elemental ties. Abstract concepts (joy, center, help) ≠ elements. Don't pad.
 - `use_case` — think through all applicable scenarios. If `famous_bearers` contains historical figures → add `historical`. If the name is still used today → add `baby`. Anime-style names → add `anime`.
 - `kanji_meaning_tags` — **aim for 12-18**. These are the primary SEO matching surface. Cover: literal meanings, extended associations, related concepts, colors, emotions. But **NEVER** include readings, generic labels, or vibe/element duplicates.
 
@@ -264,7 +271,7 @@ No fixed enum. Cover: literal kanji meanings, extended associations, colors, emo
 | `kanji_breakdown` | object[] | `[{"kanji":"鈴","meanings_en":["bell","chime"],"reading":"すず"}]` |
 | `alternative_readings` | string[] | `["すすぎ","すすき"]` |
 | `reading_romaji_variants` | string[] | `["Ohno","Ōno","Oono"]` |
-| `related_names` | string[] | IDs of related names |
+| `related_names` | string[] | Kanji of related names (e.g. same reading, different kanji) |
 | `famous_bearers` | object[] | `[{"name":"Suzuki Ichiro","name_jp":"鈴木一朗","context":"MLB player"}]` |
 | `kamon_prompt` | string | family_name only: English prompt describing kamon visual motifs |
 

@@ -53,7 +53,7 @@ Related docs (same `tools/` directory):
 | `element` | string[] **2-3** | What natural/thematic element does the name connect to? **Aim for 2-3** when kanji support it (井→water+earth, 桜→flower+wind). But **never pad with weak connections** — if the name only genuinely links to 1 element, use 1. Not every name has strong elemental associations |
 | `era` | enum | When was this name popular? Use your knowledge of Japanese naming trends |
 | `popularity` | enum | How common? Cross-reference `national_rank`/`estimated_population` if available |
-| `use_case` | string[] | Where would this name appear? Think broadly: historical figures in `famous_bearers` → add `historical`; traditional but still used → add `baby` |
+| `use_case` | string[] | Where would this name appear? Think broadly: historical figures in `famous_bearers` → add `historical`; traditional but still used → add `baby`. **`samurai`/`warrior` require martial kanji** (武, 士, 兵, 将, 鉄, 刀, 剣, etc.) — do NOT add just because a name is traditional + male |
 | `kanji_meaning_tags` | string[] 10-20 | **Semantic associations only.** Literal kanji meanings + extended concepts + colors + emotions. **NEVER include**: readings (ほそい, hosoi), generic filler (japanese surname, family name), or vibe/element duplicates |
 | `meaning_en` | string | **Compound meaning**, not a kanji-by-kanji list. 細井→"Narrow well", NOT "slender, fine, delicate, well" |
 | `description_en` | string | 2-3 sentences of **specific** cultural context. Mention name origin pattern (topographic, occupational, clan), historical significance, or regional associations |
@@ -178,6 +178,9 @@ Some records have pre-existing data from earlier automated runs that may contain
 
 ❌ `meaning_en: "Subtle joy at the center"` for 亜喜央 — treats phonetic 亜 as meaningful "subtle"
 ✅ `meaning_en: "Joyful center"` for 亜喜央 — focuses on the meaningful kanji (喜, 央)
+
+❌ `use_case: ["real_person", "historical", "samurai"]` for 晃典 — no martial kanji, "samurai" added just because it's traditional + male
+✅ `use_case: ["real_person", "historical"]` for 晃典 — scholarly name, no warrior associations
 
 ### Batch processing
 

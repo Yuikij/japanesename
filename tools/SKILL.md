@@ -17,7 +17,8 @@ Related docs (same `tools/` directory):
 ### You MUST
 
 - **Use your own knowledge** to fill soft fields. You are a large language model trained on extensive Japanese language and culture data. That training IS the tool for semantic fields.
-- Process each name by **reading its kanji → understanding each character's meaning and cultural connotation → making a judgment**.
+- **Understand the compound meaning first.** Multi-kanji names form a combined concept — 細井 means "narrow well," not "slender + well." Always synthesize the overall meaning before filling any field. This compound meaning drives `meaning_en`, `description_en`, `etymology_en`, and informs every other soft field.
+- Process each name by **reading its kanji → understanding each character's meaning → synthesizing the compound meaning → making a judgment**.
 - Execute API writes via `curl` or simple inline `fetch` calls (no external dependencies needed).
 
 ### You MUST NOT
@@ -38,7 +39,7 @@ Related docs (same `tools/` directory):
 | `estimated_population` | myoji-yurai.net | family_name only |
 | `household_count` | japanese-names.info | fallback source |
 | `alternative_readings` | kanshudo.com | both given/family |
-| `kanji_breakdown` | behindthename / japanese-names.info | literal per-kanji meanings |
+| `kanji_breakdown` | behindthename / japanese-names.info / **AI fallback** | literal per-kanji meanings; **if scraper returns nothing, fill it yourself** — you know kanji meanings |
 | `famous_bearers` | myoji-yurai / japanese-names.info | **NEVER fabricate — must have source** |
 | `regional_origin` | myoji-yurai.net (top_regions) | family_name; infer from evidence |
 | `reading_romaji_variants` | kanshudo.com | e.g. Ohno/Ōno/Oono |
@@ -47,15 +48,15 @@ Related docs (same `tools/` directory):
 
 | Field | Type | How to judge |
 |-------|------|-------------|
-| `vibe` | string[] ≤3 | What feeling does this name evoke? Consider each kanji's connotation and overall impression |
-| `element` | string[] ≤3 | What natural/thematic element does the name connect to? Based on kanji literal meanings |
+| `vibe` | string[] **2-3** | What feeling does this name evoke? **Aim for 2-3 tags** for SEO coverage. Only use 1 if truly single-dimensional |
+| `element` | string[] **2-3** | What natural/thematic element does the name connect to? **Aim for 2-3.** Think broadly: 井→water+earth, 桜→flower+wind, 鉄→earth+fire |
 | `era` | enum | When was this name popular? Use your knowledge of Japanese naming trends |
 | `popularity` | enum | How common? Cross-reference `national_rank`/`estimated_population` if available |
-| `use_case` | string[] | Where would this name appear? (real person, anime, historical, etc.) |
-| `kanji_meaning_tags` | string[] 10-20 | **Broad SEO catch-all.** Literal meanings + extended associations + colors + emotions + concepts |
-| `meaning_en` | string | One-line English meaning synthesized from kanji breakdown |
-| `description_en` | string | 2-3 sentence cultural context |
-| `etymology_en` | string | Historical/geographic origin |
+| `use_case` | string[] | Where would this name appear? Think broadly: historical figures in `famous_bearers` → add `historical`; traditional but still used → add `baby` |
+| `kanji_meaning_tags` | string[] 10-20 | **Semantic associations only.** Literal kanji meanings + extended concepts + colors + emotions. **NEVER include**: readings (ほそい, hosoi), generic filler (japanese surname, family name), or vibe/element duplicates |
+| `meaning_en` | string | **Compound meaning**, not a kanji-by-kanji list. 細井→"Narrow well", NOT "slender, fine, delicate, well" |
+| `description_en` | string | 2-3 sentences of **specific** cultural context. Mention name origin pattern (topographic, occupational, clan), historical significance, or regional associations |
+| `etymology_en` | string | **Specific** origin story. 細井→"Topographic surname referring to a narrow well." NEVER use generic templates like "fitting common Japanese family-name patterns" |
 | `kamon_prompt` | string | **family_name only.** English prompt for generating a kamon (family crest) image. Describe the crest's visual motifs based on the family name's kanji meanings and cultural associations |
 | `script` | string[] | Which writing systems — just inspect the kanji/reading fields |
 | `origin_region` | enum | Default `japan_native` unless evidence says otherwise |
@@ -96,7 +97,12 @@ Some records have pre-existing data from earlier automated runs that may contain
 | `kanji_breakdown[].reading` | May contain the full name reading instead of the per-kanji reading | Fix: each kanji entry's reading must be that single character's reading only (e.g. 郁彦 → 郁=くに, 彦=ひこ, NOT both=くにひこ) |
 | `alternative_readings` | May contain alternative **kanji writings** instead of actual reading variants | Fix: this field should hold kana/romaji reading variants. Alternative kanji spellings belong in a different context |
 | `era` / `popularity` | May have been set by a deterministic mapping script | Re-evaluate using your own judgment; override if the existing value feels wrong |
-| `vibe` / `element` / `use_case` | If present and all records share suspiciously similar values | Override with your own judgment |
+| `vibe` / `element` / `use_case` | If present and all records share suspiciously similar values, or only 1 tag when 2-3 are appropriate | Override with your own judgment; aim for 2-3 tags |
+| `kanji_meaning_tags` | May contain readings (ほそい, hosoi), generic SEO filler (japanese surname, family name, japanese last name), or duplicates of vibe/element values | Remove garbage entries; replace with real semantic associations (concepts, colors, emotions derived from kanji meaning) |
+| `meaning_en` | May be a lazy kanji-by-kanji list like "slender, fine, delicate, well" instead of compound meaning | Rewrite as synthesized compound meaning: "Narrow well" |
+| `description_en` | May be a generic template applicable to any name | Rewrite with specific cultural context: origin pattern, historical significance, regional associations |
+| `etymology_en` | May be a generic template like "fitting common Japanese family-name patterns tied to landscape, settlement, occupation, or old clan association" | Rewrite with specific origin: "Topographic surname referring to a narrow well" |
+| `kanji_breakdown` | May be empty `[]` even though the kanji is perfectly readable | Fill it yourself — you know the per-kanji meanings and readings |
 
 **Rule of thumb**: if a soft field already has a value, treat it as a *hint* you can override, not as a confirmed fact. Your fresh judgment based on kanji meaning is more reliable than pre-existing script-generated values. Override with a **better value** — never clear a soft field to null just because you distrust the old value.
 
@@ -127,11 +133,44 @@ Some records have pre-existing data from earlier automated runs that may contain
 **Example C**: `kanji=藤原`, `reading=ふじわら`, `name_part=family_name`
 
 - 藤 = wisteria vine; 原 = field/plain
-- **vibe**: `["elegant", "noble"]` — aristocratic clan name
-- **element**: `["flower"]` — wisteria is literal
+- **Compound meaning**: "Wisteria field" — a place overgrown with wisteria
+- **vibe**: `["elegant", "noble", "serene"]` — aristocratic clan name, evokes the refined Heian court
+- **element**: `["flower", "earth", "wind"]` — wisteria is a flower, 原 connects to earth/land, wisteria sways in wind
 - **era**: `"ancient"` — one of the oldest and most powerful clan surnames
-- **kanji_meaning_tags**: `["wisteria", "vine", "field", "plain", "noble", "aristocratic", "clan", "purple", "flower", "heian", "court", "elegance"]`
+- **use_case**: `["real_person", "historical", "baby"]` — still a real surname, deeply historical, occasionally used
+- **kanji_meaning_tags**: `["wisteria", "vine", "field", "plain", "noble", "aristocratic", "clan", "purple", "flower", "heian", "court", "elegance", "power", "regency"]`
+- **meaning_en**: `"Wisteria field"`
+- **etymology_en**: `"Ancient clan surname of the Fujiwara clan (藤原氏), one of the most powerful families in Japanese history, dominant at the Heian court. The name refers to a field of wisteria."`
+- **description_en**: `"Fujiwara (藤原) means 'wisteria field' and is one of the most historically significant surnames in Japan. The Fujiwara clan dominated Heian-era court politics for centuries through strategic marriages into the imperial family. The name evokes aristocratic elegance and political power."`
 - **kamon_prompt**: `"A Japanese family crest (kamon) in solid black on white background. Circular design featuring stylized wisteria (fuji) flowers hanging in elegant cascading clusters, with curving vines and leaves arranged in a symmetrical pattern within a round frame. Clean, geometric, traditional mon style."`
+
+**Example D** (family_name with compound meaning): `kanji=細井`, `reading=ほそい`, `name_part=family_name`
+
+- 細 = narrow, slender, fine; 井 = well (water well)
+- **Compound meaning**: "Narrow well" — topographic surname from a place with a slender well
+- **vibe**: `["gentle", "serene", "elegant"]` — 細 evokes delicacy and refinement
+- **element**: `["water", "earth"]` — 井 is a water source, also a structure in the ground
+- **era**: `"traditional"`
+- **use_case**: `["real_person", "historical"]` — famous bearers include Edo-period scholars
+- **kanji_meaning_tags**: `["narrow", "slender", "fine", "delicate", "well", "water_source", "depth", "purity", "precision", "quiet", "subtlety", "clarity", "refined"]`
+- **meaning_en**: `"Narrow well"`
+- **etymology_en**: `"Topographic surname meaning 'narrow well,' likely originating from settlements near a distinctively slender or narrow well. Common in the Kantō region."`
+- **description_en**: `"Hosoi (細井) means 'narrow well,' a topographic surname derived from a geographic feature. The kanji 細 (narrow, fine) paired with 井 (well) suggests a delicate precision. The name carries associations of quiet depth and refinement."`
+- **kamon_prompt**: `"A Japanese family crest (kamon) in solid black on white background. A stylized well frame (igeta/井桁) rendered with thin, refined lines suggesting the 'narrow/fine' (細) character. Geometric cross-hatch well structure within a circular border. Clean, minimalist, traditional mon style."`
+
+### Common mistakes to AVOID
+
+❌ `meaning_en: "細井 suggests slender, fine, delicate, well."` — lazy kanji-by-kanji list
+✅ `meaning_en: "Narrow well"` — compound meaning
+
+❌ `etymology_en: "...fitting common Japanese family-name patterns tied to landscape, settlement, occupation, or old clan association."` — generic template
+✅ `etymology_en: "Topographic surname meaning 'narrow well,' likely originating from settlements near a slender well."` — specific
+
+❌ `kanji_meaning_tags: ["ほそい", "hosoi", "japanese surname", "family name", "serene"]` — readings + generic filler + vibe leak
+✅ `kanji_meaning_tags: ["narrow", "slender", "well", "water_source", "depth", "purity"]` — semantic associations only
+
+❌ `element: ["water"]` (only 1) — too sparse for SEO matching
+✅ `element: ["water", "earth"]` (2-3) — better coverage
 
 ### Batch processing
 
@@ -175,11 +214,28 @@ No fixed enum. Cover: literal kanji meanings, extended associations, colors, emo
 
 ## 4. Quality Rules
 
-- `famous_bearers.name_jp` — must come from scraped evidence, NEVER fabricate
-- `kanji_meaning_tags` — aim for 10-20 for SEO breadth
-- `vibe` and `element` — max 3 each, pick the most representative
-- **Soft fields** (`vibe`, `element`, `era`, `meaning_en`, `kanji_meaning_tags`, etc.) — be **confident and decisive**. You know enough about kanji semantics and Japanese culture to make a good call. Fill these for every name. Only leave null if you genuinely cannot read the kanji or the name is completely opaque to you.
+### Confidence & completeness
+
+- **Soft fields** — be **confident and decisive**. You know enough about kanji semantics and Japanese culture to make a good call. Fill these for every name. Only leave null if you genuinely cannot read the kanji or the name is completely opaque to you.
 - **Hard fields** (`famous_bearers`, `national_rank`, `estimated_population`, etc.) — these require exact data. Leave null if no scraped evidence exists. Never fabricate.
+
+### Tag coverage (critical for SEO keyword matching)
+
+- `vibe` — **aim for 2-3 tags**. Think about the name from multiple angles (sound feel, kanji connotation, cultural context). Only use 1 if the name is truly one-dimensional.
+- `element` — **aim for 2-3 tags**. Think broadly about what the kanji connect to. Most kanji touch multiple elements (e.g. 井=water+earth, 鉄=earth+fire, 桜=flower+wind).
+- `use_case` — think through all applicable scenarios. If `famous_bearers` contains historical figures → add `historical`. If the name is still used today → add `baby`. Anime-style names → add `anime`.
+- `kanji_meaning_tags` — **aim for 12-18**. These are the primary SEO matching surface. Cover: literal meanings, extended associations, related concepts, colors, emotions. But **NEVER** include readings, generic labels, or vibe/element duplicates.
+
+### Content quality
+
+- `meaning_en` — must be a **synthesized compound meaning** (e.g. "Narrow well"), never a kanji-by-kanji list (e.g. "slender, fine, delicate, well")
+- `description_en` — must contain **specific** cultural context. Mention the name's origin pattern (topographic, occupational, clan-based), historical significance, or notable cultural associations. Generic sentences that apply to any name are unacceptable.
+- `etymology_en` — must give a **specific** origin story. Generic templates like "fitting common Japanese family-name patterns" are unacceptable.
+- `kanji_breakdown` — **required** for every name with readable kanji. If scraper data is missing, fill it yourself. Each entry needs the single kanji, its meanings, and its reading within this name.
+- `famous_bearers.name_jp` — must come from scraped evidence, NEVER fabricate
+
+### Hygiene
+
 - Clean data before writing: consistent capitalization, no trailing whitespace, no duplicate tags
 - Chinese fields (`meaning_zh`, `description_zh`) are optional / lower priority
 - Set `status` to `"llm_enriched"` after enrichment

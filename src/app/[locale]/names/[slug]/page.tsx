@@ -147,6 +147,44 @@ function buildFaqItems(kw: PageKeyword, combos: FullNameCombo[], locale: string)
   const kwName = capitalize(kw.keyword)
   const topCombos = combos.slice(0, 5).map(c => `${c.fullKanji} (${c.fullRomaji})`).join(', ')
 
+  if (kw.slug === 'male') {
+    if (locale === 'zh') {
+      return [
+        {
+          question: '哪些是经典又常见的日本男性名字？',
+          answer: topCombos
+            ? `这页会展示像 ${topCombos} 这样的精选全名组合，既包含常见、稳重的男性名字，也覆盖更现代或更有个性的写法，方便你直接比较整体气质。`
+            : '这页收录了大量日本男性名字组合，涵盖经典、现代、温柔、强势等不同风格，并附带读音与含义说明。',
+        },
+        {
+          question: '给男孩或男性角色挑日本名字时，最该看什么？',
+          answer: '一般最值得优先看的有三点：第一是整体读音是否顺口有力量；第二是汉字本义是否传达出稳重、勇气、温和、雅致等你想要的男性形象；第三是姓与名连在一起后的整体节奏感与时代感。',
+        },
+        {
+          question: '日本男性名字常见会用哪些汉字意象？',
+          answer: '男性名里很常见的意象包括翔（飞翔）、斗（星斗、气魄）、太（厚重、宏大）、真（真实、诚恳）、介／助（扶助、守护）等。页面中的每个组合都会拆开说明姓与名各自的汉字含义，方便你判断整体气质。',
+        },
+      ]
+    }
+
+    return [
+      {
+        question: 'What are some classic and popular Japanese male names?',
+        answer: topCombos
+          ? `This page highlights curated full-name combinations such as ${topCombos}, mixing classic masculine staples with more modern or distinctive options so you can compare the full impression, not just the given name alone.`
+          : 'This page collects a wide range of Japanese male name combinations, from classic and dependable to modern and distinctive, with readings and kanji meanings included.',
+      },
+      {
+        question: 'How should I choose a Japanese male name for a baby or character?',
+        answer: 'Start with the overall sound of the full name, then check whether the kanji express the masculine image you want: strong, calm, intelligent, refined, gentle, or heroic. Finally, look at how the surname and given name flow together, because the full-name rhythm matters as much as the individual kanji.',
+      },
+      {
+        question: 'What kinds of kanji are common in Japanese male names?',
+        answer: 'Many Japanese male names use kanji tied to strength, aspiration, clarity, and steadiness, such as 翔 (to soar), 斗 (dipper or constellation), 太 (broad, great), 真 (true), and 介 or 助 (to help or support). On this page, each combination includes a kanji-by-kanji breakdown so you can judge the tone more precisely.',
+      },
+    ]
+  }
+
   if (locale === 'zh') {
     return [
       {
@@ -205,9 +243,13 @@ export default async function NameInnerPage({
   const jsonLd = buildJsonLd(kw, combos, locale)
   const faqs = buildFaqItems(kw, combos, locale)
 
-  const introText = locale === 'zh'
-    ? `探索我们精心整理的 ${combos.length} 组日本名字。每个名字都包含汉字解析、含义说明和文化背景，帮助你找到最完美的名字搭配。`
-    : `Discover ${combos.length} curated full-name combinations. Each name features detailed kanji breakdowns, meanings, and cultural context to help you find the perfect match.`
+  const introText = kw.slug === 'male'
+    ? (locale === 'zh'
+      ? `探索 ${combos.length} 组精心整理的日本男性全名组合，涵盖经典、现代、强势、温柔等不同气质。每个组合都附带姓与名的读音、汉字拆解、含义与文化语感，适合给男孩取名、角色命名，或寻找更完整的男性名字灵感。`
+      : `Explore ${combos.length} curated Japanese male full-name combinations spanning classic, modern, strong, gentle, and refined masculine styles. Each pairing includes surname + given-name readings, kanji breakdowns, meanings, and cultural nuance to help with baby names, character naming, or deeper name research.`)
+    : (locale === 'zh'
+      ? `探索我们精心整理的 ${combos.length} 组日本名字。每个名字都包含汉字解析、含义说明和文化背景，帮助你找到最完美的名字搭配。`
+      : `Discover ${combos.length} curated full-name combinations. Each name features detailed kanji breakdowns, meanings, and cultural context to help you find the perfect match.`)
 
   return (
     <div className="min-h-screen">

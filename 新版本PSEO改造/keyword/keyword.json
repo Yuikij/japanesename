@@ -405,7 +405,11 @@
     "priority": 1,
     "status": "draft",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Male Names — Strong, Modern & Traditional Full-Name Ideas",
+      "h1": "Japanese Male Names",
+      "description": "Explore curated Japanese male names with real surname + given-name combinations, kanji meanings, readings, and cultural notes for modern, classic, and strong masculine styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -417,7 +421,22 @@
           ]
         }
       ],
-      "should": []
+      "should": [
+        {
+          "field": "gender",
+          "op": "eq",
+          "value": "male"
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "common",
+            "very_common",
+            "uncommon"
+          ]
+        }
+      ]
     },
     "quiz": null,
     "related_keywords": [

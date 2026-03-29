@@ -1,8 +1,7 @@
-import { readFileSync } from 'fs'
-import { join } from 'path'
 import { getTranslations } from 'next-intl/server'
 import { ArrowRight, Search, Globe, Database } from 'lucide-react'
 import Link from 'next/link'
+import keywordsData from '../../../新版本PSEO改造/keyword/keyword.json'
 
 interface Keyword {
   id: string
@@ -44,8 +43,7 @@ const CATEGORY_ICONS: Record<string, string> = {
 
 function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string }> {
   try {
-    const raw = readFileSync(join(process.cwd(), '新版本PSEO改造/keyword/keyword.json'), 'utf-8')
-    const keywords: Keyword[] = JSON.parse(raw)
+    const keywords: Keyword[] = keywordsData as Keyword[]
     return keywords
       .filter(k => k.strategy === 'category_page')
       .sort((a, b) => (b.search_volume_total ?? b.search_volume) - (a.search_volume_total ?? a.search_volume))

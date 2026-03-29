@@ -1,6 +1,5 @@
-import { readFileSync } from 'fs'
-import { join } from 'path'
 import { MetadataRoute } from 'next'
+import keywordsData from '../../新版本PSEO改造/keyword/keyword.json'
 
 interface Keyword {
   strategy: string
@@ -9,11 +8,7 @@ interface Keyword {
 
 function loadCategoryPaths(): string[] {
   try {
-    const raw = readFileSync(
-      join(process.cwd(), '新版本PSEO改造/keyword/keyword.json'),
-      'utf-8'
-    )
-    const keywords: Keyword[] = JSON.parse(raw)
+    const keywords: Keyword[] = keywordsData as Keyword[]
     return keywords
       .filter(k => k.strategy === 'category_page' && k.path)
       .map(k => k.path)

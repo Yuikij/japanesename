@@ -1,5 +1,3 @@
-import { readFileSync } from 'fs'
-import { join } from 'path'
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { ArrowRight } from 'lucide-react'
@@ -12,6 +10,7 @@ import RandomNameCombo from '@/components/RandomNameCombo'
 import NameQuiz from '@/components/NameQuiz'
 import ComboGridClient from '@/components/ComboGridClient'
 import NameListExpanderClient from '@/components/NameListExpanderClient'
+import keywordsData from '../../../../../新版本PSEO改造/keyword/keyword.json'
 
 const API_BASE = 'https://japanesenamedata.yuisama.top'
 
@@ -27,11 +26,7 @@ interface PageKeyword {
 
 function loadAllKeywords(): PageKeyword[] {
   try {
-    const raw = readFileSync(
-      join(process.cwd(), '新版本PSEO改造/keyword/keyword.json'),
-      'utf-8'
-    )
-    const keywords: KeywordRecord[] = JSON.parse(raw)
+    const keywords: KeywordRecord[] = keywordsData as KeywordRecord[]
     return keywords
       .filter(k => k.strategy === 'category_page' && k.path)
       .map(k => ({

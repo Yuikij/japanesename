@@ -43,13 +43,17 @@ function loadAllKeywords(): PageKeyword[] {
   }
 }
 
-interface FetchNamesResult {
-  names: NameRecord[]
-  missingSecret: boolean
-}
-
-async function fetchNames(filterRule: { must: FilterCondition[]; should: FilterCondition[] }): Promise<FetchNamesResult> {
+async function fetchNamesByPart(
+  filterRule: { must: FilterCondition[]; should: FilterCondition[] },
+  namePart: string,
+  limit: number
+): Promise<NameRecord[]> {
   const secret = process.env.JAPANESE_NAME_API_SECRET || 'CHANGE_ME'
+  const partFilter: FilterCondition = { field: 'name_part', op: 'eq', value: namePart }
+  const rule = {
+    must: [...filterRule.must, partFilter],
+    should: filterRule.should,
+  }
 
   try {
     const headers: Record<string, string> = { 'Content-Type': 'application/json' }
@@ -58,17 +62,23 @@ async function fetchNames(filterRule: { must: FilterCondition[]; should: FilterC
     const res = await fetch(`${API_BASE}/api/names/query`, {
       method: 'POST',
       headers,
-      body: JSON.stringify({ filter_rule: filterRule, limit: 500 }),
+      body: JSON.stringify({ filter_rule: rule, limit }),
       next: { revalidate: 86400 },
     })
-    if (!res.ok) {
-      return { names: [], missingSecret: false }
-    }
+    if (!res.ok) return []
     const json = (await res.json()) as { data?: NameRecord[] }
-    return { names: json.data ?? [], missingSecret: false }
+    return json.data ?? []
   } catch {
-    return { names: [], missingSecret: false }
+    return []
   }
+}
+
+async function fetchNames(filterRule: { must: FilterCondition[]; should: FilterCondition[] }): Promise<NameRecord[]> {
+  const [givenNames, familyNames] = await Promise.all([
+    fetchNamesByPart(filterRule, 'given_name', 300),
+    fetchNamesByPart(filterRule, 'family_name', 300),
+  ])
+  return [...givenNames, ...familyNames]
 }
 
 export async function generateStaticParams() {
@@ -243,26 +253,17 @@ export default async function NameInnerPage({
   if (!kw) notFound()
 
   const filterRule = kw.filter_rule ?? { must: [], should: [] }
-  const { names, missingSecret } = await fetchNames(filterRule)
+  const names = await fetchNames(filterRule)
   const combos = generateCombos(names)
   const quiz = QUIZ_DATA[slug] ?? null
-  const showUnavailableState = combos.length === 0 && missingSecret
 
   const h1 = kw.seo?.h1 ?? capitalize(kw.keyword)
   const jsonLd = buildJsonLd(kw, combos, locale)
   const faqs = buildFaqItems(kw, combos, locale)
 
-  const introText = showUnavailableState
-    ? (locale === 'zh'
-      ? '此页面的实时名字数据暂时不可用，因此我们先隐藏组合列表，避免展示误导性的空结果。请稍后再试，或先浏览下方相关分类获取灵感。'
-      : 'Live name data for this page is temporarily unavailable, so we are hiding the combo list instead of showing a misleading empty result. Please check back soon, or explore related categories below in the meantime.')
-    : kw.slug === 'male'
-      ? (locale === 'zh'
-        ? `探索 ${combos.length} 组精心整理的日本男性全名组合，涵盖经典、现代、强势、温柔等不同气质。每个组合都附带姓与名的读音、汉字拆解、含义与文化语感，适合给男孩取名、角色命名，或寻找更完整的男性名字灵感。`
-        : `Explore ${combos.length} curated Japanese male full-name combinations spanning classic, modern, strong, gentle, and refined masculine styles. Each pairing includes surname + given-name readings, kanji breakdowns, meanings, and cultural nuance to help with baby names, character naming, or deeper name research.`)
-      : (locale === 'zh'
-        ? `探索我们精心整理的 ${combos.length} 组日本名字。每个名字都包含汉字解析、含义说明和文化背景，帮助你找到最完美的名字搭配。`
-        : `Discover ${combos.length} curated full-name combinations. Each name features detailed kanji breakdowns, meanings, and cultural context to help you find the perfect match.`)
+  const introText = locale === 'zh'
+    ? `探索我们精心整理的 ${combos.length} 组日本名字。每个名字都包含汉字解析、含义说明和文化背景，帮助你找到最完美的名字搭配。`
+    : `Discover ${combos.length} curated full-name combinations. Each name features detailed kanji breakdowns, meanings, and cultural context to help you find the perfect match.`
 
   return (
     <div className="min-h-screen">
@@ -287,20 +288,6 @@ export default async function NameInnerPage({
         </div>
       </section>
 
-      {showUnavailableState && (
-        <section className="px-4 pb-4">
-          <div className="max-w-4xl mx-auto rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm text-amber-900">
-            <p className="font-semibold mb-1">
-              {locale === 'zh' ? '名字目录暂时不可用' : 'Name directory temporarily unavailable'}
-            </p>
-            <p>
-              {locale === 'zh'
-                ? '当前部署暂时无法取得名字目录数据。我们会优先展示说明与相关分类，而不是渲染“0 个名字”的空页面。'
-                : 'Live name-directory data is temporarily unavailable. We show a clear fallback state and related categories instead of rendering a useless “0 names” page.'}
-            </p>
-          </div>
-        </section>
-      )}
 
       {/* Random Name Combo */}
       {combos.length > 0 && (
@@ -313,9 +300,7 @@ export default async function NameInnerPage({
       )}
 
       {/* Full Name Combo List */}
-      {!showUnavailableState && (
-        <ComboListSection combos={combos} keyword={kw.keyword} locale={locale} />
-      )}
+      <ComboListSection combos={combos} keyword={kw.keyword} locale={locale} />
 
       {/* FAQ Section */}
       {faqs.length > 0 && (

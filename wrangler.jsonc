@@ -35,7 +35,8 @@
 	 */
 	"vars": {
 		"ALLOWED_ORIGINS": "https://japanesenamegenerator.casa,https://japanese-name-generator.yuisama.top",
-		"API_ENDPOINT": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+		"API_ENDPOINT": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+		"JAPANESE_NAME_API_SECRET": "CHANGE_ME"
 	},
 	"d1_databases": [
 		{

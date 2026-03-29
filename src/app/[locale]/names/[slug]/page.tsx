@@ -62,12 +62,12 @@ async function fetchNames(filterRule: { must: FilterCondition[]; should: FilterC
       next: { revalidate: 86400 },
     })
     if (!res.ok) {
-      return { names: [], missingSecret: !secret }
+      return { names: [], missingSecret: false }
     }
     const json = (await res.json()) as { data?: NameRecord[] }
-    return { names: json.data ?? [], missingSecret: !secret }
+    return { names: json.data ?? [], missingSecret: false }
   } catch {
-    return { names: [], missingSecret: !secret }
+    return { names: [], missingSecret: false }
   }
 }
 

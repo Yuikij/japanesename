@@ -23,3 +23,7 @@ This skill delegates to the standalone docs in `tools/`. Read these files:
 - **Existing values may be dirty** — some records have data from earlier automated runs with known bugs (e.g. `kanji_breakdown` readings wrong, `alternative_readings` storing kanji variants instead of reading variants). Do not blindly trust existing soft field values. See tools/SKILL.md Step 3 for the full validation checklist.
 - **Soft fields → be decisive.** You know kanji meanings and Japanese culture well enough. Fill `vibe`, `element`, `era`, `meaning_en`, `kanji_meaning_tags`, etc. for every name. Only leave null if the kanji is truly unreadable to you.
 - **Hard fields → need evidence.** `famous_bearers`, `national_rank`, etc. require scraped data. Leave null if no source exists.
+
+## Related skill
+
+- **Inner page generation**: `.cursor/skills/inner-page-gen/SKILL.md` — SOP for building keyword-driven Next.js inner pages (quiz, combos, SEO). Use after enriching name data.

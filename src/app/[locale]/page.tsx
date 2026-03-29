@@ -111,19 +111,20 @@ export default async function HomePage() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {categories.map((cat) => (
-                <div
+                <Link
                   key={cat.path}
-                  className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200 cursor-default"
+                  href={`.${cat.path}`}
+                  className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200"
                 >
                   <div className="text-3xl mb-3">{cat.icon}</div>
-                  <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-2 capitalize">
+                  <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-2 capitalize group-hover:text-pink-600 transition-colors">
                     {cat.keyword}
                   </h3>
                   <div className="flex items-center gap-1 text-xs text-gray-400">
                     <Search className="w-3 h-3" />
                     <span>{t('categories.searches', { count: formatVolume(cat.volume) })}</span>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

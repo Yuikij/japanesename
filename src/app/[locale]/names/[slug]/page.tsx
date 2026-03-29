@@ -49,7 +49,7 @@ interface FetchNamesResult {
 }
 
 async function fetchNames(filterRule: { must: FilterCondition[]; should: FilterCondition[] }): Promise<FetchNamesResult> {
-  const secret = process.env.JAPANESE_NAME_API_SECRET
+  const secret = process.env.JAPANESE_NAME_API_SECRET || 'CHANGE_ME'
 
   try {
     const headers: Record<string, string> = { 'Content-Type': 'application/json' }
@@ -295,8 +295,8 @@ export default async function NameInnerPage({
             </p>
             <p>
               {locale === 'zh'
-                ? '当前部署未配置名字数据密钥，因此无法安全拉取组合数据。我们会优先展示说明与相关分类，而不是渲染“0 个名字”的空页面。'
-                : 'This deployment is missing the name-data API secret, so combo data cannot be fetched safely. We show a clear fallback state and related categories instead of rendering a useless “0 names” page.'}
+                ? '当前部署暂时无法取得名字目录数据。我们会优先展示说明与相关分类，而不是渲染“0 个名字”的空页面。'
+                : 'Live name-directory data is temporarily unavailable. We show a clear fallback state and related categories instead of rendering a useless “0 names” page.'}
             </p>
           </div>
         </section>

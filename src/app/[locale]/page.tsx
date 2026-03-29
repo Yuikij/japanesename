@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs'
 import { join } from 'path'
 import { getTranslations } from 'next-intl/server'
-import { Sparkles, ArrowRight, Search, Globe, Database } from 'lucide-react'
+import { ArrowRight, Search, Globe, Database } from 'lucide-react'
 import Link from 'next/link'
 
 interface Keyword {
@@ -87,10 +87,9 @@ export default async function HomePage() {
             {t('description')}
           </p>
           <Link
-            href="./generate"
+            href="./names/male"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            <Sparkles className="w-5 h-5" />
             {t('startButton')}
             <ArrowRight className="w-5 h-5" />
           </Link>
@@ -207,10 +206,9 @@ export default async function HomePage() {
             {t('getStarted')}
           </h2>
           <Link
-            href="./generate"
+            href="./names/male"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-10 py-5 rounded-full text-xl font-semibold hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            <Sparkles className="w-6 h-6" />
             {t('startButton')}
             <ArrowRight className="w-6 h-6" />
           </Link>

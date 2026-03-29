@@ -2,7 +2,7 @@
   "nav": {
     "brand": "Japanese Name Generator",
     "home": "Home",
-    "generator": "Generator"
+    "browse": "Browse Names"
   },
   "common": {
     "loading": "Loading...",
@@ -15,11 +15,11 @@
     "switchToChinese": "切换到中文"
   },
   "home": {
-    "title": "Japanese Name Generator",
-    "subtitle": "Discover Authentic Japanese Names with Meanings & Cultural Heritage",
-    "description": "Explore over 4,700 authentic Japanese names — browse by category, learn kanji meanings, and find the perfect name for your baby, character, or creative project.",
-    "startButton": "Try AI Name Generator",
-    "getStarted": "Ready to find your perfect Japanese name?",
+    "title": "Japanese Name Dictionary",
+    "subtitle": "Explore Authentic Japanese Names with Meanings, Kanji & Cultural Heritage",
+    "description": "Browse over 4,700 authentic Japanese names — search by category, discover kanji meanings, and find the perfect name for your baby, character, or creative project.",
+    "startButton": "Browse Japanese Names",
+    "getStarted": "Start exploring Japanese names now",
     "categories": {
       "title": "Browse Japanese Names by Category",
       "subtitle": "Explore our curated collection across popular categories",

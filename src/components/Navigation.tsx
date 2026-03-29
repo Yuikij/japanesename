@@ -3,7 +3,6 @@
 import { useLocale, useTranslations } from 'next-intl'
 import { useRouter, usePathname, Link } from '@/i18n/navigation'
 import { routing } from '@/i18n/routing'
-import { Sparkles } from 'lucide-react'
 import { ChangeEvent } from 'react'
 
 export default function Navigation() {
@@ -34,13 +33,12 @@ export default function Navigation() {
             {t('home')}
           </Link>
           <Link
-            href="/generate"
-            className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors inline-flex items-center gap-1.5 ${
-              pathname === '/generate' ? 'bg-pink-50 text-pink-600' : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+            href="/names/male"
+            className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+              pathname.startsWith('/names') ? 'bg-pink-50 text-pink-600' : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
             }`}
           >
-            <Sparkles className="w-3.5 h-3.5" />
-            {t('generator')}
+            {t('browse')}
           </Link>
 
           <div className="relative ml-2">

@@ -7,6 +7,10 @@ import { routing } from '@/i18n/routing';
 import Navigation from '../../components/Navigation'
 import GoogleAnalytics from '../../components/GoogleAnalytics'
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -17,12 +21,12 @@ export async function generateMetadata({
   if (locale === 'zh') {
     return {
       metadataBase: new URL('https://japanesename.vercel.app'),
-      title: 'AI日本名字生成器 | 个性化文化取名服务',
-      description: '使用AI技术深度分析个性特质，结合日本文化传统，为您精心定制专属日本名字。基于个性问答的智能日本取名服务，获得真正适合您的日本名字。',
-      keywords: ['日本名字生成器', 'AI取名', '日本文化', '个性化命名', '日本取名服务', '文化名字', '动漫名字', '传统日本名字'],
-      authors: [{ name: '日本名字生成器团队' }],
-      creator: '日本名字生成器',
-      publisher: '日本名字生成器',
+      title: '日本名字大全 | 4700+ 正宗日本名字含义与文化解读',
+      description: '收录超过 4,700 个正宗日本名字，包含汉字含义、读音、文化背景。按分类浏览男名、女名、姓氏，了解每个名字背后的日本文化故事。',
+      keywords: ['日本名字', '日本名字大全', '日本名字含义', '日本男名', '日本女名', '日本姓氏', '日本取名', '日本文化', '动漫名字', '日本名字汉字'],
+      authors: [{ name: 'Japanese Name Dictionary' }],
+      creator: 'Japanese Name Dictionary',
+      publisher: 'Japanese Name Dictionary',
       robots: {
         index: true,
         follow: true,
@@ -35,22 +39,22 @@ export async function generateMetadata({
         type: 'website',
         locale: 'zh_CN',
         alternateLocale: ['en_US'],
-        title: 'AI日本名字生成器 - 个性化文化取名',
-        description: '通过AI驱动的文化分析，发现您完美的日本名字。',
-        siteName: '日本名字生成器',
+        title: '日本名字大全 — 含义、汉字与文化解读',
+        description: '收录 4,700+ 正宗日本名字，按分类浏览男名、女名、姓氏，了解汉字含义与文化背景。',
+        siteName: '日本名字大全',
         images: [
           {
             url: '/og-image-zh.jpg',
             width: 1200,
             height: 630,
-            alt: '日本名字生成器 - AI驱动的文化取名服务',
+            alt: '日本名字大全 — 正宗日本名字含义与文化解读',
           },
         ],
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'AI日本名字生成器 - 个性化文化取名',
-        description: '通过AI驱动的文化分析和个性化取名，创造您完美的日本名字。',
+        title: '日本名字大全 — 含义、汉字与文化解读',
+        description: '收录 4,700+ 正宗日本名字，按分类浏览，了解汉字含义与文化背景。',
         images: ['/twitter-image-zh.jpg'],
       },
       alternates: {
@@ -64,15 +68,14 @@ export async function generateMetadata({
     }
   }
   
-  // Default English metadata
   return {
     metadataBase: new URL('https://japanesename.vercel.app'),
-    title: 'AI-Powered Japanese Name Generator | Personalized Cultural Names',
-    description: 'Create your perfect Japanese name with our AI-powered generator. Deep personality analysis, cultural authenticity, and personalized naming based on Japanese traditions. Get your unique Japanese name today.',
-    keywords: ['Japanese name generator', 'AI naming', 'Japanese culture', 'personalized names', 'Japanese naming service', 'cultural names', 'anime names', 'traditional Japanese names'],
-    authors: [{ name: 'Japanese Name Generator Team' }],
-    creator: 'Japanese Name Generator',
-    publisher: 'Japanese Name Generator',
+    title: 'Japanese Name Dictionary | 4,700+ Authentic Names with Meanings & Kanji',
+    description: 'Browse over 4,700 authentic Japanese names with kanji meanings, readings, and cultural origins. Explore male names, female names, family names, and discover the stories behind each name.',
+    keywords: ['Japanese names', 'Japanese name meanings', 'Japanese name dictionary', 'Japanese male names', 'Japanese female names', 'Japanese last names', 'kanji names', 'Japanese baby names', 'anime names', 'Japanese culture'],
+    authors: [{ name: 'Japanese Name Dictionary' }],
+    creator: 'Japanese Name Dictionary',
+    publisher: 'Japanese Name Dictionary',
     robots: {
       index: true,
       follow: true,
@@ -85,22 +88,22 @@ export async function generateMetadata({
       type: 'website',
       locale: 'en_US',
       alternateLocale: ['zh_CN'],
-      title: 'AI Japanese Name Generator - Personalized Cultural Names',
-      description: 'Discover your perfect Japanese name with our AI-powered generator. Cultural authenticity meets personalization.',
-      siteName: 'Japanese Name Generator',
+      title: 'Japanese Name Dictionary — Meanings, Kanji & Cultural Origins',
+      description: 'Browse 4,700+ authentic Japanese names with kanji meanings, readings, and cultural origins.',
+      siteName: 'Japanese Name Dictionary',
       images: [
         {
           url: '/og-image.jpg',
           width: 1200,
           height: 630,
-          alt: 'Japanese Name Generator - AI-Powered Cultural Naming Service',
+          alt: 'Japanese Name Dictionary — Authentic Names with Meanings & Kanji',
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'AI Japanese Name Generator - Personalized Cultural Names',
-      description: 'Create your perfect Japanese name with AI-powered cultural analysis and personalized naming.',
+      title: 'Japanese Name Dictionary — Meanings, Kanji & Cultural Origins',
+      description: 'Browse 4,700+ authentic Japanese names with kanji meanings, readings, and cultural origins.',
       images: ['/twitter-image.jpg'],
       creator: '@japanesenames',
     },
@@ -146,23 +149,16 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": locale === 'zh' ? "日本名字生成器" : "Japanese Name Generator",
+              "@type": "WebSite",
+              "name": locale === 'zh' ? "日本名字大全" : "Japanese Name Dictionary",
               "description": locale === 'zh' 
-                ? "AI驱动的个性化日本名字定制服务，基于文化传统和个性分析。"
-                : "AI-powered personalized Japanese name creation service based on cultural traditions and personality analysis.",
+                ? "收录 4,700+ 正宗日本名字，包含汉字含义、读音、文化背景，按分类浏览男名、女名、姓氏。"
+                : "Browse 4,700+ authentic Japanese names with kanji meanings, readings, and cultural origins across categories.",
               "url": "https://japanesename.vercel.app",
-              "applicationCategory": "UtilityApplication",
-              "operatingSystem": "Web Browser",
               "inLanguage": locale === 'zh' ? "zh-CN" : "en-US",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              },
-              "creator": {
+              "publisher": {
                 "@type": "Organization",
-                "name": locale === 'zh' ? "日本名字生成器团队" : "Japanese Name Generator Team"
+                "name": "Japanese Name Dictionary"
               }
             }),
           }}

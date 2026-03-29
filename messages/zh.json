@@ -1,8 +1,8 @@
 {
   "nav": {
-    "brand": "日本名字生成器",
+    "brand": "日本名字大全",
     "home": "首页",
-    "generator": "AI 取名"
+    "browse": "浏览名字"
   },
   "common": {
     "loading": "加载中...",
@@ -15,11 +15,11 @@
     "switchToChinese": "切换到中文"
   },
   "home": {
-    "title": "日本名字生成器",
-    "subtitle": "探索正宗日本名字，了解其含义与文化传承",
+    "title": "日本名字大全",
+    "subtitle": "探索正宗日本名字，了解汉字含义与文化传承",
     "description": "收录超过 4,700 个正宗日本名字 —— 按分类浏览、了解汉字含义，为您的宝宝、角色或创意项目找到完美的日本名字。",
-    "startButton": "试试 AI 取名",
-    "getStarted": "准备好找到您的完美日本名字了吗？",
+    "startButton": "浏览日本名字",
+    "getStarted": "开始探索日本名字",
     "categories": {
       "title": "按分类浏览日本名字",
       "subtitle": "探索我们精心整理的热门分类",

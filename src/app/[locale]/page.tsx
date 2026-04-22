@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server'
 import { ArrowRight, Search, Globe, Database } from 'lucide-react'
 import Link from 'next/link'
 import keywordsData from '../../../新版本PSEO改造/keyword/keyword.json'
+import CategoryGridClient from '../../components/CategoryGridClient'
 
 interface Keyword {
   id: string
@@ -28,31 +29,32 @@ const FEATURED_NAMES = [
   { kanji: '田中', reading: 'たなか', romaji: 'Tanaka', gender: 'unisex', name_part: 'family_name' },
 ]
 
-const CATEGORY_ICONS: Record<string, string> = {
-  '/names/last-names': '👨‍👩‍👧‍👦',
-  '/names/male': '👦',
-  '/names/female': '👧',
-  '/names/all': '📖',
-  '/names/boy': '🧒',
-  '/names/names': '✨',
-  '/names/girl': '🎀',
-  '/names/last-names-with-meanings': '📝',
-  '/names/last-names-common': '🏠',
-  '/names/anime': '🎌',
+function formatKeywordTitle(kw: string): string {
+  // Common connective words to keep lowercase if they appear in the middle
+  const lowerCaseWords = new Set(['and', 'with', 'for', 'to', 'in', 'on', 'of', 'that'])
+  
+  return kw
+    .split(' ')
+    .map((word, index) => {
+      // Always capitalize first and last word or words not in the lowerCaseWords set
+      if (index === 0 || !lowerCaseWords.has(word.toLowerCase())) {
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+      }
+      return word.toLowerCase()
+    })
+    .join(' ')
 }
 
-function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string }> {
+function loadCategories(): Array<{ keyword: string; path: string; volume: number }> {
   try {
     const keywords: Keyword[] = keywordsData as Keyword[]
     return keywords
-      .filter(k => k.strategy === 'category_page')
+      .filter(k => k.strategy === 'category_page' && k.path)
       .sort((a, b) => (b.search_volume_total ?? b.search_volume) - (a.search_volume_total ?? a.search_volume))
-      .slice(0, 10)
       .map(k => ({
-        keyword: k.keyword,
+        keyword: formatKeywordTitle(k.keyword),
         path: k.path,
         volume: k.search_volume_total ?? k.search_volume,
-        icon: CATEGORY_ICONS[k.path] ?? '🔖',
       }))
   } catch {
     return []
@@ -106,24 +108,7 @@ export default async function HomePage() {
                 {t('categories.subtitle')}
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {categories.map((cat) => (
-                <Link
-                  key={cat.path}
-                  href={`.${cat.path}`}
-                  className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200"
-                >
-                  <div className="text-3xl mb-3">{cat.icon}</div>
-                  <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-2 capitalize group-hover:text-pink-600 transition-colors">
-                    {cat.keyword}
-                  </h3>
-                  <div className="flex items-center gap-1 text-xs text-gray-400">
-                    <Search className="w-3 h-3" />
-                    <span>{t('categories.searches', { count: formatVolume(cat.volume) })}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <CategoryGridClient categories={categories} />
           </div>
         </section>
       )}
@@ -180,17 +165,17 @@ export default async function HomePage() {
           <div className="grid grid-cols-3 gap-6">
             <div className="flex flex-col items-center">
               <Database className="w-8 h-8 text-pink-500 mb-3" />
-              <div className="text-3xl sm:text-4xl font-bold text-gray-800">4,700+</div>
+              <div className="text-3xl sm:text-4xl font-bold text-gray-800">500,000+</div>
               <div className="text-sm text-gray-500 mt-1">{t('stats.names')}</div>
             </div>
             <div className="flex flex-col items-center">
               <Search className="w-8 h-8 text-pink-500 mb-3" />
-              <div className="text-3xl sm:text-4xl font-bold text-gray-800">100+</div>
+              <div className="text-3xl sm:text-4xl font-bold text-gray-800">300+</div>
               <div className="text-sm text-gray-500 mt-1">{t('stats.categories')}</div>
             </div>
             <div className="flex flex-col items-center">
               <Globe className="w-8 h-8 text-pink-500 mb-3" />
-              <div className="text-3xl sm:text-4xl font-bold text-gray-800">2</div>
+              <div className="text-3xl sm:text-4xl font-bold text-gray-800">40+</div>
               <div className="text-sm text-gray-500 mt-1">{t('stats.languages')}</div>
             </div>
           </div>

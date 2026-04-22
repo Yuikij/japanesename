@@ -21,8 +21,8 @@ export async function generateMetadata({
   if (locale === 'zh') {
     return {
       metadataBase: new URL('https://japanesename.vercel.app'),
-      title: '日本名字大全 | 4700+ 正宗日本名字含义与文化解读',
-      description: '收录超过 4,700 个正宗日本名字，包含汉字含义、读音、文化背景。按分类浏览男名、女名、姓氏，了解每个名字背后的日本文化故事。',
+      title: '日本名字大全 | 500000+ 正宗日本名字含义与文化解读',
+      description: '收录超过 500,000 个正宗日本名字，包含汉字含义、读音、文化背景。按分类浏览男名、女名、姓氏，了解每个名字背后的日本文化故事。',
       keywords: ['日本名字', '日本名字大全', '日本名字含义', '日本男名', '日本女名', '日本姓氏', '日本取名', '日本文化', '动漫名字', '日本名字汉字'],
       authors: [{ name: 'Japanese Name Dictionary' }],
       creator: 'Japanese Name Dictionary',
@@ -40,7 +40,7 @@ export async function generateMetadata({
         locale: 'zh_CN',
         alternateLocale: ['en_US'],
         title: '日本名字大全 — 含义、汉字与文化解读',
-        description: '收录 4,700+ 正宗日本名字，按分类浏览男名、女名、姓氏，了解汉字含义与文化背景。',
+        description: '收录 500,000+ 正宗日本名字，按分类浏览男名、女名、姓氏，了解汉字含义与文化背景。',
         siteName: '日本名字大全',
         images: [
           {
@@ -54,7 +54,7 @@ export async function generateMetadata({
       twitter: {
         card: 'summary_large_image',
         title: '日本名字大全 — 含义、汉字与文化解读',
-        description: '收录 4,700+ 正宗日本名字，按分类浏览，了解汉字含义与文化背景。',
+        description: '收录 500,000+ 正宗日本名字，按分类浏览，了解汉字含义与文化背景。',
         images: ['/twitter-image-zh.jpg'],
       },
       alternates: {
@@ -70,8 +70,8 @@ export async function generateMetadata({
   
   return {
     metadataBase: new URL('https://japanesename.vercel.app'),
-    title: 'Japanese Name Dictionary | 4,700+ Authentic Names with Meanings & Kanji',
-    description: 'Browse over 4,700 authentic Japanese names with kanji meanings, readings, and cultural origins. Explore male names, female names, family names, and discover the stories behind each name.',
+    title: 'Japanese Name Dictionary | 500,000+ Authentic Names with Meanings & Kanji',
+    description: 'Browse over 500,000 authentic Japanese names with kanji meanings, readings, and cultural origins. Explore male names, female names, family names, and discover the stories behind each name.',
     keywords: ['Japanese names', 'Japanese name meanings', 'Japanese name dictionary', 'Japanese male names', 'Japanese female names', 'Japanese last names', 'kanji names', 'Japanese baby names', 'anime names', 'Japanese culture'],
     authors: [{ name: 'Japanese Name Dictionary' }],
     creator: 'Japanese Name Dictionary',
@@ -89,7 +89,7 @@ export async function generateMetadata({
       locale: 'en_US',
       alternateLocale: ['zh_CN'],
       title: 'Japanese Name Dictionary — Meanings, Kanji & Cultural Origins',
-      description: 'Browse 4,700+ authentic Japanese names with kanji meanings, readings, and cultural origins.',
+      description: 'Browse 500,000+ authentic Japanese names with kanji meanings, readings, and cultural origins.',
       siteName: 'Japanese Name Dictionary',
       images: [
         {
@@ -103,7 +103,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: 'Japanese Name Dictionary — Meanings, Kanji & Cultural Origins',
-      description: 'Browse 4,700+ authentic Japanese names with kanji meanings, readings, and cultural origins.',
+      description: 'Browse 500,000+ authentic Japanese names with kanji meanings, readings, and cultural origins.',
       images: ['/twitter-image.jpg'],
       creator: '@japanesenames',
     },
@@ -152,8 +152,8 @@ export default async function LocaleLayout({
               "@type": "WebSite",
               "name": locale === 'zh' ? "日本名字大全" : "Japanese Name Dictionary",
               "description": locale === 'zh' 
-                ? "收录 4,700+ 正宗日本名字，包含汉字含义、读音、文化背景，按分类浏览男名、女名、姓氏。"
-                : "Browse 4,700+ authentic Japanese names with kanji meanings, readings, and cultural origins across categories.",
+                ? "收录 500,000+ 正宗日本名字，包含汉字含义、读音、文化背景，按分类浏览男名、女名、姓氏。"
+                : "Browse 500,000+ authentic Japanese names with kanji meanings, readings, and cultural origins across categories.",
               "url": "https://japanesename.vercel.app",
               "inLanguage": locale === 'zh' ? "zh-CN" : "en-US",
               "publisher": {

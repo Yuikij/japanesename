@@ -3,6 +3,7 @@ import keywordsData from '../../新版本PSEO改造/keyword/keyword.json'
 
 interface Keyword {
   strategy: string
+  status: string
   path: string
 }
 
@@ -10,7 +11,7 @@ function loadCategoryPaths(): string[] {
   try {
     const keywords: Keyword[] = keywordsData as Keyword[]
     return keywords
-      .filter(k => k.strategy === 'category_page' && k.path)
+      .filter(k => k.strategy === 'category_page' && k.status === 'active' && k.path)
       .map(k => k.path)
   } catch {
     return []
@@ -39,12 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
-    })),
-    ...locales.map(locale => ({
-      url: `${baseUrl}/${locale}/test-chat`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.5,
     })),
   ]
 

@@ -28,7 +28,7 @@ function loadAllKeywords(): PageKeyword[] {
   try {
     const keywords: KeywordRecord[] = keywordsData as KeywordRecord[]
     return keywords
-      .filter(k => k.strategy === 'category_page' && k.path)
+      .filter(k => k.strategy === 'category_page' && k.status === 'active' && k.path)
       .map(k => ({
         keyword: k.keyword,
         path: k.path,
@@ -3608,6 +3608,26 @@ function buildFaqItems(kw: PageKeyword, combos: FullNameCombo[], locale: string)
     ]
   }
 
+  if (kw.slug === 'short') {
+    if (locale === 'zh') {
+      return [
+        {
+          question: '为什么 short japanese names 不只是简单地把名字变短？',
+          answer: topCombos
+            ? `像 ${topCombos} 这样的组合，真正有力量的短名字不只是字数少，它们念起来更快、记忆点更清晰，能让整个全名看起来有一种干脆的轮廓感。`
+            : '一个好的短日文名字不只是字面短。它通常节奏更快，更干净，更容易被记住，给人一种紧凑自信的感觉。',
+        },
+        {
+          question: '这页和 cute 或 nickname 风格的名字有什么区别？',
+          answer: '可爱或昵称类的页面更强调软萌、亲昵的气质；而 short japanese names 更看重名字的紧凑度、清晰感，以及如何做到简短但不单薄。',
+        },
+        {
+          question: '如果我想继续缩小 short japanese names 的范围，先看什么最有效？',
+          answer: '最有效的顺序是先按风格分：明亮跳跃、极简清爽、柔和顺口，还是更像有记忆点的昵称；然后再看它是用于现实取名、宝宝灵感还是角色命名。',
+        },
+      ]
+    }
+
     return [
       {
         question: 'Why are short Japanese names not just about being shorter?',
@@ -3740,6 +3760,8 @@ function buildFaqItems(kw: PageKeyword, combos: FullNameCombo[], locale: string)
     ]
   }
 
+  const kwName = kw.keyword;
+
   if (locale === 'zh') {
     return [
       {
@@ -3775,6 +3797,7 @@ function buildFaqItems(kw: PageKeyword, combos: FullNameCombo[], locale: string)
       answer: `Each kanji in a Japanese name carries specific meanings. For example, 翔 (shō) means "soar" and 太 (ta) means "great." We provide detailed kanji breakdowns for every name in our collection.`,
     },
   ]
+}
 
 export default async function NameInnerPage({
   params,

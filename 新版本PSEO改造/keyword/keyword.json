@@ -556,7 +556,7 @@
   },
   {
     "id": "kw_0003",
-    "keyword": "female japanese names",
+    "keyword": "japanese female names",
     "search_volume": 12100,
     "search_volume_total": 66380,
     "keyword_aliases": [
@@ -1839,7 +1839,7 @@
   },
   {
     "id": "kw_0009",
-    "keyword": "japanese names girl",
+    "keyword": "japanese girl names",
     "search_volume": 6600,
     "search_volume_total": 15180,
     "keyword_aliases": [
@@ -2932,10 +2932,40 @@
     "strategy": "category_page",
     "path": "/names/meanings",
     "priority": 3,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names and Meanings — Full-Name Ideas with Kanji Breakdowns",
+      "h1": "Japanese Names and Meanings",
+      "description": "Explore Japanese names and their meanings with kanji breakdowns, readings, and full-name combinations. Compare elegant, nature-rooted, and culturally rich name styles across male, female, and unisex categories."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "noble",
+            "serene",
+            "cool",
+            "gentle"
+          ]
+        },
+        {
+          "field": "element",
+          "op": "any_of",
+          "value": [
+            "flower",
+            "water",
+            "mountain",
+            "wind",
+            "light"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [],
     "seo_guidance": "做博客/内容页：围绕 \"japanese names and meanings\" 写一篇长文。 内容包括名字的含义解读、文化背景、使用场景举例，穿插从姓名库中筛选的具体名字示例。 搜索量 4400，KD 38，信息意图词适合用内容深度获取排名。",
@@ -3957,7 +3987,11 @@
       ],
       "should": []
     },
-    "quiz": true,
+    "quiz": {
+      "slug": "last-names-unique",
+      "intro_en": "Use this quiz to narrow rare Japanese last names by quiet mystery, atmospheric distance, or sharper standout energy.",
+      "intro_zh": "用这个小测试缩小 rare japanese last names：更偏安静神秘、优雅疏离，还是更强记忆点的路线。"
+    },
     "related_keywords": [
       {
         "label": "Unisex Japanese Names",
@@ -4228,7 +4262,7 @@
     "strategy": "category_page",
     "path": "/names/nicknames",
     "priority": 3,
-    "status": "draft",
+    "status": "active",
     "source": "keyword_other",
     "tags_hint": null,
     "dimensions": {
@@ -4243,8 +4277,26 @@
     "page_template_type": "pseo_inner_page",
     "relevance_score": 65,
     "seo_guidance": "做 PSEO 内页：日文名列表/浏览页（姓名类型=nickname）。 展示从姓名库中按 name_filter_rules 筛选出的名字列表，附罗马字读音、含义、标签。 H1 使用 \"nickname for japanese\"，搜索量 2400，KD 22。 中等搜索量，可作为二级分类页。",
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Nicknames — Cute, Short & Friendly Name Ideas",
+      "h1": "Japanese Nicknames",
+      "description": "Browse cute and friendly Japanese nicknames with kanji meanings, readings, and full-name combinations. Find short, playful, and everyday-usable Japanese nickname ideas."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cute",
+            "playful",
+            "warm",
+            "gentle"
+          ]
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -4643,13 +4695,14 @@
       "description": "Explore Japanese first-name ideas with kanji meanings, readings, and full-name combinations. Compare girl, boy, and unisex given-name styles with matching surnames."
     },
     "filter_rule": {
-      "must": [],
-      "should": [
+      "must": [
         {
           "field": "name_part",
           "op": "eq",
           "value": "given_name"
-        },
+        }
+      ],
+      "should": [
         {
           "field": "use_case",
           "op": "any_of",
@@ -5244,7 +5297,7 @@
   },
   {
     "id": "kw_0034",
-    "keyword": "female japanese names and meanings",
+    "keyword": "japanese female names and meanings",
     "search_volume": 2400,
     "kd": 37,
     "cpc": 0.03,
@@ -5901,10 +5954,44 @@
     "strategy": "category_page",
     "path": "/names/generator",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names Generator — Browse Full-Name Ideas with Kanji & Meanings",
+      "h1": "Japanese Names Generator",
+      "description": "Generate and browse Japanese full-name ideas with kanji meanings, readings, and style notes. Explore male, female, and unisex combinations for characters, babies, or creative projects."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "real_person",
+            "baby"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "common",
+            "uncommon",
+            "rare"
+          ]
+        },
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "female",
+            "unisex"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -6006,10 +6093,37 @@
     "strategy": "category_page",
     "path": "/names/username-generator",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Username Generator — Cool Japanese Name Ideas for Usernames",
+      "h1": "Japanese Username Generator",
+      "description": "Find cool Japanese names that work as usernames — sleek, edgy, and memorable kanji-based name ideas with readings and meanings. Browse sharp, distinctive name styles for gaming, social media, and online identities."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cool",
+            "edgy",
+            "mysterious"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "uncommon",
+            "rare",
+            "unique"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -6681,10 +6795,46 @@
     "strategy": "category_page",
     "path": "/names/anime-naming",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Anime Naming — Japanese Anime Character Name Ideas with Meanings",
+      "h1": "Anime Naming",
+      "description": "Find Japanese names for anime characters with kanji meanings, cool readings, and full-name combinations. Browse edgy, mysterious, playful, and dramatically cool anime-ready naming ideas."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "anime",
+            "game_character"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cool",
+            "mysterious",
+            "edgy",
+            "playful"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "uncommon",
+            "rare",
+            "unique"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -6698,10 +6848,36 @@
     "strategy": "category_page",
     "path": "/names/asian-male",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Asian Names for Boys — Japanese Male Full-Name Ideas with Meanings",
+      "h1": "Asian Names for Boys",
+      "description": "Explore Asian-inspired names for boys through Japanese male names with kanji meanings, readings, and full-name combinations across strong, cool, and modern styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "unisex"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common",
+            "uncommon"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -6724,7 +6900,7 @@
   },
   {
     "id": "kw_0050",
-    "keyword": "samurai nickname",
+    "keyword": "samurai japanese names",
     "search_volume": 1600,
     "kd": 21,
     "cpc": 0,
@@ -6732,10 +6908,37 @@
     "strategy": "category_page",
     "path": "/names/samurai-nickname",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Samurai Japanese Names — Fierce, Brave & Traditional Full-Name Ideas",
+      "h1": "Samurai Japanese Names",
+      "description": "Browse Japanese samurai names with kanji meanings, fierce readings, and warrior full-name combinations. Compare bold, brave, and battle-hardened name styles rooted in ancient Japan."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "fierce",
+            "brave",
+            "strong",
+            "bold"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "ancient",
+            "traditional"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -6756,12 +6959,48 @@
     "strategy": "category_page",
     "path": "/names/nature",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {
       "element": "nature"
     },
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Demon Slayer Names — Taisho-Era Japanese Name Ideas with Meanings",
+      "h1": "Demon Slayer Names",
+      "description": "Browse Japanese names in the style of Demon Slayer characters — traditional era names with fierce, brave, and battle-hardened kanji. Find Taisho-period inspired full-name combinations for anime fans and writers."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "ancient",
+            "traditional"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "fierce",
+            "brave",
+            "strong",
+            "noble"
+          ]
+        },
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "anime",
+            "samurai",
+            "warrior"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -6917,9 +7156,13 @@
     "strategy": "category_page",
     "path": "/names/american",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese American Names — Full-Name Ideas with Meanings & Readings",
+      "h1": "Japanese American Names",
+      "description": "Explore Japanese American names with real surname + given-name combinations, kanji meanings, and readings. Browse names bridging Japanese heritage and American culture."
+    },
     "filter_rule": {
       "must": [
         {
@@ -7329,7 +7572,7 @@
   },
   {
     "id": "kw_0057",
-    "keyword": "cute female japanese names",
+    "keyword": "cute japanese female names",
     "search_volume": 1300,
     "kd": 31,
     "cpc": 0.03,
@@ -7473,10 +7716,36 @@
     "strategy": "category_page",
     "path": "/names/funny-asian",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Funny Asian Names — Playful & Cute Japanese Full-Name Ideas",
+      "h1": "Funny Asian Names",
+      "description": "Browse playful and light-hearted Japanese names with cute kanji meanings, fun readings, and full-name combinations. Find names that are warm, charming, and genuinely fun to say."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cute",
+            "playful",
+            "warm",
+            "bright"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -7611,10 +7880,44 @@
     "strategy": "category_page",
     "path": "/names/make",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Make a Name in Japanese — Browse Full-Name Ideas with Kanji & Meanings",
+      "h1": "Make a Name in Japanese",
+      "description": "Browse Japanese full-name combinations to create your own name in Japanese. Each name shows given name + surname pairings, kanji meanings, and readings across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "real_person",
+            "baby"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "common",
+            "uncommon",
+            "rare"
+          ]
+        },
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "female",
+            "unisex"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -7879,7 +8182,7 @@
     "seo": {
       "title": "My Surname in Japanese — Explore Japanese Last Names & Meanings",
       "h1": "My Surname in Japanese",
-      "description": "Explore Japanese last names, surname meanings, and family-name combinations with kanji readings and full-name inspiration. Compare classic, scenic, familiar, and more distinctive Japanese surnames in one place."
+      "description": "Curious what your surname would sound like in Japanese? Browse authentic Japanese last names with kanji meanings, readings, and full-name pairings. Find a surname that fits your family's feel — classic, nature-rooted, elegant, or distinctive."
     },
     "filter_rule": {
       "must": [
@@ -8023,10 +8326,36 @@
     "strategy": "category_page",
     "path": "/names/kanji",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names in Kanji — Full-Name Ideas with Kanji Meanings & Readings",
+      "h1": "Japanese Names in Kanji",
+      "description": "Browse Japanese names displayed in kanji with character-by-character meanings, readings, and full-name pairings. See how kanji combine to form elegant, noble, and culturally rich names — each entry shows exactly what the characters mean."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "ancient",
+            "traditional"
+          ]
+        },
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "noble",
+            "elegant",
+            "serene",
+            "strong"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -8265,10 +8594,35 @@
     "strategy": "category_page",
     "path": "/names/asian-american",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Asian American Names — Japanese Name Ideas with Kanji & Meanings",
+      "h1": "Asian American Names",
+      "description": "Explore Asian American name ideas through Japanese full-name combinations with kanji meanings, readings, and modern styling. Browse names that blend Japanese heritage with contemporary everyday appeal."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "modern",
+            "2000s"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -8282,10 +8636,45 @@
     "strategy": "category_page",
     "path": "/names/best-male",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Best Japanese Names for Guys — Cool & Strong Full-Name Ideas",
+      "h1": "Best Japanese Names for Guys",
+      "description": "Browse the best Japanese names for guys with kanji meanings, readings, and full-name combinations. Find cool, strong, noble, and modern masculine name ideas."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "unisex"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cool",
+            "strong",
+            "noble",
+            "elegant"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -8385,9 +8774,13 @@
     "strategy": "category_page",
     "path": "/names/dark-meanings",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Dark Japanese Names and Meanings — Mysterious & Fierce Full-Name Ideas",
+      "h1": "Dark Japanese Names and Meanings",
+      "description": "Explore dark Japanese names and their meanings with kanji breakdowns, readings, and shadowy full-name combinations. Compare fierce, mysterious, and cinematic dark name styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -8419,7 +8812,7 @@
   },
   {
     "id": "kw_0069",
-    "keyword": "japanese first names male",
+    "keyword": "japanese male first names",
     "search_volume": 1000,
     "kd": 39,
     "cpc": 0,
@@ -8711,7 +9104,7 @@
   },
   {
     "id": "kw_0072",
-    "keyword": "popular female japanese names",
+    "keyword": "popular japanese female names",
     "search_volume": 1000,
     "kd": 33,
     "cpc": 0.03,
@@ -8978,10 +9371,36 @@
     "strategy": "category_page",
     "path": "/names/weird-asian",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Weird Asian Names — Unusual & Distinctive Japanese Name Ideas",
+      "h1": "Weird Asian Names",
+      "description": "Browse unusual and distinctive Japanese names with rare kanji, sharp readings, and memorable full-name combinations. Find names that stand out — edgy, mysterious, and low-frequency enough to feel genuinely unique."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "rare",
+            "unique"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "edgy",
+            "mysterious",
+            "cool"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -9023,10 +9442,37 @@
     "strategy": "category_page",
     "path": "/names/good",
     "priority": 4,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Good Japanese Names — Beautiful, Meaningful & Memorable Full-Name Ideas",
+      "h1": "Good Japanese Names",
+      "description": "Browse Japanese names with genuinely positive kanji meanings, pleasing sound patterns, and real-world usability. Find names that work well as full-name pairings — polished, culturally appropriate, and easy to love across baby names, characters, or everyday use."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "noble",
+            "serene",
+            "warm",
+            "bright"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -9313,9 +9759,13 @@
     "strategy": "category_page",
     "path": "/names/warrior",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Warrior Names in Japanese — Samurai & Strong Full-Name Ideas",
+      "h1": "Warrior Names in Japanese",
+      "description": "Browse Japanese warrior and samurai names with kanji meanings, martial readings, and strong full-name combinations. Compare fierce, bold, and battle-hardened name styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -9437,10 +9887,39 @@
     "strategy": "category_page",
     "path": "/names/info",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names Info — Meanings, Kanji, Readings & Full-Name Examples",
+      "h1": "Japanese Names Info",
+      "description": "Explore Japanese name information including kanji character meanings, romaji readings, cultural notes, and full-name examples. A reference for anyone curious about how Japanese names are structured and what they mean."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "noble",
+            "serene",
+            "strong"
+          ]
+        },
+        {
+          "field": "element",
+          "op": "any_of",
+          "value": [
+            "flower",
+            "water",
+            "mountain",
+            "light",
+            "sky"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -9679,7 +10158,7 @@
   },
   {
     "id": "kw_0083",
-    "keyword": "cool anime names male",
+    "keyword": "cool male anime names",
     "search_volume": 390,
     "search_volume_total": 600,
     "keyword_aliases": [
@@ -9694,15 +10173,41 @@
     "strategy": "category_page",
     "path": "/names/male-cool-anime",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {
       "gender": "male",
       "name_part": "given_name",
       "vibe": "cool",
       "use_case": "anime"
     },
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Cool Male Anime Names — Edgy & Fierce Japanese Full-Name Ideas",
+      "h1": "Cool Male Anime Names",
+      "description": "Browse cool male anime names with kanji meanings, edgy readings, and fierce full-name combinations. Find mysterious, intense, and dramatically cool Japanese male names for anime characters."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "unisex"
+          ]
+        },
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cool",
+            "edgy",
+            "mysterious",
+            "fierce"
+          ]
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -10307,7 +10812,11 @@
     "priority": 5,
     "status": "active",
     "tags_hint": null,
-    "seo": true,
+    "seo": {
+      "title": "Light Japanese Names — Bright, Airy & Luminous Full-Name Ideas",
+      "h1": "Light Japanese Names",
+      "description": "Browse Japanese names meaning light with kanji featuring sun, star, and luminous imagery. Compare bright, airy, and softly radiant full-name combinations for characters or inspiration."
+    },
     "filter_rule": {
       "must": [
         {
@@ -10322,7 +10831,11 @@
       ],
       "should": []
     },
-    "quiz": true,
+    "quiz": {
+      "slug": "light",
+      "intro_en": "Use this quiz to narrow light Japanese names by soft glow, bright energy, star-like mystery, or warm solar radiance.",
+      "intro_zh": "用这个小测试快速缩小 light japanese names：更偏柔和微光、明亮开朗、星光神秘，还是温暖阳光的路线。"
+    },
     "related_keywords": [
       {
         "label": "Unisex Japanese Names",
@@ -10430,10 +10943,37 @@
     "strategy": "category_page",
     "path": "/names/asian-female",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Asian Girl Names — Japanese Female Full-Name Ideas with Meanings",
+      "h1": "Asian Girl Names",
+      "description": "Explore Asian-inspired names for girls through Japanese female names with kanji meanings, readings, and full-name combinations across cute, elegant, and modern styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "female",
+            "unisex"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cute",
+            "elegant",
+            "gentle",
+            "serene"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -10447,16 +10987,48 @@
     "strategy": "category_page",
     "path": "/names/anime-nickname-generator",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Anime Nickname Generator — Cute & Cool Japanese Name Ideas",
+      "h1": "Anime Nickname Generator",
+      "description": "Browse Japanese names that make great anime nicknames — short, punchy, and character-ready. Find cute, cool, and playful name ideas with kanji meanings for anime fans and writers."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "anime",
+            "game_character"
+          ]
+        },
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cute",
+            "playful",
+            "cool",
+            "edgy"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "syllable_count",
+          "op": "lte",
+          "value": 3
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
   {
     "id": "kw_0094",
-    "keyword": "cute male japanese names",
+    "keyword": "cute japanese male names",
     "search_volume": 480,
     "kd": 42,
     "cpc": 0.02,
@@ -10658,10 +11230,37 @@
     "strategy": "category_page",
     "path": "/names/great",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Great Japanese Names — Beautiful & Meaningful Full-Name Ideas",
+      "h1": "Great Japanese Names",
+      "description": "Browse Japanese names that are widely loved and genuinely easy to appreciate — elegant, noble, or cool kanji meanings, smooth readings, and full-name combinations that hold up across styles and genders."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "noble",
+            "cool",
+            "serene",
+            "strong"
+          ]
+        },
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -10804,10 +11403,17 @@
     "strategy": "category_page",
     "path": "/names/randomizer",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Name Randomizer — Browse & Discover Full-Name Ideas",
+      "h1": "Japanese Name Randomizer",
+      "description": "Randomly discover Japanese names with kanji meanings, readings, and full-name combinations. Browse and explore authentic Japanese names across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -10899,7 +11505,7 @@
   },
   {
     "id": "kw_0099",
-    "keyword": "japanese names and meanings male",
+    "keyword": "japanese male names and meanings",
     "search_volume": 480,
     "kd": 37,
     "cpc": 0.01,
@@ -10907,9 +11513,13 @@
     "strategy": "category_page",
     "path": "/names/meanings-male",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Male Names and Meanings — Full-Name Ideas with Kanji Readings",
+      "h1": "Japanese Male Names and Meanings",
+      "description": "Explore Japanese male names and their meanings with kanji breakdowns, readings, and strong masculine full-name combinations across modern, classic, and traditional styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -11027,7 +11637,7 @@
   },
   {
     "id": "kw_0102",
-    "keyword": "japanese names with meanings female",
+    "keyword": "japanese female names with meanings",
     "search_volume": 480,
     "kd": 41,
     "cpc": 0.03,
@@ -11035,9 +11645,13 @@
     "strategy": "category_page",
     "path": "/names/meanings-female",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Female Names with Meanings — Full-Name Ideas & Kanji Readings",
+      "h1": "Japanese Female Names with Meanings",
+      "description": "Explore Japanese female names with meanings, kanji breakdowns, readings, and elegant full-name combinations. Compare cute, serene, modern, and traditional feminine styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -11076,10 +11690,37 @@
     "strategy": "category_page",
     "path": "/names/oni",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Oni Names — Dark & Fierce Japanese Full-Name Ideas",
+      "h1": "Oni Names",
+      "description": "Explore Japanese oni names with dark kanji meanings, fierce readings, and dramatic full-name combinations. Find mysterious, scary, and powerful names for fantasy characters and anime."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "dark",
+            "fierce",
+            "mysterious",
+            "scary"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "anime",
+            "fantasy"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -11482,7 +12123,7 @@
   },
   {
     "id": "kw_0107",
-    "keyword": "unique female japanese names",
+    "keyword": "unique japanese female names",
     "search_volume": 480,
     "kd": 37,
     "cpc": 0.03,
@@ -12121,10 +12762,42 @@
     "strategy": "category_page",
     "path": "/names/words",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Words as Names — Names with Deep Kanji Meanings",
+      "h1": "Japanese Words Names",
+      "description": "Browse Japanese names built from evocative everyday words — mountain, river, flower, fire, sky. Each name carries a clear meaning traceable to its kanji characters, with full-name pairings and readings."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "element",
+          "op": "any_of",
+          "value": [
+            "mountain",
+            "water",
+            "wind",
+            "earth",
+            "flower",
+            "sky",
+            "light",
+            "fire"
+          ]
+        },
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "serene",
+            "elegant",
+            "noble",
+            "warm"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -12466,9 +13139,13 @@
     "strategy": "category_page",
     "path": "/names/nerdy-boy",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Nerdy Japanese Boy Names — Smart, Unique & Intellectual Full-Name Ideas",
+      "h1": "Nerdy Japanese Boy Names",
+      "description": "Browse Japanese boy names that work for nerdy, intellectual, and anime-adjacent characters. Find distinctive male name ideas with layered kanji meanings — the kind of names worn by scholars, strategists, and quietly memorable fictional leads."
+    },
     "filter_rule": {
       "must": [
         {
@@ -12480,7 +13157,16 @@
           ]
         }
       ],
-      "should": []
+      "should": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "anime",
+            "game_character"
+          ]
+        }
+      ]
     },
     "quiz": null,
     "related_keywords": [
@@ -12717,7 +13403,11 @@
       ],
       "should": []
     },
-    "quiz": true,
+    "quiz": {
+      "slug": "common-first",
+      "intro_en": "Use this quiz to narrow common Japanese first names by soft and gentle, bright and modern, or classic and enduring style directions.",
+      "intro_zh": "用这个小测试缩小 common japanese first names：更偏柔和亲切、明亮现代，还是经典耐久的路线。"
+    },
     "related_keywords": [
       {
         "label": "Unisex Japanese Names",
@@ -12812,7 +13502,7 @@
   },
   {
     "id": "kw_0125",
-    "keyword": "female japanese names starting with s",
+    "keyword": "japanese female names starting with s",
     "search_volume": 320,
     "kd": 20,
     "cpc": 0,
@@ -12820,9 +13510,13 @@
     "strategy": "category_page",
     "path": "/names/female-starting-s",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Female Names Starting with S — Full-Name Ideas & Meanings",
+      "h1": "Japanese Female Names Starting with S",
+      "description": "Browse Japanese female names starting with S, including Saki, Sakura, Sayuri, and more, with kanji meanings, readings, and feminine full-name combinations."
+    },
     "filter_rule": {
       "must": [
         {
@@ -12934,10 +13628,35 @@
     "strategy": "category_page",
     "path": "/names/funny",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Funny Japanese Names — Playful & Cute Name Ideas with Kanji",
+      "h1": "Funny Japanese Names",
+      "description": "Browse funny and playful Japanese names with cute kanji meanings, cheerful readings, and light-hearted full-name combinations. Perfect for characters, usernames, or just a smile."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cute",
+            "playful"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -13270,10 +13989,23 @@
     "strategy": "category_page",
     "path": "/names/that-start-j",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names That Start With J — Full-Name Ideas with Kanji",
+      "h1": "Japanese Names That Start With J",
+      "description": "Browse Japanese names starting with J — including Jun, Jiro, Junko, and more — with kanji meanings, readings, and full-name combinations across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "j"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -13373,10 +14105,23 @@
     "strategy": "category_page",
     "path": "/names/that-start-r",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names That Start With R — Full-Name Ideas with Kanji",
+      "h1": "Japanese Names That Start With R",
+      "description": "Browse Japanese names starting with R — including Ren, Ryo, Ryota, Riko, and more — with kanji meanings, readings, and full-name combinations across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "r"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -13505,10 +14250,27 @@
     "strategy": "category_page",
     "path": "/names/list",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "List of Japanese Names — Browse Full-Name Ideas with Kanji & Meanings",
+      "h1": "List of Japanese Names",
+      "description": "Browse a comprehensive list of Japanese names spanning male, female, and unisex categories, with kanji meanings, readings, and surname-pairing examples. Compare authentic names from classic and traditional to modern and everyday."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common",
+            "uncommon"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [],
     "seo_guidance": "做博客/内容页：围绕 \"list of japanese names\" 写一篇长文。 内容包括名字的含义解读、文化背景、使用场景举例，穿插从姓名库中筛选的具体名字示例。 搜索量 320，KD 45，信息意图词适合用内容深度获取排名。",
@@ -13637,9 +14399,13 @@
     "strategy": "category_page",
     "path": "/names/that-mean-light",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Names That Mean Light in Japanese — Bright & Radiant Full-Name Ideas",
+      "h1": "Names That Mean Light in Japanese",
+      "description": "Explore Japanese names that mean light, sun, or star with kanji meanings, readings, and radiant full-name combinations. Compare bright, luminous, and celestial name styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -13755,10 +14521,17 @@
     "strategy": "category_page",
     "path": "/names/random",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Random Japanese Names — Browse & Discover Full-Name Ideas",
+      "h1": "Random Japanese Names",
+      "description": "Discover Japanese names you haven't seen before — from cool and edgy to gentle and traditional, all with kanji meanings, readings, and full-name combinations. Browse freely across any gender or style."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -13982,10 +14755,37 @@
     "strategy": "category_page",
     "path": "/names/unusual",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Unusual Japanese Names — Rare, Distinctive & Uncommon Full-Name Ideas",
+      "h1": "Unusual Japanese Names",
+      "description": "Browse unusual Japanese names with rare kanji, mysterious vibes, and distinctive full-name combinations. Find low-frequency, cool, and memorable name styles that stand out."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "uncommon",
+            "rare"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "mysterious",
+            "elegant",
+            "cool",
+            "edgy"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -14337,10 +15137,26 @@
     "strategy": "category_page",
     "path": "/names/asian-common",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Asian Common Names — Popular Japanese Full-Name Ideas with Meanings",
+      "h1": "Asian Common Names",
+      "description": "Explore popular and widely-used Asian names through Japanese full-name combinations with kanji meanings and readings. Browse common, familiar, and classic name styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -14354,9 +15170,13 @@
     "strategy": "category_page",
     "path": "/names/badass",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Badass Japanese Names — Cool, Edgy & Fierce Full-Name Ideas",
+      "h1": "Badass Japanese Names",
+      "description": "Browse badass Japanese names with kanji meanings, bold readings, and cool full-name combinations. Find edgy, fierce, and powerful names for characters, gaming, or inspiration."
+    },
     "filter_rule": {
       "must": [
         {
@@ -14591,7 +15411,7 @@
   },
   {
     "id": "kw_0152",
-    "keyword": "cool female japanese names",
+    "keyword": "cool japanese female names",
     "search_volume": 260,
     "kd": 35,
     "cpc": 0.03,
@@ -14739,9 +15559,13 @@
     "strategy": "category_page",
     "path": "/names/cute-pet",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Cute Japanese Pet Names — Playful & Sweet Name Ideas for Pets",
+      "h1": "Cute Japanese Pet Names",
+      "description": "Explore cute Japanese pet names with kanji meanings, sweet readings, and playful style notes. Browse adorable Japanese-inspired name ideas for cats, dogs, and other pets."
+    },
     "filter_rule": {
       "must": [
         {
@@ -14855,7 +15679,7 @@
   },
   {
     "id": "kw_0154",
-    "keyword": "dark female japanese names",
+    "keyword": "dark japanese female names",
     "search_volume": 260,
     "kd": 7,
     "cpc": 0,
@@ -14863,9 +15687,13 @@
     "strategy": "category_page",
     "path": "/names/dark-female",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Dark Japanese Female Names — Mysterious, Fierce & Elegant Full-Name Ideas",
+      "h1": "Dark Japanese Female Names",
+      "description": "Explore dark Japanese female names with kanji meanings, readings, and mysterious full-name combinations. Compare fierce, shadowy, and dramatically elegant feminine name styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -15033,7 +15861,11 @@
       ],
       "should": []
     },
-    "quiz": true,
+    "quiz": {
+      "slug": "baby-boy",
+      "intro_en": "Use this quiz to narrow Japanese baby boy names by warm and friendly, calm and strong, or bright and modern energy.",
+      "intro_zh": "用这个小测试缩小 japanese baby boy names：更偏温暖亲切、沉稳有力，还是明亮现代的男孩名路线。"
+    },
     "related_keywords": [
       {
         "label": "Female Japanese Names",
@@ -15234,13 +16066,17 @@
     "strategy": "category_page",
     "path": "/names/male-with-meanings",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {
       "gender": "male",
       "name_part": "given_name",
       "with_meanings": true
     },
-    "seo": null,
+    "seo": {
+      "title": "Japanese Boy Names Meaning Light — Bright & Radiant Male Full-Name Ideas",
+      "h1": "Japanese Boy Names Meaning Light",
+      "description": "Browse Japanese boy names that mean light, sun, or star with kanji meanings, readings, and luminous masculine full-name combinations. Find bright, radiant, and celestial male names."
+    },
     "filter_rule": {
       "must": [
         {
@@ -15292,10 +16128,39 @@
     "strategy": "category_page",
     "path": "/names/definitions",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Name Definitions — Name Meanings, Kanji & Readings",
+      "h1": "Japanese Name Definitions",
+      "description": "Look up Japanese name definitions with kanji breakdowns, character-by-character meanings, and full-name examples. Browse names with noble, elegant, serene, and nature-rooted meanings."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "noble",
+            "elegant",
+            "serene",
+            "strong"
+          ]
+        },
+        {
+          "field": "element",
+          "op": "any_of",
+          "value": [
+            "flower",
+            "light",
+            "water",
+            "mountain",
+            "sky"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -15395,10 +16260,29 @@
     "strategy": "category_page",
     "path": "/names/ideas",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Name Ideas — Browse Full-Name Combinations with Kanji & Meanings",
+      "h1": "Japanese Name Ideas",
+      "description": "Browse Japanese name ideas with kanji meanings, readings, and full-name combinations. Find elegant, cute, cool, and creative name inspiration across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "cute",
+            "cool",
+            "serene",
+            "warm"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -15540,10 +16424,23 @@
     "strategy": "category_page",
     "path": "/names/starting-r",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names Starting With R — Name Ideas with Kanji & Meanings",
+      "h1": "Japanese Names Starting With R",
+      "description": "Browse Japanese names starting with R — including Ren, Ryo, Ryota, Riku, and more — with kanji meanings, readings, and full-name combinations across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "r"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -15643,10 +16540,23 @@
     "strategy": "category_page",
     "path": "/names/that-start-y",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names That Start With Y — Full-Name Ideas with Kanji",
+      "h1": "Japanese Names That Start With Y",
+      "description": "Browse Japanese names starting with Y — including Yuki, Yuta, Yuna, Yoshiko, and more — with kanji meanings, readings, and full-name combinations across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "y"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -15746,10 +16656,29 @@
     "strategy": "category_page",
     "path": "/names/meaningful",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Meaningful Japanese Names — Full-Name Ideas with Kanji & Deep Meanings",
+      "h1": "Meaningful Japanese Names",
+      "description": "Explore meaningful Japanese names with kanji breakdowns, readings, and full-name combinations. Browse noble, elegant, and deeply symbolic name ideas with rich cultural roots."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "noble",
+            "elegant",
+            "serene",
+            "strong",
+            "brave"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -15849,10 +16778,36 @@
     "strategy": "category_page",
     "path": "/names/my-kanji",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "My Name in Kanji — Browse Japanese Kanji Name Ideas & Meanings",
+      "h1": "My Name in Kanji",
+      "description": "Explore how Japanese names look written in kanji with character-by-character meanings, readings, and full-name pairings. Find a kanji name that suits you — from elegant and serene to bold and noble."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "ancient",
+            "traditional"
+          ]
+        },
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "noble",
+            "elegant",
+            "serene",
+            "strong"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -15952,10 +16907,29 @@
     "strategy": "category_page",
     "path": "/names/nice",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Nice Japanese Names — Gentle, Friendly & Elegant Full-Name Ideas",
+      "h1": "Nice Japanese Names",
+      "description": "Browse Japanese names that feel genuinely pleasant — smooth to say, with positive kanji meanings and naturally likable full-name pairings. Find names that create a good impression and sit comfortably in everyday contexts."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "gentle",
+            "warm",
+            "cute",
+            "elegant",
+            "bright"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -16203,10 +17177,28 @@
     "strategy": "category_page",
     "path": "/names/scary",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Scary Japanese Names — Dark, Fierce & Mysterious Full-Name Ideas",
+      "h1": "Scary Japanese Names",
+      "description": "Browse scary Japanese names with dark kanji meanings, fierce readings, and eerie full-name combinations. Find mysterious, shadowy, and dramatically intense name styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "dark",
+            "fierce",
+            "mysterious",
+            "scary"
+          ]
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -16306,9 +17298,13 @@
     "strategy": "category_page",
     "path": "/names/strong",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Strong Japanese Names — Fierce, Bold & Powerful Full-Name Ideas",
+      "h1": "Strong Japanese Names",
+      "description": "Browse strong Japanese names with kanji meanings, powerful readings, and bold full-name combinations. Compare fierce, resilient, and commanding name styles for characters or inspiration."
+    },
     "filter_rule": {
       "must": [
         {
@@ -16423,10 +17419,36 @@
     "strategy": "category_page",
     "path": "/names/what-are-some",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "What Are Some Japanese Names? — Browse Names with Kanji & Meanings",
+      "h1": "What Are Some Japanese Names?",
+      "description": "Discover a wide selection of Japanese names — male, female, and unisex — with kanji meanings, readings, and full-name combinations. A good starting point for anyone new to Japanese naming."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common",
+            "uncommon"
+          ]
+        },
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "female",
+            "unisex"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -16666,11 +17688,15 @@
     "strategy": "category_page",
     "path": "/names/classical",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {
       "era": "classical"
     },
-    "seo": null,
+    "seo": {
+      "title": "Ancient Japanese Names — Traditional & Classical Full-Name Ideas",
+      "h1": "Ancient Japanese Names",
+      "description": "Explore ancient and classical Japanese names with kanji meanings, historical readings, and traditional full-name combinations from the Heian, Nara, and early imperial eras."
+    },
     "filter_rule": {
       "must": [
         {
@@ -16783,10 +17809,36 @@
     "strategy": "category_page",
     "path": "/names/asian-baby",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": {},
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Asian Baby Names — Cute & Sweet Japanese Full-Name Ideas",
+      "h1": "Asian Baby Names",
+      "description": "Explore Asian baby name ideas through cute and warm Japanese full-name combinations with kanji meanings and readings. Browse gentle, bright, and lovable name styles for newborns."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cute",
+            "warm",
+            "gentle"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": []
   },
@@ -16800,9 +17852,13 @@
     "strategy": "category_page",
     "path": "/names/cute-girls",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Cute Japanese Names for Girls — Sweet & Playful Full-Name Ideas",
+      "h1": "Cute Japanese Names for Girls",
+      "description": "Browse cute Japanese names for girls with kanji meanings, sweet readings, and adorable full-name combinations. Find soft, playful, and charming girl name ideas across modern and traditional styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -16917,10 +17973,35 @@
     "strategy": "category_page",
     "path": "/names/english",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "English Names in Japan — Modern Japanese Names with Western Appeal",
+      "h1": "English Names in Japan",
+      "description": "Browse modern Japanese names that feel familiar to Western ears — clean, contemporary full-name ideas with kanji meanings and readings. Compare Japanese naming styles from the 2000s and modern era."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "modern",
+            "2000s"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -17020,10 +18101,38 @@
     "strategy": "category_page",
     "path": "/names/good-male",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Good Japanese Names for Guys — Strong, Cool & Noble Male Full-Name Ideas",
+      "h1": "Good Japanese Names for Guys",
+      "description": "Browse good Japanese names for guys with kanji meanings, readings, and masculine full-name combinations. Compare strong, cool, noble, and widely-loved male name styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "gender",
+          "op": "any_of",
+          "value": [
+            "male",
+            "unisex"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "strong",
+            "noble",
+            "cool",
+            "elegant",
+            "brave"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -17123,10 +18232,35 @@
     "strategy": "category_page",
     "path": "/names/real",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Real Japanese Names — Authentic Full-Name Ideas with Kanji & Meanings",
+      "h1": "Real Japanese Names",
+      "description": "Browse authentic real Japanese names with kanji meanings, readings, and full-name combinations. Explore commonly used, traditional, and modern name styles actually found in Japan."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "popularity",
+          "op": "any_of",
+          "value": [
+            "very_common",
+            "common"
+          ]
+        },
+        {
+          "field": "era",
+          "op": "any_of",
+          "value": [
+            "modern",
+            "traditional",
+            "2000s"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -17226,9 +18360,13 @@
     "strategy": "category_page",
     "path": "/names/american-male",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese American Male Names — Full-Name Ideas with Meanings & Readings",
+      "h1": "Japanese American Male Names",
+      "description": "Explore Japanese American male names with kanji meanings, readings, and full-name combinations bridging Japanese heritage and American culture for boys and men."
+    },
     "filter_rule": {
       "must": [
         {
@@ -17345,9 +18483,13 @@
     "strategy": "category_page",
     "path": "/names/boy-that-mean-fire",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Boy Names That Mean Fire — Bold & Fierce Male Full-Name Ideas",
+      "h1": "Japanese Boy Names That Mean Fire",
+      "description": "Browse Japanese boy names that mean fire with kanji meanings, fiery readings, and bold male full-name combinations. Find intense, passionate, and powerful fire-themed name ideas."
+    },
     "filter_rule": {
       "must": [
         {
@@ -17468,10 +18610,36 @@
     "strategy": "category_page",
     "path": "/names/character",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Character Names — Cool & Memorable Full-Name Ideas",
+      "h1": "Japanese Character Names",
+      "description": "Browse Japanese character names with kanji meanings, readings, and memorable full-name combinations. Find cool, fierce, mysterious, and dramatic name styles for anime, fantasy, and fiction."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "use_case",
+          "op": "any_of",
+          "value": [
+            "anime",
+            "fantasy"
+          ]
+        },
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "cool",
+            "fierce",
+            "mysterious",
+            "elegant"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -17571,9 +18739,13 @@
     "strategy": "category_page",
     "path": "/names/female-first",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Female First Names — Elegant & Feminine Given-Name Ideas",
+      "h1": "Japanese Female First Names",
+      "description": "Browse Japanese female first names and given names with kanji meanings, readings, and feminine full-name combinations across elegant, cute, modern, and traditional styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -17692,10 +18864,29 @@
     "strategy": "category_page",
     "path": "/names/full",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Full Names — Complete First & Last Name Combinations with Meanings",
+      "h1": "Japanese Full Names",
+      "description": "Browse Japanese full names with both given and family name components, kanji meanings, and readings. Explore complete first-and-last name combinations across elegant, cool, and classic styles."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "cool",
+            "serene",
+            "noble",
+            "warm"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -17795,9 +18986,13 @@
     "strategy": "category_page",
     "path": "/names/girl-first",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Girl First Names — Cute & Elegant Given-Name Ideas",
+      "h1": "Japanese Girl First Names",
+      "description": "Explore Japanese girl first names and given names with kanji meanings, readings, and charming full-name combinations. Compare cute, soft, modern, and poetic girl name styles."
+    },
     "filter_rule": {
       "must": [
         {
@@ -17945,10 +19140,23 @@
     "strategy": "category_page",
     "path": "/names/start-s",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names Starting With S — Full-Name Ideas with Kanji",
+      "h1": "Japanese Names Starting With S",
+      "description": "Browse Japanese names starting with S — including Saki, Sakura, Sato, Shota, and more — with kanji meanings, readings, and full-name combinations across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "s"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -18048,11 +19256,27 @@
     "strategy": "category_page",
     "path": "/names/demon",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Demon Names — Dark, Mysterious & Anime-Style Full-Name Ideas",
+      "h1": "Japanese Demon Names",
+      "description": "Explore Japanese demon names with kanji meanings, dark readings, and dramatic full-name combinations. Browse names from anime, fantasy, folklore, and character-creation contexts."
+    },
     "filter_rule": {
       "must": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "dark",
+            "fierce",
+            "mysterious",
+            "scary"
+          ]
+        }
+      ],
+      "should": [
         {
           "field": "use_case",
           "op": "any_of",
@@ -18061,8 +19285,7 @@
             "fantasy"
           ]
         }
-      ],
-      "should": []
+      ]
     },
     "quiz": null,
     "related_keywords": [
@@ -18165,10 +19388,29 @@
     "strategy": "category_page",
     "path": "/names/first-last",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese First and Last Names — Complete Full-Name Combinations with Kanji",
+      "h1": "Japanese First and Last Names",
+      "description": "Explore how Japanese given names and family names pair together — compare combinations where first and last names balance each other in rhythm, kanji contrast, and meaning. Browse full-name pairings across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "elegant",
+            "cool",
+            "serene",
+            "noble",
+            "cute"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -18268,9 +19510,13 @@
     "strategy": "category_page",
     "path": "/names/fire",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Names for Fire — Bold, Fierce & Elemental Full-Name Ideas",
+      "h1": "Japanese Names for Fire",
+      "description": "Explore Japanese names for fire with kanji meanings, fiery readings, and bold full-name combinations. Find intense, passionate, and elemental fire-themed name ideas."
+    },
     "filter_rule": {
       "must": [
         {
@@ -18384,9 +19630,13 @@
     "strategy": "category_page",
     "path": "/names/male-generator",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
+    "seo": {
+      "title": "Japanese Male Name Generator — Browse & Discover Full-Name Ideas",
+      "h1": "Japanese Male Name Generator",
+      "description": "Browse Japanese male names and discover full-name combinations with kanji meanings, readings, and style notes. Find strong, modern, classic, and cool masculine name ideas."
+    },
     "filter_rule": {
       "must": [
         {
@@ -18571,10 +19821,23 @@
     "strategy": "category_page",
     "path": "/names/starting-y",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names Starting With Y — Name Ideas with Kanji & Meanings",
+      "h1": "Japanese Names Starting With Y",
+      "description": "Browse Japanese names starting with Y — including Yuki, Yuto, Yuna, Yoshi, and more — with kanji meanings, readings, and full-name combinations across male, female, and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "y"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -18674,10 +19937,41 @@
     "strategy": "category_page",
     "path": "/names/that-mean",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names That Mean — Browse Names by Kanji Meaning",
+      "h1": "Japanese Names That Mean",
+      "description": "Browse Japanese names by what their kanji actually mean — brave, noble, light, flower, sky, and more. Each name entry shows the meaning behind every character for easy comparison."
+    },
+    "filter_rule": {
+      "must": [],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "noble",
+            "elegant",
+            "serene",
+            "strong",
+            "brave"
+          ]
+        },
+        {
+          "field": "element",
+          "op": "any_of",
+          "value": [
+            "light",
+            "flower",
+            "water",
+            "mountain",
+            "sky",
+            "fire"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -18777,10 +20071,37 @@
     "strategy": "category_page",
     "path": "/names/that-mean-red",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names That Mean Red — Fiery, Passionate & Bold Full-Name Ideas",
+      "h1": "Japanese Names That Mean Red",
+      "description": "Browse Japanese names meaning red with fire and sun kanji, fierce readings, and bold full-name combinations. Find passionate, warm, and intensely radiant name styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "element",
+          "op": "any_of",
+          "value": [
+            "fire",
+            "sun"
+          ]
+        }
+      ],
+      "should": [
+        {
+          "field": "vibe",
+          "op": "any_of",
+          "value": [
+            "fierce",
+            "warm",
+            "bright",
+            "brave"
+          ]
+        }
+      ]
+    },
     "quiz": null,
     "related_keywords": [
       {
@@ -18880,10 +20201,23 @@
     "strategy": "category_page",
     "path": "/names/that-start-d",
     "priority": 5,
-    "status": "draft",
+    "status": "active",
     "tags_hint": null,
-    "seo": null,
-    "filter_rule": null,
+    "seo": {
+      "title": "Japanese Names That Start With D — Full-Name Ideas with Kanji",
+      "h1": "Japanese Names That Start With D",
+      "description": "Browse Japanese names starting with D — including Daiki, Daisuke, Daimu, and more — with kanji meanings, readings, and full-name combinations across male and unisex styles."
+    },
+    "filter_rule": {
+      "must": [
+        {
+          "field": "romaji",
+          "op": "starts_with",
+          "value": "d"
+        }
+      ],
+      "should": []
+    },
     "quiz": null,
     "related_keywords": [
       {

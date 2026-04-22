@@ -18,7 +18,8 @@
     "title": "Japanese Name Dictionary",
     "subtitle": "Explore Authentic Japanese Names with Meanings, Kanji & Cultural Heritage",
     "description": "Browse over 500,000 authentic Japanese names — search by category, discover kanji meanings, and find the perfect name for your baby, character, or creative project.",
-    "startButton": "Browse Japanese Names",
+    "startButton": "Browse All Names",
+  "generateButton": "Generate My Name",
     "getStarted": "Start exploring Japanese names now",
     "categories": {
       "title": "Browse Japanese Names by Category",

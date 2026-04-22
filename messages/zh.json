@@ -18,7 +18,8 @@
     "title": "日本名字大全",
     "subtitle": "探索正宗日本名字，了解汉字含义与文化传承",
     "description": "收录超过 500,000 个正宗日本名字 —— 按分类浏览、了解汉字含义，为您的宝宝、角色或创意项目找到完美的日本名字。",
-    "startButton": "浏览日本名字",
+    "startButton": "浏览所有名字",
+  "generateButton": "生成我的名字",
     "getStarted": "开始探索日本名字",
     "categories": {
       "title": "按分类浏览日本名字",

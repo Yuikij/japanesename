@@ -86,13 +86,22 @@ export default async function HomePage() {
           <p className="text-base text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
             {t('description')}
           </p>
-          <Link
-            href="./names/male"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-          >
-            {t('startButton')}
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="./names/japanese-names"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              {t('startButton')}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="./generate"
+              className="inline-flex items-center gap-3 bg-white text-pink-600 border-2 border-pink-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-50 hover:border-pink-500 transform hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg"
+            >
+              {t('generateButton')}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
         </div>
       </section>
 

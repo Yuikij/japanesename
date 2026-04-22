@@ -1,6 +1,12 @@
 import { MetadataRoute } from 'next'
+import { headers } from 'next/headers'
 
-export default function robots(): MetadataRoute.Robots {
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const headersList = await headers()
+  const host = headersList.get('host')
+  const protocol = host?.includes('localhost') ? 'http' : 'https'
+  const baseUrl = host ? `${protocol}://${host}` : 'https://japanesenamegen.com'
+
   return {
     rules: {
       userAgent: '*',
@@ -14,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
         '/scripts/',
       ],
     },
-    sitemap: 'https://japanesename.vercel.app/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   }
 } 

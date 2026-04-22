@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { headers } from 'next/headers'
 import keywordsData from '../../新版本PSEO改造/keyword/keyword.json'
 
 interface Keyword {
@@ -18,8 +19,11 @@ function loadCategoryPaths(): string[] {
   }
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://japanesename.vercel.app'
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const headersList = await headers()
+  const host = headersList.get('host')
+  const protocol = host?.includes('localhost') ? 'http' : 'https'
+  const baseUrl = host ? `${protocol}://${host}` : 'https://japanesenamegen.com'
   const locales = ['en', 'zh']
 
   const routes: MetadataRoute.Sitemap = [

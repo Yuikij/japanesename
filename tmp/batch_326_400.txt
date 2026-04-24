@@ -1,0 +1,228 @@
+﻿
+', '寰虫案', '銇ㄣ亸銇亴', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 65200, 'raw', 'japanese-personal-name-dataset');
+', '鍫€姹?, '銇汇倞銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 65200, 'raw', 'japanese-personal-name-dataset');
+', '澶ф湪', '銇熴亜銇笺亸', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 65100, 'raw', 'japanese-personal-name-dataset');
+', '宸濈敯', '銇嬨倧銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 65000, 'raw', 'japanese-personal-name-dataset');
+', '宀?, '銇嶃仐', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64900, 'raw', 'japanese-personal-name-dataset');
+', '闋堢敯', '銇欍仩', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64900, 'raw', 'japanese-personal-name-dataset');
+', '灞卞窛', '銈勩伨銇嬨倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64800, 'raw', 'japanese-personal-name-dataset');
+', '鍙ょ敯', '銇点倠銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64500, 'raw', 'japanese-personal-name-dataset');
+', '鏂扮敯', '銇椼倱銇с倱', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64300, 'raw', 'japanese-personal-name-dataset');
+', '姊呯敯', '銇嗐倎銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64100, 'raw', 'japanese-personal-name-dataset');
+', '涓夋湪', '銇裤亶', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 64000, 'raw', 'japanese-personal-name-dataset');
+', '閲庝腑', '銇仾銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 63800, 'raw', 'japanese-personal-name-dataset');
+', '姒婂師', '銇曘亱銇嶃伆銈?, 'unisex', 'family_name', 5, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 63700, 'raw', 'japanese-personal-name-dataset');
+', '鏉戜簳', '銈€銈夈亜', 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 62900, 'raw', 'japanese-personal-name-dataset');
+', '濂ュ北', '銇娿亸銈勩伨', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 62700, 'raw', 'japanese-personal-name-dataset');
+', '鍦熺敯', '銇ゃ仭銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 62500, 'raw', 'japanese-personal-name-dataset');
+', '澶у煄', '銇娿亰銇椼倣', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 61800, 'raw', 'japanese-personal-name-dataset');
+', '婊濇并', '銇熴亶銇栥倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 61800, 'raw', 'japanese-personal-name-dataset');
+', '澶ф潙', '銇娿亰銈€銈?, 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 61600, 'raw', 'japanese-personal-name-dataset');
+', '閲戝煄', '銇嶃倱銇樸倗銇?, 'unisex', 'family_name', 5, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 61200, 'raw', 'japanese-personal-name-dataset');
+', '宸濈', '銇嬨倧銇般仧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 61100, 'raw', 'japanese-personal-name-dataset');
+', '浜曞彛', '銇勩亹銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 60400, 'raw', 'japanese-personal-name-dataset');
+', '姊跺師', '銇嬨仒銈忋倝', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 60300, 'raw', 'japanese-personal-name-dataset');
+', '澶у牬', '銇娿亰銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 59800, 'raw', 'japanese-personal-name-dataset');
+', '瀹煄', '銇裤倓銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 58300, 'raw', 'japanese-personal-name-dataset');
+', '鍚夊師', '銈堛仐銈忋倝', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 58300, 'raw', 'japanese-personal-name-dataset');
+', '閲戞并', '銇嬨仾銇栥倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 58200, 'raw', 'japanese-personal-name-dataset');
+', '闀峰扯', '銇亴銇椼伨', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 58000, 'raw', 'japanese-personal-name-dataset');
+', '瀹唴', '銇裤倓銇嗐仭', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57900, 'raw', 'japanese-personal-name-dataset');
+', '瀹変簳', '銈勩仚銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57700, 'raw', 'japanese-personal-name-dataset');
+', '搴勫徃', '銇椼倗銇嗐仒', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57400, 'raw', 'japanese-personal-name-dataset');
+', '澶у唴', '銇娿亰銇嗐仭', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57300, 'raw', 'japanese-personal-name-dataset');
+', '姣斿槈', '銇层亴', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57200, 'raw', 'japanese-personal-name-dataset');
+', '鑼傛湪', '銈傘亷', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56700, 'raw', 'japanese-personal-name-dataset');
+', '鏃ラ珮', '銇层仩銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56700, 'raw', 'japanese-personal-name-dataset');
+', '鍚戜簳', '銈€銇嬨亜', 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56600, 'raw', 'japanese-personal-name-dataset');
+', '鏉惧扯', '銇俱仱銇椼伨', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56400, 'raw', 'japanese-personal-name-dataset');
+', '涓嬬敯', '銇椼倐銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56300, 'raw', 'japanese-personal-name-dataset');
+', '瑗挎湰', '銇仐銈傘仺', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56300, 'raw', 'japanese-personal-name-dataset');
+', '鑽婚噹', '銇娿亷銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56300, 'raw', 'japanese-personal-name-dataset');
+', '濉氱敯', '銇ゃ亱銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56100, 'raw', 'japanese-personal-name-dataset');
+', '濂ラ噹', '銇娿亸銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56000, 'raw', 'japanese-personal-name-dataset');
+', '绔逛腑', '銇熴亼銇亱', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56000, 'raw', 'japanese-personal-name-dataset');
+', '鐭抽粧', '銇勩仐銇愩倣', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56000, 'raw', 'japanese-personal-name-dataset');
+', '搴冪敯', '銇层倣銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55700, 'raw', 'japanese-personal-name-dataset');
+', '钘ゅ窛', '銇点仒銇嬨倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55600, 'raw', 'japanese-personal-name-dataset');
+', '宥嬬敯', '銇椼伨銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55500, 'raw', 'japanese-personal-name-dataset');
+', '绂忔湰', '銇点亸銈傘仺', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55500, 'raw', 'japanese-personal-name-dataset');
+', '鏍楃敯', '銇忋倞銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55400, 'raw', 'japanese-personal-name-dataset');
+', '鍖楅噹', '銇嶃仧銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55200, 'raw', 'japanese-personal-name-dataset');
+', '宸濆師', '銇嬨倧銈?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 55100, 'raw', 'japanese-personal-name-dataset');
+', '瀹囬噹', '銇嗐伄', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54900, 'raw', 'japanese-personal-name-dataset');
+', '璋峰窛', '銇熴伀銇屻倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54800, 'raw', 'japanese-personal-name-dataset');
+', '灏忚胺', '銇撱仧銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54700, 'raw', 'japanese-personal-name-dataset');
+', '钘ら噹', '銇点仒銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54700, 'raw', 'japanese-personal-name-dataset');
+', '鍚夋湰', '銈堛仐銈傘仺', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54500, 'raw', 'japanese-personal-name-dataset');
+', '涓圭窘', '銇倧', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54500, 'raw', 'japanese-personal-name-dataset');
+', '钘ゅ病', '銇点仒銇娿亱', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54300, 'raw', 'japanese-personal-name-dataset');
+', '绔逛笅', '銇熴亼銇椼仧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54200, 'raw', 'japanese-personal-name-dataset');
+', '绔规湰', '銇熴亼銈傘仺', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54200, 'raw', 'japanese-personal-name-dataset');
+', '闈掓煶', '銇傘亰銈勩亷', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 54000, 'raw', 'japanese-personal-name-dataset');
+', '绶掓柟', '銇娿亴銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53900, 'raw', 'japanese-personal-name-dataset');
+', '鍙よ胺', '銇点倠銈?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53800, 'raw', 'japanese-personal-name-dataset');
+', '钘ゆ潙', '銇点仒銈€銈?, 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53700, 'raw', 'japanese-personal-name-dataset');
+', '骞冲窛', '銇层倝銇嬨倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53400, 'raw', 'japanese-personal-name-dataset');
+', '浜€浜?, '銇嬨倎銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53400, 'raw', 'japanese-personal-name-dataset');
+', '楂樺扯', '銇熴亱銇椼伨', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53300, 'raw', 'japanese-personal-name-dataset');
+', '涓夎吉', '銇曘倱銈娿倱', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53200, 'raw', 'japanese-personal-name-dataset');
+', '钘ゆ并', '銇点仒銇曘倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 53000, 'raw', 'japanese-personal-name-dataset');
+', '绐敯', '銇忋伡銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 52500, 'raw', 'japanese-personal-name-dataset');
+', '绡犲磶', '銇椼伄銇栥亶', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 52300, 'raw', 'japanese-personal-name-dataset');
+', '瀹師', '銇裤倓銇倝', 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 52200, 'raw', 'japanese-personal-name-dataset');
+', '楂樹簳', '銇熴亱銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 51800, 'raw', 'japanese-personal-name-dataset');
+', '涓嬫潙', '銇椼倐銈€銈?, 'unisex', 'family_name', 4, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 51600, 'raw', 'japanese-personal-name-dataset');
+', '楂樼€?, '銇熴亱銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 51400, 'raw', 'japanese-personal-name-dataset');
+
+

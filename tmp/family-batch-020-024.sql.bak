@@ -1,0 +1,44 @@
+﻿UPDATE names SET 
+  description_zh = '“山”即山岳，“崎”指山脉突出的边缘或岬角。意指居住在山脚突出部位或山岬处的人。山崎是一个非常典型的地形姓氏，体现了日本多山地形下人们依山而居的生存状态，给人以稳重、自然、且具有地标感的印象。',
+  description_en = 'Meaning "mountain promontory" or "mountain cape." It refers to people living at the foot of a protruding ridge or mountain spur. A classic topographic surname reflecting the relationship between people and Japan''s mountainous landscape.',
+  kamon_prompt = 'A circular Japanese kamon representing the Yamazaki clan. The design features "Three Fans" (Mitsu Kashiwa) or stylized "Mountain Peaks" (Yama-mon). Minimalist flat design, black on white background, sharp geometric precision.',
+  meaning_zh = '山岬之地',
+  meaning_en = 'Mountain promontory',
+  famous_bearers = '[{"name":"山崎 和佳奈","name_jp":"山崎 和佳奈","context":"芸能人 | 声優 | 1965年 3月 21日"},{"name":"山崎 大輝","name_jp":"山崎 大輝","context":"芸能人 | 俳優 | 1995年 10月 3日"},{"name":"山崎 裕太","name_jp":"山崎 裕 太","context":"芸能人 | 1981年 3月 8日"},{"name":"山崎 康晃","name_jp":"山崎 康 晃","context":"スポーツ選手 | 横浜DeNAベイスターズ　投手 | 1992年 10月 2日"},{"name":"山崎 誠","name_jp":"山崎 誠","context":"その他 | ニコ生主、金バエの本名 | 1977年 3月 4日"},{"name":"山崎 义徳","name_jp":"山崎 义徳","context":"歴史 | 交 代寄合表向御礼衆、备中成羽领8代领主 | 1769年 7月 26日"},{"name":"山崎 夏菜","name_jp":"山崎 夏菜","context":"芸能人 | 元虹のコンキスタドール | 2002年 5月 25日"},{"name":"山崎 豊子","name_jp":"山崎 豊子","context":"文学者 | 1924年 11月 3日"},{"name":"山崎 福寿","name_jp":"山崎 福寿","context":"研究者 | 経済学者 | 1954年 2月 27日"},{"name":"山崎 方也","name_jp":"山崎 方也","context":"芸能人 | 1970年 1月 18日"}]'
+WHERE kanji = '山崎' AND name_part = 'family_name';
+
+UPDATE names SET 
+  description_zh = '“中”即中间，“岛”指水中的陆地或聚落。意指居住在河流、湖泊或海中岛屿中央的人。中岛姓氏蕴含着被水源包围的安定感与中心位置的独特性，给人以独立、清爽且具有空间感的印象。',
+  description_en = 'Meaning "middle island." Refers to people living in the center of an island in a river, lake, or sea. The name conveys a sense of stability and a unique central position surrounded by water.',
+  kamon_prompt = 'A circular Japanese kamon representing the Nakajima clan. The design features "Three Ivy Leaves" (Mitsu Tsuta) or stylized "Wave Patterns" (Nami-mon). Minimalist flat design, black on white background, fluid organic curves.',
+  meaning_zh = '水岛中央',
+  meaning_en = 'Middle island',
+  famous_bearers = '[{"name":"中岛 健人","name_jp":"中岛 健人","context":"芸能人 | 元Sexy Zone、俳優、歌手 | 1994年 3月 13日"},{"name":"中岛 义一","name_jp":"中岛 义一","context":"研究者 | 教育者 | 1893年 3月 15日"},{"name":"中岛 徳蔵","name_jp":"中岛 徳蔵","context":"その他 | 教育者 | 1864年 3月 9日"},{"name":"中岛 临太朗","name_jp":"中岛 临太朗","context":"芸能人 | りんたろー、EXIT | 1986年 3 月 6日"},{"name":"中岛 道男","name_jp":"中岛 道男","context":"研究者 | 社会学者 | 1954年 3月 6日"},{"name":"中岛 大辅","name_jp":"中岛 大辅","context":"スポーツ選手 | プロ野球選手、东北楽天ゴールデンイーグルス所属 | 2001年 6月 4日"},{"name":"中岛 淳子","name_jp":"中岛 淳子","context":"芸能人 | 歌手・女優\r\n(芸名・夏木マリ) | 1952年 5月 2日"},{"name":"中岛 ピロタカ","name_jp":"中岛 ピロタカ","context":"芸術家 | 日本だじゃれ活用协会 | 1977年 6月 7日"},{"name":"中岛 健蔵","name_jp":"中岛 健蔵","context":"文学者 | フランス文学者、文芸评论家、进歩的知识人 | 1903年 2月 21日"},{"name":"中岛 秀信","name_jp":"中岛 秀信","context":"音楽家 | 1925年 1月 1日"}]'
+WHERE kanji = '中岛' AND name_part = 'family_name';
+
+UPDATE names SET 
+  description_zh = '“池”指水池，“田”指稻田。意指居住在水池附近的田地旁的人。池田姓氏反映了古代日本农耕文明中水利与耕地的紧密核心，象征着富足、生命力与脚踏实地的生活方式。',
+  description_en = 'Meaning "pond field." Refers to people living near rice paddies adjacent to a pond. Reflects the agricultural core of ancient Japan, symbolizing abundance, vitality, and a grounded lifestyle.',
+  kamon_prompt = 'A circular Japanese kamon representing the Ikeda clan. The design features a "Butterfly" (Ageha-cho), specifically a swallowtail butterfly with open wings. Minimalist flat design, black on white background, elegant symmetrical patterns.',
+  meaning_zh = '池畔田庄',
+  meaning_en = 'Pond field',
+  famous_bearers = '[{"name":"池田 政直","name_jp":"池田 政直","context":"歴史 | 备中鸭方藩5代藩主、鸭方藩主家7代、池田氏利政流 | 1746年 3月 18日"},{"name":" 池田 绫子","name_jp":"池田 绫子","context":"音楽家 | シンガーソングライター | 1978年 6月 1日"},{"name":"池田 桃花","name_jp":"池田 桃花","context":"芸能人 | Ｊ☆DEE’Ｚ（アイドルグループ） | 2000年 3月 13日"},{"name":"池田 政范","name_jp":"池田 政范","context":"歴史 | 备中生坂藩6代藩主、池田氏辉録流 | 1796年 3月 15日"},{"name":"池田 忠継","name_jp":"池田 忠継","context":"歴史 | 备前冈山藩初代藩主、 因州池田家祖、鸟取藩池田宗家初代 | 1599年 3月 14日"},{"name":"池田 信夫","name_jp":"池田 信夫","context":"研究者 | 経済学者、ブロガー | 1953年 10月 23日"},{"name":"池田 彪马","name_jp":"池田 彪马","context":"芸能人 | SUPER☆DRAGON | 2003年 6月 2日"},{"name":"池田 辉政","name_jp":"池田 辉政","context":"歴史 | 织豊〜江戸 初期の武将、播磨姫路藩初代藩主 | 1565年 1月 31日"},{"name":"池田 理代子","name_jp":"池田 理代子","context":"音楽家 | 漫画家・劇画家、声楽家・オペラ歌手、歌人 | 1947年 12月 18日"},{"name":"池田 治政","name_jp":"池田 治政","context":"歴史 |  备前冈山藩5代藩主、冈山藩池田宗家7代 | 1750年 2月 16日"}]'
+WHERE kanji = '池田' AND name_part = 'family_name';
+
+UPDATE names SET 
+  description_zh = '“安”意味着平和，“倍”在姓氏中多作修饰。安倍氏是日本古老的贵族家族（土御门家）的直系，流传着阴阳师安倍晴明的传说。此姓深受阴阳道、咒术与灵性色彩的影响，给人以神秘、睿智且具有深厚文化底蕴的印象。',
+  description_en = 'A historic and noble surname associated with the ancient Abe clan and the legendary Onmyoji, Abe no Seimei. The name carries strong cultural associations with spiritual wisdom, mystery, and traditional Japanese high culture.',
+  kamon_prompt = 'A circular Japanese kamon representing the Abe clan. The design features a "Five-Pointed Star" (Pentagram/Seimei-kikyo), the iconic symbol of Abe no Seimei. Minimalist flat design, black on white background, sharp geometric lines.',
+  meaning_zh = '安平之宗',
+  meaning_en = 'Peaceful lineage',
+  famous_bearers = '[{"name":"安倍 晋三","name_jp":"安倍 晋三","context":"政治家 | 第90代、96～98代内閣総理大臣 | 1954年 9月 21日"},{"name":"安倍 昭恵","name_jp":"安倍 昭恵","context":"その他 | 安倍晋三内閣総理大臣夫人 | 1962年 6月 10日"},{"name":"安倍 麻美","name_jp":"安倍 麻美","context":"その他 | 元アイドル、安倍 なつみの実妹 | 1985年 2月 27日"},{"name":"安倍 能成","name_jp":"安倍 能成","context":"研究者 | 哲学者、教育者、貴族院勅選議員、文部大臣 | 1883年 12月 23日"},{"name":"安倍 晋太郎","name_jp":"安倍 晋太郎","context":"政治家 | 元外務大臣 | 1924年 4月 29日"},{"name":"安倍 なつみ","name_jp":"安倍 なつみ","context":"芸能人 | 元モー娘。夫はミュージカル俳優山崎育三郎 | 1981年 8月 10日"},{"name":"安倍 源基","name_jp":"安倍 源基","context":"政治家 | 内务官僚、弁护士、警视庁特别高等警察 部长、警视総监、内务大臣 | 1894年 2月 14日"},{"name":"安倍 寛信","name_jp":"安倍 寛信","context":"経営者 | 実業家 | 1952年 5月 30日"}]'
+WHERE kanji = '安倍' AND name_part = 'family_name';
+
+UPDATE names SET 
+  description_zh = '“桥”指桥梁，“本”指根基或附近。意指居住在桥头或大桥附近的人。桥本姓氏体现了古代交通枢纽对于聚落形成的意义，象征着连接、流动与守护，给人以开明、踏实且具有活跃气息的印象。',
+  description_en = 'Meaning "base of the bridge." Refers to people living near a bridge or a crossing point. Reflects the importance of transportation hubs in ancient times, symbolizing connection and stability.',
+  kamon_prompt = 'A circular Japanese kamon representing the Hashimoto clan. The design features a "Bridge Railing" (Kumano-mon) or stylized "Fans" (Komon). Minimalist flat design, black on white background, symmetrical rhythmic lines.',
+  meaning_zh = '桥头人家',
+  meaning_en = 'Base of the bridge',
+  famous_bearers = '[{"name":"桥本 大翔","name_jp":"桥本 大翔","context":"音楽家 | 1980年 3月 8日"},{"name":"桥本 乃依","name_jp":"桥本 乃依","context":"芸能 人 | TRUSTAR所属　Chuu Cute　リーダー | 2001年 3月 16日"},{"name":"桥本 将","name_jp":"桥本 将","context":"政治家 | 1977年 3月 15日"},{"name":"桥本 伊与子","name_jp":"桥本 伊与子","context":"歴史 | 姉小路、幕末の大奥上臈御年寄 | 1810年 3月 16日"},{"name":"桥本 夏子","name_jp":"桥本 夏子","context":"歴史 | 江戸末期〜明 治期の公家、明治天皇側室、東坊城夏長娘、橋本実麗養女 | 1856年 3月 19日"},{"name":"桥本 芽生","name_jp":"桥本 芽生","context":"音楽家 | May J.、歌手 | 1988年 6月 20日"},{"name":"桥本 环奈","name_jp":"桥本 环奈","context":"芸能人 | 俳優、元Rev.from DVL | 1999年 2月 3日"},{"name":"桥本 じゅん","name_jp":"桥本 じゅん","context":"芸能人 | 俳優、声優 | 1964年 2月 25日"},{"name":"桥本 直子","name_jp":"桥本 直子","context":"研究者 | 政治学者、国際難民法 | 1975年"},{"name":"桥本 登美 三郎","name_jp":"桥本 登美三郎","context":"政治家 | 衆議院議員、建设大臣、运输大臣 | 1901年 3月 5日"}]'
+WHERE kanji = '桥本' AND name_part = 'family_name';

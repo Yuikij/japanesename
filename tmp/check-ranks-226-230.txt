@@ -1,0 +1,14 @@
+-- Batch 45 (Surnames Ranked 226-230 approx)
+-- Targets: Yamaguchi (山口), Nishimura (西村), Masuda (増田/増田), Kawakami (河上/川上), Taniguchi (谷口)
+-- Note: Yamaguchi is rank 14, already done. Nishimura is rank 41. Taniguchi is rank 93. 
+-- Need to check correct names for rank 226-230 from CSV.
+
+-- Re-analyzing ranks:
+-- 226: 滨田 (Hamada) - Rank 55 (Already done?)
+-- 227: 小野寺 (Onodera)
+-- 228: 饭田 (Iida) - Rank 78 (Already done) 
+-- 229: 武藤 (Muto) - Rank 219 (Checking)
+-- 230: 冈崎 (Okazaki)
+
+-- Checking if 216-220 was correct. 
+-- Let's re-extract exact rank 226-230.

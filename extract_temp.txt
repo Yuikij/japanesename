@@ -1,0 +1,85 @@
+﻿
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_yoshiwara__dd9466', 
+'yoshiwara
+> ', '鍚夊師', '銈堛仐銈忋倝', 'unisex', 'family_name', 4, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 58300, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_kanazawa__30188f', 'kanazawa
+> ', '閲戞并', '銇嬨仾銇栥倧', 'unisex', 'family_name', 4, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 58200, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_nagashima__0c5f1f', 
+'nagashima
+> ', '闀峰扯', '銇亴銇椼伨', 'unisex', 'family_name', 4, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 58000, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_miyauchi__17eb5b', 'miyauchi
+> ', '瀹唴', '銇裤倓銇嗐仭', 'unisex', 'family_name', 4, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 57900, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_yasui__93e592', 'yasui
+> ', '瀹変簳', '銈勩仚銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57700, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_shouji__fe899f', 'shouji
+> ', '搴勫徃', '銇椼倗銇嗐仒', 'unisex', 'family_name', 4, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 57400, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_oouchi__6c5ddc', 'oouchi
+> ', '澶у唴', '銇娿亰銇嗐仭', 'unisex', 'family_name', 4, '["kanji"]', NULL, 
+'uncommon', 'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, 
+'[]', '[]', '[]', 57300, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_higa__9bc569', 'higa
+> ', '姣斿槈', '銇层亴', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 57200, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_mogi__d7da44', 'mogi
+> ', '鑼傛湪', '銈傘亷', 'unisex', 'family_name', 2, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56700, 'raw', 'japanese-personal-name-dataset');
+  INSERT OR IGNORE INTO names (id, romaji, kanji, reading, gender, name_part, 
+syllable_count, script, era, popularity, origin_region, use_case, vibe, 
+element, kanji_meaning_tags, meaning_en, meaning_zh, description_en, 
+description_zh, famous_bearers, related_names, reading_romaji_variants, 
+estimated_population, status, source) VALUES ('fn_hidaka__87b0a5', 'hidaka
+> ', '鏃ラ珮', '銇层仩銇?, 'unisex', 'family_name', 3, '["kanji"]', NULL, 'uncommon', 
+'japan_native', '[]', '[]', '[]', '[]', NULL, NULL, NULL, NULL, '[]', '[]', 
+'[]', 56700, 'raw', 'japanese-personal-name-dataset');
+
+

@@ -17,17 +17,14 @@
   "home": {
     "title": "Japanese Name Dictionary",
     "subtitle": "Explore Authentic Japanese Names with Meanings, Kanji & Cultural Heritage",
-    "description": "Browse over 500,000 authentic Japanese names — search by category, discover kanji meanings, and find the perfect name for your baby, character, or creative project.",
-    "startButton": "Browse All Names",
-  "generateButton": "Generate My Name",
+    "description": "Browse over 4,700 authentic Japanese names — search by category, discover kanji meanings, and find the perfect name for your baby, character, or creative project.",
+    "startButton": "Browse Male Names",
+    "browseAllButton": "Browse All Names",
     "getStarted": "Start exploring Japanese names now",
     "categories": {
       "title": "Browse Japanese Names by Category",
       "subtitle": "Explore our curated collection across popular categories",
-      "searches": "{count} monthly clicks",
-      "showMore": "Show all {count} categories",
-      "showLess": "Show less",
-      "page": "Page {current} of {total}"
+      "searches": "{count} monthly searches"
     },
     "showcase": {
       "title": "Featured Japanese Names",

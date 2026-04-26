@@ -17,17 +17,14 @@
   "home": {
     "title": "日本名字大全",
     "subtitle": "探索正宗日本名字，了解汉字含义与文化传承",
-    "description": "收录超过 500,000 个正宗日本名字 —— 按分类浏览、了解汉字含义，为您的宝宝、角色或创意项目找到完美的日本名字。",
-    "startButton": "浏览所有名字",
-  "generateButton": "生成我的名字",
+    "description": "收录超过 4,700 个正宗日本名字 —— 按分类浏览、了解汉字含义，为您的宝宝、角色或创意项目找到完美的日本名字。",
+    "startButton": "浏览男性名字",
+    "browseAllButton": "浏览全部名字",
     "getStarted": "开始探索日本名字",
     "categories": {
       "title": "按分类浏览日本名字",
       "subtitle": "探索我们精心整理的热门分类",
-      "searches": "月点击量 {count}",
-      "showMore": "展开全部 {count} 个分类",
-      "showLess": "收起",
-      "page": "第 {current} / {total} 页"
+      "searches": "月搜索量 {count}"
     },
     "showcase": {
       "title": "精选日本名字",

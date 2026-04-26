@@ -24,7 +24,9 @@
     "categories": {
       "title": "按分类浏览日本名字",
       "subtitle": "探索我们精心整理的热门分类",
-      "searches": "月搜索量 {count}"
+      "searches": "月搜索量 {count}",
+      "showMore": "展开更多 {count} 个分类",
+      "showLess": "收起"
     },
     "showcase": {
       "title": "精选日本名字",

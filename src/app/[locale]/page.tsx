@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server'
-import { ArrowRight, Search, Globe, Database } from 'lucide-react'
+import { ArrowRight, Globe, Database } from 'lucide-react'
 import Link from 'next/link'
 import keywordsData from '../../../新版本PSEO改造/keyword/keyword.json'
+import CategoryGrid from '@/components/CategoryGrid'
 
 interface Keyword {
   id: string
@@ -29,40 +30,66 @@ const FEATURED_NAMES = [
 ]
 
 const CATEGORY_ICONS: Record<string, string> = {
-  '/names/last-names': '👨‍👩‍👧‍👦',
+  // Gender / age
   '/names/male': '👦',
   '/names/female': '👧',
-  '/names/all': '📖',
   '/names/boy': '🧒',
-  '/names/names': '✨',
   '/names/girl': '🎀',
+  '/names/unisex': '⚧️',
+  // Family names
+  '/names/last-names': '👨‍👩‍👧‍👦',
   '/names/last-names-with-meanings': '📝',
   '/names/last-names-common': '🏠',
+  '/names/last-names-male': '👨',
+  '/names/last-names-cute': '🌸',
+  '/names/last-names-unique': '💎',
+  // All / general
+  '/names/all': '📖',
+  '/names/names': '✨',
+  '/names/first': '🔤',
+  '/names/common': '📋',
+  '/names/popular': '⭐',
+  '/names/meanings': '🔍',
+  // Style / vibe
+  '/names/cute': '🍬',
+  '/names/cool': '😎',
+  '/names/unique': '🌟',
+  '/names/rare': '💫',
+  '/names/dark': '🌑',
+  '/names/fierce-historical': '⚔️',
+  // Gender + style combos
+  '/names/cute-girl': '🌺',
+  '/names/unique-girl': '🦋',
+  '/names/common-girl': '🌷',
+  '/names/unique-boy': '🚀',
+  '/names/cute-boy': '🐻',
+  '/names/cool-male': '🔥',
+  '/names/boy-meanings': '📚',
+  // Anime
   '/names/anime': '🎌',
+  '/names/male-anime': '🗡️',
+  '/names/female-anime': '🌙',
+  // Misc
+  '/names/nicknames': '😊',
 }
 
-function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string }> {
+function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string | null }> {
   try {
     const keywords: Keyword[] = keywordsData as Keyword[]
     return keywords
-      .filter(k => k.strategy === 'category_page')
+      .filter(k => k.strategy === 'category_page' && k.path)
       .sort((a, b) => (b.search_volume_total ?? b.search_volume) - (a.search_volume_total ?? a.search_volume))
-      .slice(0, 10)
       .map(k => ({
         keyword: k.keyword,
         path: k.path,
         volume: k.search_volume_total ?? k.search_volume,
-        icon: CATEGORY_ICONS[k.path] ?? '🔖',
+        icon: CATEGORY_ICONS[k.path] ?? null,
       }))
   } catch {
     return []
   }
 }
 
-function formatVolume(n: number): string {
-  if (n >= 1000) return `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}K`
-  return String(n)
-}
 
 export default async function HomePage() {
   const t = await getTranslations('home')
@@ -106,24 +133,13 @@ export default async function HomePage() {
                 {t('categories.subtitle')}
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {categories.map((cat) => (
-                <Link
-                  key={cat.path}
-                  href={`.${cat.path}`}
-                  className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200"
-                >
-                  <div className="text-3xl mb-3">{cat.icon}</div>
-                  <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-2 capitalize group-hover:text-pink-600 transition-colors">
-                    {cat.keyword}
-                  </h3>
-                  <div className="flex items-center gap-1 text-xs text-gray-400">
-                    <Search className="w-3 h-3" />
-                    <span>{t('categories.searches', { count: formatVolume(cat.volume) })}</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <CategoryGrid
+              categories={categories}
+              initialCount={10}
+              searchesLabel={t('categories.searches', { count: '{count}' })}
+              showMoreLabel={t('categories.showMore', { count: '{count}' })}
+              showLessLabel={t('categories.showLess')}
+            />
           </div>
         </section>
       )}

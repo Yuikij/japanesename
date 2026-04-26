@@ -25,7 +25,7 @@
       "title": "Browse Japanese Names by Category",
       "subtitle": "Explore our curated collection across popular categories",
       "searches": "{count} monthly searches",
-      "showMore": "Show {count} more categories",
+      "showMore": "Show all {count} categories",
       "showLess": "Show less"
     },
     "showcase": {

@@ -1,8 +1,8 @@
 import { getTranslations } from 'next-intl/server'
-import { ArrowRight, Globe, Database } from 'lucide-react'
+import { ArrowRight, Search, Globe, Database } from 'lucide-react'
 import Link from 'next/link'
+import CategoryGridClient from '@/components/CategoryGridClient'
 import keywordsData from '../../../新版本PSEO改造/keyword/keyword.json'
-import CategoryGrid from '@/components/CategoryGrid'
 
 interface Keyword {
   id: string
@@ -30,65 +30,47 @@ const FEATURED_NAMES = [
 ]
 
 const CATEGORY_ICONS: Record<string, string> = {
-  // Gender / age
+  '/names/last-names': '👨‍👩‍👧‍👦',
   '/names/male': '👦',
   '/names/female': '👧',
+  '/names/all': '📖',
   '/names/boy': '🧒',
+  '/names/names': '✨',
   '/names/girl': '🎀',
-  '/names/unisex': '⚧️',
-  // Family names
-  '/names/last-names': '👨‍👩‍👧‍👦',
   '/names/last-names-with-meanings': '📝',
   '/names/last-names-common': '🏠',
-  '/names/last-names-male': '👨',
-  '/names/last-names-cute': '🌸',
-  '/names/last-names-unique': '💎',
-  // All / general
-  '/names/all': '📖',
-  '/names/names': '✨',
-  '/names/first': '🔤',
-  '/names/common': '📋',
-  '/names/popular': '⭐',
-  '/names/meanings': '🔍',
-  // Style / vibe
-  '/names/cute': '🍬',
-  '/names/cool': '😎',
-  '/names/unique': '🌟',
-  '/names/rare': '💫',
-  '/names/dark': '🌑',
-  '/names/fierce-historical': '⚔️',
-  // Gender + style combos
-  '/names/cute-girl': '🌺',
-  '/names/unique-girl': '🦋',
-  '/names/common-girl': '🌷',
-  '/names/unique-boy': '🚀',
-  '/names/cute-boy': '🐻',
-  '/names/cool-male': '🔥',
-  '/names/boy-meanings': '📚',
-  // Anime
   '/names/anime': '🎌',
-  '/names/male-anime': '🗡️',
-  '/names/female-anime': '🌙',
-  // Misc
-  '/names/nicknames': '😊',
 }
 
-function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string | null }> {
+const FALLBACK_EMOJIS = ['✨', '🌸', '🔖', '🎐', '🎌', '🏮', '🎏', '🍵', '⛩️', '🗻', '🎋', '🎀', '📖', '🎵', '⭐', '💫', '🍀', '🦋']
+
+function getDeterministicEmoji(path: string): string {
+  if (CATEGORY_ICONS[path]) return CATEGORY_ICONS[path]
+  let hash = 0
+  for (let i = 0; i < path.length; i++) {
+    hash = path.charCodeAt(i) + ((hash << 5) - hash)
+  }
+  const index = Math.abs(hash) % FALLBACK_EMOJIS.length
+  return FALLBACK_EMOJIS[index]
+}
+
+function loadCategories(): Array<{ keyword: string; path: string; volume: number; icon: string }> {
   try {
     const keywords: Keyword[] = keywordsData as Keyword[]
     return keywords
-      .filter(k => k.strategy === 'category_page' && k.path)
+      .filter(k => k.strategy === 'category_page')
       .sort((a, b) => (b.search_volume_total ?? b.search_volume) - (a.search_volume_total ?? a.search_volume))
       .map(k => ({
         keyword: k.keyword,
         path: k.path,
         volume: k.search_volume_total ?? k.search_volume,
-        icon: CATEGORY_ICONS[k.path] ?? null,
+        icon: getDeterministicEmoji(k.path),
       }))
   } catch {
     return []
   }
 }
+
 
 
 export default async function HomePage() {
@@ -133,13 +115,7 @@ export default async function HomePage() {
                 {t('categories.subtitle')}
               </p>
             </div>
-            <CategoryGrid
-              categories={categories}
-              initialCount={10}
-              searchesLabel={t('categories.searches', { count: '{count}' })}
-              showMoreLabel={t('categories.showMore', { count: '{count}' })}
-              showLessLabel={t('categories.showLess')}
-            />
+            <CategoryGridClient categories={categories} />
           </div>
         </section>
       )}

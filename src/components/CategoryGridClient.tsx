@@ -31,13 +31,13 @@ export default function CategoryGridClient({ categories }: { categories: Categor
           <Link
             key={cat.path}
             href={`.${cat.path}`}
-            className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200"
+            className="group flex flex-col h-full bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100 hover:border-pink-200"
           >
-            <div className="text-3xl mb-3 flex items-center justify-center">{cat.icon}</div>
-            <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-2 capitalize group-hover:text-pink-600 transition-colors text-center">
+            <div className="text-3xl mb-3 flex items-center justify-center shrink-0">{cat.icon}</div>
+            <h3 className="font-semibold text-gray-800 text-sm leading-snug mb-3 capitalize group-hover:text-pink-600 transition-colors text-center flex-grow flex items-center justify-center">
               {cat.keyword}
             </h3>
-            <div className="flex items-center justify-center gap-1 text-xs text-gray-400">
+            <div className="mt-auto flex items-center justify-center gap-1 text-xs text-gray-400 shrink-0">
               <Search className="w-3 h-3" />
               <span>{t('searches', { count: formatVolume(cat.volume) })}</span>
             </div>
